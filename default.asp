@@ -33,20 +33,20 @@
 	<script type="text/javascript" src="/opac/js/jquery-1.7.1.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="/opac/js/jqueryRater/style.css" />
 	<script type="text/javascript" src="/opac/js/jqueryRater/jquery.rater.js"></script>
-  <link rel="icon" href="favicon.ico" type="image/ico"/>
+	<link rel="icon" href="favicon.ico" type="image/ico"/>
  	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-    <h3><span>Cat·logos</span></h3>
+    <h3><span>Cat√°logos</span></h3>
     <div id="principal"> 
       <div id="lblutilizador"><span id="utilizador">  
-        <% if session("user")="" then response.write "<b>¡rea reservada:</b> " else response.write "Utilizador: " &  DecodeUTF8(session("user"))%><%if Session("LoggedIn") or session("LeitorIn") then%> [ <a href="logout.asp?sys=admin">Sair</a> ]<%else%> &nbsp;<a href="javascript:void(0)" onClick="window.open('admin/logleitor.asp','login','width=360,height=170,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=no')">LEITORES</a> | <a href="admin/admin.asp">ADMINISTRADORES</a> <%end if%>
+        <% if session("user")="" then response.write "<b>√Årea reservada:</b> " else response.write "Utilizador: " &  DecodeUTF8(session("user"))%><%if Session("LoggedIn") or session("LeitorIn") then%> [ <a href="logout.asp?sys=admin">Sair</a> ]<%else%> &nbsp;<a href="javascript:void(0)" onClick="window.open('admin/logleitor.asp','login','width=360,height=170,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=no')">LEITORES</a> | <a href="admin/admin.asp">ADMINISTRADORES</a> <%end if%>
         </span>
 	  </div>  
-      <p class="fil">ª InÌcio<%if Session("LoggedIn") then%> ª <a href="admin/admin.asp">AdministraÁ„o</a><% end if%></p>
+      <p class="fil">¬ª In√≠cio<%if Session("LoggedIn") then%> ¬ª <a href="admin/admin.asp">Administra√ß√£o</a><% end if%></p>
       <% if session("portal")="N" then %>
 	     <br>
-	     <h3 style="color:red">O cat·logo encontra-se em MANUTEN«√O.<br> Retomaremos o serviÁo logo que possÌvel...</h3>
+	     <h3 style="color:red">O cat√°logo encontra-se em MANUTEN√á√ÉO.<br> Retomaremos o servi√ßo logo que poss√≠vel...</h3>
 	   <%else %>
 	  <div>
 		  <div style="width:250px;float:left;"> 
@@ -65,7 +65,7 @@
 		  <%
 		   if ubound(votos)>0 then 
 		   %>
-		   <fieldset style="width:350px;margin:10px 15px 0 0;padding:10px"><legend>Top tÌtulos</legend>
+		   <fieldset style="width:350px;margin:10px 15px 0 0;padding:10px"><legend>Top t√≠tulos</legend>
 		     <br />
 			 <table style="font-size:0.9em">
 			 <% on error resume next
@@ -77,17 +77,17 @@
 				strHTML=getUrl(strURL)
 
 				if strHTML<>"" then
-					tmp=split(strHTML,"£")
+					tmp=split(strHTML,"¬£")
 					
 					if ubound(tmp)>2 then
 						med=Clng(tmp(2))/Clng(tmp(3))
-						s=s & med & "#":t=t & tmp(0) & "ß":z=z & tmp(4) & "ß"             'string(7 - Len(votos(i)),"0") & votos(i) & "," 				
+						s=s & med & "#":t=t & tmp(0) & "¬ß":z=z & tmp(4) & "¬ß"             'string(7 - Len(votos(i)),"0") & votos(i) & "," 				
 					end if
 				end if
 			     next
 			     if s<>"" then
    
-					v=split(s,"#"):	t0=split(t,"ß"): t3=split(z,"ß")
+					v=split(s,"#"):	t0=split(t,"¬ß"): t3=split(z,"¬ß")
 					
 					sortArrayD v, t0, t3
 					if session("user")="" then us="guest" else us=session("user") 
@@ -108,7 +108,7 @@
 	  <br />
 	  <div  style="display:inline;font-size:0.9em"><img src="imagens/seta-destaque.gif" alt="Dicas de pesquisa">&nbsp;<a style="text-decoration:none" href="/opac/docs/dicas.pdf" target="_blank">Dicas de pesquisa</a></div></br >
 	  <div align="right"><p class="fil"><img src="imagens/seta-destaque.gif" alt="Contactos e siglas">&nbsp;<a href="/opac/admin/fpdf/main.asp" target="_blank">Contactos e siglas</a></p></div>
-	  <div align="right" style="clear:both"><a style="text-decoration:none" href="<%=surlPORTAL%>" target="_top">&copy; Cat·logo Coletivo: <%=sentidade%></a></div>
+	  <div align="right" style="clear:both"><a style="text-decoration:none" href="<%=surlPORTAL%>" target="_top">&copy; Cat√°logo Coletivo: <%=sentidade%></a></div>
 	  <!--Software: <%=sversao%> - <%=surlRBE%> -->
       </div> 
 	</div>
