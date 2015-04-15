@@ -80,7 +80,7 @@
     }
 	
    function SwapFilter() {
-      $('#txtfilter').html('[Tipo='+$('#tdoc :selected').text()+' ; Formato='+$('#formato :selected').text()+' ; Rp='+$('#limites :selected').text()+ ($('#dp').val() !=''? ' ; AP='+ $('#dp').val():'') + ($("#truncatura").length > 0 ? ($("#truncatura").is(':checked') ? ' ; Exata=sim':' ; Exata=n„o'):'')+']');
+      $('#txtfilter').html('[Tipo='+$('#tdoc :selected').text()+' ; Formato='+$('#formato :selected').text()+' ; Rp='+$('#limites :selected').text()+ ($('#dp').val() !=''? ' ; AP='+ $('#dp').val():'') + ($("#truncatura").length > 0 ? ($("#truncatura").is(':checked') ? ' ; Exata=sim':' ; Exata=n√£o'):'')+']');
    }   
    $(document).ready(function(){ 
    //$('.radioButton').click(function() { 
@@ -114,12 +114,12 @@
 
 <body>
 
-    <h3><span>Cat·logos</span></h3>
+    <h3><span>Cat√°logos</span></h3>
     <div id="principal"> 
 	
 	<div id="lblutilizador"><span id="utilizador"> 
         <% if session("user")="" then 
-		    response.write "Utilizador: anÛnimo"
+		    response.write "Utilizador: an√≥nimo"
 		  elseif session("LeitorIn") then 
 		    response.write "Utilizador: " & DecodeUTF8(session("user")) 
 		  else response.write "Utilizador: " & ucase(session("user")) 
@@ -127,7 +127,7 @@
 		  <%if Session("LoggedIn") or session("LeitorIn") then%> [ <a href="logout.asp?sys=admin">Sair</a> ]<%end if%>
         </span>
 		</div>
-      <p class="fil" >ª <a href="default.asp">InÌcio</a> ª
+      <p class="fil" >¬ª <a href="default.asp">In√≠cio</a> ¬ª
         <% 
 		select case request.querystring("bd")
 		case "col"
@@ -142,7 +142,7 @@
 		case 0
 		     response.write "Pesquisa simplificada"
 		case 2
-		     response.write "Pesquisa avanÁada"
+		     response.write "Pesquisa avan√ßada"
 		case 3
 		     response.write "Pesquisa por palavra-chave"
 		end select
@@ -172,35 +172,35 @@
         Tipo de documento: 
         <select  size="1" name="TDOC" id="tdoc" onchange="SwapFilter()">
           <option selected value="XX">Todos os documentos</option>
-          <option value="AM">Monografia (Texto Impresso)</option>
-          <option value="BM">Monografia (Texto Manuscrito)</option>
-          <option value="CM">Partituras Musicais - Impressas</option>
-          <option value="DM">Partituras Musicais - Manuscritas</option>
-          <option value="EM">Material Cartogr·fico - Impresso</option>
-          <option value="FM">Material Cartogr·fico - Manuscrito</option>
-          <option value="GM">Material de ProjeÁ„o e VÌdeo</option>
-          <option value="IM">Registos Sonoros n„o Musicais</option>
-          <option value="JM">Registos Sonoros Musicais</option>
-          <option value="KM">Material Gr·fico a duas dimensıes</option>
-          <option value="LM">Produtos de Computador</option>
-          <option value="MM">MultimÈdia</option>
+          <option value="AM">Monografia (texto impresso)</option>
+          <option value="BM">Monografia (texto manuscrito)</option>
+          <option value="CM">Partituras musicais - Impressas</option>
+          <option value="DM">Partituras musicais - Manuscritas</option>
+          <option value="EM">Material cartogr√°fico - Impresso</option>
+          <option value="FM">Material cartogr√°fico - Manuscrito</option>
+          <option value="GM">Material de proje√ß√£o e v√≠deo</option>
+          <option value="IM">Registos sonoros n√£o musicais</option>
+          <option value="JM">Registos sonoros msicais</option>
+          <option value="KM">Material gr√°fico a duas dimens√µes</option>
+          <option value="LM">Produtos de computador</option>
+          <option value="MM">Multim√©dia</option>
           <option value="RM">Artefatos 3D e realia</option>
-          <option value="AA">AnalÌtico</option>
-          <option value="AS">PublicaÁ„o periÛdica</option>
+          <option value="AA">Anal√≠tico</option>
+          <option value="AS">Publica√ß√£o peri√≥dica</option>
         </select>
-        Ano de publicaÁ„o: 
+        Ano de publica√ß√£o: 
         <input type="text" size="4" name="DP" id="dp" maxlength="4" onchange="SwapFilter()">
          
-        <p>Formato de visualizaÁ„o: 
+        <p>Formato de visualiza√ß√£o: 
           <select  size="1" name="formato" id="formato" onchange="SwapFilter()">
             <option selected value="wiusr">Completo</option>
             <option value="wiabr">Abreviado</option>
             <option value="winp405">Norma NP405</option>
             <option value="wicmp">ISBD</option>
-            <option value="witit">TÌtulos</option>
+            <option value="witit">T√≠tulos</option>
             <option value="wibol">Boletim</option>
           </select>
-          Registos por p·gina: 
+          Registos por p√°gina: 
           <select size="1" name="limites" id="limites" onchange="SwapFilter()">
             <option value="5">5</option>
             <option value="10">10</option>
@@ -222,9 +222,9 @@
             <td> </td>
             <td> <select size="1" name="PRFX1">
                 <option selected value="AU">Autor</option>
-                <option value="TI">TÌtulo</option>
+                <option value="TI">T√≠tulo</option>
                 <option value="AS">Assunto</option>
-                <option value="COL">ColeÁ„o</option>
+                <option value="COL">Cole√ß√£o</option>
                 <option value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -240,15 +240,15 @@
             <td><select size="1" name="OP2">
                 <option value="OR">OU</option>
                 <option selected value="AND">E</option>
-                <option value="AND NOT">N√O</option>
+                <option value="AND NOT">N√ÉO</option>
                 <!--<option value="(G)">Campo</option>
-                <option value="(F)">OcorrÍncia</option>-->
+                <option value="(F)">Ocorr√™ncia</option>-->
               </select> </td>
             <td> <select size="1" name="PRFX2">
                 <option value="AU">Autor</option>
-                <option selected value="TI">TÌtulo</option>
+                <option selected value="TI">T√≠tulo</option>
                 <option value="AS">Assunto</option>
-                <option value="COL">ColeÁ„o</option>
+                <option value="COL">Cole√ß√£o</option>
                 <option value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -264,15 +264,15 @@
             <td> <select size="1" name="OP3">
                 <option value="OR">OU</option>
                 <option selected value="AND">E</option>
-                <option value="AND NOT">N√O</option>
+                <option value="AND NOT">N√ÉO</option>
                 <!--<option value="(G)">Campo</option>
-                <option value="(F)">OcorrÍncia</option>-->
+                <option value="(F)">Ocorr√™ncia</option>-->
               </select> </td>
             <td> <select size="1" name="PRFX3">
                 <option value="AU">Autor</option>
-                <option value="TI">TÌtulo</option>
+                <option value="TI">T√≠tulo</option>
                 <option selected value="AS">Assunto</option>
-                <option value="COL">ColeÁ„o</option>
+                <option value="COL">Cole√ß√£o</option>
                 <option value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -288,15 +288,15 @@
             <td><select size="1"  name="OP4">
                 <option value="OR">OU</option>
                 <option selected value="AND">E</option>
-                <option value="AND NOT">N√O</option>
+                <option value="AND NOT">N√ÉO</option>
                 <!--<option value="(G)">Campo</option>
-                <option value="(F)">OcorrÍncia</option>-->
+                <option value="(F)">Ocorr√™ncia</option>-->
               </select> </td>
             <td> <select size="1" name="PRFX4">
                 <option value="AU">Autor</option>
-                <option value="TI">TÌtulo</option>
+                <option value="TI">T√≠tulo</option>
                 <option value="AS">Assunto</option>
-                <option selected value="COL">ColeÁ„o</option>
+                <option selected value="COL">Cole√ß√£o</option>
                 <option value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -312,15 +312,15 @@
             <td><select size="1" name="OP5">
                 <option value="OR">OU</option>
                 <option selected value="AND">E</option>
-                <option value="AND NOT">N√O</option>
+                <option value="AND NOT">N√ÉO</option>
                 <!--<option value="(G)">Campo</option>
-                <option value="(F)">OcorrÍncia</option>-->
+                <option value="(F)">Ocorr√™ncia</option>-->
               </select> </td>
             <td> <select size="1" name="PRFX5">
                 <option value="AU">Autor</option>
-                <option value="TI">TÌtulo</option>
+                <option value="TI">T√≠tulo</option>
                 <option value="AS">Assunto</option>
-                <option value="COL">ColeÁ„o</option>
+                <option value="COL">Cole√ß√£o</option>
                 <option selected value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -336,15 +336,15 @@
             <td><select size="1"  name="OP6">
                 <option  value="OR">OU</option>
                 <option selected value="AND">E</option>
-                <option value="AND NOT">N√O</option>
+                <option value="AND NOT">N√ÉO</option>
                 <!--<option value="(G)">Campo</option>
-                <option value="(F)">OcorrÍncia</option>-->
+                <option value="(F)">Ocorr√™ncia</option>-->
               </select> </td>
             <td> <select size="1" name="PRFX6">
                 <option value="AU">Autor</option>
-                <option value="TI">TÌtulo</option>
+                <option value="TI">T√≠tulo</option>
                 <option value="AS">Assunto</option>
-                <option value="COL">ColeÁ„o</option>
+                <option value="COL">Cole√ß√£o</option>
                 <option value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -360,15 +360,15 @@
             <td><select size="1"  name="OP7">
                 <option value="OR">OU</option>
                 <option selected value="AND">E</option>
-                <option value="AND NOT">N√O</option>
+                <option value="AND NOT">N√ÉO</option>
                 <!--<option value="(G)">Campo</option>
-                <option value="(F)">OcorrÍncia</option>-->
+                <option value="(F)">Ocorr√™ncia</option>-->
               </select> </td>
             <td> <select size="1" name="PRFX7">
                 <option value="AU">Autor</option>
-                <option value="TI">TÌtulo</option>
+                <option value="TI">T√≠tulo</option>
                 <option value="AS">Assunto</option>
-                <option value="COL">ColeÁ„o</option>
+                <option value="COL">Cole√ß√£o</option>
                 <option value="ISBN">ISBN</option>
                 <option value="ISSN">ISSN</option>
                 <option value="CDU">CDU</option>
@@ -416,35 +416,35 @@
 		  <p>Tipo de documento: 
           <select  size="1" name="TDOC" id="tdoc" onchange="SwapFilter()">
             <option selected value="XX">Todos os documentos</option>
-            <option value="AM">Monografia (Texto Impresso)</option>
-            <option value="BM">Monografia (Texto Manuscrito)</option>
-            <option value="CM">Partituras Musicais - Impressas</option>
-            <option value="DM">Partituras Musicais - Manuscritas</option>
-            <option value="EM">Material Cartogr·fico - Impresso</option>
-            <option value="FM">Material Cartogr·fico - Manuscrito</option>
-            <option value="GM">Material de ProjeÁ„o e VÌdeo</option>
-            <option value="IM">Registos Sonoros n„o Musicais</option>
-            <option value="JM">Registos Sonoros Musicais</option>
-            <option value="KM">Material Gr·fico a duas dimensıes</option>
-            <option value="LM">Produtos de Computador</option>
-            <option value="MM">MultimÈdia</option>
+            <option value="AM">Monografia (texto impresso)</option>
+            <option value="BM">Monografia (texto manuscrito)</option>
+            <option value="CM">Partituras musicais - Impressas</option>
+            <option value="DM">Partituras musicais - Manuscritas</option>
+            <option value="EM">Material cartogr√°fico - Impresso</option>
+            <option value="FM">Material cartogr√°fico - Manuscrito</option>
+            <option value="GM">Material de proje√ß√£o e v√≠deo</option>
+            <option value="IM">Registos sonoros n√£o musicais</option>
+            <option value="JM">Registos sonoros musicais</option>
+            <option value="KM">Material gr√°fico a duas dimens√µes</option>
+            <option value="LM">Produtos de computador</option>
+            <option value="MM">Multim√©dia</option>
             <option value="RM">Artefatos 3D e realia</option>
-            <option value="AA">AnalÌtico</option>
-            <option value="AS">PublicaÁ„o periÛdica</option>
+            <option value="AA">Anal√≠tico</option>
+            <option value="AS">Publica√ß√£o peri√≥dica</option>
           </select>
-          Ano de publicaÁ„o: 
+          Ano de publica√ß√£o: 
           <input type="text" size="4" name="DP" id="dp" maxlength="4" onchange="SwapFilter()">
           </p>
-		 <p> Formato de visualizaÁ„o: 
+		 <p> Formato de visualiza√ß√£o: 
           <select  size="1" name="formato" id="formato" onchange="SwapFilter()">
             <option selected value="wiusr">Completo</option>
             <option value="wiabr">Abreviado</option>
             <option value="winp405">Norma NP405</option>
             <option value="wicmp">ISBD</option>
-            <option value="witit">TÌtulos</option>
+            <option value="witit">T√≠tulos</option>
             <option value="wibol">Boletim</option>
           </select>
-          &nbsp;&nbsp;&nbsp;Registos/p·gina: 
+          &nbsp;&nbsp;&nbsp;Registos/p√°gina: 
           <select size="1" name="limites" id="limites" onchange="SwapFilter()">
             <option value="5">5</option>
             <option value="10">10</option>
@@ -464,7 +464,7 @@
 			<input type="submit" value="Pesquisar" onClick="return ValidaExpress_3(this.form)" name="Submit">
 			<input type="reset" value=" Limpar " name="Reset">
 		  </div>
-		  <span class="txtexp">Palavra/Express„o</span>: 
+		  <span class="txtexp">Palavra/Express√£o</span>: 
           <input type="text" size="68" name="termo" id="simptrm" maxlength="80">
 		</div>
 	
@@ -490,37 +490,37 @@
 		  <p>  Tipo de documento: 
           <select  size="1" name="TDOC" id="tdoc" onchange="SwapFilter()">
             <option selected value="XX">Todos os documentos</option>
-            <option value="AM">Monografia (Texto Impresso)</option>
-            <option value="BM">Monografia (Texto Manuscrito)</option>
-            <option value="CM">Partituras Musicais - Impressas</option>
-            <option value="DM">Partituras Musicais - Manuscritas</option>
-            <option value="EM">Material Cartogr·fico - Impresso</option>
-            <option value="FM">Material Cartogr·fico - Manuscrito</option>
-            <option value="GM">Material de ProjeÁ„o e VÌdeo</option>
-            <option value="IM">Registos Sonoros n„o Musicais</option>
-            <option value="JM">Registos Sonoros Musicais</option>
-            <option value="KM">Material Gr·fico a duas dimensıes</option>
-            <option value="LM">Produtos de Computador</option>
-            <option value="MM">MultimÈdia</option>
+            <option value="AM">Monografia (texto impresso)</option>
+            <option value="BM">Monografia (texto manuscrito)</option>
+            <option value="CM">Partituras musicais - Impressas</option>
+            <option value="DM">Partituras musicais - Manuscritas</option>
+            <option value="EM">Material cartogr√°fico - Impresso</option>
+            <option value="FM">Material cartogr√°fico - Manuscrito</option>
+            <option value="GM">Material de proje√ß√£o e v√≠deo</option>
+            <option value="IM">Registos sonoros n√£o Musicais</option>
+            <option value="JM">Registos sonoros musicais</option>
+            <option value="KM">Material gr√°fico a duas dimens√µes</option>
+            <option value="LM">Produtos de computador</option>
+            <option value="MM">Multim√©dia</option>
             <option value="RM">Artefatos 3D e realia</option>
-            <option value="AA">AnalÌtico</option>
-            <option value="AS">PublicaÁ„o periÛdica</option>
+            <option value="AA">Anal√≠tico</option>
+            <option value="AS">Publica√ß√£o peri√≥dica</option>
           </select>
-          Ano de publicaÁ„o: 
+          Ano de publica√ß√£o: 
           <input type="text" size="4" name="DP" id="dp" maxlength="4" onkeyup="SwapFilter()">
           </p>
-          <p > Formato de visualizaÁ„o: 
+          <p > Formato de visualiza√ß√£o: 
 		 
           <select  size="1" name="formato" id="formato" onchange="SwapFilter()">
             <option selected value="wiusr">Completo</option>
             <option value="wiabr">Abreviado</option>
             <option value="winp405">Norma NP405</option>
             <option value="wicmp">ISBD</option>
-            <option value="witit">TÌtulos</option>
+            <option value="witit">T√≠tulos</option>
             <option value="wibol">Boletim</option>
           </select>
 
-          &nbsp;&nbsp;&nbsp;Registos/p·gina:
+          &nbsp;&nbsp;&nbsp;Registos/p√°gina:
           <select size="1" name="limites" id="limites" onchange="SwapFilter()">
             <option value="5">5</option>
             <option value="10">10</option>
