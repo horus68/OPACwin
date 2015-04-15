@@ -54,27 +54,27 @@ function check_comm(f) {
 </script>
 <div id="principal" style="width:500px">
 <p style="font-size:0.8em;text-align:justify">
-AVISO IMPORTANTE:  O conte˙do dos coment·rios È da inteira responsabilidade do respetivo autor. 
-N„o È permitida a utilizaÁ„o de linguagem imprÛpria ou inj˙rias a terceiros, sob pena de 
-suspens„o da inscriÁ„o do utilizador.
+AVISO IMPORTANTE: O conte√∫do dos coment√°rios √© da inteira responsabilidade do respetivo autor. 
+N√£o √© permitida a utiliza√ß√£o de linguagem impr√≥pria ou inj√∫rias a terceiros, sob pena de 
+suspens√£o da inscri√ß√£o do utilizador.
 </p>
 <form action="/opac/cgi/www.exe/[in=newcomm.in]" method="post" >
 <input type="hidden" name="id" value="<%=request("id")%>">
 <input type="hidden" name="expr1" value="<%=tmp(0)%>">
 <input type="hidden" name="expr2" value="<%=tmp(1)%>">
 <input type="hidden" name="ftext" id="ftext" value="">
-<div><span style="float:right;margin-right:30px"><a href="javascript:void(0)" onclick="javascript:history.go(-1)"><img src="/opac/imagens/close.gif" alt="Fechar janela" title="Fechar janela"border="0" ></a></span><span style="font-size:1.1em; font-weight:bold">ADICIONAR COMENT¡RIO</span>
+<div><span style="float:right;margin-right:30px"><a href="javascript:void(0)" onclick="javascript:history.go(-1)"><img src="/opac/imagens/close.gif" alt="Fechar janela" title="Fechar janela"border="0" ></a></span><span style="font-size:1.1em; font-weight:bold">ADICIONAR COMENT√ÅRIO</span>
 </div>
 <div id="live-preview-form" class="lp-block">
 	<p>
 		<strong>Nome:</strong><br />
 		<input type="text" name="name" id="name" readonly value="<%=strHTML %>" class="input" /><br /><br />
-		<strong>Coment·rio:</strong><br />
+		<strong>Coment√°rio:</strong><br />
 		<textarea name="comment" id="comment" class="input" rows="10"></textarea>
 	</p>
 </div>
 <div style="float:right;margin:-5px 15px 0 0"><input type="submit" value=" Enviar " onclick="return check_comm(this);"></div>
-<div style="margin:12px 0 0 0;font-style:italic;font-size:0.9em">Antevis„o:</div>
+<div style="margin:12px 0 0 0;font-style:italic;font-size:0.9em">Antevis√£o:</div>
 <div id="live-preview-display" class="lp-block" style="margin:0">
 	<div id="lp-avatar"></div>
 	<div id="lp-name"></div>
