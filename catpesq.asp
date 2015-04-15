@@ -497,7 +497,7 @@
             <option value="EM">Material cartográfico - Impresso</option>
             <option value="FM">Material cartográfico - Manuscrito</option>
             <option value="GM">Material de projeção e vídeo</option>
-            <option value="IM">Registos sonoros não Musicais</option>
+            <option value="IM">Registos sonoros não musicais</option>
             <option value="JM">Registos sonoros musicais</option>
             <option value="KM">Material gráfico a duas dimensões</option>
             <option value="LM">Produtos de computador</option>
