@@ -1,5 +1,5 @@
 <!--#include file="admin/functions.asp"-->
-<!--#include file="admin/config.asp" -->
+<!--#include file="admin/config.asp"-->
 
  <% 
    referer=request.servervariables("http_referer") 
