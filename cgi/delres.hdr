@@ -1,0 +1,101 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+   putenv('nut=' (if v9000^n='nut' then v9000^v fi))
+   if getenv('nut')<>'' then
+     putenv('user=' (if v9000^n='nut' then v9000^v fi))
+   else
+     putenv('user=' (if v9000^n='ut' then v9000^v fi))
+   fi	 
+   putenv('ori=' (if v9000^n='flag' then v9000^v fi))
+'<head>'/
+'<META HTTP-EQUIV="Refresh" CONTENT="7;URL=/opac/cgi/www.exe/'if getenv('ori')='cat' then '[in=pesqres.in]' else '[in=gesres.in]' fi '?'if getenv('ori')='cat' then 'base=reservas&expressao=REQ 's(getenv('user')) else, if getenv('user')='ADMIN' then 'base=reservas&express=$'  else 'base=reservas&express=REQ '(if v9000^n='ut' then v9000^v fi) fi, fi'&lim_inicio=1&limites=999999&ut='(if v9000^n='ut' then v9000^v fi)'&dbmin='(if v9000^n='dbmin' then v9000^v fi)'&nut='getenv('nut')';"/>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/ 	
+'	<link href="/opac/css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="/opac/css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script type="text/javascript" src="/opac/js/prototype.js"></script>'/
+'<script>'/
+'function avisar()'/
+'   {'/
+' var maildbg= "'cat('maildbg.pft')'";'/
+if getenv('user')='ADMIN' then
+
+'          if (maildbg != "") '/
+'            var url="/opac/admin/sendemail_curto.asp?assunto=Cancelamento de reserva&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino="+maildbg;'/
+'          else '/
+'            var url="/opac/admin/sendemail_curto.asp?assunto=Cancelamento de reserva&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino='ref(['users']L(['users']'SIGLA '(if v9000^n='dest' then v9000^v fi)),v11)'";'/
+'          var texto="Exmos Snrs,<br><br>Por decisão do ADMINISTRADOR DA REDE, queiram fazer o favor de considerar o CANCELAMENTO da reserva nº '(if v9000^n='mfn' then v9000^v fi)', referente a: <br><br>Biblioteca : <b>'ref(['users']L(['users']'SIGLA '(if v9000^n='sigla' then v9000^v fi)),v3)' </b><br>Título : <b>'(if v9000^n='titulo' then mhu,v9000^v,mhl fi)'</b> <br>Nº registo: <b>'(if v9000^n='nreg' then v9000^v fi)'</b><br><br>";'/
+'          texto += "Com os melhores cumprimentos.<br>O Administrador: 'ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v17)'.";'/
+'          url += "&mensagem="+texto;'/
+'		   new Ajax.Request(url, {     '/
+'          method:"get",  '/
+'		   onSuccess: function(transport){       '/
+'		   var response = transport.responseText;  '/
+'          $("msg").innerHTML=response; '/  
+'          if (maildbg != "") '/
+'              var popurl="/opac/admin/prtemail.asp?assunto=Cancelamento de reserva&destinatario="+maildbg+"&mensagem=" + texto ;'/
+'           else '/
+'              var popurl="/opac/admin/prtemail.asp?assunto=Cancelamento de reserva&destinatario='ref(['users']L(['users']'SIGLA '(if v9000^n='sdest' then v9000^v fi)),v11)'&mensagem=" + texto ; '/
+'          winpops=window.open(popurl,"","width=550,height=390,"); '/
+'           },     '/
+'		   onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/
+
+else
+	'     var chk ="'REF(['sumres']L(['sumres']'SI 'getenv('nut')),mfn(1))'";'/
+ 	'     if (chk != "")'/
+	'     {'/   
+	'     		var nres ='REF(['sumres']L(['sumres']'SI 'getenv('nut')),v10)';'/
+	'           if (nres >0)'/ 
+	'           {'/
+	'     		url ="/opac/cgi/www.exe/[in=updtop.in]?from="+chk+"&flag=dec";'/
+	' 	  		new Ajax.Request(url, {     '/
+	'      	    method:"get",  '/
+	'	   		onSuccess: function(transport){       '/
+	'	   		var response = transport.responseText;  '/
+	'      		if (response != "Sucesso" ) '/  
+	'            		alert("Erro ao guardar a reserva do leitor [Top leitores]");'/ 
+	'          	},     '/
+	'	   	    onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/       
+	'           }'/
+	'      }'/ 
+'          if (maildbg != "") '/
+              if getenv('nut')<>'' then
+'                var url="/opac/admin/sendemail_curto.asp?assunto=Cancelamento de reserva&Email='ref(['leitor']L(['leitor']'NR 'getenv('nut')),v8)'&destino="+maildbg;'/
+			 else 
+'                var url="/opac/admin/sendemail_curto.asp?assunto=Cancelamento de reserva&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino="+maildbg;'/
+              fi 
+'          else '/
+             if getenv('nut')<>'' then
+'          		 var url="/opac/admin/sendemail_curto.asp?assunto=Cancelamento de reserva&Email='ref(['leitor']L(['leitor']'NR 'getenv('nut')),v8)'&destino='ref(['users']L(['users']'SIGLA '(if v9000^n='dest' then v9000^v fi)),v11)'";'/
+              else
+'                var url="/opac/admin/sendemail_curto.asp?assunto=Cancelamento de reserva&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino='ref(['users']L(['users']'SIGLA '(if v9000^n='sdest' then v9000^v fi)),v11)'";'/
+              fi
+'          var texto="Exmos Snrs,<br><br>Por favor, queiram considerar o cancelamento da reserva nº '(if v9000^n='mfn' then v9000^v fi)', referente a: <br><br>Biblioteca : <b>'ref(['users']L(['users']'SIGLA '(if v9000^n='sigla' then v9000^v fi)),v3)' </b><br>Título : <b>'(if v9000^n='titulo' then mhu,v9000^v,mhl fi)'</b> <br>Nº registo: <b>'(if v9000^n='nreg' then v9000^v fi)'</b><br><br>";'/
+'          texto += "Com os melhores cumprimentos.<br>";'/
+           if getenv('nut')<>'' then
+'            texto += "O leitor nº 'getenv('nut')': <b>'ref(['leitor']L(['leitor']'NR 'getenv('nut')),v2)' ['ref(['leitor']L(['leitor']'NR 'getenv('nut')),v20)']</b>";'/
+           else
+'            texto +="O coordenador da biblioteca: 'ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v17)'.";'/
+           fi
+'          url += "&mensagem="+texto;'/
+'		   new Ajax.Request(url, {     '/
+'          method:"get",  '/
+'		   onSuccess: function(transport){       '/
+'		   var response = transport.responseText;  '/
+'          $("msg").innerHTML=response; '/  
+'          if (maildbg != "") '/
+'              var popurl="/opac/admin/prtemail.asp?assunto=Cancelamento de reserva&destinatario="+maildbg+"&mensagem=" + texto ;'/
+'          else '/
+'              var popurl="/opac/admin/prtemail.asp?assunto=Cancelamento de reserva&destinatario='ref(['users']L(['users']'SIGLA '(if v9000^n='sigla' then v9000^v fi)),v11)'&mensagem=" + texto ; '/
+'          winpops=window.open(popurl,"","width=550,height=430,"); '/
+'           },     '/
+'		   onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/
+fi
+'   }'/
+'</script>'/
+'</head>'/
+'<body>'/

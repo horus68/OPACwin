@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@getmfns.hdr
+cgi=@getmfns.cgi
+epilog=@getmfns.ftr

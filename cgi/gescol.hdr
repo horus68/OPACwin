@@ -1,0 +1,75 @@
+putenv('user='(if v9000^n='ut' then v9000^v fi))
+putenv('op='(if v9000^n='op' then v9000^v fi))
+putenv('termo='(if v9000^n='termo' then v9000^v fi))
+putenv('base='(if v9000^n='base' then v9000^v fi))
+putenv('expressao='(if v9000^n='expressao' then v9000^v fi))
+
+'<!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head>'/
+'<title>'ref(['_cnf']1,v100)'</title>'/
+'<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'<meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'<link type="text/css" rel="stylesheet" href="/opac/css/default.css"/>'/
+'<![if !IE]>'/
+'<link href="/opac/css/default1.css" rel="stylesheet" type="text/css"/>'/
+'<![endif]>'/
+'<script language="JavaScript" src="/opac/js/prototype.js"></script>'/
+'<script language="JavaScript" src="/opac/js/geral.js"></script>'/
+'<script>
+  function cvMaiusc (s) { return s.toUpperCase();}
+  function chkHref(base,nreg)
+  {
+   
+   window.location.href="/opac/cgi/www.exe/[in=pesqger.in]?base="+base+"&lim_inicio=1&limites=1&expressao="+nreg+"&formato=wiusr&nomemnu="+escape("cgi/www.exe/[in=gescol.in]?ut='getenv('user')'&expressao='getenv('expressao')'&lim_inicio=1&limites=25&base='getenv('base')'&op='getenv('op')'");
+  }
+  
+  function verGrafico()
+  {
+   window.location.href="/opac/admin/graficos.asp?base='getenv('base')'&op='(if v9000^n='opges' then v9000^v fi)'&criterio="+escape("'getenv('expressao')'")+"&sigla='getenv('op')'";  
+  }
+  
+  function getTEx()
+  {
+          var base="'getenv('base')'";
+		  var op="'getenv('op')'";
+		  var termo="'getenv('termo')'";
+		  var Base= base.toUpperCase();
+		  var db= op=="X"? "opac": base; ' 
+		  if getenv('expressao')<>'' then
+		  'var expr="'getenv('expressao')'";'
+		  else
+		  'var expr= op=="X"? "$" : op==Base ? "": "SI "+op;
+		  expr += (op==Base ? termo+"$" : " AND "+termo + "$");'
+		  fi
+		  'var url="/opac/cgi/www.exe/[in=getex.in]?base="+db+"&expressao="+expr+"&lim_inicio=1&limites=500000&op='getenv('op')'";
+		  
+		  new Ajax.Request(url, {    
+          method:"get",  
+		  onSuccess: function(transport){      
+		  var response = transport.responseText;  
+          document.getElementById("totex").innerHTML=response; 
+           }}); 
+ }
+ 
+</script>'/
+'<STYLE type="text/css">
+table#users td.nb {width:370px;word-wrap:break-word}
+table#users td.nb1 {width:320px;word-wrap:break-word}
+@media print {
+     table#users {width:17cm; font-size: 12pt;}
+     table#users td{border:solid 1px #999;}
+}
+</STYLE>'
+'</head><body onload="getTEx()">'/
+
+'<div>'/
+'<div id="principal"> '/
+'<div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span>'/
+'</div>'/
+'	   <p class="fil">'/
+'	   » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp?id=3">Administração</a> » <a href="javascript:history.go(-1)">Avaliação da existências</a> » Lista de títulos'/
+'<div id="admbotoes" style="float:right"><a href="javascript:history.go(-1)"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="/opac/imagens/imprimir.gif" border=0 alt="Imprimir lista de títulos" title="Imprimir lista de títulos"></a>' if REF(['users']L(['users']'SIGLA 'getenv('op')),v21)='' then ' <a href="javascript:verGrafico();"><img src="/opac/imagens/grafico.jpg" border=0 width=20 alt="gráficos"></a> ' fi '</div><h3>Avaliação das existências - Listagem de títulos  [' if getenv('op')='X' then 'Toda a rede' else getenv('op') fi ']</h3>'/
+'<table id="users" class="listatitulos" summary="Lista de títulos" >'/
+'  <th>MFN</th><th>Título</th><th>Autor(es</th><th>Nº ex.</th>'/
+'<span style="float:right;margin-bottom:5px"><b>Total: <span id="totreg"></span> registo(s) [<span id="totex" style="color:red"></span> <span style="color:red;">exemplares</span>]</span><span>Critério de pesquisa: 'getenv('expressao')'</b></span>'/

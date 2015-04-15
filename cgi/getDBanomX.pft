@@ -1,0 +1,21 @@
+putenv('flag=0')
+,select val(getenv('campo'))
+case 922: ,select getenv('oper')
+	  case '<': if nocc(v922)< val(getenv('nocc')) then putenv('flag=1') fi,
+      case '=': if v922= getenv('nocc') then putenv('flag=1') fi,
+ 	  case '>': if nocc(v922)> val(getenv('nocc')) then putenv('flag=1') fi,
+       
+	  case 'in': 
+	            if p(v922) and v922:s(replace(getenv('nocc'),' ','')) then putenv('flag=1') fi,	  
+	     endsel,
+endsel,		  
+if val(getenv('flag'))=1 then 
+     '<td><a href="#" onclick="javascript:VRegisto(&quot;'mfn(7)'&quot;,&quot;'getenv('base')'&quot;);">'mfn'</a></td>'/
+     if val(getenv('ir'))=9 then
+          putenv('ir=0')
+          '</tr><tr>'/
+     else  
+          putenv('ir='f(val(getenv('ir'))+1,0,0))
+     fi
+     putenv('nr='f(val(getenv('nr'))+1,0,0))
+fi

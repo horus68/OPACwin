@@ -1,0 +1,24 @@
+
+          proc('A3000#Prima aqui para exportar os registos ('
+                if val(v1083)>val(v1002)-val(v1031) then f(val(v1002)-val(v1031)+1,0,0) else v1083 fi 
+               ') apresentados nesta página (em formato ISO 2709 - Unimarc)#')
+          '<script language="javascript">
+           function export_reg() { 
+             var loc="/opac/cgi/www.exe/[in=export.in]?'
+           'base='v1051,'&',
+           'expressao='replace(V1021,'+','%2B'),'&',
+           'formato=','&',
+           'to='(if v9000^n='to' then v9000^v fi),'&',
+           'from='(if v9000^n='from' then v9000^v fi),'&',
+           'nomemnu='(if v9000^n='nomemnu' then v9000^v fi),'&',
+           'lim_inicio='f(val(v1031),0,0),'&',
+           'limites='f(val(v1031)+val(v1083)-1,0,0),'&',
+           'totreg='if val(v1002)-val(v1083) < val(v1031)+val(v1083)-1 then f(val(v1002),0,0) else f(val(v1083),0,0) fi,'&',
+           'tmppath='(if v9000^n='tmppath' then v9000^v fi),'&',
+           'isofilepath='(if v9000^n='isofilepath' then v9000^v fi),'&',
+           'expfile=F'f(val(mid(date,19,3),mid(date,10,6)),0,0)'.ISO','&','";
+ popup=window.open(loc,"Export","toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=yes,width=350,height=130,left=200,top=210"); 
+           }  
+           </script>' 
+           '<img src="/opac/imagens/png/24x24/save.png" border="0"  title="'v3000'" style="cursor:pointer" onclick="javascript:export_reg();">'/
+     

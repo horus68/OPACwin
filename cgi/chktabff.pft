@@ -1,0 +1,2 @@
+if REF(['cal']L(['cal']'DT '(if v9000^n='expressao' then v9000^v fi)),mfn(1)) <>'' then 'sim' else 'nao' fi
+

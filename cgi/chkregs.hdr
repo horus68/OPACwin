@@ -1,0 +1,3 @@
+''
+putenv('tipo='(if v9000^n='tipo' then v9000^v fi))
+

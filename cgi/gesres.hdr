@@ -1,0 +1,45 @@
+putenv('user='(if v9000^n='ut' then v9000^v fi))
+putenv('dbmin='(if v9000^n='dbmin' then v9000^v fi))
+putenv('status='(if v9000^n='estado' then v9000^v fi))
+
+'<!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head>'/
+'<title>'ref(['_cnf']1,v100)'</title>'/
+'<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'<meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'<link type="text/css" rel="stylesheet" href="/opac/css/default.css"/>'/
+'<![if !IE]>'/
+'<link href="/opac/css/default1.css" rel="stylesheet" type="text/css"/>'/
+'<![endif]>'/
+'<script>'/
+'       function dlRes(nreg,ti,r,sd,so){'/
+'       if (confirmaSubmit(nreg,ti,r)) ' /
+'          window.location.href="/opac/cgi/www.exe/[in=delres.in]?base=reservas&lim_inicio=1&limites=9999999&ut='getenv('user')'&mfn="+nreg+"&titulo="+escape(ti)+"&nreg="+r+"&sigla="+so+"&sdest="+sd+"&dbmin='getenv('dbmin')'";'/
+'       }'/
+'       function confirmaSubmit(nreg,ti,r){'/
+'       var sim=confirm("Tem a certeza que quer eliminar a reserva nº" + nreg +"?\nTítulo: "+ti.toUpperCase()+ " [nº registo:"+r+"]");'/
+'       if (sim) return true ; else return false ;}'/
+'       function confRes(nreg,ti,au,r,sit,nut){'/
+'       window.location.href="/opac/cgi/www.exe/[in=confres.in]?base=reservas&dbmin='getenv('dbmin')'&lim_inicio=1&limites=9999999&ut='getenv('user')'&mfn="+nreg+"&express='(if v9000^n='express' then v9000^v fi)'&estado='(if v9000^n='estado' then v9000^v fi)'&titulo="+escape(ti)+"&autor="+escape(au)+"&nreg="+r+"&sit="+sit+"&nut="+nut;'/
+'       }'
+'</script>'/
+'<STYLE type="text/css">
+table#users td {font-size:8pt;}
+@media print {
+     table#users {width:17cm; font-size: 12pt;}
+}
+@media print {
+     table#users td{border:solid 1px;}
+}
+</STYLE>'
+'</head><body>'/
+'<div>'/
+'<div id="principal"> '/
+'<div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span>'/
+'</div>'/
+'	   <p class="fil">'/
+'	   » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp?id=2">Administração</a> » Pedidos de reserva'/
+'<div id="admbotoes" style="float:right"><a href="/opac/admin/admin.asp?id=2"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="/opac/imagens/imprimir.gif" border=0 title="Imprimir lista de reservas" alt="Imprimir lista de reservas"></a></div><h3>'getenv('user')' - Listagem de pedidos de reserva 'if getenv('status')='0' then '[Pendentes]' else, if getenv('status')='1' then '[Confirmadas]' fi, fi '</h3>'/
+'<table id="users" summary="Listagem de pedidos de reserva">'/
+'  <th>ID</th><th>Título</th><th title="Biblioteca">Bib.</th><th>Cota</th><th>Nº reg.</th><th>Ex</th><th>Estado</th><th>Entidade</th><th title="Nº leitor">N.L.</th><th>Data</th><th class="resboao"></th>'/

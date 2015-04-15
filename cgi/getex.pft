@@ -1,0 +1,7 @@
+  if getenv('op')='X' then 
+    putenv('nex='f(rsum(v966^c|;|)+val(getenv('nex')),0,0))
+  else	
+	putenv('nex='f(nocc(v966)+val(getenv('nex')),0,0))
+  fi
+   
+     

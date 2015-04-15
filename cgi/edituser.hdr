@@ -1,0 +1,89 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/		
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+
+'<script language="JavaScript" src="../../js/users.js"></script>'/
+'<script language="JavaScript" src="../../js/md5.js"></script>'/
+'<script language="JavaScript" src="../../js/prototype.js"></script>'/
+'<script>'/
+'function chk_iso(us,codigo) '/
+' {'/
+' var user=us.toLowerCase();'/
+' url = "/opac/admin/chkiso.asp?file="+user+".iso&r="+new Date().getTime();'/
+' new Ajax.Request (url, { '/
+' method:"get",   '/
+' onSuccess: function(transport) {    '/
+' var response = transport.responseText; '/
+' if (response != codigo.toLowerCase() ) '/
+'    if (response=="Erro") '/
+'      $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/stop.gif\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Ficheiro ISO NÃO ENCONTRADO ou não foi possível ler o ficheiro.\">";'/
+'    else '/ 
+'     if (response=="misc") '/
+'       $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/question
+.png\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente com mistura do padrão ANSI com o padrão ASCII.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\">";'/
+'     else '/
+'       $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/aviso.gif\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente NÃO CONFERE com a parametrização.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\">";'/
+' else  $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/checked.jpg\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente VÁLIDA.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\"/>";'/
+' }, '/
+' onFailure: function() {alert("Ocorreu um erro. Contacte o administrador.")}
+ }); '/
+'  }'/
+'</script>'/
+'</head>'/
+'<body >'/
+'      <h3><span>Utilizadores</span></h3>'
+'      <script>'
+'      function onEnter(event){'
+'       var bolOldBrowser = (document.layers) ? true : false;'
+'       var intKeyCode = 0;'
+'       if (bolOldBrowser)'
+'         intKeyCode = event.which;'
+'         else'
+'         intKeyCode = event.keyCode;'
+'         if (intKeyCode == 13)'
+'          novapesq();'
+'       }'
+'       function cancelar(){'
+'       window.location.href="../www.exe/[in=pesquser.in]?base=users&ut=admin&lim_inicio=1&limites=9999&expressao=\"'(if v9000^n='expressao' then replace(v9000^v,'"','') fi)'\"";'  
+'}'
+'      function novapesq() { var strexpr=document.getElementById("expr").value;'
+'       window.location.href="../../cgi/www.exe/[in=pesquser.in]?base=users&lim_inicio=1&limites=9999&ut=admin&expressao=" + strexpr '
+'       }'
+
+'       function edUser(us,nreg){'
+'       window.location.href="../../cgi/www.exe/[in=edituser.in]?base=users&lim_inicio=1&limites=9999&ut=admin&expressao=SIGLA "+us;'
+'       }'
+'       function dlUser(us,nreg){'
+'       if (confirmaSubmit(us)) ' 
+'           window.location.href="../../cgi/www.exe/[in=deluser.in]?base=users&lim_inicio=1&limites=9999&ut=admin&mfn="+nreg;'
+'       }'
+'       function permUser(us){'
+'       window.location.href="../../cgi/www.exe/[in=permuser.in]?base=prmusr&lim_inicio=1&limites=9999&ut=admin&expressao=\"SIGLA "+us+"\"";'
+'       }'
+'       function permNovo(us){'
+'       var sim=confirm("O utilizador "+us+ " não tem permissões definidas. Vai ser criado um novo registo para configuração das permissões.");'          
+'       if (sim) '
+'       window.location.href="../../cgi/www.exe/[in=permnovo.in]?base=prmusr&lim_inicio=1&limites=9999&ut=admin&expressao=\"SIGLA "+us+"\"&user="+us;'
+'       }'
+'       function confirmaSubmit(us){'
+'       var sim=confirm("Tem a certeza que quer eliminar o utilizador " + us +"?");'
+'       if (sim) return true ; else return false ;}'
+
+'      </script>'  
+
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp">Administração</a> »'
+'      Utilizadores</p>'
+'      <span style="float:right"><a href="../../cgi/www.exe/[in=relusers.in]?expressao=$&ut=ADMIN"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></span><br><br>'/
+    '<!--<b>Expressão de pesquisa:</b> <input name="expr" id="expr" type="text" size="50" value="'(if v9000^n='expressao' then v9000^v fi)'" onkeypress="javascript:onEnter(event)">'/
+    '<a href="javascript:novapesq()"><img src="../../imagens/refresh.gif" alt="Refazer pesquisa" width="20" height="20" align="absmiddle" border=0></a>-->'/
+     ''/

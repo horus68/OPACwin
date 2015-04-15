@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@getmaillt.hdr
+cgi=@getmaillt.cgi
+epilog=@getmaillt.ftr

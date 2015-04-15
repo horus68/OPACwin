@@ -1,0 +1,12 @@
+putenv('base='(if v9000^n='base' then v9000^v fi))
+putenv('campo='(if v9000^n='expr' then v9000^v fi))
+putenv('subc='(if v9000^n='subc' then v9000^v fi))
+putenv('oper='(if v9000^n='oper' then v9000^v fi))
+putenv('nocc='(if v9000^n='nocc' then v9000^v fi))
+putenv('cs='(if v9000^n='cs' then v9000^v fi))
+putenv('nr=0')
+putenv('ir=0')
+'<div><span style="float:left" id="resultados"></span><span id="bPrint" style="float:right;"></span></div>'/
+'<div style="clear:both"></div>'/
+'<div id="infoanom" style="float:left">Base: 'getenv('base')' Critério: [campo:'getenv('campo') if getenv('subc')<>'' then '; subcampo:'getenv('subc') fi ' operador:'getenv('oper') if type(getenv('nocc'))='N' then ' ocorr.(as):' else 'texto:' fi getenv('nocc')']</div>'/
+'<table class="users"><tr>'/

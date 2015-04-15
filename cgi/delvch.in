@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@delvch.hdr
+cgi=@delvch.cgi
+epilog=@delvch.ftr
+
+

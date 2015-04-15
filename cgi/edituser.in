@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@edituser.hdr
+cgi=@edituser.cgi
+epilog=@edituser.ftr
+
+

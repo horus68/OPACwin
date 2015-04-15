@@ -1,0 +1,78 @@
+'<script>'
+'function chkfield()
+{
+   var vArray = document.getElementsByTagName("input");
+   var flag=true;
+   for(var i=0 ;i<vArray.length;i++) { 
+       var tipo=document.getElementById(vArray[i].name).type; 
+	   if (tipo !="hidden" && tipo != "button" && tipo != "submit") 
+	   {
+	   		var str= document.getElementById(vArray[i].name).value;  
+			str= str.replace(/\^/g,"[$]");
+			
+			document.getElementById(vArray[i].name).value=str;
+			if (str == "") flag=false;	    
+		}
+	}
+   document.getElementById("texto").value= escape(document.getElementById("texto").value.replace(/\^/g,"[$]"));		
+   if (!flag) { 
+   	var r=confirm("ATENÇÃO: Existem campos vazios em resultado das alterações produzidas. Confirma essa operação?");
+   	flag=r;
+   }
+   if (flag==true) {window.opener.document.getElementById("acc'(if v9000^n='ind' then v9000^v fi)'").href="#";window.opener.document.getElementById("acc'(if v9000^n='ind' then v9000^v fi)'").innerHTML="<img src=\"../imagens/confirmar_stop.jpg\" alt=\"Corrigir erros\" border=\"0\">";}
+   return flag; 
+}'
+'</script>'
+	  '<h3>BASE: 'mhu,mstname,mpl' - Edição do registo nº 'mfn(7)'</h3>'
+	  '<p class="aviso" style="width:440px">'replace(replace(replace(s(getenv('texto')),'[menor]','<img src="../../imagens/lt.jpg" width="11">'),'[maior]','<img src="../../imagens/gt.jpg" width="11">'),'#','"')'<span style="font-size:80%"> '
+	  
+      '</span></p>'
+	  '<form action="../../cgi/www.exe/[in=updcorr.in]"  method="" onsubmit="return chkfield()">'
+	  '<input type="hidden" name="base" value="'mstname'">'
+	  '<input type="hidden" name="campo" value="'getenv('campo')'">'
+	  '<input type="hidden" name="from" value="'mfn(7)'">'
+	  '<input type="hidden" name="texto" value="'getenv('texto')'">'
+      '<fieldset class="validar"><legend>Campos a corrigir</legend><br />'
+	  (
+	  
+	  select s(getenv('campo'))
+	  case '010': if p(v10) then '<label for="v10" ><span class="corr"><span style="float:right">[010]:</span>ISBN</span></label><input type="text" id="v10" name="v10" value="'v10'" size="48" ><br>' else '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '011': if p(v11) then '<label for="v11" ><span class="corr"><span style="float:right">[011]:</span>ISSN</span></label><input type="text" id="v11" name="v11" value="'v11'" size="48" ><br>' else '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '101': if p(v101) then '<label for="v101"><span class="corr"><span style="float:right">[101]:</span>Código de Língua:</span></label><input type="text" id="v101" name="v101" value="'v101'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '102': if p(v102) then '<label for="v102"><span class="corr"><span style="float:right">[102]:</span>Código de País:</span></label><input type="text" id="v102" name="v102" value="'v102'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '110': if p(v110) then '<label for="v10" ><span class="corr"><span style="float:right">[010]:</span>ISSN</span></label><input type="text" id="v10" name="v10" value="'v10'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+      case '200': if p(v200) then '<label for="v200"><span class="corr"><span style="float:right">[200]:</span>Título/Menção resp.</span></label><input type="text" id="v200" name="v200" value="'v200'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '210': if p(v210) then '<label for="v210"><span class="corr"><span style="float:right">[210]:</span>Publicação</span></label><input type="text" id="v210" name="v210" value="'v210'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '215': if p(v215) then '<label for="v215"><span class="corr"><span style="float:right">[010]:</span>Descrição física</span></label><input type="text" id="v215" name="v215" value="'v215'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '461': if p(v461) or p(v463) or p(v210) or p(v215) or p(v921) or p(v922) then '<label for="v461"><span class="corr"><span style="float:right">[461]:</span>Nível de conjunto </span></label><input type="text" id="v461" name="v461" value="'v461'" size="48" ><br>
+	              <label for="v463"><span class="corr"><span style="float:right">[463]:</span>Nível da parte </span></label><input type="text" id="v463" name="v463" value="'v463'" size="48" ><br>
+				  <label for="v210"><span class="corr"><span style="float:right">[210]:</span>Publicação </span></label><input type="text" id="v210" name="v210" value="'v210'" size="48" ><br>
+				  <label for="v215"><span class="corr"><span style="float:right">[215]:</span>Descrição física </span></label><input type="text" id="v215" name="v215" value="'v215'" size="48" ><br>
+                  <label for="v921"><span class="corr"><span style="float:right">[921]:</span>Tipo de documento</span></label><input type="text" id="v921" name="v921" value="'v921'" size="4">  [922]:
+				  <input type="text" id="v922" name="v922" value="'v922'" size="4"><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+      case '207': if p(v207) or p(v303) or p(v921) or p(v922) then '<label for="v207"><span class="corr"><span style="float:right">[207]:</span>Descrição baseada em</span></label><input type="text" id="v207" name="v207" value="'v207'" size="48" ><br>
+                  <label for="v303"><span class="corr"><span style="float:right">[303]:</span>Numeração</span></label><input type="text" id="v303" name="v303" value="'v303'" size="48"><br>
+				  <label for="v921"><span class="corr"><span style="float:right">[921]:</span>Tipo de documento</span></label><input type="text" id="v921" name="v921" value="'v921'" size="4">  [922]:
+				  <input type="text" id="v922" name="v922" value="'v922'" size="4"><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,				  
+      case '326': if p(v326) or p(v921) or p(v922) then '<label for="v326"><span class="corr"><span style="float:right">[326]:</span>Periodicidade</span></label><input type="text" id="v326" name="v326" value="'v326'" size="48" ><br>
+                  <label for="v921"><span class="corr"><span style="float:right">[921]:</span>Tipo de documento</span></label><input type="text" id="v921" name="v921" value="'v921'" size="4">  [922]:
+				  <input type="text" id="v922" name="v922" value="'v922'" size="4"><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '620': if p(v620) or p(v921) or p(v922) then '<label for="v620"><span class="corr"><span style="float:right">[620]:</span>Periodicidade</span></label><input type="text" id="v620" name="v620" value="'v620'" size="48" ><br>
+                  <label for="v921"><span class="corr"><span style="float:right">[921]:</span>Tipo de documento</span></label><input type="text" id="v921" name="v921" value="'v921'" size="4">  [922]:
+				  <input type="text" id="v922" name="v922" value="'v922'" size="4"><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,			  				  
+	  case '675': if p(v675) then '<label for="v675"><span class="corr"><span style="float:right">[675]:</span>CDU</span></label><input type="text" id="v675'f(iocc,0,0)'" name="v675'f(iocc,0,0)'" value="'v675'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+      case '700': if p(v700) then '<label for="v700"><span class="corr"><span style="float:right">[700]:</span>Resp. principal</span></label><input type="text" id="v700" name="v700" value="'v700'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '701': if p(v701) then '<label for="v701"><span class="corr"><span style="float:right">[701]:</span>Co-resp. principal</span></label><input type="text" id="v701'f(iocc,0,0)'" name="v701'f(iocc,0,0)'" value="'v701'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '702': if p(v702) then '<label for="v702"><span class="corr"><span style="float:right">[702]:</span>Resp. secundária</span></label><input type="text" id="v702'f(iocc,0,0)'" name="v702'f(iocc,0,0)'" value="'v702'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '931': if p(v931) then '<label for="v931"><span class="corr"><span style="float:right">[931]:</span>Data de entrada</span></label><input type="text" id="v931" name="v931" value="'v931'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  case '966': if p(v966) then '<label for="v966"><span class="corr"><span style="float:right">[966]:</span>Cota</span></label><input type="text" id="v966'f(iocc,0,0)'" name="v966'f(iocc,0,0)'" value="'v966'" size="48" ><br>' else  '<p class="aviso" style="text-align:center">Campo(s) recentemente eliminado(s).<br>Feche esta janela e refresque a listagem de erros (F5)</p>' fi,
+	  endsel
+	  )
+      if getenv('flag')<>'0' then
+	  '<br /><br /><center><input  type="submit" name="bt1" value="Atualizar">'
+      '<input type="button" name="bt2" value="Cancelar" onclick="javascript:window.close();"></center>'
+	  fi
+      '</fieldset>'
+      '</form>'
+  
+ 

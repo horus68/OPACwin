@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+tck=9001
+prolog=@export3.hdr
+cgi=@export.cgi
+epilog=@export.ftr
