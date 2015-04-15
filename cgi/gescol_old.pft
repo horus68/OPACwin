@@ -1,0 +1,17 @@
+if val(v1001)=1 then '<span style="float:right;margin-bottom:5px"><b>Total: 'v1002' registo(s) [<span id="totex" style="color:red"></span> <span style="color:red;">exemplares</span>]</span><span>Critério de pesquisa: 'getenv('expressao')'</b></span>' fi/
+if val(v1002)>0 then
+  if getenv('op') <> 'X' then
+   '<tr><td align="center"><a href="javascript:chkHref(&quot;'getenv('base')'&quot;,&quot;'mfn(7)'&quot;)">'mfn(1)'</a></td><td class="nb">'mhu,v200^a,mhl'</td><td class="nb">' if a(v200^f) then ' ' else v200^f fi '</td><td align="center" style="color:red"><b>'f(nocc(v966),0,0)'</b></td></tr>'/
+  else 
+    '<tr><td align="center"><a href="javascript:chkHref(&quot;opac&quot;,&quot;'mfn(7)'&quot;)">'mfn(1)'</a></td><td class="nb">'mhu,v200^a,mhl'</td><td class="nb1">' if a(v200^f) then ' ' else v200^f fi '</td><td align="center" style="color:red"><b>'f(rsum(v966^c|;|),0,0)'</b></td></tr>'/
+  fi	
+fi  
+ /*'Título: 'v200^a, ' Autor(es): 'v200^f, 'Nº Ex: ' v966^c, 'Acum: '  */
+	/*f(val(v966^c)+val(REF(val(f(mfn-1,0,0)),v9999)),0,0)/*/
+   /*  f(rsum(v966^c|;|)+val(getenv('nex')),0,0)/  */
+
+if getenv('op') <> 'X' then
+   putenv('nex='f(nocc(v966)+val(getenv('nex')),0,0))
+else
+   putenv('nex='f(rsum(v966^c|;|)+val(getenv('nex')),0,0))
+fi

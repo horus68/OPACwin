@@ -1,0 +1,6 @@
+   
+ 'Título: 'v200^a, ' Autor(es): 'v200^f, 'Nº Ex: ' v966^c, 'Acum: '  
+	/*f(val(v966^c)+val(REF(val(f(mfn-1,0,0)),v9999)),0,0)/*/
+     f(rsum(v966^c|;|)+val(getenv('nex')),0,0)/
+     putenv('nex='f(val(v966^c[1])+val(getenv('nex')),0,0))
+      

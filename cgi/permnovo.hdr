@@ -1,0 +1,14 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'   <META HTTP-EQUIV="Refresh" CONTENT="2;URL=../../cgi/www.exe/[in=permuser.in]?base=prmusr&lim_inicio=1&limites=1000&entidade='getenv('tmp')'&ut=admin&expressao=&quot;SIGLA '(if v9000^n='user' then replace(v9000^v,'"','') fi)'&quot;"/>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script language="JavaScript" src="../../js/users.js"></script>'/
+'</head>'/
+'<body>'/

@@ -1,0 +1,300 @@
+,if val(v1001)=val(v1031) then
+
+,@hdrreg.pft,
+
+
+/* Seleção de registos */
+'<table  width="100%" cellpadding="0" height="1">'/
+'  <tr>'/
+if val(v1002)>1 then
+
+'    <td>'/
+'    <input  onclick="this.value=check(forms[0].T8000);return false;" src="/opac/imagens/checkall.png" name="img" type="image" title="Marcar/desmarcar todos os registos desta página">'/
+'</td>'/
+'<td valign="top">'
+if S((if v9000^n='selrec' then v9000^v fi))='1' then
+'<form method="get" action="/opac/cgi/www.exe/[in=pesqsel.in]" name="selrecs" >'
+   '<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+   '<input type="hidden" name="base" value="'v1051'">'
+   '<input type="hidden" name="expressao" value='(| + |+V8000)'>'
+   '<input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'
+   '<input type="hidden" name="nomemnu" value="'(if v9000^n='nomemnu' then v9000^v fi)'">'
+   '<input type="hidden" name="id" value="'(if v9000^n='id' then v9000^v fi)'">'
+   '<input type="hidden" name="lim_inicio" value="1">'
+   '<input type="hidden" name="limites" value="'(if v9000^n='limites' then v9000^v fi)'">'
+   '<input type="hidden" name="iso2709" value="'(if v9000^n='iso2709' then v9000^v fi)'">'
+   '<input type="hidden" name="user" value="'(if v9000^n='user' then v9000^v fi)'">'
+   '<input type="hidden" name="nut" value="'(if v9000^n='nut' then v9000^v fi)'">'
+   '<input type="hidden" name="sortfmt" value="'(if v9000^n='sortfmt' then v9000^v fi)'">'
+   '<input style="display:none" border="0" src="/opac/imagens/icon_filter.png"  name="img" id="img" type="image" title="Filtrar registos selecionados...">'
+else 
+   '       '/
+   '<input style="display:none" border="0" src="/opac/imagens/icon_filter.png"   name="img" type="image" title="ATENÇÃO! Esta funcionalidade não está disponível de momento. Tente mais tarde!"'
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' onclick="javascript:alert(&quot;ATENÇÃO! Esta funcionalidade não está disponível de momento. Tente mais tarde!&quot;)">'
+,fi,
+else
+ ' <td width="3%"></td><td>'
+fi,
+'<span id="lblfilter"></span></td>'
+'<td width="52%"><div id="tweet"></div></td>'
+'    <td width="18%"  valign="top" align="right">'
+'<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_config = {ui_language: "pt"}</script>
+<div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4ba619317592da06" class="addthis_button_compact"></a>
+<a class="addthis_button_facebook" title="Enviar para o FaceBook"></a>
+<a class="addthis_button_myspace" title="Enviar para o MySpace"></a>
+<a class="addthis_button_twitter" title="Enviar para o Twitter"></a>
+<a class="addthis_button_delicious" title="Enviar para o Delicious"></a>
+<a class="addthis_button_plaxo" title="Enviar para o Plaxo"></a>
+<a class="addthis_button_digg" title="Enviar para o Digg"></a>
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ba619317592da06"></script>
+<!-- AddThis Button END -->'
+
+'    </td>'
+'</tr>'
+'  </table>'
+
+
+else if val(v1001)=1 then ,@hdrreg.pft, fi fi,
+
+putenv('nome=cotas')
+putenv('votos='ref(['votos']L(['votos']'MFN 'v966^a[1],v966^l[1]),v4))
+putenv('nvotos='ref(['votos']L(['votos']'MFN 'v966^a[1],v966^l[1]),v5))
+
+'<a name="R'v1001'"></a>'/
+'<br>'
+'<table id="main" width="100%" cellpadding="0" class="Description" >'/
+'  <tr>'/        
+'    <td colspan="3" valign="absbottom">'if v1051='opac' and s(v930,v966)<>'' then  '<span style="float:right;padding-top:7px"><span id="form'v1001'" style="margin-right:150px;"><span class="ui-rater"><span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span><span class="ui-rater-rating" id="rate-avg'v1001'"></span>&#160;(<span class="ui-rater-rateCount" id="rate-count'v1001'"></span> votos)</span> </span> Nº de exemplares: <span id="total'mfn(1)'"></span></span>' fi 
+,@wnovo.pft,
+
+if val(v1002)>1 then 
+   '<span class="linkunimarc"><a href="javascript:popunimarc(&quot;'(if v9000^n='base' then v9000^v fi)'&quot;,&quot;'(if v9000^n='expressao' then v9000^v fi)'&quot;,&quot;wiunimarc&quot;,&quot;'mfn(7)'&quot;);" title="Ver registo no formato UNIMARC">'V1001'</a></span>- <div style="display:inline-block;width:120px;"> ',@selreg.pft, if  v1051='opac' and s(v930,v966)<>'' then ' <a href="javascript:void(0)" onclick="ver_comm('if getenv('user')='ADMIN' then '-1' else '0'getenv('nuser') fi',&quot;'v966^a[1]'@@'v966^l[1]'&quot;,'mfn(1)')" ><img src="/opac/imagens/add-comment.png" align="absbottom" alt="Comentários" title="Comentários" border="0"></a> 'if getenv('nuser')<>'' then '<a style="margin-left:5px" href="javascript:void(0)" onclick="ver_tags(0'getenv('nuser')',&quot;'v966^a[1]'@@'v966^l[1]'&quot;,'mfn(1)')" ><img src="/opac/imagens/tags.png" align="absbottom" alt="Tags" title="Adicionar palavras-chave" width="18" border="0"></a>'fi fi'</div>'
+else
+   '<span class="linkunimarc"><a href="javascript:popunimarc(&quot;'(if v9000^n='base' then v9000^v fi)'&quot;,&quot;'(if v9000^n='expressao' then v9000^v fi)'&quot;,&quot;wiunimarc&quot;,&quot;'mfn(7)'&quot;);" title="Ver registo no formato UNIMARC">'V1001'</a></span>- <div style="display:inline-block;width:120px">'if v1051='opac' and s(v930,v966)<>'' then ' <a href="javascript:void(0)" onclick="ver_comm('if getenv('user')='ADMIN' then '-1' else '0'getenv('nuser') fi',&quot;'v966^a[1]'@@'v966^l[1]'&quot;,'mfn(1)')" ><img src="/opac/imagens/add-comment.png" align="absbottom" alt="Comentários" title="Comentários" border="0"></a> 'if getenv('nuser')<>'' then '<a style="margin-left:5px" href="javascript:void(0)" onclick="ver_tags(0'getenv('nuser')',&quot;'v966^a[1]'@@'v966^l[1]'&quot;,'mfn(1)')" ><img src="/opac/imagens/tags.png" align="absbottom" alt="Tags" title="Adicionar palavras-chave" width="18" border="0"></a>'fi fi'</div>',
+fi
+'<span class="tipodoc">',@witdoc.pft,'</span>'/
+'</td>'/
+' </tr>'/
+' <tr><td colspan="3" height="1"  valign="top"> <hr size="1" ></td></tr>'/
+' <tr>'/
+' <td width="85%" colspan="2"  valign="top">'/
+
+'<table border="0" width="100%" class="Description">'/
+'<tr>'/
+'    <td width="190" valign="top"><strong>Título</strong></td>'/
+'    <td width="80%" valign="top">'/
+	 MHL,'<b>'(mhl,| ; |+v200^a,'</b>'| [|v200^b|]|,|. |v200^c,| : |v200^e,| |v200^d,|. |v200^i,|, |v200^h,|, |V200^v/)
+'    </td>'/
+'  </tr>'/
+
+IF P(V200^f) THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>Autor(es)</strong></td>'/
+'    <td width="80%" valign="top">'/
+MHL,(| ; |+v200^f,| ; |v200^g)/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V205) THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>Edição</strong></td>'/
+'    <td width="80%" valign="top">'/
+	 MHL,(|, |+v205^a,|, |v205^b,| |v205^d,| / |v205^f,| ; |v205^g)/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V210) THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>Publicação</strong></td>'/
+'    <td width="80%" valign="top">'/
+	 MHL,(| ; |+v210^a,|, |v210^b,| : |v210^c,|, |V210^d,| (|v210^e,| |v210^f,| : |v210^g,|, |v210^h)
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V225) THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>Coleção</strong></td>'/
+'    <td width="80%" valign="top">'/
+	 MHL,"("D225,('<a href="javascript:window.location.href=ChkLinkHref(1,&quot;wiusr&quot;,&quot;COL ',MHU,V225^a,| |V225^h,| |V225^i,MHL,'&quot;)">'MHL,| (|+V225^a,'</a>'| = |v225^d,| : |v225^e,| / |V225^f,|; |V225^g,| |v225^h,| |V225^i,|, |V225^x,| ; |V225^v), if instr(v225,')')=0 then ')' fi, /
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V10) THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>ISBN</strong></td>'/
+'    <td width="80%" valign="top">'/
+	 MHL,IF A(V10^a) THEN V10^b,| : |V10^d,|. |V10^z ELSE (V10^a,| (|V10^b|)|,| : |V10^d,|. |V10^z) FI
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V11) THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>ISSN</strong></td>'/
+'    <td width="80%" valign="top">'/
+	 MHL,(|. |+V11^a,| |V11^b,| : |V11^d,|. |V11^z)/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF S(V300,V301,V302,V303,V304,V305,V306,V307,V308,V310,V311,V312,V313,V314,
+V315,V320,V321,V322,V323,V324,V325,V326,V327,V328,V330,V332,V333,V336,V337,
+V345,V421,V422,V423,V430,V431,V434,V435,V436,V440,V441,V444,V445,V446,V457,
+V448,V451,V452,V453,V454,V461,V463,V488)<>'' THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>Notas</strong></td>'/
+'    <td width="80%" valign="top">'/
+MHL,S(
+(|. - |v300^a),(|. - |v301^a)(|. - |v302^a)(|. - |v303^a)(|. - |v304^a)(|. - |v305^a)(|. - |v306^a)(|. - |v307^a)(|. - |v308^a)(|. - |v310^a)(|. - |v311^a)(|. - |v312^a)(|. -|v313^a)(|. - |v314^a)(|. - |v315^a)(|. - |v320^a)(|. - |v321^a,|, |v321^b,| |v321^x)(|. - |v322^a)(|. - |v323^a)(|. - |v324^a)(|. - |v326^a,| |v326^b)(|. - |v327^a)(|. - |v328^a)(|. - |v330^a)(|. - |v332^a)(|. - |v333^a)(|. - |v336^a)(|. - |v337^a)(|. - |v345^a,| |v345^b,| |v345^c,| |v345^d)
+(". - Suplemento: "|. - |+V421^a+|. - |,| / |V421^f)(". - Suplemento de: "|.- |+V422^a,| / |V422^f)(". - Publicado com: "|. - |+V423^a,| / |V423^f)(". - Continua: "|. - |+V430^a,| / |V430^f)(". - Continua em parte: "|. - |+V431^a,| / |V431^f)(". - Absorve: "|. - |+V434^a,| / |V424^f)(". - Absorve em parte: "|. - |+V435^a,| / |V435^f)(". - Fusão de: "|. - |+V436^a,| / |V436^f)(". - Continuado por: "|. - |+V440^a,| / |V440^f)
+(". - Continuado em parte por: "|. - |+V441^a,| / |V441^f)(". - Absorvido por: "|. - |+V444^a,| / |V444^f)(". - Absorvido em parte por: "|. - |+V445^a,| / |V445^f)(". - Cindido em: "|. - |+V446^a,| / |V446^f)(". - Fundido com: "|. - |+V447^a,| / |V447^f)(". - Mudou de novo para: "|. - |+V448^a,| / |V448^f)(". - Outra ed. no mesmo suporte: "|. - |+V451^a,| / |V451^f)(". - Ed. em suporte diferente: "|. - |+V452^a,| / |V452^f)(". - Trad. como: "|. - |+V453^a,| / |V453^f)
+(". - Trad. de: "|. - |+V454^a,| / |V454^f)IF S(v921,v922):'aa' AND s(v461,v463)<>'' THEN '<br>In: ',v461^a, v461^t,|. |v461^i,|, |v461^h,|. - |v461^c,| : |v461^b,|, |v461^d,|. - |v461^v,|, |v461^p,|. - |v461^5,v463^a,| / |v463^t,|. - |v463^c,| : |v463^b,|, |v463^d,|. - |v463^y,|. - |v463^v,|, |v463^p,|. - |v463^5 FI (". - Outras obras relacionadas: "|. - |+V488^a,| / |V488^f)
+)*4/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF S(V600V601V602V604V605V606V607V610)<>'' THEN
+'  <tr>'/
+'    <td width="190" valign="top"><strong>Assunto(s)</strong></td>'/
+'    <td width="80%" valign="top">'/
+
+if p(v600) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AS 'MHU,V600^a,| |V600^b,| |V600^d,| |V600^c,| |V600^f,IF S(V600^A)<>'' AND S(V600^X)<>'' THEN '--' FI,V600^x,|--|V600^y,|--|V600^z,MHL,'&quot;)">'| / |+V600^a,| |V600^b,| |V600^d,| |V600^c,| |V600^f,|--|V600^x,|--|V600^y,|--|V600^z,'</a>'/) FI/
+IF P(V600)THEN" / "D601 FI,if p(v601) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AS ',MHU,| / |+V601^a| |,V601^b,| |V601^c,| |V601^d,| |V601^e,| |V601^f,|--|V601^x,|--|V601^y,|--|V601^z,MHL,'&quot;)">'V601^a,| |V601^b,| |V601^c,| |V601^d,| |V601^e,| |V601^f,IF S(V601^A)<>'' AND S(V601^X)<>'' THEN '--' FI,V601^x,|--|V601^y,|--|V601^z'</a>'/) FI/
+IF S(V600V601)<>''THEN" / "D602FI(| / |+V602^a,| |V602^f,|--|V602^x,|--|V602^y,|--|V602^z)
+IF S(V600V601V602)<>''THEN" / "D604FI(| / |+V604^a| |V604^b,| |V604^c,| |V604^d,| |V604^e,| |V604^f,| |V604^i,| |V604^k,| |V604^l,| |V604^n,| |V604^r,| |V604^t,| |V604^v,|--|V604^x,|--|V604^y|--|V604^z)
+IF S(V600V601V602V604)<>'' THEN" / "D605FI(| / |+V605^a,|. |V605^h,| |V605^i,|, |V605^k,| |V605^l,| |V605^m,| |V605^n,| |V605^q,|--|V605^x,|--|V605^y,|--|V605^z)
+IF S(V600V601V602V604V605)<>''THEN" / "D606FI,if p(v606) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AS ',MHU,V606^a,IF V606^x:'['THEN |--|V606^y,|--|V606^z,|--|V606^x ELSE |--|V606^x,|--|V606^y,|--|V606^z FI,MHL,'&quot;)">'| / |+V606^a,IF V606^x:'['THEN |--|V606^y,|--|V606^z,|--|V606^x ELSE |--|V606^x,|--|V606^y,|--|V606^z fi,'</a>'/) FI/
+IF S(V600V601V602V604V605V606)<>''THEN" / "D607FI,if p(v607) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AS ',mhu,V607^a,|--|V607^x,|--|V607^y,|--|V607^z,mhl,'&quot;)">',| / |+V607^a,|--|V607^x,|--|V607^y,|--|V607^z,'</a>'/) FI/
+IF S(V600V601V602V604V605V606V607)<>''THEN" / "D610FI,if p(v610) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AS ',mhu,V610^a,mhl,'&quot;)">',| / |+V610^a'</a>'/) FI/
+
+,
+
+'    </td>'/
+'  </tr>'/
+FI/
+
+,@wiusrx.pft,
+'</table>'/
+'</td>'/
+'<td width="13%"   height="0" valign="top" align="center">'/
+if p(v859^u) then 
+mpl, 
+proc('D9777A9777*'right(s(mhu,V859^u),4),mpl,'*'),
+proc('D9777A9777*'mid(s(mhu,V9777),instr(V9777,'.')+1,1000),mpl,'*'),
+ if s('/JPG/JPEG/GIF/PNG/'):s(v9777) then
+  '<p align="center">',
+   if p(v859^x) then '<a href="'v859^x'" target="_blank">' fi,
+   '<img  src="'v859^u'" title="'v859^z'" onerror="ImageLoadFailed(this)" width="120" height="160" align="center">',
+   if p(v859^x) then '</a>' fi,
+   if p(v859^z) then
+   '<br>'v859^z, ''
+   fi,
+   '</p>'
+ fi,
+else,
+   if v10^a[1]<>'' then
+	  proc('D9999A9999#'replace(replace(replace(v10^a[1],'-',''),' ',''),'.','')'#')
+	  if p(v9999) then
+		'<span id="'mfn'" align="top"></span>'
+		'<script>
+		 var imagem = new loadImage(120, 160, "'v9999'", "'mfn'")
+		</script>'
+	  ,fi
+	,fi,
+,fi,
+'</td>'/
+
+'</tr></table><br />'/
+,if S(V930,V966)<>''  and v1051='opac' then
+'<span style="float:right;font-size:0.7em;margin:-7px 8px 0 0;"><img id="vermais'mfn'" onclick="expandir(&quot;'mfn'&quot;,&quot;'v1051'&quot;,&quot;'v966^l[1]'&quot;,&quot;'getenv('user')'&quot;,&quot;'getenv('nuser')'&quot;,&quot;'getenv('ent')'&quot;);" src="/opac/imagens/plus.gif" border="0" align="absbottom" style="cursor:pointer" title="Expandir" alt="Expandir" >&nbsp;</span>'/
+fi
+'<table  width="99%" cellpadding=2 cellspacing=0 class="Description">'/
+,if S(V930,V966)<>'' THEN
+'  <tr>'/
+'    <td width="190" valign="top">'/
+if v1051 <> 'opac' then
+'   <b> Cota</b></td>'/
+else    
+	 '<b> Cotas da Rede</b></td>'/
+fi
+'    <td class="cframe" valign="top" style="padding-left:3px;background-color:#f2f2f2;">'/
+if  v1051 <> 'opac' then
+	,@dspcota_x.pft,
+else
+	,@dspcota.pft,
+fi
+'    </td>'/
+'  </tr>'/
+,FI,
+
+'  <tr>'/
+'    <td  width="190" valign="top" align="left"></td>'/
+'    <td class="cframe" valign="top" align="left" >'/
+'    <iframe name="' s(getenv('nome'),f(mfn,1,0)) '" id="' s(getenv('nome'),f(mfn,1,0)) '" frameborder="no" scrolling="no" width="100%" height="60" style="display:none"></iframe></td>'/
+
+'  </tr>'/
+if S(V930,V966)<>'' and v1051='opac' and (getenv('user')='ADMIN' or getenv('nuser')<>'') then
+'<tr><td><span title="Tags">&nbsp;<b>Palavras-chave</b></span></td><td>'/
+'<div id="tags'v1001'" class="tags"></div>'/
+'<script>'/
+'  jQuery(function() {'/
+        if getenv('nuser')<>'' then
+'         var surl="/opac/admin/showtags.asp?expr=(MFN 'v966^a[1],v966^l[1]') AND (LTR 'getenv('nuser')')";	 '/
+         else
+'   	   var surl="/opac/admin/showtags.asp?expr=MFN 'v966^a[1],v966^l[1]'";'/
+          fi
+'         surl= surl +"&d="+Math.random()*Math.random();'/   
+'         $.ajax({'/
+'		  url:surl,'/
+'         success: function(data) {'/
+'		  var str=data;'/
+'         var tags_list = str.split(",");'/
+'         tags_list = jQuery.map(tags_list, function (item) { return jQuery.trim(item); });'/
+'         tags_list = jQuery.unique( tags_list.sort() ).sort();'/
+'         $("#tags'v1001'").html("");'/
+'         if (tags_list.length==1) $("#tags'v1001'").append("<span class=\"tagBox-bullet\">&bull;</span><span class=\"tagBox-item\" >(vazio)</span>");'/
+'         jQuery.each(tags_list, function(key, val) {'/
+'            if (val !="") $("#tags'v1001'").append("<span class=\"tagBox-bullet\">&bull;</span><span class=\"tagBox-item\" ><a style=\"text-decoration:none\" href=\"javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;PCH "+val+"&quot;)\">"+val+"</a></span>");'/
+'         });'/
+'         }'/  
+'		  }); '/   
+'    });'/
+'</script>'/
+'</td></tr>'/
+fi,
+if val(V1002)>1 then
+'  <tr>'/
+'    <td width="190" valign="top"></td>'/
+'    <td width="80%" valign="top">'/
+'    <div align="right">'/
+,@navereg.pft,
+'    </div></td>'/
+'  </tr>'/
+FI,
+'<tr><td>&nbsp;</td><td>'
+
+'<script>var v='if getenv('votos')<>'' then getenv('votos') else '0' fi'; var nv='if getenv('nvotos')<>'' then getenv('nvotos') else '0' fi'; var med='if getenv('nvotos')<>'' then 'round(v/nv,1)' else '0' fi'; '
+'        $("#form'v1001'").rater({ postHref: "/opac/admin/votacao.asp?expr='v966^a[1]'@@'v966^l[1]'",rating:med});'
+'        $("#rate-avg'v1001'").text(med); $("#rate-count'v1001'").text(nv);'
+'</script>'/
+''/ 
+'<script>
+   // jQuery(function() {
+   //     jQuery("#tags'v1001'").tagBox(); 
+   // });
+
+        // $("#tags'v1001'").tagsInput();
+</script>'
+
+'</td>'/ 
+'</tr>'/
+'</table>'/

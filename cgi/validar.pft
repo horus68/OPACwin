@@ -1,0 +1,234 @@
+lw(10000)
+mfn(7)'|'
+/* ========
+campo 10 
+=========== */
+
+if getenv('tipo')='' or getenv('tipo')='2' then,
+if p(v10^a) then
+   (proc('A9010#'MHU,replace(replace(v10^a,'-',''),' ','')'#')),MHL
+   (if V9010<>'' then 
+       if type(mid(v9010.13,1,size(v9010.13)-1))<>'N' then '010|2|O ISBN contém caracteres inválidos [use apenas 0..9,X, hífen ou espaço] |' fi
+    fi) 
+(
+if size(v9010)=13 then
+       if not
+           s(f(val(f(
+              (val(mid(v9010,size(v9010)-0,1))  *1) +
+              (val(mid(v9010,size(v9010)-1,1))  *3) +
+              (val(mid(v9010,size(v9010)-2,1))  *1) +
+              (val(mid(v9010,size(v9010)-3,1))  *3) +
+              (val(mid(v9010,size(v9010)-4,1))  *1) +
+              (val(mid(v9010,size(v9010)-5,1))  *3) +
+              (val(mid(v9010,size(v9010)-6,1))  *1) +
+              (val(mid(v9010,size(v9010)-7,1))  *3) +
+              (val(mid(v9010,size(v9010)-8,1))  *1) +
+              (val(mid(v9010,size(v9010)-9,1))  *3) +
+              (val(mid(v9010,size(v9010)-10,1)) *1) +
+              (val(mid(v9010,size(v9010)-11,1)) *3) +
+              (val(mid(v9010,size(v9010)-12,1)) *1)
+             ,0,0))/10,0,2)):'.00' then '010|2|ISBN inválido |'
+      ,fi,
+ else
+   if size(v9010)=10 then 
+       if not
+           s(f(val(f(
+              (val(replace(mid(v9010.10,size(v9010.10)-0,1),'X','10')) * 1) +
+              (val(mid(v9010,size(v9010)-1,1)) * 2) +
+              (val(mid(v9010,size(v9010)-2,1)) * 3) +
+              (val(mid(v9010,size(v9010)-3,1)) * 4) +
+              (val(mid(v9010,size(v9010)-4,1)) * 5) +
+              (val(mid(v9010,size(v9010)-5,1)) * 6) +
+              (val(mid(v9010,size(v9010)-6,1)) * 7) +
+              (val(mid(v9010,size(v9010)-7,1)) * 8) +
+              (val(mid(v9010,size(v9010)-8,1)) * 9) +
+              (val(mid(v9010,size(v9010)-9,1)) *10)
+             ,0,0))/11,0,2)):'.00' then '010|2|ISBN inválido |'
+      ,fi,
+    else
+          '010|2|O ISBN deve ter 10 ou 13 caracteres; [0..9,X, hífen ou espaço] |' 
+  ,fi,
+,fi,
+ )
+,fi,
+
+/* =========
+campo 11 
+============ */
+
+if p(v11^a) then
+   (proc('A9011#'MHU,replace(replace(replace(v11^a,'#',''),'-',''),' ','')'#')),MHL
+   (if v9011<>'' then
+      if type(mid(v9011,1,size(v9011)-1))<>'N' then  '011|2|O ISSN contém caracteres inválidos [use apenas 0..9,X, hífen ou espaço] |' break fi
+   fi)
+   (if size(v9011)<>8 then  '011|2|O ISSN deve ter 8 caracteres; [0..9,X, hífen ou espaço] |'   else
+      if not
+         s(f(val(f(
+            (val(replace(mid(v9011,size(v9011)-0,1),'X','10')) * 1) +
+            (val(mid(v9011,size(v9011)-1,1)) * 2) +
+            (val(mid(v9011,size(v9011)-2,1)) * 3) +
+            (val(mid(v9011,size(v9011)-3,1)) * 4) +
+            (val(mid(v9011,size(v9011)-4,1)) * 5) +
+            (val(mid(v9011,size(v9011)-5,1)) * 6) +
+            (val(mid(v9011,size(v9011)-6,1)) * 7) +
+            (val(mid(v9011,size(v9011)-7,1)) * 8)
+           ,0,0))/11,0,2)):'.00' then  '011|2|ISSN inválido |' 
+        ,fi,
+     ,fi,
+   )
+,fi,
+
+
+/* ========
+Campo 110
+===========*/
+
+if s(mhu,v922):'S' then mhl,  
+   if a(v110^a) then  '110|2|Recomenda-se que este campo esteja sempre presente nos registos de publicações em série. |'  fi,
+fi,
+
+,fi
+/* ==========
+Campo 200
+=============
+if getenv('tipo')='' or getenv('tipo')='1' then,
+	if a(v200^a) then  '200|1|O <b>Título próprio</b> é de preenchimento obrigatório. Preencha o subcampo ^a |'  fi,
+,fi
+if getenv('tipo')='' or getenv('tipo')='3' then,
+if s(replace(replace(replace(s(MHU,v200^f),'.',''),'[',''),']','')):'ET AL' then mhl,
+   if s(v700,v710)<>'' then  '200|3|Dado que o subcampo ^f contém <b>et al.</b> deve preencher os campos do bloco 7xx excepto 700 ou 710 |'  fi,
+fi
+
+mhl,
+if p(v200^f) then,
+   if s(v700,v701,V702,v710,v711,v712)='' then  '200|3|Mmenção de responsabilidade (^f) sem preenchimento num dos campos do bloco 7xx. Recomenda-se o seu preenchimento num campo do bloco 7xx |'  fi,
+fi,
+if p(v200^g) then,
+   if s(V702,v712)='' then  '200|3|Outras menções de responsabilidade (^g) sem preenchimento num dos campos 702 ou 712. Recomenda-se o seu preenchimento num campo do bloco 702 ou 712 |'  fi,
+fi,
+proc('D9999A9999~'mid(replace(s(mhu,v200^a[1]),'~','^'),0,instr(s(mhu,v200^a[1]),' ')-1)'~')
+if s('/A/AS/O/OS/UM/UNS/UMA/THE/LE/LA/'):V9999 and 
+   (not s(mpu,V200^a[1]):s(mpu,|<|V9999| >|))then  mpl,'200|3|Em vez de: "'V200^a[1].30'..." escreva "'
+   mpl,'<'V9999' >',mid(v200^a[1],instr(v200^a[1],' ')+1,30)'..."|'  fi
+,fi,
+if getenv('tipo')='' or getenv('tipo')='2' then,   
+if s(mpu,V200^a):'<' and not s(mpu,V200^a):'>' then   mpl,'200|2|Simbolo < sem ter sido fechado. Deve colocar a expressão entre < > 'V200^a.50'...|'  fi
+if s(mpu,V200^a):'>' and not s(mpu,V200^a):'<' then   mpl,'200|2|Símbolo > sem ter sido aberto. Deve colocar a expressão entre < > 'V200^a.50'...|' fi
+,fi
+/* =========
+Campo 210
+============ */
+if getenv('tipo')='' or getenv('tipo')='3' then,
+if s(mhu,v921,v922)<>'AA' then mhl, 
+   if a(v210^a) or a(v210^c) or a(v210^d) then  '210|3|O Local (^a), Editor (^c) ou Data (^d) devem ser preenchidos |'  fi,
+   if a(v210^a) then  '210|3|Se não tiver a informação do local de publicação (^a) preencha com [S.l.] |' fi,
+   if a(v210^c) then  '210|3|Se não tiver a informação do nome do editor (^c) preencha com [s.n.] |'  fi,
+   if a(v210^d) then  '210|3|Se não tiver a informação da data de publicação (^d) preencha com uma data aproximada |'  fi,   
+   if getenv('tipo')='' or getenv('tipo')='2' then,
+   if s(replace(replace(replace(replace(s(mhu,v210^d),' ',''),'.',''),'[',''),']','')):'SD' then  mhl,'210|2|A designação [s.d.] não está correcta. Deve preencher a data de publicação (^d) com uma data aproximada |'  fi,
+   ,fi,   
+fi,
+,fi
+/* ==========
+Campo 675
+=============*/
+if getenv('tipo')='' or getenv('tipo')='2' then,
+if p(v675^a) and v675^a[1].1='4' then '675|2|Campo 675 com CDU da classe 4! |'  fi,
+(if v675<>'' and v675^a='' then '675|2|Campo 675 preenchido sem subcampo ^a |'  fi,)
+
+/* ==========
+Campo 7xx
+============= */
+if p(v700) and p(v710) then '710|2|Os campos 700 e 710 não podem ser preenchidos em simultâneo. Só pode haver um autor principal |'  fi,
+,fi,
+mpl,
+if getenv('tipo')='' or getenv('tipo')='3' then,
+(if v701^a<>'' and a(v701^4) then  mpl,'701|3|Falta o código de função no subcampo ^4 |' fi)
+(if v702^a<>'' and a(v702^4) then  mpl,'702|3|Falta o código de função no subcampo ^4 |' fi)
+(if v711^a<>'' and a(v711^4) then  mpl,'711|3|Falta o código de função no subcampo ^4 |' fi)
+(if v712^a<>'' and a(v712^4) then  mpl,'712|3|Falta o código de função no subcampo ^4 |' fi)
+,fi,
+if getenv('tipo')='' or getenv('tipo')='1' then,
+(if v700<>'' and a(v700^a) then '700|1|A palavra de ordem (^a) é de preenchimento obrigatório |' fi)
+(if v701<>'' and a(v701^a) then '701|1|A palavra de ordem (^a) é de preenchimento obrigatório |' fi)
+(if v702<>'' and a(v702^a) then '702|1|A palavra de ordem (^a) é de preenchimento obrigatório |' fi)
+(if v710<>'' and a(v710^a[1]) then '710|1|A palavra de ordem (^a) é de preenchimento obrigatório |' fi)
+(if v711<>'' and a(v711^a[1]) then '711|1|A palavra de ordem (^a) é de preenchimento obrigatório |' fi)
+(if v712<>'' and a(v712^a[1]) then '712|1|A palavra de ordem (^a) é de preenchimento obrigatório |' fi)
+(if v700*1.1='1' and a(v700^b) then '700|1|Como a entrada de autor é pelo apelido deve preencher o subcampo ^b |' fi)
+(if v701*1.1='1' and a(v701^b) then '701|1|Como a entrada de autor é pelo apelido deve preencher o subcampo ^b |' fi)
+(if v702*1.1='1' and a(v702^b) then '702|1|Como a entrada de autor é pelo apelido deve preencher o subcampo ^b |' fi)
+(if v700*1.1='0' and p(v700^b) then '700|1|Como a entrada de autor é pela forma directa não pode existir o subcampo ^b |' fi)
+(if v701*1.1='0' and p(v701^b) then '701|1|Como a entrada de autor é pela forma directa não pode existir o subcampo ^b |' fi)
+(if v702*1.1='0' and p(v702^b) then '702|1|Como a entrada de autor é pela forma directa não pode existir o subcampo ^b |' fi)
+,fi,
+if getenv('tipo')='' or getenv('tipo')='2' then,
+MHL,(if s(v701^4).1<>'' then if s(ref(['codf']L(['codf']V701^4),s(mpl,V1)))<>s(v701^4) then  '701|2|Erro no código da função |' fi fi)
+MHL,(if s(v702^4).1<>'' then if s(ref(['codf']L(['codf']V702^4),s(mpl,V1)))<>s(v702^4) then  '702|2|Erro no código da função |' fi fi)
+MHL,(if s(V711^4).1<>'' then if s(ref(['codf']L(['codf']V711^4),s(mpl,V1)))<>s(V711^4) then  '711|2|Erro no código da função |' fi fi)
+MHL,(if s(V712^4).1<>'' then if s(ref(['codf']L(['codf']V712^4),s(mpl,V1)))<>s(V712^4) then  '712|2|Erro no código da função |' fi fi)
+,fi,
+/* ============
+Campo 966
+=============== */
+if getenv('tipo')='' or getenv('tipo')='1' then,
+if s(mhu,v921,v922)<>'AA' then mhl,  
+  (if a(v966^a) then '966|1|Falta preencher o subcampo número de registo (^a) |'  fi,) 
+  (if a(v966^l) then '966|1|O preenchimento da sigla da biblioteca é obrigatório (^l) |'  fi,) 
+  (if a(v966^s) then '966|1|Falta preencher o subcampo cota (^s)  |'  fi,) 
+  (if s('/JI/EB/E1/EI/'):v966^l and a(v966^m) then '966|1|Falta a sigla de Agrupamento (^m). Desta maneira não é possível associar a biblioteca ao respectivo Agrupamento |'  fi,) /* Sem sigla de Agrupamento  */
+  
+fi,
+
+/* =========
+Campos 46x
+============ */
+if S(mhu,v922):'A' then, 
+   mpl,
+   if p(v461) and p(v463) then  '461|1|Os campos 461 e 463 não podem ser preenchidos no mesmo registo |'  fi
+   if s(v461,V463)=''     then  '461|1|Os analíticos requerem o preenchimento do campo 461 (publicações periódicas) ou 463 (monografias) |'  fi
+   if p(v210)             then  '461|1|O campo Publicação (210) não pode existir num analítico. Preencha os subcampos do campo 461 ou 463 |'  fi
+   if p(v215)             then  '461|1|O campo Descrição física (215) não pode existir num analítico. Preencha os subcampos do campo 461 ou 463 |'  fi
+,fi,
+if S(mhu,v922)<>'A' then
+    mpl,
+    if p(v461) then  '461|1|O campo 461 não deve ser preenchido neste tipo de documento. |'  fi,
+    if p(v463) then  '463|1|O campo 463 não deve ser preenchido neste tipo de documento. |'  fi,
+,fi, 
+,fi,
+if getenv('tipo')='' or getenv('tipo')='3' then,
+if S(v461)<>'' and a(v461^p) then  mpl,'461|3|Utilize o subcampo ^p para indicar as páginas de onde foi retirado o analítico |'  fi,
+if S(v463)<>'' and a(v463^p) then  mpl,'463|3|Utilize o subcampo ^p para indicar as páginas de onde foi retirado o analítico |'  fi,
+,fi,
+/* ===============
+Publicacoes Série
+================== */
+
+if S(mhu,v922):'S' then,  
+   mpl,
+   if getenv('tipo')='' or getenv('tipo')='2' then,
+   if a(v303) and a(v207) then   '207|2|Deve preencher o campo <b>Descrição baseada em</b> (303) ou o campo <b>Numeração</b> (207) |'  fi
+   ,fi,
+   if getenv('tipo')='' or getenv('tipo')='1' then,
+   if p(v303) and p(v207) then   '207|1|Os campos 303 e 207 não podem ser preenchidos no mesmo registo |'  fi
+   ,fi,
+   if getenv('tipo')='' or getenv('tipo')='2' then,
+   if a(v326)             then   '326|2|Deve preencher o campo <b>Periodicidade</b> |'  fi
+   if a(v620^d)           then   '620|2|Deve preencher o <b>Local como assunto</b> (^d) |'  fi
+   ,fi,
+   if getenv('tipo')='' or getenv('tipo')='2' then,
+  if p(v100^a) then
+    select s(mhu,v100^a*8.1,mhl,)
+      case 'A': 
+        if val(v100^a*9.4)<=0 or v100^a*13.4<>'----' or v100^a*13.4<>'    ' or val(V210^d[1].4)<=0       then  '210|2|Incoerência entre o campo 100 (tipo de data) e o campo 210^d |'  fi
+      case 'B':
+        if val(v100^a*9.4)<=0 or val(v100^a*13.4)<=0 or val(V210^d[1].4)<=0                              then  '210|2|Incoerência entre o campo 100 (tipo de data) e o campo 210^d |'  fi
+      case 'C':
+        if val(v100^a*9.4)<=0 or val(v100^a*13.4)<>0 or val(V210^d[1].4)<=0                              then  '210|2|Incoerência entre o campo 100 (tipo de data) e o campo 210^d |'  fi
+    endsel,
+  fi,
+  ,fi,
+,fi,
+if getenv('tipo')='' or getenv('tipo')='2' then,
+if nocc(v955)>1 then '955|2|Não pode haver mais de uma ocorrência do campo 955 |'  fi,
+,fi/

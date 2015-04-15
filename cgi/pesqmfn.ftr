@@ -1,0 +1,10 @@
+if s(v1091)='0' then
+   '<input TYPE="button" VALUE="Página anterior" ONCLICK="window.history.back(-1)" NAME="PagAnt" ></small>'/
+   '<input TYPE="button" VALUE="Nova pesquisa" ONCLICK="window.location.href = &quot;/opac/'(if v9000^n='nomemnu' then v9000^v fi)'&nut='(if v9000^n='nut' then v9000^v fi)'&quot;" NAME="mnuprincipal" >'/
+else
+,@wierro.pft,
+fi,
+'	  
+  </div>
+</body>'
+'</html>'

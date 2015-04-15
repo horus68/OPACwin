@@ -1,0 +1,79 @@
+lw(20000),
+proc('D9000A9000~'replace(s(cat('..\database.lst')),s(/#),'~A9000~')'~')
+proc('D9001A9001~'(if V9000:'MASTER=' then mid(V9000,instr(V9000,'=')+1,size(V9000)) else '' fi)'~')
+proc('D9002A9002~'(if V9000:'AUXDB='  then mid(V9000,instr(V9000,'=')+1,size(V9000))'%' fi)'~')
+proc('D9002A9002~'replace(V9002,'%','~A9002~')'~')
+
+'echo off'/
+'cls'/
+'SET ERRORLEVEL=0'/
+'IF EXIST CHKDUP.TMP del chkdup.tmp > nul'/
+'IF EXIST ..\TMP\CHKDUP.TMP del ..\tmp\chkdup.tmp > nul'/
+'SET DBMASTER='V9001^b/
+'echo == CATALOGO DE ' v9001^c ' =='/
+'echo == FASE 1 : InversÆo das bases bibliogr ficas =='/
+'echo == FASE 1 : Inversão das bases bibliográficas == >> %LOGSPATH%log_%LOGDATE%.txt'/
+/* Cria rotina para cada base de dados */
+(
+  if v9002^b<>'' then
+     'SET IOCC='f(iocc,0,0)/
+     `mx `V9002^b` "proc='D001A001~'f(mfn,0,0),'-'getenv('IOCC'),'~'" "proc=@.\conta_966.prc" -all now copy=`V9002^b/
+     'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+     `copy .\geral.fst `V9002^b`.fst > null`/
+     `mx `V9002^b` "fst=1 0 V1/" fullinv=`V9002^b` uctab=isisuc.tab -all now`/
+     'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+     `mx `V9002^b` now uctab=isisuc.tab lw=10000 "pft='`mhu,V9002^b,mhl,`'REPLACE(REPLACE(S(,@.\chkdup01.pft,),'{',''),'}','')" >> ..\tmp\chkdup.tmp`/
+     'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+
+  fi,
+/)
+
+'mx seq=..\tmp\chkdup.tmp proc=@.\chkdup01.prc uctab=isisuc.tab create=..\tmp\tmp_chkdup -all now tell=25000'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'msrt ..\tmp\tmp_chkdup 250 @.\chkdup01.srt tell=300000'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'mx ..\tmp\tmp_chkdup lw=10000 "pft=,@.\chkdup02.pft,"  now > ..\tmp\chkdup02.tmp'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'echo == FASE 2 : Processamento dos duplicados =='/
+'echo == FASE 2 : Processamento dos duplicados      == >> %LOGSPATH%log_%LOGDATE%.txt'/
+'mx seq=..\tmp\chkdup02.tmp lw=10000 "pft=@.\mkdupadd.pft" now > .\mkverdup.bat'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'mx null create='V9001^b' -all now count=0'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'call .\mkverdup.bat'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+`mx `V9001^b` "fst=1 0 V1/" fullinv=`V9001^b` uctab=isisuc.tab -all now`/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'mx seq=..\tmp\chkdup02.tmp lw=10000 "sys=@.\mkdupmod.pft" now -all tell=25000'/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+if v9001^p<>'' then
+  `mx `V9001^b` create=..\tmp\tmp_chkdup proc=@.\`V9001^p` -all now tell=10000`/
+  'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+  `mx ..\tmp\tmp_chkdup create=`V9001^b` -all now tell=10000`/
+  'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+else 
+fi,
+'echo == FASE FINAL =='/
+'echo == FASE FINAL == >> %LOGSPATH%log_%LOGDATE%.txt'/
+`copy .\geral.fst `V9001^b`.fst > null`/
+`mx `V9001^b` fst=@.\geral.fst stw=@.\geral.stw fullinv=`V9001^b` uctab=isisuc.tab -all now`/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'mx null "pft=@.\mktags.pft" count=1 now > .\mktags.bat'/
+'call mktags.bat'/
+`mx `V9001^b` fst=@.\geral.fst stw=@.\geral.stw fullinv=`V9001^b` uctab=isisuc.tab -all now`/
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+/* Cria rotina para cada base de dados */
+(
+  if v9002^b<>'' then
+     `mx `V9002^b` "proc='d1d9666'" copy=`V9002^b` now -all`/  
+     `mx `V9002^b` fst=@.\geral.fst stw=@.\geral.stw fullinv=`V9002^b` uctab=isisuc.tab -all now`/
+  fi,
+/)
+'IF %ERRORLEVEL% NEQ 0 GOTO CONTINUE'/
+'echo Conclu¡do!'/
+'XCOPY /Q /Y %DBTMPPATH%*.* %BASESPATH% >nul'/
+'echo FIM...'/
+':CONTINUE'/
+'IF %ERRORLEVEL% NEQ 0 ECHO ** Erro no processamento **'/
+'IF %ERRORLEVEL% NEQ 0 ECHO ** Erro no processamento ** >> %LOGSPATH%log_%LOGDATE%.txt'/
+':FINAL'/

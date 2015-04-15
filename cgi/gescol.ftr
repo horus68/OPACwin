@@ -1,0 +1,35 @@
+if val(v1002)=0 then
+   '<tr><td colspan=7><div align="center" class="aviso" style="margin:100px 0 100px 0;font-size:1.3em">Não foram encontrados registos...</div></td></tr>'
+fi   
+'</table>'
+''
+if val(v1002)>0 then
+'<script>document.getElementById("totreg").innerHTML='v1002'</script>'
+'<div align="right">'
+ if val(v1032)<=val(v1002)
+   then
+     '<form method="post" action="/opac/cgi/www.exe/%5Bin=gescol.in%5D">'
+	 '<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+     '<input type="hidden" name="base" value="'v1051'">'
+     '<input type="hidden" name="expressao" value="'V1021'">'
+     '<input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'
+     '<input type="hidden" name="lim_inicio" value="'f(val(v1031)+val(v1083),0,0)'">'
+     '<input type="hidden" name="limites" value="'f(val(v1032)+val(v1083),0,0)'">'/
+	  '<input type="hidden" name="entidade" value="'(if v9000^n='entidade' then v9000^v fi)'">'/
+	 '<input type="hidden" name="op" value="'(if v9000^n='op' then v9000^v fi)'">'/ 
+     '<input type="hidden" name="user" value="'(if v9000^n='user' then v9000^v fi)'">'/
+   '<input TYPE="button" VALUE="Página anterior" ONCLICK="window.history.back(-1)">'/
+   '<input TYPE="button" VALUE="Nova pesquisa" ONCLICK="window.location.href = &quot;/opac/admin/admin.asp?id=3&quot;">'/
+    if val(v1083)+val(v1031)<=val(v1002) then 
+    '<input type="submit" value="'if val(v1002)-val(v1083) < val(v1031)+val(v1083)-1 then 'Últimos ' f(val(v1002)-val(v1083)-val(v1031)+1,0,0)  else 'Próximos 'f(val(v1083),0,0) fi ' registos" name="Submit" tabindex="1" ></p>'/
+    fi
+  fi
+   '</form>'/
+   '<form name="search" onSubmit="return Localizar(this.string.value);">'
+   '  Localizar nesta página'/
+   '  <input name="string" type="text" size=15 >'
+   '  <input type="submit" value="?" name="sel">'
+   '</form>'/
+fi
+'</div></div>'
+'</BODY>'

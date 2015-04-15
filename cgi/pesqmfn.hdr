@@ -1,0 +1,30 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="/opac/css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="/opac/css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'</head>'/
+'<body id="opac">'/
+
+'<script language="JavaScript" src="/opac/js/geral.js"></script>'/
+
+'<script language="JavaScript">'/
+
+'function ChkLinkHref(tipo,formato,linha_in)'/
+'{'/
+'  var dim=0;'/
+'  var tmp="",car="";'/
+'  tmp=ConvUp(linha_in);'/
+'  var param="/opac/cgi/www.exe/[in=pesqger.in]?base='(if v9000^n='base' then v9000^v fi)'&ut='(if v9000^n='ut' then v9000^v fi)'&nut='(if v9000^n='nut' then v9000^v fi)'&nomemnu='(if v9000^n='nomemnu' then v9000^v fi)'&formato="+formato+"&lim_inicio=1&limites='(if v9000^n='limites' then v9000^v fi)'&iso2709='(if v9000^n='iso2709' then v9000^v fi)'&sortfmt='(if v9000^n='sortfmt' then v9000^v fi)'&user='(if v9000^n='user' then v9000^v fi)'&expressao=";'/
+'  dim=tmp.length;'/
+'  car=tmp.charAt(dim-1);'/
+'  if (tipo=="1" && car==")") tmp=tmp.substring(0,dim-1);'/
+'  return(param + ChkChars(tmp));'/
+'}'/
+
+'</script>'/

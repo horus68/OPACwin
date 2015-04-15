@@ -1,0 +1,95 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+
+    putenv('user=' (if v9000^n='nut' then v9000^v fi))
+
+'<head>'/
+' <!--<META HTTP-EQUIV="Refresh" CONTENT="4;URL="../../cgi/www.exe/[in=gesres.in]?base=reservas&lim_inicio='(if v9000^n='lim_inicio' then v9000^v fi)'&limites=1000&ut='(if v9000^n='ut' then v9000^v fi)'&expressao='(if v9000^n='expressao' then v9000^v fi)'">-->'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/ 	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script type="text/javascript" src="../../js/prototype.js"></script>'/
+'<script>'/
+'function avisar()'/
+'   {'/
+'        var estado='(if v9000^n='sit' then v9000^v fi)';'/
+'        var maildbg= "'cat('maildbg.pft')'";'/
+         /*if ref(['users']L(['users']'SIGLA 'getenv('user')),v2)='' then*/
+		 if type(getenv('user'))='N' then 
+	'     var chk ="'REF(['sumres']L(['sumres']'SI 'getenv('user')),mfn(1))'";'/
+ 	'     if (chk != "")'/
+	'     {'/  
+	'           var es= estado==0? 1:0;'/
+	'     		url ="/opac/cgi/www.exe/[in=updtopcf.in]?from="+chk+"&estado="+es;'/
+	' 	  		new Ajax.Request(url, {     '/
+	'      	    method:"get",  '/
+	'	   		onSuccess: function(transport){       '/
+	'	   		var response = transport.responseText;  '/
+	'      		if (response != "Sucesso" ) '/  
+	'            		alert("Erro ao confirmar a reserva do leitor [Top leitores]");'/ 
+	'          	},     '/
+	'	   	    onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/       
+	'      }'/ 		 	
+'          if (estado == 0) '/		 
+'             url ="/opac/cgi/www.exe/[in=newvch.in]?base=vouchers&user='getenv('user')'&biblt='ref(['leitor']L(['leitor']'NR 'getenv('user')),v20)'&titulo='(if v9000^n='titulo' then mhu,v9000^v,mhl fi)'&autor='(if v9000^n='autor' then mhu,v9000^v,mhl fi)'&sigla='(if v9000^n='ut' then mhu,v9000^v,mhl fi)'&siglaext='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v3)'&siglamor='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v4)'&nreg='(if v9000^n='nreg' then mhu,v9000^v,mhl fi)'&ut='(if v9000^n='ut' then mhu,v9000^v,mhl fi)'&mfn='(if v9000^n='mfn' then mhu,v9000^v,mhl fi)'";'/
+'          else '/
+'  			  url ="/opac/cgi/www.exe/[in=delvch.in]?base=vouchers&ut='getenv('user')'&mfn='ref(['vouchers']L(['vouchers']'MFN '(if v9000^n='mfn' then v9000^v fi)),mfn(1))'";'/
+'		   new Ajax.Request(url, {     '/
+'          method:"get",  '/
+'		   onSuccess: function(transport){       '/
+'		   var response = transport.responseText;  '/
+'          if (response.indexOf("Sucesso")==-1) '/  
+'            alert("Erro ao atualizar o Certificado de Reserva [Voucher]!");'/ 
+'           },     '/
+'		   onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/
+         fi 
+'          var str= (estado==0? "Confirmação de reserva":"Anulação de confirmação de reserva");'/
+'          if (maildbg != "") '/
+             if type(getenv('user'))='N' then 
+'              var url="/opac/admin/sendemail_curto.asp?assunto="+ str +" de documento&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino="+maildbg;'/
+		     else
+'              var url="/opac/admin/sendemail_curto.asp?assunto="+ str +" de documento&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino="+maildbg;'/
+			 fi	 
+'          else '/
+             if type(getenv('user'))='N' then 
+'              var url="/opac/admin/sendemail_curto.asp?assunto="+ str +" de documento&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino='ref(['leitor']L(['leitor']'NR '(if v9000^n='user' then v9000^v fi)),v8)'";'/
+		     else
+'              var url="/opac/admin/sendemail_curto.asp?assunto="+ str +" de documento&Email='ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'&destino='ref(['users']L(['users']'SIGLA '(if v9000^n='user' then v9000^v fi)),v11)'";'/			 
+			 fi	 
+'          var texto="Exmo(s) Snr(s),<br><br>O pedido de reserva com nº '(if v9000^n='mfn' then v9000^v fi)', referente a: <br><br> Biblioteca : <b>'ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v3)' </b><br>";'/
+'          texto += "Título : <b>'(if v9000^n='titulo' then mhu,v9000^v,mhl fi)'</b><br> Autor : <b>'(if v9000^n='autor' then mhu,v9000^v,mhl fi)'</b>  <br> Nº registo : <b>'(if v9000^n='nreg' then v9000^v fi)'</b><br><br>";'/
+'          texto += "que estava na situação de " + (estado==0 ? "PENDENTE": "CONFIRMADO") + " foi agora colocado como " + (estado==0 ? "CONFIRMADO": "PENDENTE")+"."; '/
+'          texto += estado==0 ? "<br>ATENÇÃO: A RESERVA MANTÉM-SE ATIVA POR UM PRAZO DE 'ref(['param']2,v20)' DIAS, FINDO O QUAL ELA SERÁ AUTOMATICAMENTE RETIRADA DO SISTEMA. <br>O empréstimo será feito de acordo com o REGULAMENTO DE EMPRÉSTIMO DA REDE.": "<br>ATENÇÃO: PARA FICAR A SABER O MOTIVO DA ANULAÇÃO DA CONFIRMAÇÃO DE RESERVA CONTACTE-NOS ATRAVÉS DO EMAIL: 'ref(['users']L(['users']'SIGLA '(if v9000^n='ut' then v9000^v fi)),v11)'.";' /
+'          texto += "<br><br>Com os melhores cumprimentos.<br>O responsável pela biblioteca.<br>";' /
+'          url += "&mensagem="+texto;'/
+'		   new Ajax.Request(url, {     '/
+'          method:"get",  '/
+'		   onSuccess: function(transport){       '/
+'		   var response = transport.responseText;  '/
+'          $("msg").innerHTML=response; '/  
+'          if (maildbg != "") '/
+'               var popurl="/opac/admin/prtemail.asp?assunto="+ str + " de documento&destinatario="+maildbg+"&mensagem=" + texto ;'/
+'          else '/
+'               var popurl="/opac/admin/prtemail.asp?assunto="+ str + " de documento&destinatario='ref(['users']L(['users']'SIGLA '(if v9000^n='user' then v9000^v fi)),v11)'&mensagem=" + texto ; '/
+'          winpops=window.open(popurl,"ticket","width=550,height=430,"); '/
+'          if(window.focus) winpops.focus()'/
+'           },     '/
+'		   onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/
+'   }'/
+'</script>'/'<script>'/
+'var howLong = 8000;'/
+'t = null;'/
+'function refreshMe(){'/
+'t = setTimeout("refrescar()",howLong);'/
+'}'/
+'function refrescar(){'/
+'  window.location.href="../../cgi/www.exe/[in=gesres.in]?base=reservas&dbmin='(if v9000^n='dbmin' then v9000^v fi)'&lim_inicio='(if v9000^n='lim_inicio' then v9000^v fi)'&limites=1000&ut='(if v9000^n='ut' then v9000^v fi)'&express='(if v9000^n='express' then v9000^v fi)'&estado='(if v9000^n='estado' then v9000^v fi)'"'/
+'}'/
+'</script>'/
+'</head>'/
+'<body onload="refreshMe();">'/

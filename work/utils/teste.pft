@@ -1,0 +1,1 @@
+lw(1000),`mx ..\basestmp\opac  "proc='A990~`v1^n`~'" from=`ref(['..\basestmp\opac']L(['..\basestmp\opac']'XRF 'v1^a),mfn(1))` count=1 copy=..\basestmp\opac now -all`/

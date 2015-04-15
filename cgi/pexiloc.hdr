@@ -1,0 +1,123 @@
+ putenv('user='(if v9000^n='ut' then v9000^v fi))
+ putenv('nut='(if v9000^n='nut' then v9000^v fi))
+putenv('pos='(if v9000^n='pos' then v9000^v fi))
+putenv('sigla='(if v9000^n='sigla' then v9000^v fi)) 
+'<html><head>'/
+'<script type="text/javascript" src="../../js/geral.js"></script>'/
+'<script type="text/javascript" src="../../js/prototype.js"></script>'/
+' <title>Informação detalhada sobre as existências na base local</title>'/
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+' <script>'/ 
+' function novares(titulo,autor,entidade,sigla,cota,nreg,ex, conf)'/
+'{'/
+'	  var nome="'getenv('user')'";'/
+	  if getenv('nut')<>'' then	  	  
+'       var numMaxPed="'REF(['param']2,v10)'";'/
+'       url ="/opac/cgi/www.exe/[in=getnres.in]?expressao=SI 'getenv('nut')' AND EST 0&lim_inicio=1&limites=9999999"'/
+'		new Ajax.Request(url, {     '/
+'          method:"get",  '/
+'		   onSuccess: function(transport){       '/
+'		   var response = transport.responseText;  '/
+'          if (parseInt(response) >= parseInt(numMaxPed)) {alert("ATENÇÃO! Pedido NÃO SATISFEITO.\nFoi atingido o número MÁXIMO DE PEDIDOS!");fechaCortina();return}'/            
+'          continuar(titulo,autor,nome,entidade,sigla,cota,nreg,ex, conf); fechaCortina();return},  '/
+'		   onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/
+       else
+
+'        continuar(titulo,autor,nome,entidade,sigla,cota,nreg,ex, conf);'/
+       fi
+'}'/		
+
+' function continuar(titulo,autor,nome,entidade,sigla,cota,nreg,ex, conf){'/		      
+'		var nut="'getenv('nut')'";'/
+'		var base="'(if v9000^n='base' then v9000^v fi)'";'/
+'	 	//var titulo="'getenv('titulo')'";'/
+'       titulo=titulo.replace(/&quot;/g,"");'/
+'	 	//var autor="'getenv('autor')'";'/
+'       autor=autor.replace(/&QUOT;/g,"");'/
+'       var resp=false;'/
+'       var chk ="'REF(['prmusr']L(['prmusr']'SIGLA 'getenv('user')),v700^a)'";'/
+'       if (chk=="0") {alert("Este utilizador NÃO TEM permissão para efetuar reservas. Contacte o administrador.");return;};'/
+'		if (nome.toUpperCase()==base.toUpperCase()) {alert("A origem do pedido não pode ser o destinatário do mesmo ("+nome.toUpperCase()+ "-" + base.toUpperCase()+")!");return; }'/
+'		if (nome=="guest" || nome=="") {alert("Operação não permitida a utilizadores anónimos!");return;}'/
+'      	//if (nome=="guest" || nome=="") { window.open ("../../admin/logleitor.asp","loglt","toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=no,menubar=no,width=370,height=170,left=50%,top=50%");return;}'/                                                                                  	
+'       //if (top.get_qty('getenv('pos')') == m) {alert("Não pode exceder o máx. de exemplares disponíveis!");return;}'/
+'       //top.add_item('getenv('pos')',1);top.insert_basket_contents("basket_status");'/
+'       window.parent.document.getElementById("exemplares").style.display="none";'/
+'       if (conf=="1"){'/
+'           resp=confirm("ATENÇÃO:O documento já tem uma reserva confirmada. Se prosseguir, o seu pedido de reserva\n será considerado se, PERÍODO MÁXIMO DE 'ref(['param']1,v20)' DIAS, houver disponibilidade do documento.");'/
+'           if (resp==true) nova_reserva(titulo,autor,entidade,nut,sigla,cota,nreg,ex,nome); else alert("Operação cancelada pelo utilizador!");'/     
+'       }else {'/
+'           nova_reserva(titulo,autor,entidade,nut,sigla,cota,nreg,ex,nome);'/  
+	'		if (isNaN(nut)==false)'/
+	'       {'/ 
+	'          var chk ="'REF(['sumres']L(['sumres']'SI 'getenv('nut')),mfn(1))'";'/
+	'          if (chk == "")'/
+	'          {'/
+	'   	   		url ="/opac/cgi/www.exe/[in=newtop.in]?ut="+nut+"&tipo=leitor";'/
+	'		   		new Ajax.Request(url, {     '/
+	'          		method:"get",  '/
+	'		   		onSuccess: function(transport){       '/
+	'		   		var response = transport.responseText;  '/
+	'          		if (response != "Sucesso" ) '/  
+	'            		alert("Erro ao guardar a reserva do leitor [Top leitores]");'/ 
+	'           	},     '/
+	'		   		onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/             
+	'          }'/
+	'          else {'/
+	'   	   		url ="/opac/cgi/www.exe/[in=updtop.in]?from="+chk;'/
+	'		   		new Ajax.Request(url, {     '/
+	'          	    method:"get",  '/
+	'		   		onSuccess: function(transport){       '/
+	'		   		var response = transport.responseText;  '/
+	'          		if (response != "Sucesso" ) '/  
+	'            		alert("Erro ao guardar a reserva do leitor [Top leitores]");'/ 
+	'           	},     '/
+	'		   	    onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }   }); '/             
+	'           }'/
+	'       }'/
+'       }'/
+'       fechaCortina();'/
+'}'/
+' function fechaCortina(){'/
+'       window.parent.parent.document.getElementById("cotas'(if v9000^n='mfn' then v9000^v fi)'").style.height="60px";'/
+'       window.parent.document.getElementById("exemplares").style.height="115px"; '/ 
+'       window.parent.document.getElementById("exemplares").style.display="none"; '/ 
+'}'/
+' function actres(ex,mfn,exres, conf)'/
+'{'/
+'		var nome="'getenv('user')'";'/
+'		var base="'(if v9000^n='base' then v9000^v fi)'";'/
+'	 	//var titulo="'getenv('titulo')'";'/
+'       var resp=false;'/
+'       var chk ="'REF(['prmusr']L(['prmusr']'SIGLA 'getenv('user')),v700^a)'";'/
+'       if (chk=="0") {alert("Este utilizador NÃO TEM permissão para efetuar reservas. Contacte o administrador.");return;};'/
+'		if (nome.toUpperCase()==base.toUpperCase()) {alert("A origem do pedido não pode ser o destinatário do mesmo ("+nome.toUpperCase()+ "-" + base.toUpperCase()+")!");return; }'/
+'		if (nome=="guest" || nome=="") {alert("Operação não permitida a utilizadores anónimos!");return;}'/	
+'      	//if (nome=="guest" || nome=="")  { window.open ("../../admin/logleitor.asp","loglt","toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=no,menubar=no,width=370,height=170,left=50%,top=50%");return;}'/ 
+'       //if (top.get_qty('getenv('pos')') == m) {alert("Não pode exceder o máx. de exemplares disponíveis!");return;}'/
+'       //top.add_item('getenv('pos')',1);top.insert_basket_contents("basket_status");'/
+'       if (ex == exres) {alert("ATENÇÃO! Já existe uma reserva do documento para este utilizador e não pode exceder o máx. de exemplares disponíveis!");return;}'/
+'       var total= ex+exres;'/ 
+'       if (conf=="1"){'/
+'           resp=confirm("ATENÇÃO:O documento já tem uma reserva confirmada. Se prosseguir, o seu pedido de reserva\n será considerado se, no PERÍODO MÁXIMO DE 'ref(['param']1,v20)' DIAS, houver disponibilidade do documento.");'/
+'           if (resp==true) act_reserva(total,nome,mfn,base); else alert("Operação cancelada pelo utilizador!");'/  
+'       }else {'/
+'           act_reserva(total,nome,mfn,base);'/
+'       }'/
+'       window.parent.parent.document.getElementById("cotas'(if v9000^n='mfn' then v9000^v fi)'").style.height="60px";'/
+'       window.parent.document.getElementById("exemplares").style.height="115px"; '/ 
+'       window.parent.document.getElementById("exemplares").style.display="none"; '/  
+'}'/
+' </script>'/
+' </head>'/
+'<body topmargin="0" leftmargin="0">'
+'<table class="showex" border="1"  cellspacing="0" width="100%" style="font:7pt Verdana">'
+'
+ <th width="30%">Cota</th>
+ <th width="25%">Nº Registo</th>
+ <th width="6%" title="Nº de exemplares">Ex.</th>
+ <th width="20%">Disponibilidade</th>
+ <th width="9%">Reservar</th>' 

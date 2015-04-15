@@ -1,0 +1,2 @@
+''
+putenv('op='(if v9000^n='op' then v9000^v fi))

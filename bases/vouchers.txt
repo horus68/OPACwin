@@ -1,0 +1,12 @@
+!ID 000001
+!v999!^aPCCRBE
+!ID 000002
+!v001!4
+!v010!4¦ BIENAL DE ESCULTURA [E] DESENHO
+!v020! 
+!v030!19159
+!v040!BMS
+!v045!Biblioteca Municipal de Sátão
+!v050!Rua Dr. Hiláro Almeida Pereira
+!v060!20100531 112732 1 150
+!v999!^a1^bBMS

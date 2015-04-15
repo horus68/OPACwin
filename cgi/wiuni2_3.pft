@@ -1,0 +1,380 @@
+
+,if p(V10)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">010 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> 'V10|<br>|'</td></tr>'/
+fi,
+if p(V11)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">011 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V11|<br>|'</td></tr>'/
+fi,
+if p(V21)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">021 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V21|<br>|'</td></tr>'/
+fi,
+
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">100 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">^a'
+replace(S(V931,C9,V932,C13,V933,C17,V934,C21,V935,C24,V936,C25,V937'pory0103    ',C38,V938),' ',' '),
+'<br></td></tr>'/
+
+if p(V101)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">101 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V101|<br>|'</td></tr>'/
+fi,
+if p(V102)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">102 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V102|<br>|'</td></tr>'/
+fi,
+(if p(V200)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">200 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V200|<br>|'</td></tr>'/
+fi),
+if p(V205)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">205 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V205|<br>|'</td></tr>'/
+fi,
+if p(V206)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">206 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V206|<br>|'</td></tr>'/
+fi,
+if p(V207)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">207 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V207|<br>|'</td></tr>'/
+fi,
+if p(V208)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">208 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V208|<br>|'</td></tr>'/
+fi,
+if p(V210)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">210 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V210|<br>|'</td></tr>'/
+fi,
+if p(V211)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">211 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V211|<br>|'</td></tr>'/
+fi,
+if p(V215)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">215 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V215|<br>|'</td></tr>'/
+fi,
+if p(V225)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">225 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V225|<br>|'</td></tr>'/
+fi,
+if p(V300)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">300 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V300|<br>|'</td></tr>'/
+fi,
+if p(V301)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">301 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V301|<br>|'</td></tr>'/
+fi,
+if p(V302)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">302 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V302|<br>|'</td></tr>'/
+fi,
+if p(V303)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">303 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V303|<br>|'</td></tr>'/
+fi,
+if p(V304)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">304 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V304|<br>|'</td></tr>'/
+fi,
+if p(V305)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">305 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V305|<br>|'</td></tr>'/
+fi,
+if p(V306)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">306 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V306|<br>|'</td></tr>'/
+fi,
+if p(V307)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">307 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V307|<br>|'</td></tr>'/
+fi,
+if p(V308)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">308 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V308|<br>|'</td></tr>'/
+fi,
+if p(V310)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">310 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V310|<br>|'</td></tr>'/
+fi,
+if p(V311)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">311 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V311|<br>|'</td></tr>'/
+fi,
+if p(V312)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">312 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V312|<br>|'</td></tr>'/
+fi,
+if p(V313)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">313 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V313|<br>|'</td></tr>'/
+fi,
+if p(V314)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">314 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V314|<br>|'</td></tr>'/
+fi,
+if p(V315)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">315 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V315|<br>|'</td></tr>'/
+fi,
+if p(V320)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">320 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V320|<br>|'</td></tr>'/
+fi,
+if p(V321)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">321 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V321|<br>|'</td></tr>'/
+fi,
+if p(V322)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">322 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V322|<br>|'</td></tr>'/
+fi,
+if p(V323)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">323 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V323|<br>|'</td></tr>'/
+fi,
+if p(V324)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">324 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V324|<br>|'</td></tr>'/
+fi,
+if p(V326)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">326 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V326|<br>|'</td></tr>'/
+fi,
+if p(V327)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">327 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V327|<br>|'</td></tr>'/
+fi,
+if p(V328)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">328 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V328|<br>|'</td></tr>'/
+fi,
+if p(V330)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">330 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V330|<br>|'</td></tr>'/
+fi,
+if p(V332)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">332 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V332|<br>|'</td></tr>'/
+fi,
+if p(V333)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">333 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V333|<br>|'</td></tr>'/
+fi,
+if p(V336)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">336 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V336|<br>|'</td></tr>'/
+fi,
+if p(V337)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">337 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V337|<br>|'</td></tr>'/
+fi,
+if p(V345)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">345 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V345|<br>|'</td></tr>'/
+fi,
+if p(V410)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">410 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V410|<br>|'</td></tr>'/
+fi,
+if p(V411)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">411 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V411|<br>|'</td></tr>'/
+fi,
+if p(V421)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">421 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V421|<br>|'</td></tr>'/
+fi,
+if p(V422)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">422 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V422|<br>|'</td></tr>'/
+fi,
+if p(V423)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">423 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V423|<br>|'</td></tr>'/
+fi,
+if p(V430)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">430 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V430|<br>|'</td></tr>'/
+fi,
+if p(V431)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">431 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V431|<br>|'</td></tr>'/
+fi,
+if p(V432)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">432 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V432|<br>|'</td></tr>'/
+fi,
+if p(V433)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">433 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V433|<br>|'</td></tr>'/
+fi,
+if p(V434)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">434 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V434|<br>|'</td></tr>'/
+fi,
+if p(V435)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">435 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V435|<br>|'</td></tr>'/
+fi,
+if p(V436)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">436 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V436|<br>|'</td></tr>'/
+fi,
+if p(V437)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">437 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V437|<br>|'</td></tr>'/
+fi,
+if p(V440)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">440 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V440|<br>|'</td></tr>'/
+fi,
+if p(V441)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">441 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V441|<br>|'</td></tr>'/
+fi,
+if p(V442)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">442 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V442|<br>|'</td></tr>'/
+fi,
+if p(V443)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">443 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V443|<br>|'</td></tr>'/
+fi,
+if p(V444)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">444 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V444|<br>|'</td></tr>'/
+fi,
+if p(V445)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">445 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V445|<br>|'</td></tr>'/
+fi,
+if p(V446)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">446 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V446|<br>|'</td></tr>'/
+fi,
+if p(V447)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">447 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V447|<br>|'</td></tr>'/
+fi,
+if p(V448)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">448 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V448|<br>|'</td></tr>'/
+fi,
+if p(V451)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">451 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V451|<br>|'</td></tr>'/
+fi,
+if p(V452)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">452 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V452|<br>|'</td></tr>'/
+fi,
+if p(V453)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">453 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V453|<br>|'</td></tr>'/
+fi,
+if p(V454)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">454 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V454|<br>|'</td></tr>'/
+fi,
+if p(V461)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">461 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V461|<br>|'</td></tr>'/
+fi,
+if p(V462)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">462 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V462|<br>|'</td></tr>'/
+fi,
+if p(V463)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">463 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V463|<br>|'</td></tr>'/
+fi,
+if p(V464)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">464 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V464|<br>|'</td></tr>'/
+fi,
+if p(V488)then
+
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">488 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V488|<br>|'</td></tr>'/
+fi,/
+
+

@@ -1,0 +1,11 @@
+******** Fusão das bases bibliográficas ******** 
+************************************************ 
+Início da rotina: 13:57:39,02 [20150408] 
+Ficheiro ISO EBSOL2 não encontrado 
+Ficheiro ISO EBLUA1 não encontrado 
+Ficheiro ISO EBLUA2 não encontrado 
+== FASE 1 : Inversão das bases bibliográficas == 
+== FASE 2 : Processamento dos duplicados      == 
+== FASE FINAL == 
+Fim da rotina: 13:57:42,65 [20150408] 
+Tempo de execução: 0h:0m:3s,630ms  

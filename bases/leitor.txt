@@ -1,0 +1,112 @@
+!ID 000001
+!v021!A
+!v010!1
+!v011!Beatriz Constância Pires Sousa
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!beazinha@gmail.com
+!v017!
+!v018!
+!v019!
+!v020!../../upload/fotos/leitores/34.jpg
+!v100!BMS
+!ID 000002
+!v010!2
+!v011!Carla Isabel Cunha Teixeira
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!estrelateixeira@gmail.com
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!BMS
+!ID 000003
+!v010!3
+!v011!Vera Cristina Sousa Pereira
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!cristinafofa@live.com.pt
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!BMAR
+!ID 000004
+!v010!4
+!v011!Susana Patrícia Costa
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!susanacosta20@gmail.com
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!ESNPV
+!ID 000005
+!v010!5
+!v011!Filipa Rodrigues Cruz
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!filipacruz@hotmail.com
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!AES
+!ID 000006
+!v010!6
+!v011!Paula Manuela Pinto
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!palmeira97@gmail.com
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!AEAR
+!ID 000007
+!v010!7
+!v011!Sara Gabriela Pinto Machado
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!AEFA
+!ID 000008
+!v010!8
+!v011!Carla Maria Costa
+!v012!
+!v013!
+!v014!
+!v015!
+!v016!
+!v017!
+!v018!
+!v019!
+!v020!
+!v021!A
+!v100!ESFRV

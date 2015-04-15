@@ -1,0 +1,14 @@
+'<div id="live-preview-display" class="lp-block" >'/
+'   <div style="padding-bottom:3px">'/
+ '<div style="float:right"><a  href="javascript:void(0)" onclick="delcomm('mfn(1)')"><img src="../../imagens/close_icon.gif" border="0"/></a></div>'/
+'<div>#'mfn(1)' ('v4*6.2'-'v4*4.2'-'v4.4')</div></div>'/
+'   <!--<div><span style="float:left"><fb:like></fb:like <fb:like layout="button_count"></fb:like></span></div>-->'/
+'   '/
+'	<div id="lp-avatar" style="height:50px">'/
+'     <script> var md5Email = hex_md5("'ref(['leitor']val(v1),v8)'");'/
+'     document.write ("<img src=\"http://www.gravatar.com/avatar.php?gravatar_id=" + md5Email + "&size=80&rating=G&default=http://localhost/opac/imagens/no_avatar.gif\" alt=\"" + $("#lp-name").val() + "\" />");'/
+'     </script>'/
+'	</div>'/
+'   <div id="lp-name">'if v2<>'' then ref(['leitor']val(v1),v2) fi ', disse:</div>'
+'	<div id="lp-comment" class="wordwrap">'v3'</div><br />'
+'</div>'

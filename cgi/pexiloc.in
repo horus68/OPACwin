@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+prolog=@pexiloc.hdr
+cgi=@pexiloc.cgi
+epilog=@pexiloc.ftr
+

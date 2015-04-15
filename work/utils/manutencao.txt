@@ -1,0 +1,493 @@
+
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    69      1    341   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    69      1    341   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    69      1    341   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    341   0      0      0      0      0      0
+========================================================================== 
+INICIO: - 20-01-2012 - 17:05:17,18 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+FIM: - 20-01-2012 - 17:05:19,95 
+========================================================================== 
+INICIO: - 20-01-2012 - 17:18:50,58 
+========================================================================== 
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      3    217   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     12    495   0      0      0      0      0      0
+*** mfn 3 tag=7/1 len=0 -> rejected length
+*** mfn 3 tag=18/1 len=0 -> rejected length
+*** mfn 3 tag=21/1 len=0 -> rejected length
+*** mfn 6 tag=7/1 len=0 -> rejected length
+*** mfn 6 tag=12/1 len=0 -> rejected length
+*** mfn 6 tag=18/1 len=0 -> rejected length
+*** mfn 7 tag=7/1 len=0 -> rejected length
+*** mfn 7 tag=10/1 len=0 -> rejected length
+*** mfn 7 tag=12/1 len=0 -> rejected length
+*** mfn 7 tag=18/1 len=0 -> rejected length
+*** mfn 8 tag=3/1     -> rejected char
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      9     11   0      0      0      0      0      0
+*** mfn 1 tag=100/1 len=0 -> rejected length
+*** mfn 1 tag=12/1 len=0 -> rejected length
+*** mfn 1 tag=13/1 len=0 -> rejected length
+*** mfn 1 tag=14/1 len=0 -> rejected length
+*** mfn 1 tag=15/1 len=0 -> rejected length
+*** mfn 1 tag=16/1 len=0 -> rejected length
+*** mfn 1 tag=17/1 len=0 -> rejected length
+*** mfn 1 tag=18/1 len=0 -> rejected length
+*** mfn 1 tag=3/1 len=0 -> rejected length
+*** mfn 1 tag=4/1 len=0 -> rejected length
+*** mfn 1 tag=5/1 len=0 -> rejected length
+*** mfn 1 tag=6/1 len=0 -> rejected length
+*** mfn 1 tag=7/1 len=0 -> rejected length
+*** mfn 1 tag=9/1 len=0 -> rejected length
+*** mfn 1 tag=10/1 len=0 -> rejected length
+*** mfn 2 tag=12/1 len=0 -> rejected length
+*** mfn 2 tag=13/1 len=0 -> rejected length
+*** mfn 2 tag=14/1 len=0 -> rejected length
+*** mfn 2 tag=15/1 len=0 -> rejected length
+*** mfn 2 tag=16/1 len=0 -> rejected length
+*** mfn 2 tag=17/1 len=0 -> rejected length
+*** mfn 2 tag=18/1 len=0 -> rejected length
+*** mfn 2 tag=19/1 len=0 -> rejected length
+*** mfn 2 tag=100/1 len=0 -> rejected length
+*** mfn 2 tag=3/1 len=0 -> rejected length
+*** mfn 2 tag=4/1 len=0 -> rejected length
+*** mfn 2 tag=6/1 len=0 -> rejected length
+*** mfn 2 tag=7/1 len=0 -> rejected length
+*** mfn 2 tag=8/1 len=0 -> rejected length
+*** mfn 2 tag=9/1 len=0 -> rejected length
+*** mfn 2 tag=10/1 len=0 -> rejected length
+*** mfn 2 tag=11/1 len=0 -> rejected length
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6     74    285   0      0      0      0      0      0
+*** mfn 1 tag=13/1 len=0 -> rejected length
+*** mfn 2 tag=13/1 len=0 -> rejected length
+*** mfn 2 tag=14/1 len=0 -> rejected length
+*** mfn 3 tag=13/1 len=0 -> rejected length
+*** mfn 3 tag=14/1 len=0 -> rejected length
+*** mfn 4 tag=13/1 len=0 -> rejected length
+*** mfn 4 tag=14/1 len=0 -> rejected length
+*** mfn 5 tag=13/1 len=0 -> rejected length
+*** mfn 5 tag=14/1 len=0 -> rejected length
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31     12    157   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3     20     17   0      0      0      0      0      0
+*** mfn 2 tag=90/1 len=0 -> rejected length
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+FIM: - 20-01-2012 - 17:18:53,30 
+========================================================================== 
+INICIO: - 20-01-2012 - 17:22:18,38 
+========================================================================== 
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+FIM: - 20-01-2012 - 17:22:20,83 
+========================================================================== 
+INICIO: - 20-01-2012 - 17:28:14,08 
+========================================================================== 
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+FIM: - 20-01-2012 - 17:28:16,68 
+========================================================================== 
+INICIO: - 20-01-2012 - 17:31:08,59 
+========================================================================== 
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+========================================================================== 
+FIM: - 20-01-2012 - 17:31:11,18 
+========================================================================== 
+INICIO: - 20-01-2012 - 17:34:56,87 
+========================================================================== 
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2     41   0      0      0      0      0      0
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      1    419   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    37     29    279   0      0      0      0      0      0
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    37      2    395   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    54     15    165   0      0      0      0      0      0
+*** mfn 47 tag=3/1 len=0 -> rejected length
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    54      1    443   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+   168     64    157   0      0      0      0      0      0
+*** mfn 124 tag=2/1 len=0 -> rejected length
+*** mfn 160 tag=2/1 len=0 -> rejected length
+*** mfn 161 tag=2/1 len=0 -> rejected length
+*** mfn 162 tag=2/1 len=0 -> rejected length
+*** mfn 163 tag=2/1 len=0 -> rejected length
+*** mfn 164 tag=2/1 len=0 -> rejected length
+*** mfn 165 tag=2/1 len=0 -> rejected length
+*** mfn 166 tag=2/1 len=0 -> rejected length
+*** mfn 167 tag=2/1 len=0 -> rejected length
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+   168      2    327   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    36     47    405   0      0      0      0      0      0
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    36      2    157   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8     22    317   0      0      0      0      0      0
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      1    359   0      0      0      0      0      0
+FIM: - 20-01-2012 - 17:35:00,13 
+========================================================================== 
+INICIO: - 20-01-2012 - 17:38:24,74 
+========================================================================== 
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      1    419   0      0      0      0      0      0
+*..\..\bases\cal
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      1    419   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+*..\..\bases\users
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    22     10    199   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+*..\..\bases\leitor
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    279   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+*..\..\bases\param
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    225   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    37      2    395   0      0      0      0      0      0
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    37      2    395   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    54      1    443   0      0      0      0      0      0
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    54      1    443   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+   168      2    327   0      0      0      0      0      0
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+   168      2    327   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    36      2    157   0      0      0      0      0      0
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    36      2    157   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      1    359   0      0      0      0      0      0
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      1    359   0      0      0      0      0      0
+FIM: - 20-01-2012 - 17:38:27,87 

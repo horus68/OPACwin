@@ -1,0 +1,18 @@
+,select s(MHU,V921,V922)
+  case 'AM':MHL,'<img src="/opac/imagens/livro.gif" alt="Monografia(Texto impresso)" title="Monografia(Texto impresso)" width="24" align="absbottom">',
+  case 'BM':MHL,'<img src="/opac/imagens/livro.gif" alt="Monografia (Texto Manuscrito)" title="Monografia (Texto Manuscrito)" width="24"  align="absbottom">',
+  case 'CM':MHL,'<img src="/opac/imagens/partitura.gif" alt="Partituras Musicais - Impressas" title="Partituras Musicais - Impressas"width="24" align="absbottom">',
+  case 'DM':MHL,'<img src="/opac/imagens/partitura.gif" alt="Partituras Musicais - Manuscritas" title="Partituras Musicais - Manuscritas" width="24" align="absbottom">',
+  case 'EM':MHL,'<img src="/opac/imagens/mapa.gif" alt="Material Cartográfico - Impresso" title="Material Cartográfico - Impresso" width="24" align="absbottom">',
+  case 'FM':MHL,'<img src="/opac/imagens/mapa.gif" alt="Material Cartográfico - Manuscrito" title="Material Cartográfico - Manuscrito" width="24" align="absbottom">',
+  case 'GM':MHL,'<img src="/opac/imagens/video.gif" alt="Material de Projeção e Vídeo" title="Material de Projeção e Vídeo" width="24"  align="bottom">',
+  case 'IM':MHL,'<img src="/opac/imagens/regson.gif" alt="Registos Sonoros não Musicais" title="Registos Sonoros não Musicais" width="24" align="absbottom">',
+  case 'JM':MHL,'<img src="/opac/imagens/regmusic.gif" alt="Registos Sonoros Musicais" title="Registos Sonoros Musicais" width="24" align="absbottom">',
+  case 'KM':MHL,'<img src="/opac/imagens/mapa.gif" alt="Material Gráfico a duas dimensões" title="Material Gráfico a duas dimensões" width="24" align="absbottom">',
+  case 'LM':MHL,'<img src="/opac/imagens/computer.gif" alt="Produtos de Computador" title="Produtos de Computador" width="24" align="absbottom">',
+  case 'MM':MHL,'<img src="/opac/imagens/multimedia.gif" alt="Multimédia" title="Multimédia" width="24" align="absbottom">',
+  case 'RM':MHL,'<img src="/opac/imagens/jogos.gif" alt="Artefactos 3D e realia" title="Artefactos 3D e realia" width="24" align="absbottom">',
+  case 'AA':MHL,'<img src="/opac/imagens/analitico.gif" alt="Analítico" width="24" title="Analítico" width="24" align="absbottom">',
+  case 'AS':MHL,'<img src="/opac/imagens/periodico.gif" alt="Publicação periódica" title="Publicação periódica" width="24" align="absbottom">',
+  elsecase MHL,'<img src="/opac/imagens/naodef.gif" alt="Tipo de documento: não definido" title="Tipo de documento: não definido" width="24" align="absbottom">'/
+endsel,MHL,

@@ -1,0 +1,69 @@
+   if val(v1001)=1 then
+
+'<form method="get"  ONSUBMIT="return ChkSelTrm(this)" action="/opac/cgi/www.exe/[in=pesqger.in]">'/
+'<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+' <input type="hidden" name="base" value="'v1051'">'/
+' <input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'/
+' <input type="hidden" name="expressao" value="'(if v9000^n='expressao' then v9000^v fi)'">'/
+' <input type="hidden" name="nomemnu" value="'(if v9000^n='nomemnu' then v9000^v fi)'">'/
+' <input type="hidden" name="limites" value="25">'/
+' <input type="hidden" name="express" value="">'/
+' <input type="hidden" name="sel_trm" value="">'/
+' <input type="hidden" name="id" value="'(if v9000^n='id' then v9000^v fi)'">'/
+' <input type="hidden" name="user" value="'(if v9000^n='user' then v9000^v fi)'">'/
+' <input type="hidden" name="nut" value="'(if v9000^n='nut' then v9000^v fi)'">'/
+'<br>'/
+'<div>'/
+'         <table cellpadding=0 cellspacing=1>'/
+'           <tr>'/
+'              <td width=230><div><p>'/
+'                 <select MULTIPLE SIZE="13" NAME="Lexico" size="2" style="width:220px">'/
+fi/
+
+if v1<>'' then '<option value="'V1'">'  v1'</option>'/
+
+else/
+' </select></td>'/
+' <td>'/
+' <p><strong>A lista contém  <em>'V1083'</em> termos pesquisáveis.</strong></p>'/
+' <p>Primeiro: <em>'v1031'</em><br>'/
+' Último: <em>'v1032'</em></p>'/
+' <strong>1.</strong>'/
+' Para selecionar mais do que um termo basta premir simultaneamente as'/
+' teclas CTLR + Tecla Esquerda do rato. Caso sejam selecionados vários termos é assumido'/
+' o operador OU (+). <br>'/
+' <strong>2.</strong>'/
+' Para pesquisar os termos selecionados prima a opção'/
+' "Pesquisar termos"'/
+' <p></p><p><input TYPE="submit" VALUE="Pesquisar termos" ONCLICK="SelTrmLista(this.form)" NAME="PesqTrm"></p>'/
+
+' </td>'/
+'          </tr>'/
+'        </table>'/
+
+' </div>'/
+'</form>'/
+fi/
+
+if a(v1) then
+' <a name="opcoes"></a>'/
+' <form method="get" action="/opac/cgi/www.exe/[in=pesqtrm.in]">'/
+'<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+' <input type="hidden" name="base" value="'v1051'">'/
+' <input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'/
+' <input type="hidden" name="formato0" value="'(if v9000^n='formato0' then v9000^v fi)'">'/
+' <input type="hidden" name="nomemnu" value="'(if v9000^n='nomemnu' then v9000^v fi)'">'/
+' <input type="hidden" name="expressao" value="'S(V1032)'">'/
+' <input type="hidden" name="limites" value="'V1083'"><div align="right">'/
+' <input type="hidden" name="iso2709" value="'(if v9000^n='iso2709' then v9000^v fi)'">'/
+' <input type="hidden" name="user" value="'v1041'">'/
+' <input type="hidden" name="nut" value="'(if v9000^n='nut' then v9000^v fi)'">'/
+' <input type="hidden" name="id" value="'(if v9000^n='id' then v9000^v fi)'">'/
+' <input type="hidden" name="sortfmt" value="'(if v9000^n='sortfmt' then v9000^v fi)'">'/
+' <input type="submit" value="Próximos 'f(val(v1083),0,0)' termos >>" name="PagSeg">'/
+' <input TYPE="button" VALUE="Página anterior" ONCLICK="window.history.back(-1)" NAME="PagAnt" >'/
+' <input TYPE="button" VALUE="Novos termos" ONCLICK="window.location.href = &quot;/opac/'(if v9000^n='nomemnu' then v9000^v fi)'&id='(if v9000^n='id' then v9000^v fi)'&quot;" NAME="MnuPrincipal">'/
+' </div>'/
+
+'</form>'/
+fi,

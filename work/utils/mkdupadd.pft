@@ -1,0 +1,15 @@
+lw(10000),
+/* Rotina para criar novos registos - ADD  */
+proc('D9000A9000~'replace(s(cat('..\database.lst')),s(/#),'~A9000~')'~')
+proc('D9001A9001~'(if V9000:'MASTER=' then mid(V9000,instr(V9000,'=')+1,size(V9000)) else '' fi)'~')
+
+(
+if v1<>'' then
+  if V1^s:'ADD' then 
+      `mx `V1^b` from=`f(val(V1^m),0,0)` "proc=@.\chk_dup_c966_alt.prc"  count=1 append=`V9001[1]^b` now -all`/
+  fi,
+fi,
+/)
+
+
+

@@ -1,0 +1,371 @@
+lw(10000)
+putenv('flag=0')
+,select val(getenv('campo'))
+
+case 200: ,select getenv('subc')
+      case 'a':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^a)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^a)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^a)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^a) and s(mhu,v200^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^a) and v200^a:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^a) and not s(mhu,v200^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^a) and not v200^a:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'b':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^b)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^b)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^b)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^b) and s(mhu,v200^b,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^b) and v200^b:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^b) and not s(mhu,v200^b,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^b) and not v200^b:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'c':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^c)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^c)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^c)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^c) and s(mhu,v200^c,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^c) and v200^c:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^c) and not s(mhu,v200^c,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^c) and not v200^c:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,			
+	  case 'd':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^d)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^d)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^d)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^d) and s(mhu,v200^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^d) and v200^d:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^d) and not s(mhu,v200^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^d) and not v200^d:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'e':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^e)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^e)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^e)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^e) and s(mhu,v200^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^e) and v200^e:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^e) and not s(mhu,v200^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^e) and not v200^e:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'f':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^f)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^f)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^f)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^f) and s(mhu,v200^f,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^f) and v200^f:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^f) and not s(mhu,v200^f,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^f) and not v200^f:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'g':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^g)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^g)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^g)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^g) and s(mhu,v200^g,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^g) and v200^g:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^g) and not s(mhu,v200^g,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^g) and not v200^g:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,
+	  case 'h':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^h)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^h)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^h)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^h) and s(mhu,v200^h,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^h) and v200^h:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^h) and not s(mhu,v200^h,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^h) and not v200^h:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,
+	  case 'i':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^i)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^i)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^i)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^i) and s(mhu,v200^i,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^i) and v200^i:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^i) and not s(mhu,v200^i,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^i) and not v200^i:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,
+	  case 'v':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^v)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^v)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^v)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^v) and s(mhu,v200^v,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^v) and v200^v:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^v) and not s(mhu,v200^v,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^v) and not v200^v:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,
+	  case 'z':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^z)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^z)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^z)> val(getenv('nocc')) then putenv('flag=1') fi,
+		   case 'in': if getenv('cs')='0' then,  if p(v200^z) and s(mhu,v200^z,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^z) and v200^z:getenv('nocc') then putenv('flag=1') fi fi,
+	  case 'notin': if getenv('cs')='0' then,if p(v200^z) and not s(mhu,v200^z,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^z) and not v200^z:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,	
+      case '5':
+          	,select getenv('oper')
+		  case '<': if nocc(v200^5)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200^5)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200^5)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200^5) and s(mhu,v200^5,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200^5) and v200^5:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200^5) and not s(mhu,v200^5,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200^5) and not v200^5:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,					
+	  case '':
+		,select getenv('oper')
+		  case '<': if nocc(v200)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v200)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v200)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v200) and s(mhu,v200,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v200) and v200:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v200) and not s(mhu,v200,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v200) and not v200:getenv('nocc') then putenv('flag=1') fi fi,
+			endsel,
+	  endsel,
+case 210: ,select getenv('subc')
+      case 'a':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^a)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^a)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^a)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^a) and s(mhu,v210^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^a) and v210^a:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^a) and not s(mhu,v210^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^a) and not v210^a:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'b':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^b)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^b)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^b)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^b) and s(mhu,v210^b,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^b) and v210^b:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^b) and not s(mhu,v210^b,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^b) and not v210^b:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'c':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^c)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^c)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^c)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^c) and s(mhu,v210^c,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^c) and v210^c:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^c) and not s(mhu,v210^c,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^c) and not v210^c:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'd':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^d)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^d)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^d)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^d) and s(mhu,v210^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^d) and v210^d:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^d) and not s(mhu,v210^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^d) and not v210^d:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'e':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^e)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^e)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^e)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^e) and s(mhu,v210^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^e) and v210^e:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^e) and not s(mhu,v210^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^e) and not v210^e:getenv('nocc') then putenv('flag=1') fi fi,
+                endsel,
+	  case 'f':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^f)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^f)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^f)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^f) and s(mhu,v210^f,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^f) and v210^f:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^f) and not s(mhu,v210^f,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^f) and not v210^f:getenv('nocc') then putenv('flag=1') fi fi,
+              endsel,
+	  case 'g':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^g)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^g)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^g)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if p(v210^g) and s(mhu,v210^g,mhl):getenv('nocc') then putenv('flag=1') fi,
+	      case 'notin': if p(v210^g) and not s(mhu,v210^g,mhl):getenv('nocc') then putenv('flag=1') fi,
+            endsel,
+	  case 'h':
+          	,select getenv('oper')
+		  case '<': if nocc(v210^h)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210^h)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210^h)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210^h) and s(mhu,v210^h,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210^h) and v210^h:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210^h) and not s(mhu,v210^h,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210^h) and not v210^h:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,			
+	  case '':	
+			,select getenv('oper')
+		  case '<': if nocc(v210)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v210)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v210)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v210) and s(mhu,v210,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v210) and v210:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v210) and not s(mhu,v210,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v210) and not v210:getenv('nocc') then putenv('flag=1') fi fi,
+			endsel,
+	  endsel,
+case 215: ,select getenv('subc')
+      case 'a':
+		,select getenv('oper')
+		  case '<': if nocc(v215^a)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v215^a)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v215^a)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v215^a) and s(mhu,v215^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v215^a) and v215^a:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v215^a) and not s(mhu,v215^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v215^a) and not v215^a:getenv('nocc') then putenv('flag=1') fi fi,
+		endsel,
+	 case 'c':
+		,select getenv('oper')
+		  case '<': if nocc(v215^c)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v215^c)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v215^c)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v215^c) and s(mhu,v215^c,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v215^c) and v215^c:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v215^c) and not s(mhu,v215^c,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v215^c) and not v215^c:getenv('nocc') then putenv('flag=1') fi fi,
+		endsel,
+	  case 'd':
+		,select getenv('oper')
+		  case '<': if nocc(v215^d)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v215^d)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v215^d)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v215^d) and s(mhu,v215^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v215^d) and v215^d:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v215^d) and not s(mhu,v215^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v215^d) and not v215^d:getenv('nocc') then putenv('flag=1') fi fi,
+		endsel,
+	  case 'e':
+		,select getenv('oper')
+		  case '<': if nocc(v215^e)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v215^e)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v215^e)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v215^e) and s(mhu,v215^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v215^e) and v215^e:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v215^e) and not s(mhu,v215^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v215^e) and not v215^e:getenv('nocc') then putenv('flag=1') fi fi,
+		endsel,	
+	  case '':
+		,select getenv('oper')
+		  case '<': if nocc(v215)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v215)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v215)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v215) and s(mhu,v215,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v215) and v215:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v215) and not s(mhu,v215,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v215) and not v215:getenv('nocc') then putenv('flag=1') fi fi,
+		endsel,
+	  endsel,
+case 225: ,select getenv('subc')
+      case 'a':
+		,select getenv('oper')
+		  case '<': if nocc(v225^a)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^a)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^a)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225^a) and s(mhu,v225^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225^a) and v225^a:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225^a) and not s(mhu,v225^a,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225^a) and not v225^a:getenv('nocc') then putenv('flag=1') fi fi,
+			endsel,
+	  case 'd':
+		,select getenv('oper')
+		  case '<': if nocc(v225^d)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^d)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^d)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225^d) and s(mhu,v225^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225^d) and v225^d:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225^d) and not s(mhu,v225^d,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225^d) and not v225^d:getenv('nocc') then putenv('flag=1') fi fi,
+			endsel,
+	  case 'e':
+		,select getenv('oper')
+		  case '<': if nocc(v225^e)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^e)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^e)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225^e) and s(mhu,v225^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225^e) and v225^e:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225^e) and not s(mhu,v225^e,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225^e) and not v225^e:getenv('nocc') then putenv('flag=1') fi fi,
+			endsel,
+	  case 'h':
+          	,select getenv('oper')
+		  case '<': if nocc(v225^h)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^h)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^h)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225^h) and s(mhu,v225^h,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225^h) and v225^h:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225^h) and not s(mhu,v225^h,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225^h) and not v225^h:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,
+	  case 'i':
+          	,select getenv('oper')
+		  case '<': if nocc(v225^i)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^i)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^i)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if p(v225^i) and v225^i:getenv('nocc') then putenv('flag=1') fi,
+	      case 'notin': if p(v225^i) and not v225^i:getenv('nocc') then putenv('flag=1') fi,
+            endsel,
+	  case 'v':
+          	,select getenv('oper')
+		  case '<': if nocc(v225^v)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^v)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^v)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225^v) and s(mhu,v225^v,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225^v) and v225^v:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225^v) and not s(mhu,v225^v,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225^v) and not v225^v:getenv('nocc') then putenv('flag=1') fi fi,
+		    endsel,
+	 case 'x':
+          	,select getenv('oper')
+		  case '<': if nocc(v225^x)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225^x)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225^x)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225^x) and s(mhu,v225^x,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225^x) and v225^x:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225^x) and not s(mhu,v225^x,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225^x) and not v225^x:getenv('nocc') then putenv('flag=1') fi fi,
+            endsel,
+	  case '':
+		,select getenv('oper')
+		  case '<': if nocc(v225)< val(getenv('nocc')) then putenv('flag=1') fi,
+		  case '=': if nocc(v225)= val(getenv('nocc')) then putenv('flag=1') fi,
+	 	  case '>': if nocc(v225)> val(getenv('nocc')) then putenv('flag=1') fi,
+		  case 'in': if getenv('cs')='0' then,  if p(v225) and s(mhu,v225,mhl):getenv('nocc') then putenv('flag=1') fi,
+	             else  if p(v225) and v225:getenv('nocc') then putenv('flag=1') fi fi,
+	      case 'notin': if getenv('cs')='0' then,if p(v225) and not s(mhu,v225,mhl):getenv('nocc') then putenv('flag=1') fi,
+	                else if p(v225) and not v225:getenv('nocc') then putenv('flag=1') fi fi,
+			endsel,
+	  endsel,
+
+endsel,
+if val(getenv('flag'))=1 then 
+     '<td><a href="#" onclick="javascript:VRegisto(&quot;'mfn(7)'&quot;,&quot;'getenv('base')'&quot;);">'mfn'</a></td>'/
+     if val(getenv('ir'))=12 then
+          putenv('ir=0')
+          '</tr><tr>'/
+     else  
+          putenv('ir='f(val(getenv('ir'))+1,0,0))
+     fi
+     putenv('nr='f(val(getenv('nr'))+1,0,0))
+fi
+

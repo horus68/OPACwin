@@ -1,0 +1,39 @@
+'<html>'/
+'<title>Exportação de registos  - ISO 2709</title>'/
+'<body >'/
+
+'<script>'/
+'function ChkHref()'/
+'{'/
+'  fich="'(if v9000^n='expfile' then v9000^v fi)'";'/
+'  fpath="'(if v9000^n='isofilepath' then v9000^v fi)'"+fich;'/
+'  loc=document.location.protocol+"//"+document.location.hostname+fpath;'/
+'  outp="Para fazer <em>download</em> do ficheiro&nbsp;&quot;"+fich+"&quot;&nbsp; clique <a href=\""+fpath+"\" target=\"TEMP\"  >aqui</a>";'/
+'  return(outp);'/
+'}'/
+
+'function UrlHref()'/
+'{'/
+'  fich="'(if v9000^n='expfile' then v9000^v fi)'";'/
+'  fpath="'(if v9000^n='isofilepath' then v9000^v fi)'"+fich;'/
+'  loc=document.location.protocol+"//"+document.location.hostname+fpath;'/
+
+'  return(loc);'/
+'}'/
+
+'</script>'/
+
+'<table border="0" width="100%" cellspacing="0" cellpadding="0">'/
+'  <tr>'/
+'    <td align="center" style="font-family:Arial;font-size:11pt">Os registos da página atual vão ser exportados no formato ISO 2709</td>'/
+'  </tr>'/
+'</table>'/
+'<br>'/
+'<table border="0" width="100%" cellspacing="0" cellpadding="0">'/
+'  <tr>'/
+'    <td align="center" style="font-family:Arial;font-size:11pt"><script>document.write(ChkHref());</script></td>'/
+'  </tr>'/
+'</table>'/
+
+'</body>'/
+'</html>'/

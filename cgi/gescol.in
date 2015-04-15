@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@gescol.hdr
+cgi=@gescol.cgi
+epilog=@gescol.ftr

@@ -1,0 +1,177 @@
+'<table  width="100%" cellpadding="2" style="margin-top:9px">'/
+'  <tr>'/        
+'    <td id="cheader1"  valign="top">'
+,@wnovo.pft,
+
+     '<span class="linkunimarc"><a href="javascript:popunimarc(&quot;'(if v9000^n='base' then v9000^v fi)'&quot;,&quot;'(if v9000^n='expressao' then v9000^v fi)'&quot;,&quot;wiunimarc&quot;,&quot;'mfn(7)'&quot;,&quot;validar&quot;);" title="Ver registo no formato UNIMARC">'V1001'</a></span>- '
+
+'</td>'/
+'<td width="400">',@witdoc.pft,'</td>'/
+
+'    <td id="cheader2">' if v1051='opac' then '<span style="float:right">Nº de exemplares: <span id="total'mfn(1)'"></span></span>' fi 
+'  </td>'/
+' </tr>'/
+' <tr><td colspan="3" height="1"  valign="top"> <hr size="1"></td></tr>'/
+' <tr>'/
+' <td id="cencaixe" colspan="2"  valign="top">'/
+
+'<table  width="100%">'/
+'<tr>'/
+'    <td width="200" valign="top"><strong>Título</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+     MHL,'<b>'(mhl,| ; |+v200^a,'</b>'| [|v200^b|]|,|. |v200^c,| : |v200^e,| |v200^d,|. |v200^i,|, |v200^h,|, |V200^v/)
+'    </td>'/
+'  </tr>'/
+
+IF P(V200^f) THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>Autor(es)</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+MHL,(| ; |+v200^f,| ; |v200^g)/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V205) THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>Edição</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+     MHL,(|, |+v205^a,|, |v205^b,| |v205^d,| / |v205^f,| ; |v205^g)/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V210) THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>Publicação</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+     MHL,(| ; |+v210^a,|, |v210^b,| : |v210^c,|, |V210^d,| (|v210^e,| |v210^f,| : |v210^g,|, |v210^h)
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V225) THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>Coleção</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+     MHL,"( "D225,(''MHL,| (|+V225^a,''| = |v225^d,| : |v225^e,| / |V225^f,|; |V225^g,| |v225^h,| |V225^i,|, |V225^x,| ; |V225^v/),')'/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V10) THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>ISBN</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+     MHL,IF A(V10^a) THEN V10^b,| : |V10^d,|. |V10^z ELSE (V10^a,| (|V10^b|)|,| : |V10^d,|. |V10^z) FI
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF P(V11) THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>ISSN</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+     MHL,(|. |+V11^a,| |V11^b,| : |V11^d,|. |V11^z)/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF S(V300,V301,V302,V303,V304,V305,V306,V307,V308,V310,V311,V312,V313,V314,
+V315,V320,V321,V322,V323,V324,V325,V326,V327,V328,V330,V332,V333,V336,V337,
+V345,V421,V422,V423,V430,V431,V434,V435,V436,V440,V441,V444,V445,V446,V457,
+V448,V451,V452,V453,V454,V461,V463,V488)<>'' THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>Notas</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+MHL,S(
+(|. - |v300^a),(|. - |v301^a)(|. - |v302^a)(|. - |v303^a)(|. - |v304^a)(|. - |v305^a)(|. - |v306^a)(|. - |v307^a)(|. - |v308^a)(|. - |v310^a)(|. - |v311^a)(|. - |v312^a)(|. -|v313^a)(|. - |v314^a)(|. - |v315^a)(|. - |v320^a)(|. - |v321^a,|, |v321^b,| |v321^x)(|. - |v322^a)(|. - |v323^a)(|. - |v324^a)(|. - |v326^a,| |v326^b)(|. - |v327^a)(|. - |v328^a)(|. - |v330^a)(|. - |v332^a)(|. - |v333^a)(|. - |v336^a)(|. - |v337^a)(|. - |v345^a,| |v345^b,| |v345^c,| |v345^d)
+(". - Suplemento: "|. - |+V421^a+|. - |,| / |V421^f)(". - Suplemento de: "|.- |+V422^a,| / |V422^f)(". - Publicado com: "|. - |+V423^a,| / |V423^f)(". - Continua: "|. - |+V430^a,| / |V430^f)(". - Continua em parte: "|. - |+V431^a,| / |V431^f)(". - Absorve: "|. - |+V434^a,| / |V424^f)(". - Absorve em parte: "|. - |+V435^a,| / |V435^f)(". - Fusão de: "|. - |+V436^a,| / |V436^f)(". - Continuado por: "|. - |+V440^a,| / |V440^f)
+(". - Continuado em parte por: "|. - |+V441^a,| / |V441^f)(". - Absorvido por: "|. - |+V444^a,| / |V444^f)(". - Absorvido em parte por: "|. - |+V445^a,| / |V445^f)(". - Cindido em: "|. - |+V446^a,| / |V446^f)(". - Fundido com: "|. - |+V447^a,| / |V447^f)(". - Mudou de novo para: "|. - |+V448^a,| / |V448^f)(". - Outra ed. no mesmo suporte: "|. - |+V451^a,| / |V451^f)(". - Ed. em suporte diferente: "|. - |+V452^a,| / |V452^f)(". - Trad. como: "|. - |+V453^a,| / |V453^f)
+(". - Trad. de: "|. - |+V454^a,| / |V454^f)IF S(v921,v922):'aa' AND s(v461,v463)<>'' THEN '<br>In: ',v461^t,|, |v461^h,|. - |v461^c,| : |v461^b,|, |v461^d,|, |v461^p,v463^a,| : |v463^e,| / |v463^f,|. - |v463^v FI (". - Outras obras relacionadas: "|. - |+V488^a,| / |V488^f)
+)*4/
+'    </td>'/
+'  </tr>'/
+FI/
+
+IF S(V600V601V602V604V605V606V607V610)<>'' THEN
+'  <tr>'/
+'    <td width="200" valign="top"><strong>Assunto(s)</strong></td>'/
+'    <td id="cregisto" valign="top">'/
+
+if p(v600) then (''| / |+V600^a,| |V600^b,| |V600^d,| |V600^c,| |V600^f,|--|V600^x,|--|V600^y,|--|V600^z,''/) FI/
+IF P(V600)THEN" / "D601 FI,if p(v601) then (''V601^a,| |V601^b,| |V601^c,| |V601^d,| |V601^e,| |V601^f,IF S(V601^A)<>'' AND S(V601^X)<>'' THEN '--' FI,V601^x,|--|V601^y,|--|V601^z''/) FI/
+IF S(V600V601)<>''THEN" / "D602FI(| / |+V602^a,| |V602^f,|--|V602^x,|--|V602^y,|--|V602^z)
+IF S(V600V601V602)<>''THEN" / "D604FI(| / |+V604^a| |V604^b,| |V604^c,| |V604^d,| |V604^e,| |V604^f,| |V604^i,| |V604^k,| |V604^l,| |V604^n,| |V604^r,| |V604^t,| |V604^v,|--|V604^x,|--|V604^y|--|V604^z)
+IF S(V600V601V602V604)<>'' THEN" / "D605FI(| / |+V605^a,|. |V605^h,| |V605^i,|, |V605^k,| |V605^l,| |V605^m,| |V605^n,| |V605^q,|--|V605^x,|--|V605^y,|--|V605^z)
+IF S(V600V601V602V604V605)<>''THEN" / "D606FI,if p(v606) then (''| / |+V606^a,IF V606^x:'['THEN |--|V606^y,|--|V606^z,|--|V606^x ELSE |--|V606^x,|--|V606^y,|--|V606^z fi,''/) FI/
+IF S(V600V601V602V604V605V606)<>''THEN" / "D607FI,if p(v607) then ('',| / |+V607^a,|--|V607^x,|--|V607^y,|--|V607^z,''/) FI/
+IF S(V600V601V602V604V605V606V607)<>''THEN" / "D610FI,if p(v610) then ('',| / |+V610^a''/) FI/
+
+,
+
+'    </td>'/
+'  </tr>'/
+FI/
+,IF S(V675,V700,V701,V702,V710,V711,V712,V856)<>'' THEN
+'  <tr>'/
+
+'    <td width="20%"  valign="top" align="left"><strong><i>Veja também...</i></strong></td>'/
+'    <td width="65%" valign="top" align="left">'/
+
+     if p(v675) then ('CDU 'V675^a'<br>'/) FI/
+     if p(v700) then (''V700^a,| |V700^b| |,V700^c,| |V700^f'<br>'/) FI/
+     if p(v701) then (''V701^a,| |V701^b| |,V701^c,| |V701^f'<br>'/) FI/
+     if p(v702) then (''V702^a,| |V702^b| |,V702^c,| |V702^f'<br>'/) FI/
+     if p(v710) then (''V710^a,| |V710^b,| |V710^c,| |V710^d,| |V710^e,| |V710^f'<br>'/) FI/
+     if p(v711) then (''V711^a,| |V711^b,| |V711^c,| |V711^d,| |V711^e,| |V711^f'<br>'/) FI/
+     if p(v712) then (''V712^a,| |V712^b,| |V712^c,| |V712^d,| |V712^e,| |V712^f'<br>'/) FI/
+     if p(v856) then mpl,(|<img src="/opac/imagens/ponto_c13.gif"> |V856^z|<br>|/) mhl,FI
+
+'    </td>'/
+'  </tr>'/
+,FI,
+'</table>'/
+'</td>'/
+'<td width="15%" align="left"  height="0" valign="top">'/
+'</td>'/
+
+'</tr></table>'/
+'<table  width="99%" cellpadding=0 cellspacing=0>'/
+
+,if S(V930,V966)<>'' THEN
+'  <tr>'/
+'    <td width="170" valign="top">'/
+if v1051 <> 'opac' then
+    '   <b>  Cota</b></td>'/
+else    
+     '<b>  Cotas da Rede</b></td>'/
+fi
+'    <td  width="81%" valign="top" style="padding-left:3px;background-color:#f2f2f2;">'/
+ 
+if  v1051 <> 'opac' then
+     
+    ,@dspcota_X.pft,
+else
+   ,@dspcota.pft,
+fi
+'    </td>'/
+'  </tr>'/
+,FI,
+
+'  <tr>'/
+'    <td  width="170"valign="top" align="left"></td>'/
+'    <td width="81%" valign="top" align="left" >'/
+'    <iframe name="' s(getenv('nome'),f(mfn,1,0)) '" id="' s(getenv('nome'),f(mfn,1,0)) '" frameborder="no" scrolling="no" width="100%" height="60" style="display:none"></iframe></td>'/
+'  </tr>'/
+if val(V1002)>1 then
+'  <tr>'/
+'    <td width="200" valign="top"></td>'/
+'    <td id="cregisto" valign="top">'/
+'    <div align="right">'/
+,@navereg.pft,
+'    </div></td>'/
+'  </tr>'/
+FI,
+
+'</table>'/

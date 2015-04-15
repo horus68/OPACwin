@@ -1,0 +1,14 @@
+users.*=%ROOT%\bases\users.*
+reservas.*=%ROOT%\bases\reservas.*
+prmusr.*=%ROOT%\bases\prmusr.*
+leitor.*=%ROOT%\bases\leitor.*
+niplt.*=%ROOT%\bases\niplt.*
+vouchers.*=%ROOT%\bases\vouchers.*
+param.*=%ROOT%\bases\param.*
+sumres.*=%ROOT%\bases\sumres.*
+codf.*=%ROOT%\cgi\codf.*
+cal.*=%ROOT%\bases\cal.*
+_cnf.*=%ROOT%\bases\_cnf.*
+tags.*=%ROOT%\bases\tags.*
+votos.*=%ROOT%\bases\votos.*
+comments.*=%ROOT%\bases\comments.*

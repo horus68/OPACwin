@@ -1,0 +1,19 @@
+
+,IF S(V675,V700,V701,V702,V710,V711,V712,V856)<>'' THEN
+'  <tr>'/
+
+'    <td width="20%"  valign="top" align="left"><strong><i>Veja também...</i></strong></td>'/
+'    <td width="65%" valign="top" align="left">'/
+
+     if p(v675) then ('CDU <a href="javascript:window.location.href=ChkLinkHref(2,&quot;wiusr&quot;,&quot;CDU ',MHU,V675^a,MHL,'&quot;)">'V675^a'</a><br>'/) FI/
+     if p(v700) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AU ',MHU,V700^a,| |V700^b,| |V700^c,| |V700^f,MHL,'&quot;)">'V700^a,| |V700^b| |,V700^c,| |V700^f'</a><br>'/) FI/
+     if p(v701) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AU ',MHU,V701^a,| |V701^b,| |V701^c,| |V701^f,MHL,'&quot;)">'V701^a,| |V701^b| |,V701^c,| |V701^f'</a><br>'/) FI/
+     if p(v702) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AU ',MHU,V702^a,| |V702^b,| |V702^c,| |V702^f,MHL,'&quot;)">'V702^a,| |V702^b| |,V702^c,| |V702^f'</a><br>'/) FI/
+     if p(v710) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AU ',MHU,V710^a,| |V710^b,| |V710^c,| |V710^d,| |V710^e,| |V710^f,MHL,'&quot;)">'V710^a,| |V710^b,| |V710^c,| |V710^d,| |V710^e,| |V710^f'</a><br>'/) FI/
+     if p(v711) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AU ',MHU,V711^a,| |V711^b,| |V711^c,| |V711^d,| |V711^e,| |V711^f,MHL,'&quot;)">'V711^a,| |V711^b,| |V711^c,| |V711^d,| |V711^e,| |V711^f'</a><br>'/) FI/
+     if p(v712) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;AU ',MHU,V712^a,| |V712^b,| |V712^c,| |V712^d,| |V712^e,| |V712^f,MHL,'&quot;)">'V712^a,| |V712^b,| |V712^c,| |V712^d,| |V712^e,| |V712^f'</a><br>'/) FI/
+     if p(v856) then mpl,(|<img src="/opac/imagens/ponto_c13.gif"> <a href="|V856^u|" target="_blank">|V856^z|</a><br>|/) mhl,FI
+
+'    </td>'/
+'  </tr>'/
+,FI,

@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@getrates.hdr
+cgi=@getrates.cgi
+epilog=@rates.ftr
+
+

@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pesqres.hdr
+cgi=@pesqres.cgi
+epilog=@pesqres.ftr

@@ -1,0 +1,4 @@
+
+,IF (V931.6=s(date).6) then 
+'<img src="/opac/imagens/novo.gif" border="0" align="absmiddle" alt="Na base desde: 's(date).4,'/',s(date)*6.2,'/',s(date)*4.2,'">'
+FI,

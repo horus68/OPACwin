@@ -1,0 +1,2 @@
+''
+putenv('oper='(if v9000^n='flag' then v9000^v fi))

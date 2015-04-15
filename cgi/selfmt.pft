@@ -1,0 +1,10 @@
+'<font face="Verdana" size="1">Formato 
+<select SIZE="1" NAME="formato" style="font-size=9">/
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'wiusr' then 'selected' fi' value="wiusr">Completo</option>
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'wiabr' then 'selected' fi' value="wiabr">Abreviado</option>
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'winp405' then 'selected' fi' value="winp405">Norma NP405</option>
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'wicmp' then 'selected' fi' value="wicmp">ISBD</option>
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'witit' then 'selected' fi' value="witit">Títulos</option>
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'wiuni' then 'selected' fi' value="wiuni">Unimarc</option>
+    <option ' if S((if v9000^n='formato' then v9000^v fi)):'wibol' then 'selected' fi' value="wibol">Boletim</option>
+</select></small></font>'/

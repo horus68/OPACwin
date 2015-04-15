@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pesqcomm.hdr
+cgi=@pesqcomm.cgi
+epilog=@pesqcomm.ftr
+
+

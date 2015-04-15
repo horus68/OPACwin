@@ -1,0 +1,14 @@
+		
+		'<form name="frmsetpar" id="frmsetpar" action="../../cgi/www.exe/[in=updpar.in]" method="post" >  '/
+		'<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'/
+		'<input type="hidden" id="mnu" name="mnu" value="5">'/
+		'<fieldset class="states"><br>'/
+		'<h4 style="margin-left:50px">Definições de reserva</h4>'/
+		'<p>'/
+		'<label for "v10" >Nº Máx. de pedidos:  <input  type="text" name="v10" id="v10" size="6" value="'v10'"></label>'/
+		'<label for "v20" >Nº Máx. de dias:  <input  type="text" name="v20" id="v20" size="6" value="'v20'"></label>'/
+		'</p>'/
+		'<br><br><br>'/
+		'<div align="center"><input type="submit" value="Atualizar" onclick="return validadados();"></div><br>'/
+		'</fieldset>'/
+		'</form>'/

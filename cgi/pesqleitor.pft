@@ -1,0 +1,16 @@
+if val(v1001)=val(v1031)  then
+		'<span style="float:left;"><input type="text" size="30" style="margin-left:2px" name="criterio" id="criterio" onkeydown="return onEnter(event,this.form);"> </span>'/
+		'<span id="bibs" style="float:left;margin-top:1px; margin-left:2px"></span><span style="float:left">  <img src="../../imagens/lupa.png" border="0" name="lupa" id="lupa" style="cursor:pointer" align="absbottom" onclick="javascript:procurar()"></span>'/
+		 '<span style="float:left;font-size:0.8em;margin-top:3px;margin-left:4px">(pesquisa pelo nº de leitor ou por nome)</span>'/
+		'<span style="float:right">Leitores: 'v1002'</span><br>'/
+        '<table id="users" class="sortable" summary="Editar utilizadores [Leitores]" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);"
+  onMouseOut="javascript:highlightTableRow(0);">'/
+        '<th style="display:none"></th><th 'if getenv('user') <>'ADMIN' then 'style="display:none"' fi'>Biblioteca</th><th>Nº</th><th align="left"> Nome</th><th align="left"> Morada</th>'/
+fi        
+     (
+		if p(v1) then
+ 			    
+        '<tr ><td style="display:none">'mfn(1)'</td><td align="left" 'if getenv('user') <>'ADMIN' then 'style="display:none"' fi'>'v20'</td><td align="left">'v1'</td><td align="left"> 'v2'</td><td align="left"> 'v4'</td></tr>'/      
+ 		
+        fi 
+    )

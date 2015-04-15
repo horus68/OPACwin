@@ -1,0 +1,3 @@
+(
+    '<tr><td 'if getenv('user')<>'ADMIN' then 'style="display:none"' fi'>'if p(v20) then, v20| |, else '  ---  ', fi'</td><td>'if p(v1) then, v1| |, else '  ---  ', fi'</td><td>'if p(v2) then, v2| |, else '  ---  ', fi'</td><td>'if p(v4) then, v4| |, else '  ---  ', fi'</td><td>'if p(v6) then, v6| |, else '  ---  ', fi'</td><td style="white-space:nowrap">'if p(v3) then, v3.4'-'v3*4.2'-'v3*6.2| |, else '  ---  ', fi'</td></tr>'/
+)

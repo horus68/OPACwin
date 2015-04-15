@@ -1,0 +1,58 @@
+'<div align="left">'
+'<table border="0" cellspacing="0" width="200" cellpadding="0" height="22">'
+'    <tr>'
+'      <td width="30" valign="top" align="left">'
+
+/* Nova Pesquisa */
+'<a href="javascript:window.location.href=&quot;/opac/'getenv('mnuori'),if instr(getenv('mnuori'),'?') >0 then '&' else '?' fi 'id='(if v9000^n='id' then v9000^v fi)'&quot;"><img src="/opac/imagens/png/24x24/search.png" border="0"  title="Iniciar uma nova pesquisa"></a> '/
+'      </td>'
+'      <td width="30" valign="top">'
+
+/* Histórico */
+
+'<a href="#" onclick="javascript:ver_his()"><img border="0"  src="/opac/imagens/png/24x24/clock.png" alt="Histórico de pesquisas" title="Histórico de pesquisas" ></a>'/
+'      </td>'
+'      <td width="30" valign="top">'
+
+/* Página anterior*/
+'<a href="javascript:window.history.back(-1)"> <img src="/opac/imagens/png/24x24/Arrow2 Left.png" border="0"  title="Página anterior..."></a> '/
+'      </td>'
+'      <td width="30" valign="top">'
+
+/* Proximos registos */
+if val(v1083)+val(v1031)<=val(v1002)
+   then
+    '<a href="/opac/cgi/www.exe/[in=pesqger.in]?base='v1051'&exectype=2&expressao='V1021'&formato='(if v9000^n='formato' then v9000^v fi)'&TDOC='(if v9000^n='TDOC' then v9000^v fi)'&nomemnu='(if v9000^n='nomemnu' then v9000^v fi)'&lim_inicio='f(val(v1031)+val(v1083),0,0),'&','limites='f(val(v1032)+val(v1083),0,0),'&','iso2709='(if v9000^n='iso2709' then v9000^v fi),'&','entidade='(if v9000^n='entidade' then v9000^v fi),'&','user='(if v9000^n='user' then v9000^v fi),'&','nut='(if v9000^n='nut' then v9000^v fi),'&','vt='(if v9000^n='vt' then v9000^v fi),'&','el='(if v9000^n='el' then v9000^v fi),'&','ut='(if v9000^n='ut' then v9000^v fi),'&','id='(if v9000^n='id' then v9000^v fi)'">'
+    '<img src="/opac/imagens/png/24x24/Arrow2 Right.png" border="0" title="'if val(v1002)-val(v1083)<val(v1031)+val(v1083)-1 then 'Últimos 'f(val(v1002)-val(v1083)-val(v1031)+1,0,0) else 'Próximos 'f(val(v1083),0,0) fi' registos">'
+    '</a>' 
+fi,
+
+'      </td>'
+'      <td width="30" valign="top">'
+/* Exportação */
+
+   ,  IF (val(V1001)=val(V1031)) or (V1001='1') then ,@export.pft, fi,
+
+ 
+
+'     </td>'
+/* Enviar por Mail */
+' <td width="30" valign="top" align="left">'
+    '<img src="/opac/imagens/png/24x24/mail.png" title="Enviar registos por Email" border="0" style="cursor:pointer"
+
+     onclick="javascript:MailIt(&quot;'V1051'&quot;,
+                                &quot;mailit&quot;,
+                                &quot;'V1021'&quot;,
+                                &quot;'V1001'&quot;,
+                                &quot;'f(val(v1032)+val(v1083),0,0)'&quot;
+                               );">'
+
+'</td>'
+/* Imprimir */
+'      <td width="30" valign="top" align="left">'
+'      <img src="/opac/imagens/png/24x24/printer.png" border="0"  title="Imprimir os registos desta página" style="cursor:pointer"'
+'''''''''''''''''      onclick="javascript:Imprimir(&quot;'V1051'&quot;,&quot;'(if v9000^n='formato' then v9000^v fi)'&quot;,&quot;'V1021'&quot;,&quot;'V1001'&quot;,&quot;'f(val(v1032)+val(v1083),0,0)'&quot;,&quot;'(if v9000^n='entidade' then v9000^v fi)'&quot;)">'
+'      </td>'
+'    </tr>'
+'  </table>'
+'</div>'

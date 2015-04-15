@@ -1,0 +1,228 @@
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    329   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31      5    411   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31     10    243   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    37      2    395   0      0      0      0      0      0
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    54      1    443   0      0      0      0      0      0
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+   168      2    327   0      0      0      0      0      0
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    36      2    157   0      0      0      0      0      0
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      1    359   0      0      0      0      0      0
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2    151   0      0      0      0      0      0
+FIM: - 20-01-2012 - 18:02:23,05 
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31     10    243   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31     10    243   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2    151   0      0      0      0      0      0
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2    151   0      0      0      0      0      0
+FIM: - 20-01-2012 - 18:03:46,80 
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6      1    361   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31     10    243   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    31     10    243   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2    151   0      0      0      0      0      0
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8      2    151   0      0      0      0      0      0
+FIM: - 20-01-2012 - 18:05:19,98 
+========================================================================== 
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      4    113   0      0      0      0      0      0
+*..\..\bases\reservas
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     6     73    317   0      0      0      0      0      0
+*..\..\bases\niplt
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     3      1    201   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    38     15     83   0      0      0      0      0      0
+*..\..\bases\prmusr
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    38     15     83   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    37     29    279   0      0      0      0      0      0
+*..\..\bases\vouchers
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     5      2    291   0      0      0      0      0      0
+*..\..\bases\comments
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+    39     16     59   0      0      0      0      0      0
+*..\..\bases\tags
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     7      2    397   0      0      0      0      0      0
+*..\..\bases\votos
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     1      1     65   0      0      0      0      0      0
+========================================================================== 
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8     23      1   0      0      0      0      0      0
+*..\..\bases\sumres
+ nxtmfn nxtmfb nxtmfp  t  reccnt mfcxx1 mfcxx2 mfcxx3    RC
+     8     23     39   0      0      0      0      0      0
+FIM: - 20-03-2012 - 18:14:36,68 

@@ -1,0 +1,36 @@
+' <a name="'s('tab',mfn,f(iocc,1,0))'"></a>'/
+'  <table  cellspacing=0 width="100%" >'/
+'   <tr> '/ 
+  putenv('n=0') 
+  putenv('baseref='v1051'')
+(if v966<>'' then
+       putenv('n='f(val(getenv('n'))+val(v966^c),0,0)) 
+	   '<script>'/
+	   'document.getElementById("total'mfn(1)'").innerHTML="'getenv('n')'";'/
+	   '</script>'/
+
+
+    if iocc = 11 or iocc= 21 or iocc=31 or iocc=41 or iocc=51 or iocc=61 or iocc=71 or iocc=81 or iocc=91 or iocc=101 then 
+  
+      '</tr><tr><td width="50"><div id="'s('tab',mfn,f(iocc,1,0))'" style="height:16px;" title="'
+                                 
+     
+     REF(['users']L(['users']'SIGLA 's(v966^l)),v3) 
+         
+       '"  onclick="changecont("'s('tab',mfn,f(iocc,1,0))'","'f(mfn,1,0)'")" align="center" style="font-size:7pt;font-family:verdana;font-weight:normal"><span class=cota><a style="text-decoration:none;" href="javascript:ShowExi(&quot;'s('tab',mfn,f(iocc,1,0))'&quot;,&quot;'getenv('baseref')'&quot;,&quot;showexi&quot;,&quot;'f(mfn,1,0)'&quot;,&quot;'v966^l'&quot;,&quot;'getenv('user')'&quot;,&quot;'getenv('nuser')'&quot;,&quot;'getenv('ent')'&quot;);" >'if v966^l='' then '--' fi, V966^l '</a></span></div></td>'
+     else 
+
+      '<td width="50"> <div id="'s('tab',mfn,f(iocc,1,0))'"  style="height:16px;" title="'
+   
+	 REF(['users']L(['users']'SIGLA 's(v966^l)),v3)
+	 
+       '"  onclick="changecont("'s('tab',mfn,f(iocc,1,0))'","'f(mfn,1,0)'")" align="center" style="font-size:7pt;font-family:verdana;font-weight:normal"><span class=cota><a style="text-decoration:none;" href="javascript:ShowExi(&quot;'s('tab',mfn,f(iocc,1,0))'&quot;,&quot;'getenv('baseref')'&quot;,&quot;showexi&quot;,&quot;'f(mfn,1,0)'&quot;,&quot;'v966^l'&quot;,&quot;'getenv('user')'&quot;,&quot;'getenv('nuser')'&quot;,&quot;'getenv('ent')'&quot;);" >'if v966^l='' then '--' fi, V966^l '</a></span></div></td>'
+	 
+     fi,
+
+ fi/)'
+   </tr>
+   
+  </table>
+  
+'

@@ -1,0 +1,12 @@
+lw(10000),
+if (v999<>'') and (v2<>'') then,
+   if s(mhu,v999)<>s(mhu,ref(val(mfn)-1,v999)) then
+        mhl,'^sADD^b'V1'^m',v2'^x'getenv('DBMASTER')
+        putenv('MASTER_MFN='v2)
+     ,else,
+       mhl,
+       '^sMOD^b'V1'^m',v2,'^c'getenv('MASTER_MFN'),'^x'getenv('DBMASTER')
+    fi
+/
+,fi,
+

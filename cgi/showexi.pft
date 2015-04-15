@@ -1,0 +1,51 @@
+putenv('user='(if v9000^n='ut' then v9000^v fi))
+putenv('nut='(if v9000^n='nut' then v9000^v fi))
+putenv('ent='(if v9000^n='ent' then v9000^v fi))
+'<table>
+  <tr><td width="45%" valign="top">'
+'<font face="Verdana" style="font-size:8pt"><span id="nex" style="float:right;color:red;font-size:0.8em"></span>' replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v3),'ß','á'),'Æ','ã'),'‚','é'),'§','º'),'‡','ç'),'ˆ','ê'),'¢','ó'),'¦','ª'),'µ','Á'),' ','á'),'£','ú')' - 'replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v4),'ß','á'),'Æ','ã'),'‚','é'),'§','º'),'‡','ç'),'ˆ','ê'),'¢','ó'),'¦','ª'),'µ','Á'),' ','á'),'£','ú')' - Telef.:'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v9)' - Fax: 'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v10) '</font>'
+'</td>
+<div >'  
+
+	  '<script>
+         var regs= "'(|+|+v9666^y)'";
+		 var bibs= "'(|+|+v9666^l)'";
+         var itema= regs.split("+");
+	     var itemb= bibs.split("+");
+		 for (var i = 0; i < itema.length; i++)
+		 	itema[i] = "("+pad(itema[i],7)+" AND SI "+itemb[i]+")";
+		 regs= itema.join(" OR ");	 
+		 function showregs(mfn, base,ex,count){
+		        if(!ex) return;
+				ShowRegs(mfn, regs, base,"'getenv('user')'","'getenv('nut')'",ex,count,"'(if v9000^n='estab' then v9000^v fi)'","'getenv('ent')'");
+         }   
+	  </script>'
+	  
+ ( if v9000^v [LAST] = v966^l then
+
+   '<script>
+
+         
+       function showmap(entidade, morada,concelho,lt,lg)
+	    {       ShowMap (entidade, morada,concelho,lt,lg);
+		}
+	    document.getElementById("nex").innerHTML="['v966^c' ex.]";
+		
+	</script>'
+  
+  
+  '<table border="1"  cellspacing="0" width="100%">' 
+    '<tr>
+      <td width="80%" valign="middle" align="center" ><font face="Verdana" style="font-size:8pt"><div title="'REF(['users']L(['users']'SIGLA 'v966^m),v3)'">Fundo: <b>'if v966^m='' then '--' fi,V966^m'</b> ['if REF(['users']L(['users']'SIGLA 'v966^m),v3) <>'' then REF(['users']L(['users']'SIGLA 'v966^m),v3) else 'não definido' fi']</div></font></td>
+      <td width="10%" valign="top" align="center" ><font face="Verdana" style="font-size:8pt"><a href="javascript:showmap(&quot;'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v3)'&quot;,&quot;'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v4)'&quot;,&quot;'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v5)'&quot;,&quot;'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v22)'&quot;,&quot;'REF(['users']L(['users']'SIGLA 's(v9000^v [LAST])),v23)'&quot;)"><img src="/opac/imagens/local.gif" border=0 alt="Localização"></a></font></td>	  
+	  <td width="10%" valign="top" align="center" ><font face="Verdana" style="font-size:8pt"><a id="btnex" href="javascript:showregs(&quot;'mfn(1)'&quot;,&quot;'if v966^m<>'' then v966^m else v966^l fi'&quot;,&quot;'v966^c'&quot;,&quot;'v1001'&quot;)"><img src="/opac/imagens/exemplares.gif" border=0 alt="Exemplares"></font></td>
+     </tr>'
+     
+  '</table>'
+ fi/)
+'</div>  
+</tr></table>'
+'<iframe name="exemplares" id="exemplares" frameborder="no" scrolling="no" width="100%" height="115" style="display:none">
+</iframe></td>'/
+'<script>document.getElementById("btnex").click();</script>'/
+

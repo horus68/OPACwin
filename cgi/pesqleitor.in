@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pesqleitor.hdr
+cgi=@pesqleitor.cgi
+epilog=@pesqleitor.ftr
+
+

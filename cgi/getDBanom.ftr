@@ -1,0 +1,10 @@
+   if val(getenv('ir'))<>9 then '</tr>'/ fi
+   '</table>'/
+   if val(getenv('nr'))>0 then 
+     '<script>$("#resultados").html("Resultado: 'getenv('nr')' registo(s)");addBtPrint("anomalias");</script>'
+   else
+	 '<script>$("#resultados").html("Resultado: 'getenv('nr')' registo(s)")</script>'  
+	 '<br /><br /><div class="aviso">Não foram encontrados registos correspondentes ao critério.</div>' 
+   fi
+    
+   

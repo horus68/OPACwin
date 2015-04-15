@@ -1,0 +1,86 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head>'/
+'<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">'/
+'<link type="text/css" rel="stylesheet" href="/opac/css/default.css" >'/
+'<![if !IE]>'/
+'<link type="text/css" rel="stylesheet" href="/opac/css/default1.css"/>'/
+'<![endif]>'/
+'</head>'/
+'<title>Denúncia de comentário abusivo</title></head>'/
+'<body>'/
+'<div style="float:right;margin:22px 37px 0 0"><input type="image" onclick="javascript:history.go(-1);" src="/opac/imagens/close.gif" alt="Fechar janela" title="Fechar janela"></div>'/
+'<script language="JavaScript">'/
+
+'function validar_mail(str){
+    var valido;
+    var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if(filter.test(str))
+      valido = true;
+    else{
+      alert("ATENÇÃO! Endereço de e-mail inválido.");
+      document.getElementById("Destino").focus();
+      valido = false;
+    }
+    return valido;
+  }'/
+
+'function popupform(myform, windowname)
+{
+if (! window.focus)return true;
+window.open("", windowname, "height=200,width=350,top=200,left=200,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no");
+myform.target=windowname;
+return true;
+}'/
+
+'function ValMail()'/
+'{'/
+'  var str= document.getElementById("Destino").value;'/
+'  if ( str == "")'/
+'     {  '/
+'       alert("ATENÇÃO! O email do destinatário é de preenchimento obrigatório.");'/
+'       return (false);'/
+'     } else '/
+'     {'/
+'       if (validar_mail(str)) return (true); else return (false);'/
+'     }'/
+'}'/
+' </script>'/
+'<form  method="POST" action="/opac/admin/sendemail.asp"  target="_blank" >'/
+
+'  <div align="center">'/
+'  <center>'/
+'  <img src="/opac/imagens/logotipo_banner.png" ><h3>DENÚNCIA DE COMENTÁRIO ABUSIVO</h3>'/
+'  <br />'/
+'  <table border=0 width="440" cellspacing="1">'/
+'    <tr valign="top">'/
+'      <td  width="201"><b>Remetente</b></td>'/
+'      <td  width="239"><input TYPE="text" size=60  name="Email" ></td>'/
+'    </tr>'/
+'    <tr valign="top">'/
+'       <td  width="201"><b>Destinatário</b></td>'/
+'       <td  width="239"><input TYPE="text" size=60  name="Destino" id="Destino" value="'ref(['users']2,v11)'" ></td>'/
+'    </tr>'/
+'    <tr valign="top">'/
+'      <td  width="201"><b>Assunto</b></td>'/
+'      <td  width="339"><input TYPE="text" size=60  name="Assunto" value="Denúnica de comentário abusivo (Registo nº '(if v9000^n='mfn' then v9000^v fi)' : Leitor nº '(if v9000^n='ltr' then v9000^v fi)')" readonly></td>'/
+'    </tr>'/
+'    <tr valign="top">'/
+'      <td  width="201"><b>Mensagem</b></td>'/
+'      <td  width="239"><TEXTAREA  name="Comentario" COLS=36 ROWS=8 WRAP="virtual" ></TEXTAREA></td>'/
+'    </tr>'/
+'  </center>'/
+'</table>'/
+'</div>'/
+'<br>'/
+'  <div align="center">'/
+'    <table border=0 cellspacing="1" width="420">'/
+'     <tr>'/
+'       <td width="50"></td>'/    
+'       <td><p align="center"><input TYPE="submit"  value="Enviar" onclick="return ValMail();"><input TYPE="reset" style="font-size:8pt" value="Limpar"></td>'/
+'     </tr>'/
+'   </table>'/
+'</div>'/
+'<input type="hidden" name="flag" value="true">'/ 
+'<input type="hidden" name="nc" value="'mfn(1)'">'/ 
+'<input type="hidden" name="Mensagem" value="O registo em epígrafe apresenta um comentário com linguagem inapropriada ou insultuosa.<br><em>'/

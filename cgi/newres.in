@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@newres.hdr
+cgi=@newres.cgi
+epilog=@newres.ftr
+
+

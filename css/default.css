@@ -1,0 +1,534 @@
+body
+{
+    padding:0;
+    background: #fff;
+    margin: 0px;
+    font: 12px Arial, sans-serif;
+    color: #673802;
+    text-align: center;
+
+}
+a
+{
+    color: #307082
+}
+a:hover
+{
+    color: #d60808
+}
+acronym
+{
+    border-right: medium none;
+    border-top: medium none;
+    border-left: medium none;
+    border-bottom: medium none
+}
+input, select {
+   font: 13px Arial, sans-serif;
+   
+}
+
+h3 span
+{
+    display: none
+}
+
+h2
+{
+    font-size: 14px;
+	margin-top:18px;
+    width: 220px;
+}
+
+h1
+{
+    background:  url(/opac/imagens/logoopac.gif) no-repeat;
+    margin-top:  10px; 
+	float:right;
+    overflow: hidden;
+    width: 190px;
+    height: 120px;
+}
+
+h1 span
+{
+    display: none
+}
+
+table {
+     font-size: 1em;
+}
+
+div {
+ -moz-border-radius: 0 5px 5px 5px;
+ border-radius: 0 5px 5px 5px;
+
+
+}
+ 
+#principal
+{
+    margin: 20px auto;
+	width:820px;  /* 620px */
+	text-align: left;
+	font-size: 110%;
+}
+
+#principal.opac p.manifesto
+{
+  height: 200px;
+}
+#principal.resultado
+{  
+	margin: 0px auto;
+}
+
+#principal p
+{
+    margin: 10px 0px;
+	text-align:justify;
+    LINE-height: 150%
+}
+#principal p.destaque
+{
+   font-size:1.2em;
+   font-weight:bold;
+   margin-top: 20px;
+}
+#principal p.fil {
+	color:#999;
+	font-size: 0.9em;
+}
+
+#principal p.filesp {
+	color:#999;
+	font-size: 0.9em;
+	margin-left: 233px;
+}
+
+#principal p.fil a, p.filesp a{
+	text-decoration:none
+}
+
+
+#principal li.catalogo {
+    list-style-type: none;
+	line-height: 1.2em;
+	margin-left: -40px;
+	font-size:16px;
+	font-weight: bold;
+	color: #007380;
+}
+#principal li.admin {
+list-style-type: none;
+list-style-image: url(/opac/imagens/marca.gif);
+vertical-align: bottom;
+}
+
+#principal li.admin a {
+margin-left:5px;
+}
+
+#principal li.lema {
+ list-style-type: none;
+ margin-left: -40px;
+ font-size:1.1em;
+ font-weight: bold;
+ font-style: italic;
+ text-align: right;
+}
+
+#principal dt {
+		color: #000;
+		font-weight: bold;
+		padding: 0;
+		
+}
+
+#principal dd {
+		margin: 0 0 .4em 0;
+		padding: 0 0 0 20px;
+        background-image: url(/opac/imagens/marca_sm.gif);
+		background-repeat: no-repeat;
+		background-position: 0 .5em;
+}
+
+#lblutilizador{
+   float:right;
+   margin-top:0px;
+   font-size:90%;
+}
+
+#lblutilizador, #utilizador{
+    color: #007380;
+}
+
+#sumario .p2
+{
+    font-size: 12px;
+    right: 20px;
+    margin: 0px;
+    position: absolute;
+    top: 165px
+}
+		
+.nordem, .linkunimarc a:link, .linkunimarc a:visited{
+    color: red;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* ------------------ Menus de tilizadores--------------------------- */
+
+table#users{
+     width: 820px;   /* 620px */
+     font-size: 1em;
+
+}
+
+table#users.graficos{ width: 200px;}
+table#users.edit { width: 820px;}    /* 620px */
+ 
+
+table#users th, table#users1 th {
+    text-align:center;
+    border-style:none;
+    background-color: silver;
+	background-color:#e4e4e4;
+	border:1px solid #FFF;
+	cursor:pointer;
+	background-position:right center;
+	background-repeat:no-repeat;
+	padding : 3px
+}
+table#users td, table#users1 td{
+    border-style: solid;
+    border-width: 1px;
+	
+	/*font-weight:bold;*/
+	padding:3px;
+}
+table#users tr:hover {cursor: pointer}
+
+/* -------------------------- Menu gráficos  ----------------*/
+
+#drop ul li {
+  background: none;
+  display: inline-block;
+  list-style: none;
+}
+ 
+.container4 {
+  margin: 0px 0px 10px 20px ;
+  padding: 0px;
+  display: inline-block;
+}
+ 
+.menu4 {
+  position: absolute;
+  width: 100px !important;
+  margin-top: 3px !important;
+}
+
+/* -----------------------------------------------------------*/
+	
+fieldset.users{
+   width:805px;       /* 605px */
+   font-size:1em;
+   }
+  
+fieldset.users label{
+  display:block;
+  margin-left:50px;
+  vertical-align:top;
+}
+
+fieldset.users label.esp{
+  display:inline;
+  margin-right: 9px;
+}
+fieldset.users label.esp1{
+  display:inline;
+  margin-left:4px;
+  color:red
+}
+fieldset.users label span{
+  display:block;
+  width:80px;
+  margin-top:2px;
+  float:left;
+}
+
+fieldset.users input{
+  margin-bottom:2px;
+}
+
+fieldset.users input.esp, fieldset.users input.agrup{
+  width:121px;
+}
+
+fieldset.users input.extra{
+	width:604px;
+}
+fieldset.users input.extra1{
+	width:530px;
+}
+fieldset.users input.extra2{
+	width:643px;
+}
+fieldset.users input.coords{
+	width:234px;
+}
+fieldset.users select.coords{
+	width:345px;
+}
+fieldset.users select.coords1{
+	width:260px;
+	margin-bottom:2px
+}
+fieldset.users select.extra{
+	width:183px;
+}
+
+fieldset.users span.errousers{
+   color:red;
+   width:40px;
+}
+
+.susers {
+   width:820px;
+   font-size:1em
+}
+
+/* ------------------------ Menu de entrada -------------------------- */
+fieldset.topleitores {
+  width:450px;
+  margin:10px 15px 0 0;
+  padding:10px
+}
+
+div#coldir {
+  float:right;
+  width:470px;
+}
+
+/* ------------------------Menus de leitores -------------------------- */
+fieldset #imgLeitor{
+ float:right;
+ width:100px;
+ height:105px;
+ border: solid 1px;
+ margin-right:30px;
+}		
+
+fieldset.leitor{
+   width:805px;      /* 605px */
+   font-size: 90%;
+   }
+   
+fieldset.leitor label{
+  display:inline-block;
+  margin-left:50px;
+  vertical-align:top;
+}
+fieldset.leitor label.esp{
+  display:inline;
+  margin-top:2px;
+}
+fieldset.leitor label.agrup{
+  width:110px;
+}
+fieldset.leitor label span{
+  display:block;
+  width:100px;
+  margin-top:2px;
+  float:left;
+}
+
+fieldset.leitor textarea {
+width:600px;         /* 400px */
+font: 90% Arial;
+}
+
+
+/*------------------ Vários -----------------*/
+
+fieldset.validar{
+   width:640px;      /* 440px */
+   font-size: 90%;
+}
+
+fieldset.validar label{
+  display:inline-block;
+  margin-left:20px;
+  vertical-align:bottom;
+}
+
+fieldset.validar label span.corr{
+  display:block;
+  width:160px;
+  float:left;
+}
+
+.aviso {color:red; font-size: 105%}
+
+#cheader1 {width: 125px;}
+#cheader2 {width: 620px;}
+#cregisto {width: 550px;}
+#cencaixe {width: 40%;}
+
+
+.showex {
+  vertical-align:top;
+  text-align:center;
+}
+
+.tabfakeon{
+text-decoration:none;
+position: relative;
+z-index: 1;
+border: 1px solid #778;
+padding: 3px 7px;
+margin-right: 3px;
+color: #2d2b2b;
+font: bold 8pt Verdana;
+background-image: url(../imagens/shadeactive.gif);
+border-bottom-color: white;
+}
+
+.tabfakeoff{
+text-decoration: none;
+position: relative;
+z-index: 1;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #778;
+color: #2d2b2b;
+font: bold 8pt Verdana;
+background: white url(../imagens/shade.gif) top left repeat-x;
+
+}
+
+.reservas { width: 580px;}
+
+#headcert
+{
+    left: 40px;
+    position: absolute;
+    top: 25px;
+	width:820px;          /* 620 */
+    clear:both;
+}
+#cert {text-align: left}
+
+.cert{
+   margin: 0 40px 0 40px;
+   font: 1.2em Arial
+}
+fieldset.cert label{
+   width: 180px;
+   margin-bottom: 5px;
+  
+}
+.lblcert {
+    font-weight: bold;	
+}
+
+h1#topo {
+	width: 820px;                    /* 620 */
+	height: 130px;
+	margin:0px 0px 0 0 ;
+	background-image: url(../imagens/cwd.gif) ;
+	
+	}
+h1#topo span {
+	display: none;
+	}
+	
+
+.tabmainmenu{
+    margin-left:80px;margin-top:75px;
+}
+.tabsubmenu{
+    margin-left:80px;margin-top:40px;
+}
+.tabsubmenu1{
+    margin-left:80px;margin-top:38px;
+}	
+
+.param
+{
+  float:left;
+  width:8.2em;
+  margin-left:1em;
+  padding-top:0.2em;
+  text-align:left;
+  font-size:1em;
+  display: block
+}
+fieldset.tabparam
+{
+ height:72px;
+ width:370px;		 /* 270 */
+ font-size:1em;
+ padding-right:10px
+} 
+
+fieldset.tabparam1
+{
+ height:72px;
+ width:778px;		 /* 578 */
+ font-size:1em;
+} 
+
+fieldset.tabparam input
+{
+  font-size:1em;
+}
+#frmseluser{margin-top:12px}
+
+#painel{
+  border:1px solid gray; 
+  width:800px; 			 /* 600 */
+  min-height:320px;
+  overflow: hidden;
+  margin-bottom: 1em; 
+  padding: 10px;
+}
+
+.tipodoc {
+   padding-left:-30px;
+}
+.cframe{
+  width:83%;
+}
+
+.lp-block		{ width:480px; float:left; }
+.lp-block input, .lp-block textarea { width:97%; }
+#live-preview-display 	{ background:#eee; padding:10px; width:475px; margin-top:20px; }
+#lp-name { font-weight:bold; }
+#lp-avatar { float:right; margin:0 0 20px 20px; }
+#lp-comment { padding-top:10px; font-style:italic; line-height:19px; }
+.wordwrap {     white-space: pre-wrap;      /* CSS3 */       
+               white-space: -moz-pre-wrap; /* Firefox */        
+			   white-space: -pre-wrap;     /* Opera <7 */       
+			   white-space: -o-pre-wrap;   /* Opera 7 */     
+			   word-wrap: break-word;      /* IE */ 
+		} 	
+div.tabBox {
+ border: 1px solid #765;
+ margin: 1em 0;
+ padding: 0.5em 1em;
+
+}	
+@media screen
+{
+   #infoanom {display:none}
+}
+@media print {
+   #infoanom {display:block}
+   #admbotoes {display:none}
+   .resbotao {display:none}
+}
+	

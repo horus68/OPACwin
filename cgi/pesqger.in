@@ -1,0 +1,7 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pesqger.hdr
+cgi=@pesqger.cgi
+epilog=@pesqger.ftr
+get=exportok=1&selrec=1&tmppath=../tmp/&isofilepath=/opac/tmp/

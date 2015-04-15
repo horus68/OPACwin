@@ -1,0 +1,5 @@
+if val(v1102)<>0 then
+  '<p style="height:50px"></p><p class="aviso">Erro ao atualizar o registo </p>'/
+else
+  '<p style="height:50px"></p><p class="aviso">Atualização da base principal bem sucedida...</p>'/
+fi,

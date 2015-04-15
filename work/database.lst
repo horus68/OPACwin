@@ -1,0 +1,3 @@
+MASTER=^b..\basestmp\opac^pchk_dup_c966.prc^cOPAC
+AUXDB=^b..\basestmp\AESOL
+UNIDB=^b..\basestmp\EBSOL1

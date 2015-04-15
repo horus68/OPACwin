@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pesqger.hdr
+cgi=@pesqsel.cgi
+epilog=@pesqger.ftr
+/* Ativa/Desativa a selecao de registos "selrec=1" permite selecionar */
+get=exportok=1&selrec=1&tmppath=../tmp/&isofilepath=/opac/tmp/

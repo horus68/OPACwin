@@ -1,0 +1,37 @@
+if v966^l<>'' and getenv('sigla')=v966^l then,
+if getenv('nut')<>'' then
+	putenv('flag='REF(['reservas']L(['reservas']s(getenv('ent'),getenv('nut'),if v966^m<>'' and left(v966^l,1)<>'B' then v966^m else v966^l fi,v966^a)),mfn(1)))
+else
+  if getenv('user')<>'guest' then
+	putenv('flag='REF(['reservas']L(['reservas']s(getenv('user'),if v966^m<>'' and left(v966^l,1)<>'B' then v966^m else v966^l fi,v966^a)),mfn(1)))
+  fi	
+fi
+
+    '<tr>'/  
+	'      <td >'if v966^s='' then '--' fi, v966^s'</td>'/
+	'      <td >'if v966^a='' then '--' fi, v966^a'</td>'/
+	'      <td >'if v966^c <>'' then v966^c else, if v966^a <>'' then '1' else '--' fi,fi'</b></td>'/
+	'	   <td ><img src="/opac/imagens/green-circle.png" align="absmiddle">'/
+			  ,select REF(['reservas']L(['reservas']s(if v966^m<>'' and left(v966^l,1)<>'B' then v966^m else v966^l fi,v966^a)),v200^a)
+			  case '0':'<img src="/opac/imagens/clock.gif" align="absmiddle">'/,
+			  case '1':'<img src="/opac/imagens/lock.gif" align="absmiddle">'/,
+			  endsel,		 
+		  '</td>'/
+		  '<td>'/    
+			if v966^a <>'' then, 
+			 if (ref(['param']2,v40)='S' or (s(getenv('nut'))='' and s(getenv('user'))='guest')) or (s(getenv('user'))<>'guest' and s(getenv('nut'))='' and ref(['param']2,v50)='S') then
+			 if  getenv('flag')<>'' then  
+			 '<a href="javascript:actres('if v966^c <>'' then v966^c else '1' fi','getenv('flag')','if REF(['reservas']val(getenv('flag')), v100^e)='' then '1' else REF(['reservas']val(getenv('flag')), v100^e) fi',&quot;'REF(['reservas']L(['reservas']s(if v966^m<>'' and left(v966^l,1)<>'B' then v966^m else v966^l fi,v966^a)),v200^a)'&quot;);" title="Reservar"><img src="/opac/imagens/reserve.gif" border="0"></a>' 
+			 else 
+			'<a href="javascript:novares(&quot;'v200^a,| [|v200^b|]|,|. |v200^c'&quot;,&quot;'v200^f[1],| ; |v200^g[1]'&quot;,&quot;'v966^l'&quot;,&quot;'if v966^m<>'' and left(v966^l,1)<>'B' then v966^m else v966^l fi'&quot;,&quot;'v966^s'&quot;,&quot;'v966^a'&quot;,'if v966^c <>'' then v966^c else '1' fi',&quot;'REF(['reservas']L(['reservas']s(if v966^m<>'' and left(v966^l,1)<>'B' then v966^m else v966^l fi,v966^a)),v200^a)'&quot;);" title="Reservar"><img src="/opac/imagens/reserve.gif" border="0"></a>' 
+			 fi
+			 else
+			  '<img src="/opac/imagens/reserve_stop.gif" border="0" alt="Reserva de documentos temporariamente suspensa">'
+			 fi
+			,else
+			  '--'
+			,fi   
+	
+		  '</td>'/     
+	 '</tr>'/
+,fi	

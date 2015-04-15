@@ -1,0 +1,26 @@
+putenv('cc='(if v9000^n='nex' then v9000^v fi))
+ 
+if s(mhu,v922,mhl):'A' then 
+    '<tr><td colspan="5" class="aviso">Parte relacionada. Consulte o documento integral [',mhl,'Veja Notas]</td></tr>'
+else,
+if val(v1002)>0  then
+(  
+,@listex.pft,
+)
+ else
+    '<tr><td colspan=5><br><b>Não foram encontrados registos</b></td></tr>'/
+ fi
+,fi
+ '<script>'/
+ 'if (window.parent.document.getElementById("exemplares").style.display=="inline")'/
+ '{'/
+ 'var p='getenv('cc')'*21+100; var le = p; var lf= le+95;'/
+ 'eval("window.parent.parent.document.getElementById(\"cotas'(if v9000^n='mfn' then v9000^v fi)'\").style.height=\""+le+"px\"");'/
+ 'eval("window.parent.document.getElementById(\"exemplares\").style.height=\""+lf+"px\"");'/
+ '}'/
+ 'else'/
+ '{'/
+ '  window.parent.parent.document.getElementById("cotas'(if v9000^n='mfn' then v9000^v fi)'").style.height="60px";'/
+ '  window.parent.document.getElementById("exemplares").style.height="115px";'/
+ '}'/
+ '</script>'/

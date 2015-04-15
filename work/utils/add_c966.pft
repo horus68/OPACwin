@@ -1,0 +1,14 @@
+/* Last update: 20-Set-2004 20:19 */
+/* Adiciona apenas a 1ª ocorrência do campo 966*/
+s((
+ if v966<>`` then 
+   `A966~`
+     replace(
+     s(
+     `  `,
+         |^a|V966^a[1],|^l|V966^l[1],|^s|V966^s[1],|^m|V966^m[1],|^c|V966^c[1],
+      ),`~`,``)
+   '~'
+ fi
+)
+)

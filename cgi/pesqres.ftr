@@ -1,0 +1,8 @@
+if val(v1002)=0 then
+   '<tr><td colspan=9><div align="center" class="aviso" style="margin:100px 0 100px 0;font-size:1.3em">Não foram encontrados registos...</div></td></tr>'
+fi  
+
+'</form></table>'
+'</div></div>'
+'<br>'
+'</BODY>'

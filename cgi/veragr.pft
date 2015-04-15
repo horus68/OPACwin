@@ -1,0 +1,2 @@
+putenv('tmp='REF(L(['users']'SIGLA '(if v9000^n='agr' then v9000^v fi)),mfn(1))) 
+if getenv('tmp') <>'' and REF(val(getenv('tmp')),v21) = '' then 'sim' else 'nao' fi 

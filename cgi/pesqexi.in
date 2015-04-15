@@ -1,0 +1,6 @@
+ctttype=text/html
+tcg=9000
+prolog=@pesqexi.hdr
+cgi=@pesqexi.cgi
+epilog=@pesqexi.ftr
+

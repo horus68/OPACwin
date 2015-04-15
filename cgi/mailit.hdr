@@ -1,0 +1,86 @@
+'<html>'/
+'<head>'/
+'<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">'/
+'</head>
+
+ <title>Envio de registos por Email</title></head>
+ <body  topmargin="3" leftmargin="3">'/
+
+'<script language="JavaScript">'/
+
+'function validar_mail(str){
+    var valido;
+    var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if(filter.test(str))
+      valido = true;
+    else{
+      alert("ATENÇÃO! Endereço de e-mail inválido.");
+      document.getElementById("Destino").focus();
+      valido = false;
+    }
+    return valido;
+  }'/
+
+'function popupform(myform, windowname)
+{
+if (! window.focus)return true;
+window.open("", windowname, "height=200,width=350,top=200,left=200,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no");
+myform.target=windowname;
+return true;
+}'/
+
+'function ValMail()'/
+'{'/
+'  var str= document.getElementById("Destino").value;'/
+'  if ( str == "")'/
+'     {  '/
+'       alert("ATENÇÃO! O campo Email do destinatário é de preenchimento obrigatório.");'/
+'       return (false);'/
+'     } else '/
+'     {'/
+'       if (validar_mail(str)) return (true); else return (false);'/
+'     }'/
+'}'/
+' </script>'/
+'<form  method="POST" action="/opac/admin/sendemail.asp"  target="_blank" >'/
+
+'  <div align="center">'/
+'  <center>'/
+'  <img src="/opac/imagens/logotipo_banner.png" ><h3>ENVIO DE REGISTOS POR EMAIL</h3>'/
+'  <br />'/
+'  <table border=0 width="440" cellspacing="1">'/
+'    <tr valign="top">'/
+'      <td  width="201"><font size="1" face="Verdana" color="#000000"><b>Remetente</b></font></td>'/
+'      <td  width="239"><input TYPE="text" size=60 style="font-size:8pt" name="Email" ></td>'/
+'    </tr>'/
+'    <tr valign="top">'/
+'       <td  width="201"><font size="1" face="Verdana" color="#000000"><b>Email'/
+'        de destino</b></font></td>'/
+'       <td  width="239"><input TYPE="text" size=60 style="font-size:8pt" name="Destino" id="Destino"></td>'/
+'    </tr>'/
+'    <tr valign="top">'/
+'      <td  width="201"><font size="1" face="Verdana" color="#000000"><b>Assunto</b></font></td>'/
+'      <td  width="339"><input TYPE="text" size=60 style="font-size:8pt" name="Assunto" value="Resultado de pesquisa"></td>'/
+'    </tr>'/
+'    <tr valign="top">'/
+'      <td  width="201"><font size="1" face="Verdana" color="#000000"><b>Comentário</b></font></td>'/
+'      <td  width="239"><TEXTAREA style="font-size:8pt" name="Comentario" COLS=43 ROWS=3 WRAP="virtual" >Envio do resultado da pesquisa: ['(if v9000^n='expressao' then mhu,v9000^v,mhl fi)']</TEXTAREA></td>'/
+'    </tr>'/
+'  </center>'/
+'</table>'/
+'</div>'/
+'<br>'/
+'  <div align="center">'/
+'    <table border=0 cellspacing="1" width="420">'/
+'     <tr>'/
+'       <td width="50"></td>'/    
+'       <td><p align="center"><input TYPE="submit" style="font-size:8pt" value="Enviar" onclick="return ValMail();"><input TYPE="reset" style="font-size:8pt" value="Limpar"></td>'/
+'     </tr>'/
+'   </table>'/
+'</div>'/
+'<input type=hidden name="Mensagem" value="'/
+/'-------------------------------------------------------------------------<br>'/
+/'                         Resultado da pesquisa<br>'/
+/''/
+/'                    ',@wdate.pft,'<br>'/
+/'-------------------------------------------------------------------------<br>'/

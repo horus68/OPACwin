@@ -1,0 +1,4 @@
+`mx ..\..\bases\tags "pft='^n',v1,'^a',v3^a,v3^b/"   now -all > addtags.txt`/
+'mx seq=addtags.txt create=..\..\tmp\addtags gizmo=gans850 now -all'/
+'mx ..\..\tmp\addtags  "pft=@teste.pft"  now > addtags.bat'/
+'call addtags'/

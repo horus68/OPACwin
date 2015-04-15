@@ -1,0 +1,22 @@
+Código ID				 001 10 0 0	 x
+Sigla					 002 15 0 0	 v
+Nome					 003 100 0 0	 v
+Morada					 004 100 0 0	 v
+Concelho				 005 60 0 0	 v
+Cod. Postal				 006 60 0 0	 v
+Senha					 007 15 0 0	 v
+Nivel					 008 1 0 0	 x
+Telefone				 009 15 0 0	 v
+Fax					 010 15 0 0	 v
+E-mail					 011 50 0 0	 v
+Web					 012 150 0 0	 v
+Foto					 013 50 0 0	 x
+Contador				 014 50 0 0	 x
+UCM					 015 8 0 0	 x
+frase					 016 200 0 0	 x
+Coordenador				 017 50 0 0	 v
+Equipa					 018 150 0 0	 x
+Blogue					 019 150 0 0	 x
+Notas					 020 200 0 0	 x
+<<< Campo 921 >>>   			 921 1 0 0	 x
+<<< Campo 922 >>>			 922 1 0 0	 x

@@ -1,0 +1,251 @@
+if p(V500)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center"  valign="top">500 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V500|<br>|'</td></tr>'/
+fi,
+if p(V501)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center"  valign="top">501 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V501|<br>|'</td></tr>'/
+fi,
+if p(V503)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">503 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V503|<br>|'</td></tr>'/
+fi,
+if p(V510)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">510 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V510|<br>|'</td></tr>'/
+fi,
+if p(V512)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">512 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V512|<br>|'</td></tr>'/
+fi,
+if p(V513)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">513 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V513|<br>|'</td></tr>'/
+fi,
+if p(V514)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">514 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V514|<br>|'</td></tr>'/
+fi,
+if p(V515)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">515 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V515|<br>|'</td></tr>'/
+fi,
+if p(V516)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">516 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V516|<br>|'</td></tr>'/
+fi,
+if p(V517)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">517 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V517|<br>|'</td></tr>'/
+fi,
+if p(V520)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">520 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V520|<br>|'</td></tr>'/
+fi,
+if p(V530)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">530 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V530|<br>|'</td></tr>'/
+fi,
+if p(V531)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">531 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V531|<br>|'</td></tr>'/
+fi,
+if p(V532)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">532 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V532|<br>|'</td></tr>'/
+fi,
+if p(V540)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">540 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V540|<br>|'</td></tr>'/
+fi,
+if p(V541)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">541 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V541|<br>|'</td></tr>'/
+fi,
+(if p(V600)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">600 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V600|<br>|'</td></tr>'/
+fi),
+(if p(V601)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">601 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V601|<br>|'</td></tr>'/
+fi),
+(if p(V602)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">602 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V602|<br>|'</td></tr>'/
+fi),
+(if p(V604)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">604 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V604|<br>|'</td></tr>'/
+fi),
+(if p(V605)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">605 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V605|<br>|'</td></tr>'/
+fi),
+(if p(V606)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">606 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V606|<br>|'</td></tr>'/
+fi),
+(if p(V607)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">607 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V607|<br>|'</td></tr>'/
+fi),
+(if p(V610)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">610 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V610|<br>|'</td></tr>'/
+fi),
+(if p(V620)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">620 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V620|<br>|'</td></tr>'/
+fi),
+(if p(V626)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">626 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V626|<br>|'</td></tr>'/
+fi),
+(if p(V660)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">660 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V660|<br>|'</td></tr>'/
+fi),
+(if p(V661)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">661 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V661|<br>|'</td></tr>'/
+fi),
+(if p(V670)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">670 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V670|<br>|'</td></tr>'/
+fi),
+(if p(V675)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">675 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V675|<br>|'</td></tr>'/
+fi),
+(if p(V676)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">676 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V676|<br>|'</td></tr>'/
+fi),
+(if p(V680)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">680 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V680|<br>|'</td></tr>'/
+fi),
+(if p(V686)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">686 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V686|<br>|'</td></tr>'/
+fi),
+(if p(V700)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">700 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V700|<br>|'</td></tr>'/
+fi),
+(if p(V701)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">701 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V701|<br>|'</td></tr>'/
+fi),
+(if p(V702)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">702 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V702|<br>|'</td></tr>'/
+fi),
+(if p(V710)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">710 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V710|<br>|'</td></tr>'/
+fi),
+(if p(V711)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">711 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V711|<br>|'</td></tr>'/
+fi),
+(if p(V712)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">712 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V712|<br>|'</td></tr>'/
+fi),
+(if p(V720)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">720 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V720|<br>|'</td></tr>'/
+fi),
+(if p(V721)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">721 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V721|<br>|'</td></tr>'/
+fi),
+(if p(V722)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">722 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V722|<br>|'</td></tr>'/
+fi),
+(if p(V801)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">801 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V801|<br>|'</td></tr>'/
+fi),
+(if p(V856)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">856 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left" > ' V856|<br>|'</td></tr>'/
+fi),
+(if p(V859)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">859 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left"> ' V859|<br>|'</td></tr>'/
+fi),
+(if p(V901)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">901 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V901|<br>|'</td></tr>'/
+fi),
+if p(V921)then
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">921 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V921|<br>|'</td></tr>'/
+fi,
+if p(V922)then
+'<td width="5%" bgcolor="#EFF1F1" align="center" valign="top">922 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V922|<br>|'</td></tr>'/
+fi,
+if p(V930)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">930 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V930|<br>|'</td></tr>'/
+fi,
+if v9000: s('validar') then
+if p(V966)then
+'<tr>'/
+'<td width="5%" bgcolor="#EFF1F1"  align="center" valign="top">966 </td>'/
+'<td width="90%" bgcolor="#EFF1F1" align="left">' V966|<br>|'</td></tr>'/
+fi,
+fi
+

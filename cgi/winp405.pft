@@ -1,0 +1,115 @@
+,if val(v1001)=val(v1031) then
+
+,@hdrreg.pft,
+
+/* Seleção de registos */
+'<table border="0" width="100%" cellpadding="0">'/
+'  <tr>'/
+if val(v1002)>1 then
+
+'    <td>'/
+'    <input  onclick="this.value=check(forms[0].T8000);return false;" src="/opac/imagens/checkall.png" name="img" type="image" title="Marcar/desmarcar todos os registos desta página">'/
+
+'</td>'/
+'<td valign="top">'
+if S((if v9000^n='selrec' then v9000^v fi))='1' then
+'<form method="get" action="/ensaio/cgi/www.exe/[in=pesqsel.in]" name="selrecs">'
+   '<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+   '<input type="hidden" name="base" value="'v1051'">'
+   '<input type="hidden" name="expressao" value='(| + |+V8000)'>'
+   '<input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'
+   '<input type="hidden" name="nomemnu" value="'(if v9000^n='nomemnu' then v9000^v fi)'">'
+   '<input type="hidden" name="id" value="'(if v9000^n='id' then v9000^v fi)'">'
+   '<input type="hidden" name="lim_inicio" value="1">'
+   '<input type="hidden" name="limites" value="'(if v9000^n='limites' then v9000^v fi)'">'
+   '<input type="hidden" name="iso2709" value="'(if v9000^n='iso2709' then v9000^v fi)'">'
+   '<input type="hidden" name="user" value="'(if v9000^n='user' then v9000^v fi)'">'
+   '<input type="hidden" name="nut" value="'(if v9000^n='nut' then v9000^v fi)'">'
+   '<input type="hidden" name="sortfmt" value="'(if v9000^n='sortfmt' then v9000^v fi)'">'
+   '<input style="display:none" border="0" src="/opac/imagens/icon_filter.png"  name="img" id="img" type="image" title="Filtrar registos selecionados...">'
+else 
+   '       '/
+   '<input style="display:none" border="0" src="/opac/imagens/icon_filter.png"  name="img" id="img" type="image" alt="ATENÇÃO! Esta funcionalidade não está disponível de momento. Tente mais tarde!"'
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' onclick="javascript:alert(&quot;ATENÇÃO! Esta funcionalidade não está disponível de momento. Tente mais tarde!&quot;)">'
+,fi,
+else
+ ' <td width="3%"></td><td>'
+fi,
+'<span id="lblfilter"></span></td>'
+'<td width="43%"></td>'
+'    <td width="25%"  valign="top" align="right">'
+'<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_config = {ui_language: "pt"}</script>
+<div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4ba619317592da06" class="addthis_button_compact"></a>
+<a class="addthis_button_facebook" title="Enviar para o FaceBook"></a>
+<a class="addthis_button_myspace" title="Enviar para o MySpace"></a>
+<a class="addthis_button_twitter" title="Enviar para o Twitter"></a>
+<a class="addthis_button_delicious" title="Enviar para o FaceBook"></a>
+<a class="addthis_button_plaxo" title="Enviar para o Plaxo"></a>
+<a class="addthis_button_digg" title="Enviar para o Digg"></a>
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ba619317592da06"></script>
+<!-- AddThis Button END -->'
+
+'    </td>'
+'</tr>'
+'  </table>'
+
+else if val(v1001)=1 then ,@hdrreg.pft, fi fi,
+
+'<a name="R'V1001'"></a>'/
+
+'<br>'
+
+'<table  width="100%" cellpadding="0" cellspacing="0">'/
+'  <tr>'/
+'    <td valign="baseline" colspan=2>' if v1051='ensaio' then '<span style="float:right">Nº de exemplares: <span id="total'mfn(1)'">'v966^c'</span></span>' fi ,@witdoc.pft, '</td>'/
+'  </tr>'/
+'<tr><td colspan=2 valign="top"><hr size="1"></td></tr>'/
+'  <tr>'/
+'    <td width="10%" valign="top">'
+,@wnovo.pft,
+if val(v1002)>1 then 
+   '<span class="linkunimarc"><a href="#" onclick="javascript:popunimarc(&quot;'(if v9000^n='base' then v9000^v fi)'&quot;,&quot;'(if v9000^n='expressao' then v9000^v fi)'&quot;,&quot;wiunimarc&quot;,&quot;'mfn(7)'&quot;);return false;">'V1001'</a></span>- ',@selreg.pft,
+
+
+fi
+'    </td>'/
+'    <td width="90%" valign="bottom" align="left"><div align="justify">'/
+MHL,IF S(V700,V701,V711)<>'' OR (P(V710) AND S(MHU,V710^a.8,
+MHL)<>'PORTUGAL' OR P(V710^b)) THEN, IF S(V700,V710)<>'' THEN IF P(V700) THEN
+(MHU,V700^a,MHL,| |V700^b,| |V700^d,| |V700^c) IF P(V701) THEN  (MHU,| ; |V701^a,
+MHL,| |V701^b,| |V701^d,| |V701^c) FI ELSE IF P(V710)  THEN (MHU,V710^a,MHL,
+| |V710^b,| |V710^c,| |V710^d,| |V710^e,| |V710^f) IF P(V711) THEN (MHU,| ; |V711^a,
+MHL,| |V711^b,| |V711^d,| |V711^c,| |V711^f) FI FI FI ELSE IF S(V701,V711)<>''
+THEN IF P(V701) THEN (MHU,V701^a,MHL,| |V701^b,| |V701^d,| |V701^c) ' [et al.]'
+ELSE IF P(V711) THEN (MHU,V711^a,MHL,| |V711^b,| |V711^d,| |V711^c,| |V711^f)
+' [et al.]' FI FI FI FI ELSE IF S(V702,V712)<>'' THEN IF P(V702) THEN
+(IF V702^4:'220' OR V702^4:'340' OR V702^4:'020' THEN MHU,| ; |+V702^a,MHL,| |V702^b,
+| |V702^d,| |V702^c,,@wcf702.pft, FI) ELSE IF P(V712) THEN
+(IF V712^4:'340' THEN MHU,| ; |+V712^a,MHL,| |V712^b,| |V712^d,| |V712^c,| |V712^f,
+,@wcf712.pft, FI) FI FI FI FI IF S(V700,V701,V702,V710,V711,V712)<>'' then ' - ' FI(| ; |+v200^a,| [|v200^b|]|,| : |v200^e,|. |v200^h,
+| |v200^i),". "V205^a,". "D210,(| ; |+v210^a,IF S(V921,V922):'am' then | : |v210^c FI
+|, |v210^d),mid(S(|. |V215^a),1,instr(S(|. |V215^a),';')-1),|. |V328^a,|. ISBN |v10^a,|. ISSN |v11^a,". "
+IF S(v921,v922):'aa' AND s(v461,v463)<>'' THEN '<br>In: ',v461^t,|. |v461^i,|, |v461^h,|. - |v461^c,| : |v461^b,|, |v461^d,|. - |v461^v,|, |v461^p,|. - |v461^5,v463^a,| / |v463^t,|. - |v463^c,| : |v463^b,|, |v463^d,|. - |v463^y,|. - |v463^v,|, |v463^p,|. - |v463^5/ fi#
+
+'  </div></td>'/
+'  </tr>'
+'</table>'/
+'<table  width="100%" >'/
+IF val(V1002)>1 then
+'  <tr>'/
+
+'    <td width="95%" valign="top" align="left" >'/
+'    <div align="right">'/
+if right(v1001,1)='5' or right(v1001,1)='0' then
+,@navereg.pft,
+fi
+'    </div></td>'/
+'  </tr>'/
+FI,
+
+'</table>'/
+/*'<hr width="100%" noshade align="right" size="1">'/*/

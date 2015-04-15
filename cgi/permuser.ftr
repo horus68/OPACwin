@@ -1,0 +1,7 @@
+'</table>'
+if val(v1091)=7 then
+  '<br>'/
+  '<p class="aviso">Não foram encontrados registos </p>'/
+fi
+'<br>'/
+'</BODY>'

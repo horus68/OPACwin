@@ -1,0 +1,80 @@
+,if val(v1001)=val(v1031) then
+
+,@hdrreg.pft,
+
+/* Seleção de registos */
+'<table  width="100%" cellpadding="0" height="1">'/
+'  <tr>'/
+if val(v1002)>1 then
+
+'    <td>'/
+'    <input  onclick="this.value=check(forms[0].T8000);return false;" src="/opac/imagens/checkall.png" name="img" type="image" title="Marcar/desmarcar todos os registos desta página">'/
+
+'</td>'/
+'<td valign="top">'
+if S((if v9000^n='selrec' then v9000^v fi))='1' then
+'<form method="get" action="/opac/cgi/www.exe/[in=pesqsel.in]" name="selrecs">'
+   '<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+   '<input type="hidden" name="base" value="'v1051'">'
+   '<input type="hidden" name="expressao" value='(| + |+V8000)'>'
+   '<input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'
+   '<input type="hidden" name="nomemnu" value="'(if v9000^n='nomemnu' then v9000^v fi)'">'
+   '<input type="hidden" name="id" value="'(if v9000^n='id' then v9000^v fi)'">'
+   '<input type="hidden" name="lim_inicio" value="1">'
+   '<input type="hidden" name="limites" value="'(if v9000^n='limites' then v9000^v fi)'">'
+   '<input type="hidden" name="iso2709" value="'(if v9000^n='iso2709' then v9000^v fi)'">'
+   '<input type="hidden" name="user" value="'(if v9000^n='user' then v9000^v fi)'">'
+   '<input type="hidden" name="nut" value="'(if v9000^n='nut' then v9000^v fi)'">'
+   '<input type="hidden" name="sortfmt" value="'(if v9000^n='sortfmt' then v9000^v fi)'">'
+   '<input style="display:none" border="0" src="/opac/imagens/icon_filter.png"  name="img" id="img" type="image" title="Filtrar registos selecionados...">'
+else 
+   '       '/
+   '<input style="display:none" border="0" src="/opac/imagens/icon_filter.png"  name="img" type="image" title="ATENÇÃO! Esta funcionalidade não está disponível de momento. Tente mais tarde!"'
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' onclick="javascript:alert(&quot;ATENÇÃO! Esta funcionalidade não está disponível de momento. Tente mais tarde!&quot;)">'
+,fi,
+else
+ ' <td width="3%"></td><td>'
+fi,
+'<span id="lblfilter"></span></td>'
+'<td width="43%"></td>'
+'    <td width="25%"  valign="top" align="right">'
+'<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_config = {ui_language: "pt"}</script>
+<div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4ba619317592da06" class="addthis_button_compact"></a>
+<a class="addthis_button_facebook" title="Enviar para o FaceBook"></a>
+<a class="addthis_button_myspace" title="Enviar para o MySpace"></a>
+<a class="addthis_button_twitter" title="Enviar para o Twitter"></a>
+<a class="addthis_button_delicious" title="Enviar para o Delicious"></a>
+<a class="addthis_button_plaxo" title="Enviar para o Plaxo"></a>
+<a class="addthis_button_digg" title="Enviar para o Digg"></a>
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ba619317592da06"></script>
+<!-- AddThis Button END -->'
+
+'    </td>'
+'</tr>'
+'  </table>'
+
+
+else if val(v1001)=1 then ,@hdrreg.pft, fi fi,
+
+if val(v1001)=val(v1031) then '<br>' fi
+
+'<table width="100%" cellpadding="2">'/
+'  <tr>'/
+'    <td width="12%" valign="top" align="right">'
+,@wnovo.pft,
+if val(v1002)>1 then 
+     '<span class="linkunimarc"><a href="#" onclick="javascript:popunimarc(&quot;'(if v9000^n='base' then v9000^v fi)'&quot;,&quot;'(if v9000^n='expressao' then v9000^v fi)'&quot;,&quot;wiunimarc&quot;,&quot;'mfn(7)'&quot;);return false;">'V1001'</a></span>- ',@selreg.pft,
+else
+ '<span class="linkunimarc"><a href="#" onclick="javascript:popunimarc(&quot;'(if v9000^n='base' then v9000^v fi)'&quot;,&quot;'(if v9000^n='expressao' then v9000^v fi)'&quot;,&quot;wiunimarc&quot;,&quot;'mfn(7)'&quot;);return false;">'V1001'</a></span>- '
+fi
+'</td><td width="88%" valign="bottom" align="left"><div align="justify">'/
+'    '/
+     if p(v200) then ('<a href="javascript:window.location.href=ChkLinkHref(0,&quot;wiusr&quot;,&quot;TI 'MHU,,V200^a,| |V200^h,| |V200^i,'&quot;)">'"<b>"D200,MHL,| ; |+v200^a,'</a>',| [|v200^b|]|,|. |v200^c,| : |v200^e,| |v200^d,|. |V200^i,|, |V200^h,|, |V200^v,"</b>"d200,| / |v200^f,| ; |v200^g/),|. |v210^a,|, |v210^b,| : |v210^c,|, |v210^d FI/
+'    '/
+'   </div></td>'/
+'  </tr>'
+'</table>'/

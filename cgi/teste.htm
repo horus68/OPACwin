@@ -1,0 +1,17 @@
+<head>
+<title>Exemplo de chamada de MX em ambiente CGI</title>
+</head>
+<body>
+<form method="post" action="mx.exe/cgi=mx" >
+<hr>
+Expressão de busca (bool=): <input type="text" name="bool" value="$"></input>&#160;<br/ >
+Num. de registros a exibir (count=): <input type="text" name="count" value="10"></input>&#160;<br/ >
+<input type="hidden" name="cipar" value="dbdef.cip"></input>
+<input type="hidden" name="db" value="opac"></input>
+<input type="hidden" name="now"></input>
+<input type="hidden" name="btell" value="0"></input>
+<input type="hidden" name="pft" value="lw(8000),newline('<br>'),@manut.pft"></input>
+<input type="submit" value="procurar"></input>
+</form>
+</body>
+</html>
