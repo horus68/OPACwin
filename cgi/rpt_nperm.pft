@@ -1,0 +1,7 @@
+ '<center>'/
+if val(v1102)<>0 then
+  '<p style="height:30px"></p><p class="aviso">Erro ao atualizar o registo </p>'/
+else
+  '<p style="height:20px"></p><p class="aviso">Atualização efetuada com sucesso...</p>'/
+fi
+'</center>'/

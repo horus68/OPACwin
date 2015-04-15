@@ -1,0 +1,1 @@
+if REF(['users']L(['users']'SIGLA '(if v9000^n='sigla' then v9000^v fi)),mfn(1)) <>'' then 'sim' else 'nao' fi

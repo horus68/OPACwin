@@ -1,0 +1,88 @@
+', ',select s(V701^4)
+  case '005' : 'act.'/
+  case '010' : 'adapt.'/
+  case '020' : 'anot.'/
+  case '030' : 'arranjo'/
+  case '040' : 'artista'/
+  case '065' : 'leiloeiro'/
+  case '070' : 'co-aut.'/
+  case '072' : 'tit.'/
+  case '075' : 'posfaciador'/
+  case '080' : 'introd.'/
+  case '090' : 'guiÆo'/
+  case '100' : 'ant. bibliogr.'/
+  case '110' : 'encad.'/
+  case '120' : 'resp. enc.'/
+  case '130' : 'resp. gr f.'/
+  case '140' : 'resp. capa'/
+  case '150' : 'extratextos'/
+  case '160' : 'livreiro'/
+  case '170' : 'cal¡gr.'/
+  case '180' : 'cart¢gr.'/
+  case '190' : 'censor'/
+  case '200' : 'core¢gr.'/
+  case '205' : 'colab.'/
+  case '210' : 'coment.'/
+  case '212' : 'coment.'/
+  case '220' : 'compil.'/
+  case '230' : 'compos.'/
+  case '240' : 'comp. gr f.'/
+  case '250' : 'maestro'/
+  case '260' : 'direitos de autor'/
+  case '270' : 'corrector'/
+  case '275' : 'bail.'/
+  case '290' : 'dedic.'/
+  case '300' : 'dir.'/
+  case '305' : 'dissert.'/
+  case '310' : 'distrib.'/
+  case '320' : 'doador'/
+  case '340' : 'ed. lit.'/
+  case '350' : 'grav. buril'/
+  case '360' : 'grav. aguaf.'/
+  case '365' : 'aval.'/
+  case '370' : 'ed. filme'/
+  case '380' : 'contraf.'/
+  case '390' : 'ant. poss.'/
+  case '400' : 'patroc.'/
+  case '410' : 't‚c. gr f.'/
+  case '430' : 'ilum.'/
+  case '440' : 'ilustr.(ou il.)'/
+  case '450' : 'apresent.'/
+  case '460' : 'entrevistado'/
+  case '470' : 'entrevistador'/
+  case '480' : 'libreto'/
+  case '510' : 'lit¢grafo'/
+  case '520' : 'letra'/
+  case '030' : 'grav. met.'/
+  case '540' : 'supervisor'/
+  case '545' : 'm£sico'/
+  case '550' : 'narrador'/
+  case '557' : 'Org.'/
+  case '560' : 'investig.'/
+  case '580' : 'fab. papel'/
+  case '590' : 'int‚rp.'/
+  case '600' : 'fot¢gr.'/
+  case '610' : 'impr.'/
+  case '620' : 'impr. grav'/
+  case '630' : 'prod.'/
+  case '635' : 'prog.'/
+  case '640' : 'rev.'/
+  case '650' : 'ed. com.'/
+  case '660' : 'dest. de carta'/
+  case '670' : 'resp. grav.'/
+  case '675' : 'rev.'/
+  case '680' : 'rubr.'/
+  case '690' : 'cen¢gr.'/
+  case '700' : 'copista'/
+  case '705' : 'escult.'/
+  case '710' : 'relat.'/
+  case '720' : 'ass. ms.'/
+  case '721' : 'cant.'/
+  case '730' : 'trad.'/
+  case '740' : 'resp. tipo'/
+  case '750' : 'tip¢gr.'/
+  case '755' : 'entretainer'/
+  case '760' : 'grav. mad.'/
+  case '770' : 'mat. acomp.'/
+endsel,
+

@@ -1,0 +1,41 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+    putenv('expr=' (if v9000^n='expressao' then v9000^v fi))
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script language="JavaScript" src="../../js/tools.js"></script>'/
+'</head>'/
+'<body>'/
+'      <h3><span>Definir/Editar PIN Leitor</span></h3>'
+'      <script>'
+'       function validadados() {'
+'       var status=true;'
+'       var msgconf="";'
+'       var msg="";' 
+'       document.getElementById("activo").value= document.getElementById("v121").checked ? "1": "0";'
+'       if (document.getElementById("v11").value=="")'
+'        {msg= "O campo PIN é de preenchimento obrigatório."; status=false;}'
+'       if (!status) alert ("ATENÇÂO! Existem erros no preenchimento do formulário.\n\n" + msg);'
+'        return status;'
+'       }'
+
+'       function voltar(){'
+'       var str="'(if v9000^n='expressao' then v9000^v fi)'";'
+'       var nreg = str.replace(/[a-zA-Z]/g,"");'
+'       var bib = str.replace(/[0-9]/g,"");'
+'       window.location.href= "../../cgi/www.exe/[in=pleitor.in]?ut='(if v9000^n='ut' then  v9000^v fi)'&expressao="+nreg+bib;'
+'       }'
+'      </script>'
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl' &nbsp;[ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp">Administração</a> » <a href="/opac/cgi/www.exe/[in=pleitor.in]?ut='(if v9000^n='ut' then v9000^v fi)'&expressao='(if v9000^n='expressao' then v9000^v fi)'">'
+'      Leitores </a> » Definição de permissões</p>'
+'      '
+'      <div id="admbotoes" style="float:right"><a href="javascript:voltar()"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></div><h3>Definição de permissões</h3>'/

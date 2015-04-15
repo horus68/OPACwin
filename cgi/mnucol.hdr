@@ -1,0 +1,42 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+
+    putenv('user=' (if v9000^n='ut' then v9000^v fi))
+    putenv('mnu=' (if v9000^n='mnu' then v9000^v fi))
+    putenv('base=' (if v9000^n='base' then v9000^v fi))
+'	<title>'ref(['_cnf']1,v100)'</title>'/
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script type="text/javascript" src="../../js/users.js"></script>'/
+'</head>'/
+'<body>'/
+'   <h3><span>Gestão da coleção</span></h3>  
+	<div id="principal" class="resultado"> <div id="lblutilizador">Utilizador: ' if getenv('user')='guest' then 'anónimo' else getenv('user') fi ' [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</div>'/   
+    ' <p class="fil">» '/   
+	     '<a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp?id=3">Administração</a> » Avaliação das existências' 
+	''/
+	'<div  align="right" ><a href="../../admin/admin.asp?id=3"><img src="../../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></div>'/
+	 
+	   '<br>'
+	   'Selecione o utilizador: '
+	   
+		'<div align="center">'/
+		'<form name="frmselcri" id="frmselcri" action="" method="post" >  '/
+		' <input type="hidden" name="ut" value="'getenv('user')'">'/
+		' <input type="hidden" id="base" name="base" value="'getenv('base')'">'/
+		' <input type="hidden" name="lim_inicio" value="1">'/
+		' <input type="hidden" name="limites" value="99999">'/
+		' <input type="hidden" id="users" name="users" value="">'/
+		' <input type="hidden" id="mnu" name="mnu" value="'getenv('mnu')'">'/
+		' <input type="hidden" name="expressao" id="expressao" value="">'/
+		'<select size=15 id="susers" name="susers" class="susers">'/
+	   
+	   
+	   	
+ 

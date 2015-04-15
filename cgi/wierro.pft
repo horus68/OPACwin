@@ -1,0 +1,33 @@
+'<br >'
+'<table style="margin-top:50px; font-size:1.2em; font-weight:bold" border="0" width="100%">'/
+'  <tr>'/
+'    <td align="center">'/
+' <img src="../../imagens/oops.gif" border="0">'/
+,select s(v1091)
+  case '1':'Erro interno'/,
+  case '3':,'Erro na expressão de pesquisa'/
+  case '5':,'Erro no formato'/,
+  case '7':,'Não existem registos para visualizar',
+  elsecase  'Erro interno do programa: 'V1091/,
+endsel,
+'  </td></tr>'/
+'</table>'/
+'<table border="0" width="100%" cellspacing="0" cellpadding="0">'/
+'  <tr>'/
+'<td align="center">'
+,select s(v1091)
+  case '1':,''/,
+  case '3':, if v1021<>'' then
+     else 
+        '<div align="center">'
+          'Expressão de pesquisa não definida ou registos não selecionados' 
+        '</div>'
+     fi
+  case '5':,''/,
+  case '7':,
+  ,elsecase  ''/,
+endsel,
+' </td>'/
+'<td><a href="javascript:history.back()">Voltar</a></td>'/
+'</tr>'
+'</table>'

@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@permnovo.hdr
+cgi=@permnovo.cgi
+epilog=@permnovo.ftr
+
+

@@ -1,0 +1,11 @@
+if val(v1001)=1  then
+        '<table id="users" class="edit" summary="Editar permisões de utilizadores">'/
+        '<th width="80">Nº Registo</th><th width="140">Sigla</th><th width="350">Permissões</th><th width="30">&nbsp;</th>'/
+fi        
+     (
+		if p(v2) then
+ 			    
+        '<tr><td>' mfn'</td><td>' v2'</td><td><input type="checkbox" id="chk1" 'if val(v700^a)=1 then 'checked' fi '>Fazer reservas <input type="checkbox" id="chk2" 'if val(v700^b)=1 then 'checked' fi '>Alterar senha <input type="checkbox" id="chk3" 'if val(v700^c)=1 then 'checked' fi '>Administração</td><td><a href="javascript: saveperm(&quot;'mfn(1)'&quot;,&quot;'v2'&quot;)"><img src="../../imagens/export.gif" border=0 alt="Gravar permissões"></a></a></td></tr>'/      
+ 		
+        fi
+    )

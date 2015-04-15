@@ -1,0 +1,3 @@
+lw(20000),
+proc('D9000A9000~'replace(s(cat('dbdef.cip')),'%ROOT%',s(ref([getenv('BASESPATH')'_cnf']1,v104),ref([getenv('BASESPATH')'_cnf']1,v103)))'~')
+v9000/

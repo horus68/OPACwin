@@ -1,0 +1,64 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/		
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'</head>'/
+'<body>'/
+'      <h3><span>Utilizadores</span></h3>'
+'      <script>'
+'      function onEnter(event){'
+'       var bolOldBrowser = (document.layers) ? true : false;'
+'       var intKeyCode = 0;'
+'       if (bolOldBrowser)'
+'         intKeyCode = event.which;'
+'         else'
+'         intKeyCode = event.keyCode;'
+'         if (intKeyCode == 13)'
+'          novapesq();'
+'       }'
+
+'       function validadados() {'
+'       var status=true;'
+'       var msgconf="";'
+'       var msg="";' 
+'       var senha=document.getElementById("v7").value;'
+'       var confirma=document.getElementById("confirma").value;'
+'        if (senha!=confirma)'
+'        { msgconf= "As senhas não conferem.\n";status=false; }'
+'        if (document.getElementById("v1").value=="")'
+'        {msg = "ID"; status=false; }'
+'        if (document.getElementById("v2").value=="")'
+'        {msg= (msg != "") ? msg+ ",SIGLA": msg+"SIGLA"; status=false; }'
+'        if (document.getElementById("v3").value=="")'
+'        {msg=  (msg != "") ? msg +",NOME": msg+ "NOME"; status=false; }'
+'        if (document.getElementById("v7").value=="")'
+'        {msg= (msg != "") ? msg +",SENHA": msg+ "SENHA" ; status=false; }'
+'        if (msg != "")  msg= "Os campos " + msg + " são obrigatórios.";'
+'        if (!status) alert ("ATENÇÂO! Existem erros no preenchimento do formulário.\n\n" + msgconf + "\n" + msg);'
+'        return status;'
+'       }'
+'       function voltar(){'
+'       window.location.href= "../../cgi/www.exe/[in=pesquser.in]?base=users&lim_inicio=1&limites=9999999&ut=admin&expressao=\"'(if v9000^n='expressao' then replace(v9000^v,'"','') fi )'\"";'
+'       }'
+'       function saveperm(mfn,us){'
+'       var n1=document.getElementById("chk1").checked ? 1:0;'
+'       var n2=document.getElementById("chk2").checked ? 1:0;'
+'       var n3=document.getElementById("chk3").checked ? 1:0;'
+'       window.location.href="../../cgi/www.exe/[in=updperm.in]?base=prmusr&from="+mfn+"&expressao=SIGLA "+us+"&ut=admin&chk1="+n1+"&chk2="+n2+"&chk3="+n3;'
+'       }'
+'      </script>'
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp">Administração</a> »'
+'      Utilizadores</p>'
+'      '
+'      <span style="float:right"><a href="javascript:voltar()"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></span><br><br>'/
+
+     ''/

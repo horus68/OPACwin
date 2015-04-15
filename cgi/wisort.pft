@@ -1,0 +1,8 @@
+,"pft=REF(['"N9999,(if v9000^n='base' then v9000^v fi),"']val(v1^m), "N9999,'@'(if V9000^n='formato' then v9000^v fi),".pft,)"N9999/
+select S((if V9000^n='sortfmt' then v9000^v fi))
+    /* Titulo */ case '1' : "freq='^k',S(MPU,V200^a,V200^e,v200^f).100,'^m'mfn"n9999,/
+    /* Autor  */ case '2' : "freq='^k',S(MPU,V700^a,V700^b,v710^a,v710^b).100,'^m'mfn"n9999,/
+    /* Data   */ case '3' : "freq='^k',S(MPU,V932,V210^d).20,'^m'mfn"n9999,/
+endsel,
+
+

@@ -1,0 +1,10 @@
+<script language="vbscript" runat="server">
+Sub Session_OnStart
+ CONST HIST_COLUMNS = 5
+ Dim histArray( ) 
+ ReDim histArray( HIST_COLUMNS, 10 ) 
+ histMaxUsed = -1 
+ Session("histArray") = histArray 
+ Session("histMaxUsed") = histMaxUsed 
+end sub 
+ </script>

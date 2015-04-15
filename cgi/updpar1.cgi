@@ -1,0 +1,9 @@
+'cipar=dbdef.cip'/
+'uctab=isisuc.tab'/
+'db=param'/
+'read=x'/
+'write=x'/
+'proc=@updpar.prc'/
+'from=2'/
+'count=1'/
+'pft=@report.pft'/

@@ -1,0 +1,5 @@
+if val(v1102)<>0 then
+  'Erro'
+else
+  'Sucesso'
+fi

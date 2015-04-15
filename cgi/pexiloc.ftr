@@ -1,0 +1,10 @@
+if val(v1002)=0 then
+'<tr><td colspan=5><br><b>Não foram encontrados registos</b></td></tr>'/
+fi
+'</table>
+<p style="margin-top:4px">
+<img src="/opac/imagens/green-circle.png" border="0" alt="Disponível para empréstimo"> : disponível para empréstimo   
+<img src="/opac/imagens/clock.gif" border="0" alt="Reserva pendente"> : reserva pendente   
+<img src="/opac/imagens/lock.gif" border="0" alt="Reserva confirmada"> : reserva confirmada  
+</p>
+</html>'

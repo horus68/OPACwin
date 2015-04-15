@@ -1,0 +1,51 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'	<meta name="robots" content="follow,index" />'/
+    putenv('expr=' (if v9000^n='expressao' then v9000^v fi))
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<style type="text/css">'/
+'.states label {'/
+'  display:inline-block;'/
+'  width:250px;'/
+'  margin-left:50px;'/
+'  padding: 0;'/
+'  white-space:nowrap;'/
+'}'/
+'html>body label{display:inline;float:left}'/
+'p {  white-space:nowrap;margin:0 0 1em 0;padding:0}'/
+
+'</style>'/
+
+'</head>'/
+'<body>'/
+'      <h3><span>Definir/Editar Definições de Reservas</span></h3>'
+'      <script>'
+'       function validadados() {'
+'       var status=true;'
+'       var msg="";' 
+'       var s1= document.getElementById("v10").value;'
+'       var s2= document.getElementById("v20").value;'
+'       if (s1=="" || isNaN(s1)) '
+'        {msg += "O campo Nº MÁX. DE PEDIDOS é de preenchimento obrigatório e tem de ser NUMÉRICO."; status=false;}'
+'       if (s2=="" || isNaN(s2)) '
+'        {msg += "O campo Nº MÁX. DE DIAS DA RESERVA é de preenchimento obrigatório e tem de ser NUMÉRICO."; status=false;}'
+'       if (!status) alert ("ATENÇÂO! Existem erros no preenchimento do formulário.\n\n" + msg);'
+'        return status;'
+'       }'
+
+'       function fechar(){'
+'       window.location.href= "../../admin/admin.asp?mnres=3&id=2&ut=admin";'
+'       }'
+'      </script>'
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl' [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp?mnres=3&id=2">Administração</a> »'
+'      Parametrização</p>'
+'      <span style="float:right"><a href="javascript:fechar();"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></span>'/
+     '<br><br>'/

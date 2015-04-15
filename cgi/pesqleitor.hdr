@@ -1,0 +1,104 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<title>'ref(['_cnf']1,v100)'</title>'/  
+'<script type="text/javascript" src="../../js/sorttable.js"></script>'/
+'<script src="../../js/tableH.js" type="text/javascript"></script>'/
+'<script type="text/javascript" src="../../js/prototype.js"></script>'/
+'<script>'
+'function start() {
+    if (!document.getElementsByTagName || !document.createTextNode || !document.getElementById("users")) return;
+    var rows = document.getElementById("users").getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    for (i =  0; i < rows.length; i++) {
+        rows[i].onclick = function() {
+			document.getElementById("expressao").value= this.cells[2].firstChild.nodeValue+this.cells[1].firstChild.nodeValue;
+	 		document.getElementById("frmselleitor").submit();
+        }
+    }
+}'
+'var ie = (navigator.appName.indexOf("Internet Explorer") !=-1) ? true: false;
+if(!ie) 
+{
+HTMLElement.prototype.click = function() 
+{
+var evt = this.ownerDocument.createEvent("MouseEvents");
+evt.initMouseEvent("click", true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+this.dispatchEvent(evt);
+} 
+}'
+
+'function onEnter( evt, frm ) {'
+'var keyCode = null;'
+'if( evt.which ) {'
+'keyCode = evt.which;'
+'} else if( evt.keyCode ) {'
+'keyCode = evt.keyCode;'
+'}'
+'if( 13 == keyCode ) {'
+'frm.lupa.click();'
+'return false;'
+'}'
+'return true;'
+'}'
+putenv('user='mhu,(if v9000^n='ut' then v9000^v fi),mhl)
+'function procurar()'
+'{'
+' var biblio="";'/
+' var selObj = $("selbiblio");'/
+' if (selObj != null) {'/
+'	 var selIndex = selObj.selectedIndex==-1?  0: selObj.selectedIndex;'/
+'    biblio=selObj.options[selIndex].text;'/
+' }'/ 
+' var expr=document.getElementById("criterio").value;'
+if getenv('user')='ADMIN' then
+' expr = biblio==""? expr: expr + (biblio!="<Biblioteca>"? " AND SI "+biblio:"");'
+fi
+' var mais="'if getenv('user')<>'ADMIN' then ' AND SI ' getenv('user') fi'";'
+' if (isNaN(expr)) document.getElementById("expressao").value= expr+"$"; else document.getElementById("expressao").value="NR "+expr+mais;'
+' document.forms[0].submit();'
+'}'/
+' function muda_biblio(){'/
+' var selObj = $("selbiblio");'/
+' if (selObj != null) {'/
+'	 var selIndex = selObj.selectedIndex==-1?  0: selObj.selectedIndex;'/
+'    biblio=selObj.options[selIndex].text;'/
+'    window.location.href="/opac/cgi/www.exe/[in=pesqleitor.in]?expressao=SI "+ biblio+"&from=1&to=25&ut=ADMIN";'
+' }'/  
+'}'/
+' function mostra_biblio(){'/
+'	  url ="/opac/cgi/www.exe/[in=relinst.in]";'/
+'	  new Ajax.Request(url, {    '/
+'       method:"get",  '/
+'		onSuccess: function(transport){       '/
+'		var response = transport.responseText; '/
+'       var entidades=response.split(",");'/ 
+'       var sigla="'(if v9000^n='expressao' then v9000^v fi)'";'/
+'       var strsele="<select id=\"selbiblio\" onchange=\"muda_biblio()\">";'/
+'       strsele += "<option value=>&lt;Biblioteca&gt;</option>";'/
+'       for (i=0;i<entidades.length-1;i++)'/
+'       {     strsele+= "<option value=\""+ entidades[i]+"\"" + (sigla.indexOf(entidades[i])!=-1? " selected ": "")+ " >"+ entidades[i]+"</option>";}'/
+'       strsele +="</select>";'/ 
+'		$("bibs").innerHTML=strsele;'/
+'     },    '/
+'	   onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }  }); '/
+'}'/
+'</script>'
+
+'</head>'/
+'<body onload="start();'if getenv('user')='ADMIN' then 'mostra_biblio();' fi'">'/
+'      <h3><span>Utilizadores [leitores]</span></h3>'
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp?'if getenv('user')='ADMIN' then 'mnut=2' else 'id=5' fi'">Administração</a> »'
+'      Seleção de leitor</p>'
+'<div id="admbotoes" style="float:right"><a href="../../admin/admin.asp?'if getenv('user')='ADMIN' then 'mnut=2' else 'id=5' fi'"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></div><h3>Seleção de leitor</h3>'/
+'<div align="center">'/
+'<form name="frmselleitor" id="frmselleitor" action="../../cgi/www.exe/[in=pleitor.in]" method="post" >  '/
+' <input type="hidden" name="ut" value="'getenv('user')'">'/
+' <input type="hidden" name="expressao" id="expressao" value="">'/

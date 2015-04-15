@@ -1,0 +1,11 @@
+lw(2000),
+putenv('base='mhu,v21,mhl)
+if  getenv('base')<> 'ADMIN' then
+   'IF NOT EXIST %DBTMPPATH%'v2'.mst GOTO NEXT'v2/
+		if getenv('base')='' then
+			'echo AUXDB=^^b%DBTMPPATH%'v2'>> ..\database.lst'/
+        else
+		    'echo UNIDB=^^b%DBTMPPATH%'v2'>> ..\database.lst'/
+		fi
+   ':NEXT'v2/
+fi

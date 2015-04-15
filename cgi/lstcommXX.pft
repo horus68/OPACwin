@@ -1,0 +1,19 @@
+'<div id="live-preview-display" class="lp-block" >'/
+'   <div style="padding-bottom:3px">'/
+if val(getenv('id'))=val(v1) or getenv('id')='-1' then
+ '<div style="float:right"><a  href="javascript:void(0)" onclick="delcomm('mfn(1)')"><img src="../../imagens/close_icon.gif" border="0"/></a></div>'/
+fi
+'<div>#'mfn(1)' ('v4*6.2'-'v4*4.2'-'v4.4')</div></div>'/
+'   <!--<div><span style="float:left"><fb:like></fb:like <fb:like layout="button_count"></fb:like></span></div>-->'/
+'   '/
+'	<div id="lp-avatar" style="height:50px">'/
+'     <script> var md5Email = hex_md5("'ref(['leitor']val(v1),v8)'");'/
+'     document.write ("<img src=\"http://www.gravatar.com/avatar.php?gravatar_id=" + md5Email + "&size=80&rating=G&default=../../imagens/no_avatar.gif\" alt=\"" + $("#lp-name").val() + "\" />");'/
+'     </script>'/
+'	</div>'/
+'   <div id="lp-name">'if v2<>'' then ref(['leitor']val(v1),v2) fi ', disse:</div>'
+'	<div id="lp-comment" class="wordwrap">'v3'</div><br />'
+if getenv('id')<> '-1' then
+'   <div style="clear:both;float:right"><img src="../../imagens/abuso.gif" border="0" align="absmiddle" /> <a href="javascript:void(0)" onclick="mailabuso('mfn(1)','v1')" alt="" title="">Denunciar abuso</a></div>'
+fi
+'</div>'

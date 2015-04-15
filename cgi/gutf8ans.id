@@ -1,0 +1,5831 @@
+!ID 000001
+!v001!c280
+!v002!128
+!v010!80
+!v011!hex
+!v012!128
+!v021!asc
+!v051!EURO
+!v052!Euro Sign
+!v101!0080
+!ID 000002
+!v001!c281
+!v002!129
+!v010!81
+!v011!hex
+!v012!129
+!v021!asc
+!v050!fonte desconhecida provavelmente Internet
+!v101!0081
+!ID 000003
+!v001!c282
+!v002!130
+!v010!82
+!v011!hex
+!v012!130
+!v021!asc
+!v051!apostrofe tipografica esquerda baixa
+!v052!single low-9 quotation mark
+!v101!0082
+!ID 000004
+!v001!c283
+!v002!131
+!v010!83
+!v011!hex
+!v012!131
+!v021!asc
+!v051!funcao de
+!v052!florin (Latin small letter f with hook)
+!v101!0083
+!ID 000005
+!v001!c284
+!v002!132
+!v010!84
+!v011!hex
+!v012!132
+!v021!asc
+!v051!aspas tipografica esquerda baixa
+!v052!double low-9 quotation mark
+!v101!0084
+!ID 000006
+!v001!c285
+!v002!133
+!v010!85
+!v011!hex
+!v012!133
+!v021!asc
+!v051!elipse
+!v052!horizontal ellipsis
+!v101!0085
+!ID 000007
+!v001!c286
+!v002!134
+!v010!86
+!v011!hex
+!v012!134
+!v021!asc
+!v051!adaga
+!v052!dagger mark
+!v101!0086
+!ID 000008
+!v001!c287
+!v002!135
+!v010!87
+!v011!hex
+!v012!135
+!v021!asc
+!v051!adaga dupla
+!v052!double dagger mark
+!v101!0087
+!ID 000009
+!v001!c288
+!v002!136
+!v010!88
+!v011!hex
+!v012!136
+!v021!asc
+!v051!acento circunflexo
+!v052!letter modifying circumflex
+!v101!0088
+!ID 000010
+!v001!c289
+!v002!137
+!v010!89
+!v011!hex
+!v012!137
+!v021!asc
+!v051!permil
+!v052!per mille sign
+!v101!0089
+!ID 000011
+!v001!c28a
+!v002!138
+!v010!8A
+!v011!hex
+!v012!138
+!v021!asc
+!v051!S maiusculo acento caron
+!v052!capital S caron
+!v101!008A
+!ID 000012
+!v001!c28b
+!v002!139
+!v010!8B
+!v011!hex
+!v012!139
+!v021!asc
+!v051!marca angular esquerda
+!v052!left single angle quote mark
+!v101!008B
+!ID 000013
+!v001!c28c
+!v002!140
+!v010!8C
+!v011!hex
+!v012!140
+!v021!asc
+!v051!ligadura OE maiuscula
+!v052!capital OE ligature
+!v101!008C
+!ID 000014
+!v001!c28d
+!v002!141
+!v010!8D
+!v011!hex
+!v012!141
+!v021!asc
+!v050!fonte desconhecida provavelmente Internet
+!v101!008D
+!ID 000015
+!v001!c28e
+!v002!142
+!v010!8E
+!v011!hex
+!v012!142
+!v021!asc
+!v052!Latin CAPITAL letter Z with caron
+!v101!008E
+!ID 000016
+!v001!c28f
+!v002!143
+!v010!8F
+!v011!hex
+!v012!143
+!v021!asc
+!v050!fonte desconhecida provavelmente Internet
+!v101!008F
+!ID 000017
+!v001!c290
+!v002!144
+!v010!90
+!v011!hex
+!v012!144
+!v021!asc
+!v050!fonte desconhecida provavelmente Internet
+!v101!0090
+!ID 000018
+!v001!c291
+!v002!145
+!v010!91
+!v011!hex
+!v012!145
+!v021!asc
+!v051!apostrofe tipografica esquerda alta
+!v052!left single quotation mark
+!v101!0091
+!ID 000019
+!v001!c292
+!v002!146
+!v010!92
+!v011!hex
+!v012!146
+!v021!asc
+!v051!apostrofe tipografica direita alta
+!v052!right single quotation mark
+!v101!0092
+!ID 000020
+!v001!c293
+!v002!147
+!v010!93
+!v011!hex
+!v012!147
+!v021!asc
+!v051!aspas tipografica esquerda
+!v052!left double quotation mark
+!v101!0093
+!ID 000021
+!v001!c294
+!v002!148
+!v010!94
+!v011!hex
+!v012!148
+!v021!asc
+!v051!aspas tipografica direita
+!v052!right double quotation mark
+!v101!0094
+!ID 000022
+!v001!c295
+!v002!149
+!v010!95
+!v011!hex
+!v012!149
+!v021!asc
+!v051!ponto central
+!v052!round filled bullet (Bullet)
+!v101!0095
+!ID 000023
+!v001!c296
+!v002!150
+!v010!96
+!v011!hex
+!v012!150
+!v021!asc
+!v051!travessao curto
+!v052!en dash
+!v101!0096
+!ID 000024
+!v001!c297
+!v002!151
+!v010!97
+!v011!hex
+!v012!151
+!v021!asc
+!v051!travessao longo
+!v052!em dash
+!v101!0097
+!ID 000025
+!v001!c298
+!v002!152
+!v010!98
+!v011!hex
+!v012!152
+!v021!asc
+!v051!til
+!v052!small spacing tilde acent
+!v101!0098
+!ID 000026
+!v001!c299
+!v002!153
+!v010!99
+!v011!hex
+!v012!153
+!v021!asc
+!v051!marca registrada
+!v052!trade mark
+!v101!0099
+!ID 000027
+!v001!c29a
+!v002!154
+!v010!9A
+!v011!hex
+!v012!154
+!v021!asc
+!v051!s minusculo acento caron
+!v052!small s caron
+!v101!009A
+!ID 000028
+!v001!c29b
+!v002!155
+!v010!9B
+!v011!hex
+!v012!155
+!v021!asc
+!v051!marca angular direita
+!v052!right angle single quotation mark
+!v101!009B
+!ID 000029
+!v001!c29c
+!v002!156
+!v010!9C
+!v011!hex
+!v012!156
+!v021!asc
+!v051!ligadura oe minuscula
+!v052!small oe ligature
+!v101!009C
+!ID 000030
+!v001!c29d
+!v002!157
+!v010!9D
+!v011!hex
+!v012!157
+!v021!asc
+!v050!fonte desconhecida provavelmente Internet
+!v101!009D
+!ID 000031
+!v001!c29e
+!v002!158
+!v010!9E
+!v011!hex
+!v012!158
+!v021!asc
+!v052!Latin small letter z with caron
+!v101!009E
+!ID 000032
+!v001!c29f
+!v002!159
+!v010!9F
+!v011!hex
+!v012!159
+!v021!asc
+!v051!Y maisuclo acento trema
+!v052!capital Y diaeresis
+!v101!009F
+!ID 000033
+!v001!c2a0
+!v002!160
+!v010!A0
+!v011!hex
+!v012!160
+!v021!asc
+!v041!&#160;
+!v051!Espaco nao divisivel
+!v052!No-Break Space
+!v101!00A0
+!ID 000034
+!v001!c2a1
+!v002!161
+!v010!A1
+!v011!hex
+!v012!161
+!v021!asc
+!v041!&#161;
+!v051!Exclamacao invertida
+!v052!Inverted Exclamation Mark
+!v101!00A1
+!ID 000035
+!v001!c2a2
+!v002!162
+!v010!A2
+!v011!hex
+!v012!162
+!v021!asc
+!v041!&#162;
+!v051!Centavos
+!v052!Cent Sign
+!v101!00A2
+!ID 000036
+!v001!c2a3
+!v002!163
+!v010!A3
+!v011!hex
+!v012!163
+!v021!asc
+!v041!&#163;
+!v051!Libras
+!v052!Pound Sign
+!v101!00A3
+!ID 000037
+!v001!c2a4
+!v002!164
+!v010!A4
+!v011!hex
+!v012!164
+!v021!asc
+!v041!&#164;
+!v051!Valor monetario
+!v052!Currency Sing
+!v101!00A4
+!ID 000038
+!v001!c2a5
+!v002!165
+!v010!A5
+!v011!hex
+!v012!165
+!v021!asc
+!v041!&#165;
+!v051!Yene
+!v052!Yen Sing
+!v101!00A5
+!ID 000039
+!v001!c2a6
+!v002!166
+!v010!A6
+!v011!hex
+!v012!166
+!v021!asc
+!v041!&#166;
+!v051!Barra vertical partida
+!v052!Broken Bar
+!v101!00A6
+!ID 000040
+!v001!c2a7
+!v002!167
+!v010!A7
+!v011!hex
+!v012!167
+!v021!asc
+!v041!&#167;
+!v051!Seccao
+!v052!Section sign
+!v101!00A7
+!ID 000041
+!v001!c2a8
+!v002!168
+!v010!A8
+!v011!hex
+!v012!168
+!v021!asc
+!v041!&#168;
+!v051!Trema
+!v052!Diaeresis
+!v101!00A8
+!ID 000042
+!v001!c2a9
+!v002!169
+!v010!A9
+!v011!hex
+!v012!169
+!v021!asc
+!v041!&#169;
+!v051!Copyright
+!v052!Copyright Sing
+!v101!00A9
+!ID 000043
+!v001!c2aa
+!v002!170
+!v010!AA
+!v011!hex
+!v012!170
+!v021!asc
+!v041!&#170;
+!v051!Ordinal feminino
+!v052!Feminine Ordinal Indicator
+!v101!00AA
+!ID 000044
+!v001!c2ab
+!v002!171
+!v010!AB
+!v011!hex
+!v012!171
+!v021!asc
+!v041!&#171;
+!v051!Left-Pointing Double Angle Quotation Mark
+!v052!Left-Pointing Double Angle Quotation Mark
+!v101!00AB
+!ID 000045
+!v001!c2ac
+!v002!172
+!v010!AC
+!v011!hex
+!v012!172
+!v021!asc
+!v041!&#172;
+!v051!Not
+!v052!Not Sign
+!v101!00AC
+!ID 000046
+!v001!c2ad
+!v002!173
+!v010!AD
+!v011!hex
+!v012!173
+!v021!asc
+!v041!&#173;
+!v051!Soft Hyphen
+!v052!Soft Hyphen
+!v101!00AD
+!ID 000047
+!v001!c2ae
+!v002!174
+!v010!AE
+!v011!hex
+!v012!174
+!v021!asc
+!v041!&#174;
+!v051!Marca registrada
+!v052!Registered Sing
+!v101!00AE
+!ID 000048
+!v001!c2af
+!v002!175
+!v010!AF
+!v011!hex
+!v012!175
+!v021!asc
+!v041!&#175;
+!v051!Macron
+!v052!Macron
+!v101!00AF
+!ID 000049
+!v001!c2b0
+!v002!176
+!v010!B0
+!v011!hex
+!v012!176
+!v021!asc
+!v041!&#176;
+!v051!Graus
+!v052!Degree Sign
+!v101!00B0
+!ID 000050
+!v001!c2b1
+!v002!177
+!v010!B1
+!v011!hex
+!v012!177
+!v021!asc
+!v041!&#177;
+!v051!Mais ou Menos
+!v052!Plus-Minus Sing
+!v101!00B1
+!ID 000051
+!v001!c2b2
+!v002!178
+!v010!B2
+!v011!hex
+!v012!178
+!v021!asc
+!v041!&#178;
+!v051!Elevado ao quadrado dois
+!v052!Superscript Two
+!v101!00B2
+!ID 000052
+!v001!c2b3
+!v002!179
+!v010!B3
+!v011!hex
+!v012!179
+!v021!asc
+!v041!&#179;
+!v051!Elevado ao cubo
+!v052!Superscript Three
+!v101!00B3
+!ID 000053
+!v001!c2b4
+!v002!180
+!v010!B4
+!v011!hex
+!v012!180
+!v021!asc
+!v041!&#180;
+!v051!Acento agudo
+!v052!Acute Accent
+!v101!00B4
+!ID 000054
+!v001!c2b5
+!v002!181
+!v010!B5
+!v011!hex
+!v012!181
+!v021!asc
+!v041!&#181;
+!v051!Micro
+!v052!Micro Sing
+!v101!00B5
+!ID 000055
+!v001!c2b6
+!v002!182
+!v010!B6
+!v011!hex
+!v012!182
+!v021!asc
+!v041!&#182;
+!v051!Paragrafo
+!v052!Pilcrow Sign
+!v101!00B6
+!ID 000056
+!v001!c2b7
+!v002!183
+!v010!B7
+!v011!hex
+!v012!183
+!v021!asc
+!v041!&#183;
+!v051!Ponto central
+!v052!Middle Dot
+!v101!00B7
+!ID 000057
+!v001!c2b8
+!v002!184
+!v010!B8
+!v011!hex
+!v012!184
+!v021!asc
+!v041!&#184;
+!v051!Cedilha
+!v052!Cedilla
+!v101!00B8
+!ID 000058
+!v001!c2b9
+!v002!185
+!v010!B9
+!v011!hex
+!v012!185
+!v021!asc
+!v041!&#185;
+!v051!Elevado a primeira
+!v052!Superscript One
+!v101!00B9
+!ID 000059
+!v001!c2ba
+!v002!186
+!v010!BA
+!v011!hex
+!v012!186
+!v021!asc
+!v041!&#186;
+!v051!Ordinal masculino
+!v052!Masculine Ordinal Indicator
+!v101!00BA
+!ID 000060
+!v001!c2bb
+!v002!188
+!v010!BC
+!v011!hex
+!v012!188
+!v021!asc
+!v041!&#188;
+!v051!Um quarto
+!v052!Vulgar Fraction One Quarter
+!v101!00BC
+!ID 000061
+!v001!c2bc
+!v002!187
+!v010!BB
+!v011!hex
+!v012!187
+!v021!asc
+!v041!&#187;
+!v051!Right-Pointing Double Angle Quotation Mark
+!v052!Right-Pointing Double Angle Quotation Mark
+!v101!00BB
+!ID 000062
+!v001!c2bd
+!v002!189
+!v010!BD
+!v011!hex
+!v012!189
+!v021!asc
+!v041!&#189;
+!v051!Meio
+!v052!Vulgar Fraction One Half
+!v101!00BD
+!ID 000063
+!v001!c2be
+!v002!190
+!v010!BE
+!v011!hex
+!v012!190
+!v021!asc
+!v041!&#190;
+!v051!Tres quartos
+!v052!Vulgar Fraction Three Quarters
+!v101!00BE
+!ID 000064
+!v001!c2bf
+!v002!191
+!v010!BF
+!v011!hex
+!v012!191
+!v021!asc
+!v041!&#191;
+!v051!Interrogacao invertida
+!v052!Inverted Question Mark
+!v101!00BF
+!ID 000065
+!v001!c380
+!v002!192
+!v010!C0
+!v011!hex
+!v012!192
+!v021!asc
+!v041!&#192;
+!v051!A maiúsculo acento grave
+!v052!Latin Capital Letter A with Grave
+!v101!00C0
+!ID 000066
+!v001!c381
+!v002!193
+!v010!C1
+!v011!hex
+!v012!193
+!v021!asc
+!v041!&#193;
+!v051!A maiusculo acento agudo
+!v052!Latin Capital Letter A with Acute
+!v101!00C1
+!ID 000067
+!v001!c382
+!v002!194
+!v010!C2
+!v011!hex
+!v012!194
+!v021!asc
+!v041!&#194;
+!v051!A maiusculo acento circunflexo
+!v052!Latin Capital Letter A with Circumflex
+!v101!00C2
+!ID 000068
+!v001!c383
+!v002!195
+!v010!C3
+!v011!hex
+!v012!195
+!v021!asc
+!v041!&#195;
+!v051!A maiusculo acento til
+!v052!Latin Capital Letter A with Tilde
+!v101!00C3
+!ID 000069
+!v001!c384
+!v002!196
+!v010!C4
+!v011!hex
+!v012!196
+!v021!asc
+!v041!&#196;
+!v051!A maiusculo acento trema
+!v052!Latin Capital Letter A with Diaeresis
+!v101!00C4
+!ID 000070
+!v001!c385
+!v002!197
+!v010!C5
+!v011!hex
+!v012!197
+!v021!asc
+!v041!&#197;
+!v051!A maiusculo acento anel
+!v052!Latin Capital Letter A with Ring Above
+!v101!00C5
+!ID 000071
+!v001!c386
+!v002!198
+!v010!C6
+!v011!hex
+!v012!198
+!v021!asc
+!v041!&#198;
+!v051!AE maiusculo
+!v052!Latin Capital Letter AE
+!v101!00C6
+!ID 000072
+!v001!c387
+!v002!199
+!v010!C7
+!v011!hex
+!v012!199
+!v021!asc
+!v041!&#199;
+!v051!C cedilha maiusculo
+!v052!Latin Capital Letter C with Cedilla
+!v101!00C7
+!ID 000073
+!v001!c388
+!v002!200
+!v010!C8
+!v011!hex
+!v012!200
+!v021!asc
+!v041!&#200;
+!v051!E maiusculo acento grave
+!v052!Latin Capital Letter E with Grave
+!v101!00C8
+!ID 000074
+!v001!c389
+!v002!201
+!v010!C9
+!v011!hex
+!v012!201
+!v021!asc
+!v041!&#201;
+!v051!E maiusculo acento agudo
+!v052!Latin Capital Letter E with Acute
+!v101!00C9
+!ID 000075
+!v001!c38a
+!v002!202
+!v010!CA
+!v011!hex
+!v012!202
+!v021!asc
+!v041!&#202;
+!v051!E maiusculo acento circunflexo
+!v052!Latin Capital Letter E with Circumflex
+!v101!00CA
+!ID 000076
+!v001!c38b
+!v002!203
+!v010!CB
+!v011!hex
+!v012!203
+!v021!asc
+!v041!&#203;
+!v051!E maiusculo acento trema
+!v052!Latin Capital Letter E with Diaeresis
+!v101!00CB
+!ID 000077
+!v001!c38c
+!v002!204
+!v010!CC
+!v011!hex
+!v012!204
+!v021!asc
+!v041!&#204;
+!v051!I maiusculo acento grave
+!v052!Latin Capital Letter I with Grave
+!v101!00CC
+!ID 000078
+!v001!c38d
+!v002!205
+!v010!CD
+!v011!hex
+!v012!205
+!v021!asc
+!v041!&#205;
+!v051!I maiusculo acento agudo
+!v052!Latin Capital Letter I with Acute
+!v101!00CD
+!ID 000079
+!v001!c38e
+!v002!206
+!v010!CE
+!v011!hex
+!v012!206
+!v021!asc
+!v041!&#206;
+!v051!I maiusculo acento circunflexo
+!v052!Latin Capital Letter I wiht Circumflex
+!v101!00CE
+!ID 000080
+!v001!c38f
+!v002!207
+!v010!CF
+!v011!hex
+!v012!207
+!v021!asc
+!v041!&#207;
+!v051!I maiusculo acento trema
+!v052!Latin Capital Letter I with Diaeresis
+!v101!00CF
+!ID 000081
+!v001!c390
+!v002!208
+!v010!D0
+!v011!hex
+!v012!208
+!v021!asc
+!v041!&#208;
+!v051!ETH maiusculo
+!v052!Latin Capital Letter ETH
+!v101!00D0
+!ID 000082
+!v001!c391
+!v002!209
+!v010!D1
+!v011!hex
+!v012!209
+!v021!asc
+!v041!&#209;
+!v051!N maiusculo acento til
+!v052!Latin Capital Letter N with Tilde
+!v101!00D1
+!ID 000083
+!v001!c392
+!v002!210
+!v010!D2
+!v011!hex
+!v012!210
+!v021!asc
+!v041!&#210;
+!v051!O maiusculo acento grave
+!v052!Latin Capital Letter O wiht Grave
+!v101!00D2
+!ID 000084
+!v001!c393
+!v002!211
+!v010!D3
+!v011!hex
+!v012!211
+!v021!asc
+!v041!&#211;
+!v051!O maiusculo acento agudo
+!v052!Latin Capital Letter O with Acute
+!v101!00D3
+!ID 000085
+!v001!c394
+!v002!212
+!v010!D4
+!v011!hex
+!v012!212
+!v021!asc
+!v041!&#212;
+!v051!O maiusculo acento circunflexo
+!v052!Latin Capital Letter O with Circumflex
+!v101!00D4
+!ID 000086
+!v001!c395
+!v002!213
+!v010!D5
+!v011!hex
+!v012!213
+!v021!asc
+!v041!&#213;
+!v051!O maiusculo acento til
+!v052!Latin Capital Letter O wiht Tilde
+!v101!00D5
+!ID 000087
+!v001!c396
+!v002!214
+!v010!D6
+!v011!hex
+!v012!214
+!v021!asc
+!v041!&#214;
+!v051!O maiusculo acento trema
+!v052!Latin Capital Letter O wiht Diaeresdis
+!v101!00D6
+!ID 000088
+!v001!c397
+!v002!215
+!v010!D7
+!v011!hex
+!v012!215
+!v021!asc
+!v041!&#215;
+!v051!Multiplicacao
+!v052!Multiplication sign
+!v101!00D7
+!ID 000089
+!v001!c398
+!v002!216
+!v010!D8
+!v011!hex
+!v012!216
+!v021!asc
+!v041!&#216;
+!v051!O maiusculo com barra
+!v052!Latin Capital Letter O with Stroke
+!v101!00D8
+!ID 000090
+!v001!c399
+!v002!217
+!v010!D9
+!v011!hex
+!v012!217
+!v021!asc
+!v041!&#217;
+!v051!U maisuculo acento grave
+!v052!Latin Capital Letter U with Grave
+!v101!00D9
+!ID 000091
+!v001!c39a
+!v002!218
+!v010!DA
+!v011!hex
+!v012!218
+!v021!asc
+!v041!&#218;
+!v051!U maiusculo acento agudo
+!v052!Latin Capital Letter U with Acute
+!v101!00DA
+!ID 000092
+!v001!c39b
+!v002!219
+!v010!DB
+!v011!hex
+!v012!219
+!v021!asc
+!v041!&#219;
+!v051!U maiusculo acento circunflexo
+!v052!Latin Capital Letter U with Circumflex
+!v101!00DB
+!ID 000093
+!v001!c39c
+!v002!220
+!v010!DC
+!v011!hex
+!v012!220
+!v021!asc
+!v041!&#220;
+!v051!U maiusculo acento trema
+!v052!Latin Capital Letter U with Diaeresis
+!v101!00DC
+!ID 000094
+!v001!c39d
+!v002!221
+!v010!DD
+!v011!hex
+!v012!221
+!v021!asc
+!v041!&#221;
+!v051!Y maiusculo acento agudo
+!v052!Latin Capital Letter Y with Acute
+!v101!00DD
+!ID 000095
+!v001!c39e
+!v002!222
+!v010!DE
+!v011!hex
+!v012!222
+!v021!asc
+!v041!&#222;
+!v051!THORN maiusculo
+!v052!Latin Capital Letter THORN
+!v101!00DE
+!ID 000096
+!v001!c39f
+!v002!223
+!v010!DF
+!v011!hex
+!v012!223
+!v021!asc
+!v041!&#223;
+!v051!Latin Small Letter SHARP S
+!v052!Latin Small Letter SHARP S
+!v101!00DF
+!ID 000097
+!v001!c3a0
+!v002!224
+!v010!E0
+!v011!hex
+!v012!224
+!v021!asc
+!v041!&#224;
+!v051!a minusculo acento grave
+!v052!Latin Small Letter a with Grave
+!v101!00E0
+!ID 000098
+!v001!c3a1
+!v002!225
+!v010!E1
+!v011!hex
+!v012!225
+!v021!asc
+!v041!&#225;
+!v051!a minusculo acento agudo
+!v052!Latin Small Letter a with Acute
+!v101!00E1
+!ID 000099
+!v001!c3a2
+!v002!226
+!v010!E2
+!v011!hex
+!v012!226
+!v021!asc
+!v041!&#226;
+!v051!a minusculo acento circunflexo
+!v052!Latin Small Letter a with Circumflex
+!v101!00E2
+!ID 000100
+!v001!c3a3
+!v002!227
+!v010!E3
+!v011!hex
+!v012!227
+!v021!asc
+!v041!&#227;
+!v051!a minusculo acento til
+!v052!Latin Small Letter a with Tilde
+!v101!00E3
+!ID 000101
+!v001!c3a4
+!v002!228
+!v010!E4
+!v011!hex
+!v012!228
+!v021!asc
+!v041!&#228;
+!v051!a minusculo acento trema
+!v052!Latin Small Letter a with Diaeresis
+!v101!00E4
+!ID 000102
+!v001!c3a5
+!v002!229
+!v010!E5
+!v011!hex
+!v012!229
+!v021!asc
+!v041!&#229;
+!v051!a minusculo acento anel
+!v052!Latin Small Letter a with Ring Above
+!v101!00E5
+!ID 000103
+!v001!c3a6
+!v002!230
+!v010!E6
+!v011!hex
+!v012!230
+!v021!asc
+!v041!&#230;
+!v051!ae minusculo
+!v052!Latin Small Letter ae
+!v101!00E6
+!ID 000104
+!v001!c3a7
+!v002!231
+!v010!E7
+!v011!hex
+!v012!231
+!v021!asc
+!v041!&#231;
+!v051!c cedilha minusculo
+!v052!Latin Small Letter c with Cedilla
+!v101!00E7
+!ID 000105
+!v001!c3a8
+!v002!232
+!v010!E8
+!v011!hex
+!v012!232
+!v021!asc
+!v041!&#232;
+!v051!e minusculo acento grave
+!v052!Latin Small Letter e with Grave
+!v101!00E8
+!ID 000106
+!v001!c3a9
+!v002!233
+!v010!E9
+!v011!hex
+!v012!233
+!v021!asc
+!v041!&#233;
+!v051!e minusculo acento agudo
+!v052!Latin Small Letter e with Acute
+!v101!00E9
+!ID 000107
+!v001!c3aa
+!v002!234
+!v010!EA
+!v011!hex
+!v012!234
+!v021!asc
+!v041!&#234;
+!v051!e minusculo acento circunflexo
+!v052!Latin Small Letter e with Circumflex
+!v101!00EA
+!ID 000108
+!v001!c3ab
+!v002!235
+!v010!EB
+!v011!hex
+!v012!235
+!v021!asc
+!v041!&#235;
+!v051!e minusculo acento trema
+!v052!Latin Small Letter e with Diaeresis
+!v101!00EB
+!ID 000109
+!v001!c3ac
+!v002!236
+!v010!EC
+!v011!hex
+!v012!236
+!v021!asc
+!v041!&#236;
+!v051!i minusculo acento grave
+!v052!Latin Small Letter i with Grave
+!v101!00EC
+!ID 000110
+!v001!c3ad
+!v002!237
+!v010!ED
+!v011!hex
+!v012!237
+!v021!asc
+!v041!&#237;
+!v051!i minusculo acento agudo
+!v052!Latin Small Letter i with Acute
+!v101!00ED
+!ID 000111
+!v001!c3ae
+!v002!238
+!v010!EE
+!v011!hex
+!v012!238
+!v021!asc
+!v041!&#238;
+!v051!i minusculo acento circunflexo
+!v052!Latin Small Letter i with Circumflex
+!v101!00EE
+!ID 000112
+!v001!c3af
+!v002!239
+!v010!EF
+!v011!hex
+!v012!239
+!v021!asc
+!v041!&#239;
+!v051!i minusculo acento trema
+!v052!Latin Small Letter i with Diaeresis
+!v101!00EF
+!ID 000113
+!v001!c3b0
+!v002!240
+!v010!F0
+!v011!hex
+!v012!240
+!v021!asc
+!v041!&#240;
+!v051!Eth minusculo
+!v052!Latin Small Letter ETH
+!v101!00F0
+!ID 000114
+!v001!c3b1
+!v002!241
+!v010!F1
+!v011!hex
+!v012!241
+!v021!asc
+!v041!&#241;
+!v051!n minusculo acento til
+!v052!Latin Small Letter n with Tilde
+!v101!00F1
+!ID 000115
+!v001!c3b2
+!v002!242
+!v010!F2
+!v011!hex
+!v012!242
+!v021!asc
+!v041!&#242;
+!v051!o minusculo acento grave
+!v052!Latin Small Letter o with Grave
+!v101!00F2
+!ID 000116
+!v001!c3b3
+!v002!243
+!v010!F3
+!v011!hex
+!v012!243
+!v021!asc
+!v041!&#243;
+!v051!o minusculo acento agudo
+!v052!Latin Small Letter o with Acute
+!v101!00F3
+!ID 000117
+!v001!c3b4
+!v002!244
+!v010!F4
+!v011!hex
+!v012!244
+!v021!asc
+!v041!&#244;
+!v051!o minusculo acento circunflexo
+!v052!Latin Small Letter o with Circumflex
+!v101!00F4
+!ID 000118
+!v001!c3b5
+!v002!245
+!v010!F5
+!v011!hex
+!v012!245
+!v021!asc
+!v041!&#245;
+!v051!o minusculo acento til
+!v052!Latin Small Letter o with Tilde
+!v101!00F5
+!ID 000119
+!v001!c3b6
+!v002!246
+!v010!F6
+!v011!hex
+!v012!246
+!v021!asc
+!v041!&#246;
+!v051!o minusculo acento trema
+!v052!Latin Small Letter o with Diaeresis
+!v101!00F6
+!ID 000120
+!v001!c3b7
+!v002!247
+!v010!F7
+!v011!hex
+!v012!247
+!v021!asc
+!v041!&#247;
+!v051!Divisao
+!v052!Division Sign
+!v101!00F7
+!ID 000121
+!v001!c3b8
+!v002!248
+!v010!F8
+!v011!hex
+!v012!248
+!v021!asc
+!v041!&#248;
+!v051!o minusculo com barra
+!v052!Latin Small Letter o with Stroke
+!v101!00F8
+!ID 000122
+!v001!c3b9
+!v002!249
+!v010!F9
+!v011!hex
+!v012!249
+!v021!asc
+!v041!&#249;
+!v051!u minusculo acento grave
+!v052!Latin Small Letter u with Grave
+!v101!00F9
+!ID 000123
+!v001!c3ba
+!v002!250
+!v010!FA
+!v011!hex
+!v012!250
+!v021!asc
+!v041!&#250;
+!v051!u minusculo acento agudo
+!v052!Latin Small Letter u with Acute
+!v101!00FA
+!ID 000124
+!v001!c3bb
+!v002!251
+!v010!FB
+!v011!hex
+!v012!251
+!v021!asc
+!v041!&#251;
+!v051!u minusculo acento circunflexo
+!v052!Latin Small Letter u with Circumflex
+!v101!00FB
+!ID 000125
+!v001!c3bc
+!v002!252
+!v010!FC
+!v011!hex
+!v012!252
+!v021!asc
+!v041!&#252;
+!v051!u minusculo acento trema
+!v052!Latin Small Letter u with Diaeresis
+!v101!00FC
+!ID 000126
+!v001!c3bd
+!v002!253
+!v010!FD
+!v011!hex
+!v012!253
+!v021!asc
+!v041!&#253;
+!v051!y minusculo acento agudo
+!v052!Latin Small Letter y with Acute
+!v101!00FD
+!ID 000127
+!v001!c3be
+!v002!254
+!v010!FE
+!v011!hex
+!v012!254
+!v021!asc
+!v041!&#254;
+!v051!Thorn minusculo
+!v052!Latin Small Letter THORN
+!v101!00FE
+!ID 000128
+!v001!c3bf
+!v002!255
+!v010!FF
+!v011!hex
+!v012!255
+!v021!asc
+!v041!&#255;
+!v051!y minusculo acento trema
+!v052!Latin Small Letter y with Diaeresis
+!v101!00FF
+!ID 000129
+!v001!c480
+!v002!065
+!v010!0100
+!v011!hex
+!v012!065
+!v021!asc
+!v041!&#256;
+!v051!A maiusculo acento macron
+!v052!Latin Capital Letter A with Macron
+!v101!0100
+!ID 000130
+!v001!c481
+!v002!097
+!v010!0101
+!v011!hex
+!v012!097
+!v021!asc
+!v041!&#257;
+!v051!a minusculo acento macron
+!v052!Latin Small Letter a with Macron
+!v101!0101
+!ID 000131
+!v001!c482
+!v002!065
+!v010!0102
+!v011!hex
+!v012!065
+!v021!asc
+!v041!&#258;
+!v051!A maiusculo acento breve
+!v052!Latin Capital Letter A with Breve
+!v101!0102
+!ID 000132
+!v001!c483
+!v002!097
+!v010!0103
+!v011!hex
+!v012!097
+!v021!asc
+!v041!&#259;
+!v051!a minusculo acento breve
+!v052!Latin Small Letter a with Breve
+!v101!0103
+!ID 000133
+!v001!c484
+!v002!065
+!v010!0104
+!v011!hex
+!v012!065
+!v021!asc
+!v041!&#260;
+!v051!A maiusculo acento ogonek
+!v052!Latin Capital Letter A with Ogonek
+!v101!0104
+!ID 000134
+!v001!c485
+!v002!097
+!v010!0105
+!v011!hex
+!v012!097
+!v021!asc
+!v041!&#261;
+!v051!a minusculo acento ogonek
+!v052!Latin Capital Letter A with Ogonek
+!v101!0105
+!ID 000135
+!v001!c486
+!v002!067
+!v010!0106
+!v011!hex
+!v012!067
+!v021!asc
+!v041!&#262;
+!v051!C maiusculo acento agudo
+!v052!Latin Capital Letter C with Acute
+!v101!0106
+!ID 000136
+!v001!c487
+!v002!099
+!v010!0107
+!v011!hex
+!v012!099
+!v021!asc
+!v041!&#263;
+!v051!c minusculo acento agudo
+!v052!Latin Small Letter c with Acute
+!v101!0107
+!ID 000137
+!v001!c488
+!v002!067
+!v010!0108
+!v011!hex
+!v012!067
+!v021!asc
+!v041!&#264;
+!v051!C maiusculo acento circunflexo
+!v052!Latin Capital Letter C with Circumflex
+!v101!0108
+!ID 000138
+!v001!c489
+!v002!099
+!v010!0109
+!v011!hex
+!v012!099
+!v021!asc
+!v041!&#265;
+!v051!c minusculo acento circunflexo
+!v052!Latin Small Letter c with Circumflex
+!v101!0109
+!ID 000139
+!v001!c48a
+!v002!067
+!v010!010A
+!v011!hex
+!v012!067
+!v021!asc
+!v041!&#266;
+!v051!C maiusculo acento ponto acima
+!v052!Latin Capital Letter C with Dot Above
+!v101!010A
+!ID 000140
+!v001!c48b
+!v002!099
+!v010!010B
+!v011!hex
+!v012!099
+!v021!asc
+!v041!&#267;
+!v051!c minusculo acento ponto acima
+!v052!Latin Small Letter c with Dot Above
+!v101!010B
+!ID 000141
+!v001!c48c
+!v002!067
+!v010!010C
+!v011!hex
+!v012!067
+!v021!asc
+!v041!&#268;
+!v051!C maiusculo acento caron
+!v052!Latin Capital Letter C with Caron
+!v101!010C
+!ID 000142
+!v001!c48d
+!v002!099
+!v010!010D
+!v011!hex
+!v012!099
+!v021!asc
+!v041!&#269;
+!v051!c minusculo acento caron
+!v052!Latin Small Letter c with Caron
+!v101!010D
+!ID 000143
+!v001!c48e
+!v002!068
+!v010!010E
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#270;
+!v051!D maiusculo acento caron
+!v052!Latin Capital Letter D with Caron
+!v101!010E
+!ID 000144
+!v001!c48f
+!v002!100
+!v010!010F
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#271;
+!v051!d minusculo acento caron
+!v052!Latin Small Letter d with Caron
+!v101!010F
+!ID 000145
+!v001!c490
+!v002!068
+!v010!0110
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#272;
+!v051!D maiusculo acento stroke
+!v052!Latin Capital Letter D with Stroke
+!v101!0110
+!ID 000146
+!v001!c491
+!v002!100
+!v010!0111
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#273;
+!v051!d minusculo acento stroke
+!v052!Latin Small Letter d with Stroke
+!v101!0111
+!ID 000147
+!v001!c492
+!v002!069
+!v010!0112
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#274;
+!v051!E maiusculo acento macron
+!v052!Latin Capital Letter E with Macron
+!v101!0112
+!ID 000148
+!v001!c493
+!v002!101
+!v010!0113
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#275;
+!v051!e minusculo acento macron
+!v052!Latin Small Letter E with Macron
+!v101!0113
+!ID 000149
+!v001!c494
+!v002!069
+!v010!0114
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#276;
+!v051!E maiusculo acento breve
+!v052!Latin Capital Letter E with Breve
+!v101!0114
+!ID 000150
+!v001!c495
+!v002!101
+!v010!0115
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#277;
+!v051!e minusculo acento breve
+!v052!Latin Small Letter E with Breve
+!v101!0115
+!ID 000151
+!v001!c496
+!v002!069
+!v010!0116
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#278;
+!v051!E Maiusculo acento ponto acima
+!v052!Latin Capital Letter E with Dot Above
+!v101!0116
+!ID 000152
+!v001!c497
+!v002!101
+!v010!0117
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#279;
+!v051!e minusculo acento ponto acima
+!v052!Latin Small Letter E with Dot Above
+!v101!0117
+!ID 000153
+!v001!c498
+!v002!069
+!v010!0118
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#280;
+!v051!E maiusculo acento Ognek
+!v052!Latin Capital Letter E with Ogonek
+!v101!0118
+!ID 000154
+!v001!c499
+!v002!101
+!v010!0119
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#281;
+!v051!e minusculo acento Ognek
+!v052!Latin Small Letter E with Ognek
+!v101!0119
+!ID 000155
+!v001!c49a
+!v002!069
+!v010!011A
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#282;
+!v051!E maiusculo acento caron
+!v052!Latin Capital Letter E with Caron
+!v101!011A
+!ID 000156
+!v001!c49b
+!v002!101
+!v010!011B
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#283;
+!v051!e minusculo acento caron
+!v052!Latin Small Letter E with Caron
+!v101!011B
+!ID 000157
+!v001!c49c
+!v002!071
+!v010!011C
+!v011!hex
+!v012!071
+!v021!asc
+!v041!&#284;
+!v051!G maiusculo acento circunflexo
+!v052!Latin Capital Letter G with Circumflex
+!v101!011C
+!ID 000158
+!v001!c49d
+!v002!103
+!v010!011D
+!v011!hex
+!v012!103
+!v021!asc
+!v041!&#285;
+!v051!g minusculo acento circunflexo
+!v052!Latin Small Letter G with Circumflex
+!v101!011D
+!ID 000159
+!v001!c49e
+!v002!071
+!v010!011E
+!v011!hex
+!v012!071
+!v021!asc
+!v041!&#286;
+!v051!G maiusculo acento breve
+!v052!Latin Capital Letter G with Breve
+!v101!011E
+!ID 000160
+!v001!c49f
+!v002!103
+!v010!011F
+!v011!hex
+!v012!103
+!v021!asc
+!v041!&#287;
+!v051!g minusculo acento breve
+!v052!Latin Small Letter G with Breve
+!v101!011F
+!ID 000161
+!v001!c4a0
+!v002!071
+!v010!0120
+!v011!hex
+!v012!071
+!v021!asc
+!v041!&#288;
+!v051!G maiusculo acento ponto acima
+!v052!Latin Capital Letter G with Dot Above
+!v101!0120
+!ID 000162
+!v001!c4a1
+!v002!103
+!v010!0121
+!v011!hex
+!v012!103
+!v021!asc
+!v041!&#289;
+!v051!g minusculo acento ponto acima
+!v052!Latin Small Letter G with Dot Above
+!v101!0121
+!ID 000163
+!v001!c4a2
+!v002!071
+!v010!0122
+!v011!hex
+!v012!071
+!v021!asc
+!v041!&#290;
+!v051!G maiusculo acento cedilha
+!v052!Latin Capital Letter G with Cedilla
+!v101!0122
+!ID 000164
+!v001!c4a3
+!v002!103
+!v010!0123
+!v011!hex
+!v012!103
+!v021!asc
+!v041!&#291;
+!v051!g minusculo acento cedilha
+!v052!Latin Small Letter G with Cedilla
+!v101!0123
+!ID 000165
+!v001!c4a4
+!v002!072
+!v010!0124
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#292;
+!v051!H maiusculo acento circunflexo
+!v052!Latin Capital Letter H with Circumflex
+!v101!0124
+!ID 000166
+!v001!c4a5
+!v002!104
+!v010!0125
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#293;
+!v051!h minusculo acento circunflexo
+!v052!Latin Small Letter H with Circumflex
+!v101!0125
+!ID 000167
+!v001!c4a6
+!v002!072
+!v010!0126
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#294;
+!v051!H maiusculo acento stroke
+!v052!Latin Capital Letter H with Stroke
+!v101!0126
+!ID 000168
+!v001!c4a7
+!v002!104
+!v010!0127
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#295;
+!v051!h minusculo acento stroke
+!v052!Latin Small Letter H with Stroke
+!v101!0127
+!ID 000169
+!v001!c4a8
+!v002!073
+!v010!0128
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#296;
+!v051!I maiusculo acento til
+!v052!Latin Capital Letter I with Tilde
+!v101!0128
+!ID 000170
+!v001!c4a9
+!v002!105
+!v010!0129
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#297;
+!v051!i minusculo acenti til
+!v052!Latin Small Letter I with Tilde
+!v101!0129
+!ID 000171
+!v001!c4aa
+!v002!073
+!v010!012A
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#298;
+!v051!I maiusculo acento macron
+!v052!Latin Capital Letter I with Macron
+!v101!012A
+!ID 000172
+!v001!c4ab
+!v002!105
+!v010!012B
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#299;
+!v051!i minusculo acento macron
+!v052!Latin Small Letter I with Macron
+!v101!012B
+!ID 000173
+!v001!c4ac
+!v002!073
+!v010!012C
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#300;
+!v051!I maiusculo acento breve
+!v052!Latin Capital Letter I with Breve
+!v101!012C
+!ID 000174
+!v001!c4ad
+!v002!105
+!v010!012D
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#301;
+!v051!i minusculo acento breve
+!v052!Latin Small Letter I with Breve
+!v101!012D
+!ID 000175
+!v001!c4ae
+!v002!073
+!v010!012E
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#302;
+!v051!I maiusculo acento ogonek
+!v052!Latin Capital Letter I with Ogonek
+!v101!012E
+!ID 000176
+!v001!c4af
+!v002!105
+!v010!012F
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#303;
+!v051!i minusculo acento ogonek
+!v052!Latin Small Letter I with Ogonek
+!v101!012F
+!ID 000177
+!v001!c4b0
+!v002!073
+!v010!0130
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#304;
+!v051!I maiusculo acento ponto acima
+!v052!LAtin Capital Letter I with Dot Above
+!v101!0130
+!ID 000178
+!v001!c4b1
+!v002!105
+!v010!0131
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#305;
+!v051!i minusculo acento sem ponto
+!v052!Latin Small Letter I Dotless
+!v101!0131
+!ID 000179
+!v001!c4b4
+!v002!074
+!v010!0134
+!v011!hex
+!v012!074
+!v021!asc
+!v041!&#308;
+!v051!J maiusculo acento circunflexo
+!v052!Latin Capital Letter J with Circumflex
+!v101!0134
+!ID 000180
+!v001!c4b5
+!v002!106
+!v010!0135
+!v011!hex
+!v012!106
+!v021!asc
+!v041!&#309;
+!v051!j minusculo acento circunflexo
+!v052!Latin Small Letter J with Circumflex
+!v101!0135
+!ID 000181
+!v001!c4b6
+!v002!075
+!v010!0136
+!v011!hex
+!v012!075
+!v021!asc
+!v041!&#310;
+!v051!K maiusculo acento cedilha
+!v052!Latin Capital Letter K with Cedilla
+!v101!0136
+!ID 000182
+!v001!c4b7
+!v002!107
+!v010!0137
+!v011!hex
+!v012!107
+!v021!asc
+!v041!&#311;
+!v051!k minusculo acento cedilha
+!v052!Latin Small Letter K with Cedilla
+!v101!0137
+!ID 000183
+!v001!c4b9
+!v002!076
+!v010!0139
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#313;
+!v051!L maiusculo acento agudo
+!v052!Latin Capital Letter L with Acute
+!v101!0139
+!ID 000184
+!v001!c4ba
+!v002!108
+!v010!013A
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#314;
+!v051!l minusculo acento agudo
+!v052!Latin Small Letter L with Acute
+!v101!013A
+!ID 000185
+!v001!c4bb
+!v002!076
+!v010!013B
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#315;
+!v051!L maiusculo acento cedilha
+!v052!Latin Capital Letter L with Cedilla
+!v101!013B
+!ID 000186
+!v001!c4bc
+!v002!108
+!v010!013C
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#316;
+!v051!l minusculo acento cedilha
+!v052!Latin Small Letter L with Cedilla
+!v101!013C
+!ID 000187
+!v001!c4bd
+!v002!076
+!v010!013D
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#317;
+!v051!L maisuculo acento caron
+!v052!Latin Capital Letter L with Caron
+!v101!013D
+!ID 000188
+!v001!c4be
+!v002!108
+!v010!013E
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#318;
+!v051!l minusculo acento caron
+!v052!Latin Small Letter L with Caron
+!v101!013E
+!ID 000189
+!v001!c4bf
+!v002!076
+!v010!013F
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#319;
+!v051!L maiusculo acento ponto central
+!v052!Latin Capital Letter L with Middle Dot
+!v101!013F
+!ID 000190
+!v001!c580
+!v002!108
+!v010!0140
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#320;
+!v051!l minusculo acento ponto central
+!v052!Latin Small Letter L with Middle Dot
+!v101!0140
+!ID 000191
+!v001!c581
+!v002!076
+!v010!0141
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#321;
+!v051!L maiusculo acento stroke
+!v052!Latin Capital Letter L with Stroke
+!v101!0141
+!ID 000192
+!v001!c582
+!v002!108
+!v010!0142
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#322;
+!v051!l minusculo acento stroke
+!v052!Latin Small Letter L with Stroke
+!v101!0142
+!ID 000193
+!v001!c583
+!v002!078
+!v010!0143
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#323;
+!v051!N maiusculo acento agudo
+!v052!Latin Capital Letter N with Acute
+!v101!0143
+!ID 000194
+!v001!c584
+!v002!110
+!v010!0144
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#324;
+!v051!n minusculo acento agudo
+!v052!Latin Small Letter N with Acute
+!v101!0144
+!ID 000195
+!v001!c585
+!v002!078
+!v010!0145
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#325;
+!v051!N maiusculo acento cedilha
+!v052!Latin Capital Letter N with Cedilla
+!v101!0145
+!ID 000196
+!v001!c586
+!v002!110
+!v010!0146
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#326;
+!v051!n minusculo acento cedilha
+!v052!Latin Small Letter N with Cedilla
+!v101!0146
+!ID 000197
+!v001!c587
+!v002!078
+!v010!0147
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#327;
+!v051!N maiusculo acento caron
+!v052!Latin Capitall Letter N with Caron
+!v101!0147
+!ID 000198
+!v001!c588
+!v002!110
+!v010!0148
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#328;
+!v051!n minusculo acento caron
+!v052!Latin Small Letter N with Caron
+!v101!0148
+!ID 000199
+!v001!c589
+!v002!110
+!v010!0149
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#329;
+!v051!n minusculo precedido apostrophe
+!v052!Latin Small Letter N Preceded By Apostrophe
+!v101!0149
+!ID 000200
+!v001!c58c
+!v002!079
+!v010!014C
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#332;
+!v051!O maiusculo acento macron
+!v052!Latin Capital Letter O with Macron
+!v101!014C
+!ID 000201
+!v001!c58d
+!v002!111
+!v010!014D
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#333;
+!v051!o minusculo acento macron
+!v052!Latin Small Letter O with Macron
+!v101!014D
+!ID 000202
+!v001!c58e
+!v002!079
+!v010!014E
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#334;
+!v051!O maiusculo acento breve
+!v052!Latin Capital Letter O with Breve
+!v101!014E
+!ID 000203
+!v001!c58f
+!v002!111
+!v010!014F
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#335;
+!v051!o minusculo acento breve
+!v052!Latin Small Letter O with Breve
+!v101!014F
+!ID 000204
+!v001!c590
+!v002!079
+!v010!0150
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#336;
+!v051!O maiusculo acento duplo agudo
+!v052!Latin Capital Letter O with Double Acute
+!v101!0150
+!ID 000205
+!v001!c591
+!v002!111
+!v010!0151
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#337;
+!v051!o minusculo acento duplo agudo
+!v052!Latin Small Letter O with Double Acute
+!v101!0151
+!ID 000206
+!v001!c594
+!v002!082
+!v010!0154
+!v011!hex
+!v012!082
+!v021!asc
+!v051!R maiusculo acento agudo
+!v052!Latin Capital Letter R with Acute
+!v101!0154
+!ID 000207
+!v001!c595
+!v002!114
+!v010!0155
+!v011!hex
+!v012!114
+!v021!asc
+!v051!r minusculo acento agudo
+!v052!Latin Small Letter R with Acute
+!v101!0155
+!ID 000208
+!v001!c596
+!v002!082
+!v010!0156
+!v011!hex
+!v012!082
+!v021!asc
+!v051!R maiusculo acento cedilha
+!v052!Latin Capital Letter R with Cedilla
+!v101!0156
+!ID 000209
+!v001!c597
+!v002!114
+!v010!0157
+!v011!hex
+!v012!114
+!v021!asc
+!v051!r minusculo acento cedilha
+!v052!Latin Small Letter R with Cedilla
+!v101!0157
+!ID 000210
+!v001!c598
+!v002!082
+!v010!0158
+!v011!hex
+!v012!082
+!v021!asc
+!v051!R maiusculo acento caron
+!v052!Latin Capital Letter R with Caron
+!v101!0158
+!ID 000211
+!v001!c599
+!v002!114
+!v010!0159
+!v011!hex
+!v012!114
+!v021!asc
+!v051!r minusculo acento caron
+!v052!Latin Small Letter R with Caron
+!v101!0159
+!ID 000212
+!v001!c59a
+!v002!083
+!v010!015A
+!v011!hex
+!v012!083
+!v021!asc
+!v051!S maiusculo acento agudo
+!v052!Latin Capital Letter S with Acute
+!v101!015A
+!ID 000213
+!v001!c59b
+!v002!115
+!v010!015B
+!v011!hex
+!v012!115
+!v021!asc
+!v051!s minusculo acento agudo
+!v052!Latin Small Letter S with Acute
+!v101!015B
+!ID 000214
+!v001!c59c
+!v002!083
+!v010!015C
+!v011!hex
+!v012!083
+!v021!asc
+!v051!S maiusculo acento circunflexo
+!v052!Latin Capital Letter S with Circumflex
+!v101!015C
+!ID 000215
+!v001!c59d
+!v002!115
+!v010!015D
+!v011!hex
+!v012!115
+!v021!asc
+!v051!s minusculo acento circunflexo
+!v052!Latin Small Letter S with Circumflex
+!v101!015D
+!ID 000216
+!v001!c59e
+!v002!083
+!v010!015E
+!v011!hex
+!v012!083
+!v021!asc
+!v051!S maiusculo acento cedilha
+!v052!Latin Capital Letter S with Cedilla
+!v101!015E
+!ID 000217
+!v001!c59f
+!v002!115
+!v010!015F
+!v011!hex
+!v012!115
+!v021!asc
+!v051!s minusculo acento cedilha
+!v052!Latin Small Letter S with Cedilla
+!v101!015F
+!ID 000218
+!v001!c5a0
+!v002!083
+!v010!0160
+!v011!hex
+!v012!083
+!v021!asc
+!v051!S maiusculo acento caron
+!v052!Latin Capital Letter S with Caron
+!v101!0160
+!ID 000219
+!v001!c5a1
+!v002!115
+!v010!0161
+!v011!hex
+!v012!115
+!v021!asc
+!v051!s minusculo acento caron
+!v052!Latin Small Letter S with Caron
+!v101!0161
+!ID 000220
+!v001!c5a2
+!v002!084
+!v010!0162
+!v011!hex
+!v012!084
+!v021!asc
+!v051!T maiusculo acento cedilha
+!v052!Latin Capital Letter T with Cedilla
+!v101!0162
+!ID 000221
+!v001!c5a3
+!v002!116
+!v010!0163
+!v011!hex
+!v012!116
+!v021!asc
+!v051!t minusculo acento cedilha
+!v052!Latin Small Letter T with Cedilla
+!v101!0163
+!ID 000222
+!v001!c5a4
+!v002!084
+!v010!0164
+!v011!hex
+!v012!084
+!v021!asc
+!v051!T maiusculo acento caron
+!v052!Latin Capital Letter T with Caron
+!v101!0164
+!ID 000223
+!v001!c5a5
+!v002!116
+!v010!0165
+!v011!hex
+!v012!116
+!v021!asc
+!v051!t minusculo acento caron
+!v052!Latin Small Letter T with Caron
+!v101!0165
+!ID 000224
+!v001!c5a6
+!v002!084
+!v010!0166
+!v011!hex
+!v012!084
+!v021!asc
+!v051!T maiusculo acento stroke
+!v052!Latin Capital Letter T with Stroke
+!v101!0166
+!ID 000225
+!v001!c5a7
+!v002!116
+!v010!0167
+!v011!hex
+!v012!116
+!v021!asc
+!v051!t minusculo acento stroke
+!v052!Latin Small Letter T with Stroke
+!v101!0167
+!ID 000226
+!v001!c5a8
+!v002!085
+!v010!0168
+!v011!hex
+!v012!085
+!v021!asc
+!v051!U maiusculo acento til
+!v052!Latin Capital Letter U with Tilde
+!v101!0168
+!ID 000227
+!v001!c5a9
+!v002!117
+!v010!0169
+!v011!hex
+!v012!117
+!v021!asc
+!v051!u minusculo acento til
+!v052!Latin Small Letter U with Tilde
+!v101!0169
+!ID 000228
+!v001!c5aa
+!v002!085
+!v010!016A
+!v011!hex
+!v012!085
+!v021!asc
+!v051!U maiusculo acento macron
+!v052!Latin Capital Letter U with Macron
+!v101!016A
+!ID 000229
+!v001!c5ab
+!v002!117
+!v010!016B
+!v011!hex
+!v012!117
+!v021!asc
+!v051!u minusculo acento macron
+!v052!Latin Small Letter U with Macron
+!v101!016B
+!ID 000230
+!v001!c5ac
+!v002!085
+!v010!016C
+!v011!hex
+!v012!085
+!v021!asc
+!v051!U maiusculo acento breve
+!v052!Latin Capital Letter U with Breve
+!v101!016C
+!ID 000231
+!v001!c5ad
+!v002!117
+!v010!016D
+!v011!hex
+!v012!117
+!v021!asc
+!v051!u minusculo acento breve
+!v052!Latin Small Letter U with Breve
+!v101!016D
+!ID 000232
+!v001!c5ae
+!v002!085
+!v010!016E
+!v011!hex
+!v012!085
+!v021!asc
+!v051!U maiusculo acento ring acima
+!v052!Latin Capital Letter U with Ring Above
+!v101!016E
+!ID 000233
+!v001!c5af
+!v002!117
+!v010!016F
+!v011!hex
+!v012!117
+!v021!asc
+!v051!u minusculo acento ring acima
+!v052!Latin Small Letter U with Ring Above
+!v101!016F
+!ID 000234
+!v001!c5b0
+!v002!085
+!v010!0170
+!v011!hex
+!v012!085
+!v021!asc
+!v051!U maiusculo acento duplo agudo
+!v052!Latin Capital Letter U with Double Acute
+!v101!0170
+!ID 000235
+!v001!c5b1
+!v002!117
+!v010!0171
+!v011!hex
+!v012!117
+!v021!asc
+!v051!u minusculo acento duplo agudo
+!v052!Latin Small Latter U woth Double Acute
+!v101!0171
+!ID 000236
+!v001!c5b2
+!v002!085
+!v010!0172
+!v011!hex
+!v012!085
+!v021!asc
+!v051!U maiusculo acento ogonek
+!v052!Latin Capital Letter U with Ogonek
+!v101!0172
+!ID 000237
+!v001!c5b3
+!v002!117
+!v010!0173
+!v011!hex
+!v012!117
+!v021!asc
+!v051!u minusculo acento ogonek
+!v052!Latin Small Letter U with Ogonel
+!v101!0173
+!ID 000238
+!v001!c5b4
+!v002!087
+!v010!0174
+!v011!hex
+!v012!087
+!v021!asc
+!v051!W maiusculo acento circunflexo
+!v052!Latin Capital Letter W with Circumflex
+!v101!0174
+!ID 000239
+!v001!c5b5
+!v002!119
+!v010!0175
+!v011!hex
+!v012!119
+!v021!asc
+!v051!w minusculo acento circunflexo
+!v052!Latin Small Letter W with Circumflex
+!v101!0175
+!ID 000240
+!v001!c5b6
+!v002!089
+!v010!0176
+!v011!hex
+!v012!089
+!v021!asc
+!v051!Y maiusculo acento circunflexo
+!v052!Latin Capital Letter Y with Circumflex
+!v101!0176
+!ID 000241
+!v001!c5b7
+!v002!121
+!v010!0177
+!v011!hex
+!v012!121
+!v021!asc
+!v051!y minusculo acento circunflexo
+!v052!Latin Small Latter Y with Circumflex
+!v101!0177
+!ID 000242
+!v001!c5b8
+!v002!089
+!v010!0178
+!v011!hex
+!v012!089
+!v021!asc
+!v051!Y maiusculo acento trema
+!v052!Latin Capital Letter Y with Diaeresis
+!v101!0178
+!ID 000243
+!v001!c5b9
+!v002!090
+!v010!0179
+!v011!hex
+!v012!090
+!v021!asc
+!v051!Z maiusculo acento agudo
+!v052!Latin Capital Letter Z with Acute
+!v101!0179
+!ID 000244
+!v001!c5ba
+!v002!122
+!v010!017A
+!v011!hex
+!v012!122
+!v021!asc
+!v051!z minusculo acento agudo
+!v052!Latin Small Letter Z with Acute
+!v101!017A
+!ID 000245
+!v001!c5bb
+!v002!090
+!v010!017B
+!v011!hex
+!v012!090
+!v021!asc
+!v051!Z maiusculo acento ponto acima
+!v052!Latin Capital Letter Z with Dot Above
+!v101!017B
+!ID 000246
+!v001!c5bc
+!v002!122
+!v010!017C
+!v011!hex
+!v012!122
+!v021!asc
+!v051!z minusculo acento ponto acima
+!v052!Latin Small Letter Z with Dot Above
+!v101!017C
+!ID 000247
+!v001!c5bd
+!v002!090
+!v010!017D
+!v011!hex
+!v012!090
+!v021!asc
+!v051!Z maiusculo acento caron
+!v052!Latin Capital Letter Z with Caron
+!v101!017D
+!ID 000248
+!v001!c5be
+!v002!122
+!v010!017E
+!v011!hex
+!v012!122
+!v021!asc
+!v051!z minusculo acento caron
+!v052!Latin Small Letter Z with Caron
+!v101!017E
+!ID 000249
+!v001!c5bf
+!v002!115
+!v010!017F
+!v011!hex
+!v012!115
+!v021!asc
+!v051!s minusculo (Fraktur e Gaelico)
+!v052!Latin Small Letter Long S
+!v101!017F
+!ID 000250
+!v001!e1b880
+!v002!065
+!v010!1E00
+!v011!hex
+!v012!065
+!v021!asc
+!v041!&#7680;
+!v051!A maiusculo com bola abaixo
+!v052!Latin Capital Letter A with Ring Below
+!v101!1E00
+!ID 000251
+!v001!e1b881
+!v002!097
+!v010!1E01
+!v011!hex
+!v012!097
+!v021!asc
+!v041!&#7681;
+!v051!a minusculo com bola abaixo
+!v052!Latin Small Letter a with Ring Below
+!v101!1E01
+!ID 000252
+!v001!e1b882
+!v002!066
+!v010!1E02
+!v011!hex
+!v012!066
+!v021!asc
+!v041!&#7682;
+!v051!B maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER B WITH DOT ABOVE
+!v101!1E02
+!ID 000253
+!v001!e1b883
+!v002!098
+!v010!1E03
+!v011!hex
+!v012!098
+!v021!asc
+!v041!&#7683;
+!v051!b minusculo acento ponto acima
+!v052!LATIN SMALL LETTER B WITH DOT ABOVE
+!v101!1E03
+!ID 000254
+!v001!e1b884
+!v002!066
+!v010!1E04
+!v011!hex
+!v012!066
+!v021!asc
+!v041!&#7684;
+!v051!B maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER B WITH DOT BELOW
+!v101!1E04
+!ID 000255
+!v001!e1b885
+!v002!098
+!v010!1E05
+!v011!hex
+!v012!098
+!v021!asc
+!v041!&#7685;
+!v051!b minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER B WITH DOT BELOW
+!v101!1E05
+!ID 000256
+!v001!e1b886
+!v002!066
+!v010!1E06
+!v011!hex
+!v012!066
+!v021!asc
+!v041!&#7686;
+!v051!B maiusculo acento linha abaixo
+!v052!LATIN CAPITAL LETTER B WITH LINE BELOW
+!v101!1E06
+!ID 000257
+!v001!e1b887
+!v002!098
+!v010!1E07
+!v011!hex
+!v012!098
+!v021!asc
+!v041!&#7687;
+!v051!b minusculo acento linha abaixo
+!v052!LATIN SMALL LETTER B WITH LINE BELOW
+!v101!1E07
+!ID 000258
+!v001!e1b888
+!v002!067
+!v010!1E08
+!v011!hex
+!v012!067
+!v021!asc
+!v041!&#7688;
+!v051!C maiusculo com cedilha e acento agudo
+!v052!LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE
+!v101!1E08
+!ID 000259
+!v001!e1b889
+!v002!099
+!v010!1E09
+!v011!hex
+!v012!099
+!v021!asc
+!v041!&#7689;
+!v051!c minusculo com cedilha e acento agudo
+!v052!LATIN SMALL LETTER C WITH CEDILLA AND ACUTE
+!v101!1E09
+!ID 000260
+!v001!e1b88a
+!v002!068
+!v010!1E0A
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#7690;
+!v051!D maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER D WITH DOT ABOVE
+!v101!1E0A
+!ID 000261
+!v001!e1b88b
+!v002!100
+!v010!1E0B
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#7691;
+!v051!d minusculo acento ponto acima
+!v052!LATIN SMALL LETTER D WITH DOT ABOVE
+!v101!1E0B
+!ID 000262
+!v001!e1b88c
+!v002!068
+!v010!1E0C
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#7692;
+!v051!D maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER D WITH DOT BELOW
+!v101!1E0C
+!ID 000263
+!v001!e1b88d
+!v002!100
+!v010!1E0D
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#7693;
+!v051!d minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER D WITH DOT BELOW
+!v101!1E0D
+!ID 000264
+!v001!e1b88e
+!v002!068
+!v010!1E0E
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#7694;
+!v051!D maiusculo acento linha abaixo
+!v052!LATIN CAPITAL LETTER D WITH LINE BELOW
+!v101!1E0E
+!ID 000265
+!v001!e1b88f
+!v002!100
+!v010!1E0F
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#7695;
+!v051!d minusculo acento linha abaixo
+!v052!LATIN SMALL LETTER D WITH LINE BELOW
+!v101!1E0F
+!ID 000266
+!v001!e1b890
+!v002!068
+!v010!1E10
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#7696;
+!v051!D maiusculo com cedilha
+!v052!LATIN CAPITAL LETTER D WITH CEDILLA
+!v101!1E10
+!ID 000267
+!v001!e1b891
+!v002!100
+!v010!1E11
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#7697;
+!v051!d minusculo com cedilha
+!v052!LATIN SMALL LETTER D WITH CEDILLA
+!v101!1E11
+!ID 000268
+!v001!e1b892
+!v002!068
+!v010!1E12
+!v011!hex
+!v012!068
+!v021!asc
+!v041!&#7698;
+!v051!D maiusculo acento circunflexo abaixo
+!v052!LATIN CAPITAL LETTER D WITH CIRCUMFLEX BELOW
+!v101!1E12
+!ID 000269
+!v001!e1b893
+!v002!100
+!v010!1E13
+!v011!hex
+!v012!100
+!v021!asc
+!v041!&#7699;
+!v051!d minusculo acento circunflexo abaixo
+!v052!LATIN SMALL LETTER D WITH CIRCUMFLEX BELOW
+!v101!1E13
+!ID 000270
+!v001!e1b894
+!v002!069
+!v010!1E14
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#7700;
+!v051!E maiusculo acento macron e grave
+!v052!LATIN CAPITAL LETTER E WITH MACRON AND GRAVE
+!v101!1E14
+!ID 000271
+!v001!e1b895
+!v002!101
+!v010!1E15
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#7701;
+!v051!e minusculo acento macron e grave
+!v052!LATIN SMALL LETTER E WITH MACRON AND GRAVE
+!v101!1E15
+!ID 000272
+!v001!e1b896
+!v002!069
+!v010!1E16
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#7702;
+!v051!E maiusculo acento macron e agudo
+!v052!LATIN CAPITAL LETTER E WITH MACRON AND ACUTE
+!v101!1E16
+!ID 000273
+!v001!e1b897
+!v002!101
+!v010!1E17
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#7703;
+!v051!e minusculo acento macron e agudo
+!v052!LATIN SMALL LETTER E WITH MACRON AND ACUTE
+!v101!1E17
+!ID 000274
+!v001!e1b898
+!v002!069
+!v010!1E18
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#7704;
+!v051!E maiusculo acento circunflexo abaixo
+!v052!LATIN CAPITAL LETTER E WITH CIRCUMFLEX BELOW
+!v101!1E18
+!ID 000275
+!v001!e1b899
+!v002!101
+!v010!1E19
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#7705;
+!v051!e minusculo acento circunflexo abaixo
+!v052!LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW
+!v101!1E19
+!ID 000276
+!v001!e1b89a
+!v002!069
+!v010!1E1A
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#7706;
+!v051!E maiusculo acento tilde abaixo
+!v052!LATIN CAPITAL LETTER E WITH TILDE BELOW
+!v101!1E1A
+!ID 000277
+!v001!e1b89b
+!v002!101
+!v010!1E1B
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#7707;
+!v051!e minusculo acento tilde abaixo
+!v052!LATIN SMALL LETTER E WITH TILDE BELOW
+!v101!1E1B
+!ID 000278
+!v001!e1b89c
+!v002!069
+!v010!1E1C
+!v011!hex
+!v012!069
+!v021!asc
+!v041!&#7708;
+!v051!E maiusculo com cedilha e breve
+!v052!LATIN CAPITAL LETTER E WITH CEDILLA AND BREVE
+!v101!1E1C
+!ID 000279
+!v001!e1b89d
+!v002!101
+!v010!1E1D
+!v011!hex
+!v012!101
+!v021!asc
+!v041!&#7709;
+!v051!e minusculo com cedilha e breve
+!v052!LATIN SMALL LETTER E WITH CEDILLA AND BREVE
+!v101!1E1D
+!ID 000280
+!v001!e1b89e
+!v002!070
+!v010!1E1E
+!v011!hex
+!v012!070
+!v021!asc
+!v041!&#7710;
+!v051!F maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER F WITH DOT ABOVE
+!v101!1E1E
+!ID 000281
+!v001!e1b89f
+!v002!102
+!v010!1E1F
+!v011!hex
+!v012!102
+!v021!asc
+!v041!&#7711;
+!v051!f minusculo acento ponto acima
+!v052!LATIN SMALL LETTER F WITH DOT ABOVE
+!v101!1E1F
+!ID 000282
+!v001!e1b8a0
+!v002!071
+!v010!1E20
+!v011!hex
+!v012!071
+!v021!asc
+!v041!&#7712;
+!v051!G maiusculo acento macron
+!v052!LATIN CAPITAL LETTER G WITH MACRON
+!v101!1E20
+!ID 000283
+!v001!e1b8a1
+!v002!103
+!v010!1E21
+!v011!hex
+!v012!103
+!v021!asc
+!v041!&#7713;
+!v051!g minusculo acento macron
+!v052!LATIN SMALL LETTER G WITH MACRON
+!v101!1E21
+!ID 000284
+!v001!e1b8a2
+!v002!072
+!v010!1E22
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#7714;
+!v051!H maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER H WITH DOT ABOVE
+!v101!1E22
+!ID 000285
+!v001!e1b8a3
+!v002!104
+!v010!1E23
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#7715;
+!v051!h minusculo acento ponto acima
+!v052!LATIN SMALL LETTER H WITH DOT ABOVE
+!v101!1E23
+!ID 000286
+!v001!e1b8a4
+!v002!072
+!v010!1E24
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#7716;
+!v051!H maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER H WITH DOT BELOW
+!v101!1E24
+!ID 000287
+!v001!e1b8a5
+!v002!104
+!v010!1E25
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#7717;
+!v051!h minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER H WITH DOT BELOW
+!v101!1E25
+!ID 000288
+!v001!e1b8a6
+!v002!072
+!v010!1E26
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#7718;
+!v051!H maiusculo acento trema
+!v052!LATIN CAPITAL LETTER H WITH DIAERESIS
+!v101!1E26
+!ID 000289
+!v001!e1b8a7
+!v002!104
+!v010!1E27
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#7719;
+!v051!h minusculo acento trema
+!v052!LATIN SMALL LETTER H WITH DIAERESIS
+!v101!1E27
+!ID 000290
+!v001!e1b8a8
+!v002!072
+!v010!1E28
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#7720;
+!v051!H maiusculo com cedilha
+!v052!LATIN CAPITAL LETTER H WITH CEDILLA
+!v101!1E28
+!ID 000291
+!v001!e1b8a9
+!v002!104
+!v010!1E29
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#7721;
+!v051!h minusculo com cedilha
+!v052!LATIN SMALL LETTER H WITH CEDILLA
+!v101!1E29
+!ID 000292
+!v001!e1b8aa
+!v002!072
+!v010!1E2A
+!v011!hex
+!v012!072
+!v021!asc
+!v041!&#7722;
+!v051!H maiusculo acento breve abaixo
+!v052!LATIN CAPITAL LETTER H WITH BREVE BELOW
+!v101!1E2A
+!ID 000293
+!v001!e1b8ab
+!v002!104
+!v010!1E2B
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#7723;
+!v051!h minusculo acento breve abaixo
+!v052!LATIN SMALL LETTER H WITH BREVE BELOW
+!v101!1E2B
+!ID 000294
+!v001!e1b8ac
+!v002!073
+!v010!1E2C
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#7724;
+!v051!I maiusculo acento tilde abaixo
+!v052!LATIN CAPITAL LETTER I WITH TILDE BELOW
+!v101!1E2C
+!ID 000295
+!v001!e1b8ad
+!v002!105
+!v010!1E2D
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#7725;
+!v051!i minusculo acento tilde abaixo
+!v052!LATIN SMALL LETTER I WITH TILDE BELOW
+!v101!1E2D
+!ID 000296
+!v001!e1b8ae
+!v002!073
+!v010!1E2E
+!v011!hex
+!v012!073
+!v021!asc
+!v041!&#7726;
+!v051!I maiusculo acentos trema e agudo
+!v052!LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE
+!v101!1E2E
+!ID 000297
+!v001!e1b8af
+!v002!105
+!v010!1E2F
+!v011!hex
+!v012!105
+!v021!asc
+!v041!&#7727;
+!v051!i minusculo acentos trema e agudo
+!v052!LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE
+!v101!1E2F
+!ID 000298
+!v001!e1b8b0
+!v002!075
+!v010!1E30
+!v011!hex
+!v012!075
+!v021!asc
+!v041!&#7728;
+!v051!K maiusculo acento agudo
+!v052!LATIN CAPITAL LETTER K WITH ACUTE
+!v101!1E30
+!ID 000299
+!v001!e1b8b1
+!v002!107
+!v010!1E31
+!v011!hex
+!v012!107
+!v021!asc
+!v041!&#7729;
+!v051!k minusculo acento agudo
+!v052!LATIN SMALL LETTER K WITH ACUTE
+!v101!1E31
+!ID 000300
+!v001!e1b8b2
+!v002!075
+!v010!1E32
+!v011!hex
+!v012!075
+!v021!asc
+!v041!&#7730;
+!v051!K maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER K WITH DOT BELOW
+!v101!1E32
+!ID 000301
+!v001!e1b8b3
+!v002!107
+!v010!1E33
+!v011!hex
+!v012!107
+!v021!asc
+!v041!&#7731;
+!v051!k minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER K WITH DOT BELOW
+!v101!1E33
+!ID 000302
+!v001!e1b8b4
+!v002!075
+!v010!1E34
+!v011!hex
+!v012!075
+!v021!asc
+!v041!&#7732;
+!v051!K maiusculo acento linha abaixo
+!v052!LATIN CAPITAL LETTER K WITH LINE BELOW
+!v101!1E34
+!ID 000303
+!v001!e1b8b5
+!v002!107
+!v010!1E35
+!v011!hex
+!v012!107
+!v021!asc
+!v041!&#7733;
+!v051!k minusculo acento linha abaixo
+!v052!LATIN SMALL LETTER K WITH LINE BELOW
+!v101!1E35
+!ID 000304
+!v001!e1b8b6
+!v002!076
+!v010!1E36
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#7734;
+!v051!L maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER L WITH DOT BELOW
+!v101!1E36
+!ID 000305
+!v001!e1b8b7
+!v002!108
+!v010!1E37
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#7735;
+!v051!l minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER L WITH DOT BELOW
+!v101!1E37
+!ID 000306
+!v001!e1b8b8
+!v002!076
+!v010!1E38
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#7736;
+!v051!L maiusculo acentos ponto abaixo e macron
+!v052!LATIN CAPITAL LETTER L WITH DOT BELOW AND MACRON
+!v101!1E38
+!ID 000307
+!v001!e1b8b9
+!v002!108
+!v010!1E39
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#7737;
+!v051!l minusculo acentos ponto abaixo e macron
+!v052!LATIN SMALL LETTER L WITH DOT BELOW AND MACRON
+!v101!1E39
+!ID 000308
+!v001!e1b8ba
+!v002!076
+!v010!1E3A
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#7738;
+!v051!L maiusculo acento linha abaixo
+!v052!LATIN CAPITAL LETTER L WITH LINE BELOW
+!v101!1E3A
+!ID 000309
+!v001!e1b8bb
+!v002!108
+!v010!1E3B
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#7739;
+!v051!l minusculo acento linha abaixo
+!v052!LATIN SMALL LETTER L WITH LINE BELOW
+!v101!1E3B
+!ID 000310
+!v001!e1b8bc
+!v002!076
+!v010!1E3C
+!v011!hex
+!v012!076
+!v021!asc
+!v041!&#7740;
+!v051!L maiusculo acento circunflexo abaixo
+!v052!LATIN CAPITAL LETTER L WITH CIRCUMFLEX BELOW
+!v101!1E3C
+!ID 000311
+!v001!e1b8bd
+!v002!108
+!v010!1E3D
+!v011!hex
+!v012!108
+!v021!asc
+!v041!&#7741;
+!v051!l minusculo acento circunflexo abaixo
+!v052!LATIN SMALL LETTER L WITH CIRCUMFLEX BELOW
+!v101!1E3D
+!ID 000312
+!v001!e1b8be
+!v002!077
+!v010!1E3E
+!v011!hex
+!v012!077
+!v021!asc
+!v041!&#7742;
+!v051!M maiusculo acento agudo
+!v052!LATIN CAPITAL LETTER M WITH ACUTE
+!v101!1E3E
+!ID 000313
+!v001!e1b8bf
+!v002!109
+!v010!1E3F
+!v011!hex
+!v012!109
+!v021!asc
+!v041!&#7743;
+!v051!m minusculo acento agudo
+!v052!LATIN SMALL LETTER M WITH ACUTE
+!v101!1E3F
+!ID 000314
+!v001!e1b980
+!v002!077
+!v010!1E40
+!v011!hex
+!v012!077
+!v021!asc
+!v041!&#7744;
+!v051!M maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER M WITH DOT ABOVE
+!v101!1E40
+!ID 000315
+!v001!e1b981
+!v002!109
+!v010!1E41
+!v011!hex
+!v012!109
+!v021!asc
+!v041!&#7745;
+!v051!m minusculo acento ponto acima
+!v052!LATIN SMALL LETTER M WITH DOT ABOVE
+!v101!1E41
+!ID 000316
+!v001!e1b982
+!v002!077
+!v010!1E42
+!v011!hex
+!v012!077
+!v021!asc
+!v041!&#7746;
+!v051!M maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER M WITH DOT BELOW
+!v101!1E42
+!ID 000317
+!v001!e1b983
+!v002!109
+!v010!1E43
+!v011!hex
+!v012!109
+!v021!asc
+!v041!&#7747;
+!v051!m minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER M WITH DOT BELOW
+!v101!1E43
+!ID 000318
+!v001!e1b984
+!v002!078
+!v010!1E44
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#7748;
+!v051!N maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER N WITH DOT ABOVE
+!v101!1E44
+!ID 000319
+!v001!e1b985
+!v002!110
+!v010!1E45
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#7749;
+!v051!n minusculo acento ponto acima
+!v052!LATIN SMALL LETTER N WITH DOT ABOVE
+!v101!1E45
+!ID 000320
+!v001!e1b986
+!v002!078
+!v010!1E46
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#7750;
+!v051!N maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER N WITH DOT BELOW
+!v101!1E46
+!ID 000321
+!v001!e1b987
+!v002!110
+!v010!1E47
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#7751;
+!v051!n minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER N WITH DOT BELOW
+!v101!1E47
+!ID 000322
+!v001!e1b988
+!v002!078
+!v010!1E48
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#7752;
+!v051!N maiusculo acento linha abaixo
+!v052!LATIN CAPITAL LETTER N WITH LINE BELOW
+!v101!1E48
+!ID 000323
+!v001!e1b989
+!v002!110
+!v010!1E49
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#7753;
+!v051!n minusculo acento linha abaixo
+!v052!LATIN SMALL LETTER N WITH LINE BELOW
+!v101!1E49
+!ID 000324
+!v001!e1b98a
+!v002!078
+!v010!1E4A
+!v011!hex
+!v012!078
+!v021!asc
+!v041!&#7754;
+!v051!N maiusculo acento circunflexo abaixo
+!v052!LATIN CAPITAL LETTER N WITH CIRCUMFLEX BELOW
+!v101!1E4A
+!ID 000325
+!v001!e1b98b
+!v002!110
+!v010!1E4B
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#7755;
+!v051!n minusculo acento circunflexo abaixo
+!v052!LATIN SMALL LETTER N WITH CIRCUMFLEX BELOW
+!v101!1E4B
+!ID 000326
+!v001!e1b98c
+!v002!079
+!v010!1E4C
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#7756;
+!v051!O maiusculo acento tilde e agudo
+!v052!LATIN CAPITAL LETTER O WITH TILDE AND ACUTE
+!v101!1E4C
+!ID 000327
+!v001!e1b98d
+!v002!111
+!v010!1E4D
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#7757;
+!v051!o minusculo acento tilde e agudo
+!v052!LATIN SMALL LETTER O WITH TILDE AND ACUTE
+!v101!1E4D
+!ID 000328
+!v001!e1b98e
+!v002!079
+!v010!1E4E
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#7758;
+!v051!O maiusculo acento tilde e trema
+!v052!LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS
+!v101!1E4E
+!ID 000329
+!v001!e1b98f
+!v002!111
+!v010!1E4F
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#7759;
+!v051!o minusculo acento tilde e trema
+!v052!LATIN SMALL LETTER O WITH TILDE AND DIAERESIS
+!v101!1E4F
+!ID 000330
+!v001!e1b990
+!v002!079
+!v010!1E50
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#7760;
+!v051!O maiusculo acento macron e grave
+!v052!LATIN CAPITAL LETTER O WITH MACRON AND GRAVE
+!v101!1E50
+!ID 000331
+!v001!e1b991
+!v002!111
+!v010!1E51
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#7761;
+!v051!o minusculo acento macron e grave
+!v052!LATIN SMALL LETTER O WITH MACRON AND GRAVE
+!v101!1E51
+!ID 000332
+!v001!e1b992
+!v002!079
+!v010!1E52
+!v011!hex
+!v012!079
+!v021!asc
+!v041!&#7762;
+!v051!O maiusculo acento macron e agudo
+!v052!LATIN CAPITAL LETTER O WITH MACRON AND ACUTE
+!v101!1E52
+!ID 000333
+!v001!e1b993
+!v002!111
+!v010!1E53
+!v011!hex
+!v012!111
+!v021!asc
+!v041!&#7763;
+!v051!o minusculo acento macron e agudo
+!v052!LATIN SMALL LETTER O WITH MACRON AND ACUTE
+!v101!1E53
+!ID 000334
+!v001!e1b994
+!v002!080
+!v010!1E54
+!v011!hex
+!v012!080
+!v021!asc
+!v041!&#7764;
+!v051!P maiusculo acento agudo
+!v052!LATIN CAPITAL LETTER P WITH ACUTE
+!v101!1E54
+!ID 000335
+!v001!e1b995
+!v002!112
+!v010!1E55
+!v011!hex
+!v012!112
+!v021!asc
+!v041!&#7765;
+!v051!p minusculo acento agudo
+!v052!LATIN SMALL LETTER P WITH ACUTE
+!v101!1E55
+!ID 000336
+!v001!e1b996
+!v002!080
+!v010!1E56
+!v011!hex
+!v012!080
+!v021!asc
+!v041!&#7766;
+!v051!P maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER P WITH DOT ABOVE
+!v101!1E56
+!ID 000337
+!v001!e1b997
+!v002!112
+!v010!1E57
+!v011!hex
+!v012!112
+!v021!asc
+!v041!&#7767;
+!v051!p minusculo acento ponto acima
+!v052!LATIN SMALL LETTER P WITH DOT ABOVE
+!v101!1E57
+!ID 000338
+!v001!e1b998
+!v002!082
+!v010!1E58
+!v011!hex
+!v012!082
+!v021!asc
+!v041!&#7768;
+!v051!R maiusculo acento ponto acima
+!v052!LATIN CAPITAL LETTER R WITH DOT ABOVE
+!v101!1E58
+!ID 000339
+!v001!e1b999
+!v002!114
+!v010!1E59
+!v011!hex
+!v012!114
+!v021!asc
+!v041!&#7769;
+!v051!r minusculo acento ponto acima
+!v052!LATIN SMALL LETTER R WITH DOT ABOVE
+!v101!1E59
+!ID 000340
+!v001!e1b99a
+!v002!082
+!v010!1E5A
+!v011!hex
+!v012!082
+!v021!asc
+!v041!&#7770;
+!v051!R maiusculo acento ponto abaixo
+!v052!LATIN CAPITAL LETTER R WITH DOT BELOW
+!v101!1E5A
+!ID 000341
+!v001!e1b99b
+!v002!114
+!v010!1E5B
+!v011!hex
+!v012!114
+!v021!asc
+!v041!&#7771;
+!v051!r minusculo acento ponto abaixo
+!v052!LATIN SMALL LETTER R WITH DOT BELOW
+!v101!1E5B
+!ID 000342
+!v001!e1b99c
+!v002!082
+!v010!1E5C
+!v011!hex
+!v012!082
+!v021!asc
+!v041!&#7772;
+!v051!R maiusculo acento ponto acima e macron
+!v052!LATIN CAPITAL LETTER R WITH DOT BELOW AND MACRON
+!v101!1E5C
+!ID 000343
+!v001!e1b99d
+!v002!114
+!v010!1E5D
+!v011!hex
+!v012!114
+!v021!asc
+!v041!&#7773;
+!v051!r minusculo acento ponto acima e macron
+!v052!LATIN SMALL LETTER R WITH DOT BELOW AND MACRON
+!v101!1E5D
+!ID 000344
+!v001!e1b99e
+!v002!082
+!v010!1E5E
+!v011!hex
+!v012!082
+!v021!asc
+!v041!&#7774;
+!v051!LATIN CAPITAL LETTER R WITH LINE BELOW
+!v052!LATIN CAPITAL LETTER R WITH LINE BELOW
+!v101!1E5E
+!ID 000345
+!v001!e1b99f
+!v002!114
+!v010!1E5F
+!v011!hex
+!v012!114
+!v021!asc
+!v041!&#7775;
+!v051!Latin small letter r with line below
+!v052!LATIN SMALL LETTER R WITH LINE BELOW
+!v101!1E5F
+!ID 000346
+!v001!e1b9a0
+!v002!083
+!v010!1E60
+!v011!hex
+!v012!083
+!v021!asc
+!v041!&#7776;
+!v051!LATIN CAPITAL LETTER S WITH DOT ABOVE
+!v052!LATIN CAPITAL LETTER S WITH DOT ABOVE
+!v101!1E60
+!ID 000347
+!v001!e1b9a1
+!v002!115
+!v010!1E61
+!v011!hex
+!v012!115
+!v021!asc
+!v041!&#7777;
+!v051!Latin small letter s with dot above
+!v052!LATIN SMALL LETTER S WITH DOT ABOVE
+!v101!1E61
+!ID 000348
+!v001!e1b9a2
+!v002!083
+!v010!1E62
+!v011!hex
+!v012!083
+!v021!asc
+!v041!&#7778;
+!v051!LATIN CAPITAL LETTER S WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER S WITH DOT BELOW
+!v101!1E62
+!ID 000349
+!v001!e1b9a3
+!v002!115
+!v010!1E63
+!v011!hex
+!v012!115
+!v021!asc
+!v041!&#7779;
+!v051!Latin small letter s with dot below
+!v052!LATIN SMALL LETTER S WITH DOT BELOW
+!v101!1E63
+!ID 000350
+!v001!e1b9a4
+!v002!083
+!v010!1E64
+!v011!hex
+!v012!083
+!v021!asc
+!v041!&#7780;
+!v051!LATIN CAPITAL LETTER S WITH ACUTE AND DOT ABOVE
+!v052!LATIN CAPITAL LETTER S WITH ACUTE AND DOT ABOVE
+!v101!1E64
+!ID 000351
+!v001!e1b9a5
+!v002!115
+!v010!1E65
+!v011!hex
+!v012!115
+!v021!asc
+!v041!&#7781;
+!v051!Latin small letter s with acute and dot above
+!v052!LATIN SMALL LETTER S WITH ACUTE AND DOT ABOVE
+!v101!1E65
+!ID 000352
+!v001!e1b9a6
+!v002!083
+!v010!1E66
+!v011!hex
+!v012!083
+!v021!asc
+!v041!&#7782;
+!v051!LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE
+!v052!LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE
+!v101!1E66
+!ID 000353
+!v001!e1b9a7
+!v002!115
+!v010!1E67
+!v011!hex
+!v012!115
+!v021!asc
+!v041!&#7783;
+!v051!Latin small letter s with caron and dot above
+!v052!LATIN SMALL LETTER S WITH CARON AND DOT ABOVE
+!v101!1E67
+!ID 000354
+!v001!e1b9a8
+!v002!083
+!v010!1E68
+!v011!hex
+!v012!083
+!v021!asc
+!v041!&#7784;
+!v051!LATIN CAPITAL LETTER S WITH DOT BELOW AND DOT ABOVE
+!v052!LATIN CAPITAL LETTER S WITH DOT BELOW AND DOT ABOVE
+!v101!1E68
+!ID 000355
+!v001!e1b9a9
+!v002!115
+!v010!1E69
+!v011!hex
+!v012!115
+!v021!asc
+!v041!&#7785;
+!v051!Latin small letter s with dot below and dot above
+!v052!LATIN SMALL LETTER S WITH DOT BELOW AND DOT ABOVE
+!v101!1E69
+!ID 000356
+!v001!e1b9aa
+!v002!084
+!v010!1E6A
+!v011!hex
+!v012!084
+!v021!asc
+!v041!&#7786;
+!v051!LATIN CAPITAL LETTER T WITH DOT ABOVE
+!v052!LATIN CAPITAL LETTER T WITH DOT ABOVE
+!v101!1E6A
+!ID 000357
+!v001!e1b9ab
+!v002!116
+!v010!1E6B
+!v011!hex
+!v012!116
+!v021!asc
+!v041!&#7787;
+!v051!Latin small letter t with dot above
+!v052!LATIN SMALL LETTER T WITH DOT ABOVE
+!v101!1E6B
+!ID 000358
+!v001!e1b9ac
+!v002!084
+!v010!1E6C
+!v011!hex
+!v012!084
+!v021!asc
+!v041!&#7788;
+!v051!LATIN CAPITAL LETTER T WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER T WITH DOT BELOW
+!v101!1E6C
+!ID 000359
+!v001!e1b9ad
+!v002!116
+!v010!1E6D
+!v011!hex
+!v012!116
+!v021!asc
+!v041!&#7789;
+!v051!Latin small letter t with dot below
+!v052!LATIN SMALL LETTER T WITH DOT BELOW
+!v101!1E6D
+!ID 000360
+!v001!e1b9ae
+!v002!084
+!v010!1E6E
+!v011!hex
+!v012!084
+!v021!asc
+!v041!&#7790;
+!v051!LATIN CAPITAL LETTER T WITH LINE BELOW
+!v052!LATIN CAPITAL LETTER T WITH LINE BELOW
+!v101!1E6E
+!ID 000361
+!v001!e1b9af
+!v002!116
+!v010!1E6F
+!v011!hex
+!v012!116
+!v021!asc
+!v041!&#7791;
+!v051!Latin small letter t with line below
+!v052!LATIN SMALL LETTER T WITH LINE BELOW
+!v101!1E6F
+!ID 000362
+!v001!e1b9b0
+!v002!084
+!v010!1E70
+!v011!hex
+!v012!084
+!v021!asc
+!v041!&#7792;
+!v051!LATIN CAPITAL LETTER T WITH CIRCUMFLEX BELOW
+!v052!LATIN CAPITAL LETTER T WITH CIRCUMFLEX BELOW
+!v101!1E70
+!ID 000363
+!v001!e1b9b1
+!v002!116
+!v010!1E71
+!v011!hex
+!v012!116
+!v021!asc
+!v041!&#7793;
+!v051!Latin small letter t with circumflex below
+!v052!LATIN SMALL LETTER T WITH CIRCUMFLEX BELOW
+!v101!1E71
+!ID 000364
+!v001!e1b9b2
+!v002!085
+!v010!1E72
+!v011!hex
+!v012!085
+!v021!asc
+!v041!&#7794;
+!v051!LATIN CAPITAL LETTER U WITH DIAERESIS BELOW
+!v052!LATIN CAPITAL LETTER U WITH DIAERESIS BELOW
+!v101!1E72
+!ID 000365
+!v001!e1b9b3
+!v002!117
+!v010!1E73
+!v011!hex
+!v012!117
+!v021!asc
+!v041!&#7795;
+!v051!Latin small letter u with diaeresis below
+!v052!LATIN SMALL LETTER U WITH DIAERESIS BELOW
+!v101!1E73
+!ID 000366
+!v001!e1b9b4
+!v002!085
+!v010!1E74
+!v011!hex
+!v012!085
+!v021!asc
+!v041!&#7796;
+!v051!LATIN CAPITAL LETTER U WITH TILDE BELOW
+!v052!LATIN CAPITAL LETTER U WITH TILDE BELOW
+!v101!1E74
+!ID 000367
+!v001!e1b9b5
+!v002!117
+!v010!1E75
+!v011!hex
+!v012!117
+!v021!asc
+!v041!&#7797;
+!v051!Latin small letter u with tilde below
+!v052!LATIN SMALL LETTER U WITH TILDE BELOW
+!v101!1E75
+!ID 000368
+!v001!e1b9b6
+!v002!085
+!v010!1E76
+!v011!hex
+!v012!085
+!v021!asc
+!v041!&#7798;
+!v051!LATIN CAPITAL LETTER U WITH CIRCUMFLEX BELOW
+!v052!LATIN CAPITAL LETTER U WITH CIRCUMFLEX BELOW
+!v101!1E76
+!ID 000369
+!v001!e1b9b7
+!v002!117
+!v010!1E77
+!v011!hex
+!v012!117
+!v021!asc
+!v041!&#7799;
+!v051!Latin small letter u with circumflex below
+!v052!LATIN SMALL LETTER U WITH CIRCUMFLEX BELOW
+!v101!1E77
+!ID 000370
+!v001!e1b9b8
+!v002!085
+!v010!1E78
+!v011!hex
+!v012!085
+!v021!asc
+!v041!&#7800;
+!v051!LATIN CAPITAL LETTER U WITH TILDE AND ACUTE
+!v052!LATIN CAPITAL LETTER U WITH TILDE AND ACUTE
+!v101!1E78
+!ID 000371
+!v001!e1b9b9
+!v002!117
+!v010!1E79
+!v011!hex
+!v012!117
+!v021!asc
+!v041!&#7801;
+!v051!LATIN SMALL LETTER U WITH TILDE AND ACUTE
+!v052!LATIN SMALL LETTER U WITH TILDE AND ACUTE
+!v101!1E79
+!ID 000372
+!v001!e1b9ba
+!v002!085
+!v010!1E7A
+!v011!hex
+!v012!085
+!v021!asc
+!v041!&#7802;
+!v051!LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS
+!v052!LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS
+!v101!1E7A
+!ID 000373
+!v001!e1b9bb
+!v002!117
+!v010!1E7B
+!v011!hex
+!v012!117
+!v021!asc
+!v041!&#7803;
+!v051!Latin small letter u with macron and diaeresis
+!v052!LATIN SMALL LETTER U WITH MACRON AND DIAERESIS
+!v101!1E7B
+!ID 000374
+!v001!e1b9bc
+!v002!086
+!v010!1E7C
+!v011!hex
+!v012!086
+!v021!asc
+!v041!&#7804;
+!v051!LATIN CAPITAL LETTER V WITH TILDE
+!v052!LATIN CAPITAL LETTER V WITH TILDE
+!v101!1E7C
+!ID 000375
+!v001!e1b9bd
+!v002!118
+!v010!1E7D
+!v011!hex
+!v012!118
+!v021!asc
+!v041!&#7805;
+!v051!Latin small letter v with tilde
+!v052!LATIN SMALL LETTER V WITH TILDE
+!v101!1E7D
+!ID 000376
+!v001!e1b9be
+!v002!086
+!v010!1E7E
+!v011!hex
+!v012!086
+!v021!asc
+!v041!&#7806;
+!v051!LATIN CAPITAL LETTER V WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER V WITH DOT BELOW
+!v101!1E7E
+!ID 000377
+!v001!e1b9bf
+!v002!118
+!v010!1E7F
+!v011!hex
+!v012!118
+!v021!asc
+!v041!&#7807;
+!v051!LATIN SMALL LETTER V WITH DOT BELOW
+!v052!LATIN SMALL LETTER V WITH DOT BELOW
+!v101!1E7F
+!ID 000378
+!v001!e1ba80
+!v002!087
+!v010!1E80
+!v011!hex
+!v012!087
+!v021!asc
+!v041!&#7808;
+!v051!LATIN CAPITAL LETTER W WITH GRAVE
+!v052!LATIN CAPITAL LETTER W WITH GRAVE
+!v101!1E80
+!ID 000379
+!v001!e1ba81
+!v002!119
+!v010!1E81
+!v011!hex
+!v012!119
+!v021!asc
+!v041!&#7809;
+!v051!w minusculo acento grave
+!v052!LATIN SMALL LETTER W WITH GRAVE
+!v101!1E81
+!ID 000380
+!v001!e1ba82
+!v002!087
+!v010!1E82
+!v011!hex
+!v012!087
+!v021!asc
+!v041!&#7810;
+!v051!LATIN CAPITAL LETTER W WITH ACUTE
+!v052!LATIN CAPITAL LETTER W WITH ACUTE
+!v101!1E82
+!ID 000381
+!v001!e1ba83
+!v002!119
+!v010!1E83
+!v011!hex
+!v012!119
+!v021!asc
+!v041!&#7811;
+!v051!w minusculo acento agudo
+!v052!LATIN SMALL LETTER W WITH ACUTE
+!v101!1E83
+!ID 000382
+!v001!e1ba84
+!v002!087
+!v010!1E84
+!v011!hex
+!v012!087
+!v021!asc
+!v041!&#7812;
+!v051!W maiusculo acento trema
+!v052!LATIN CAPITAL LETTER W WITH DIAERESIS
+!v101!1E84
+!ID 000383
+!v001!e1ba85
+!v002!119
+!v010!1E85
+!v011!hex
+!v012!119
+!v021!asc
+!v041!&#7813;
+!v051!w minusculo acento trema
+!v052!LATIN SMALL LETTER W WITH DIAERESIS
+!v101!1E85
+!ID 000384
+!v001!e1ba86
+!v002!087
+!v010!1E86
+!v011!hex
+!v012!087
+!v021!asc
+!v041!&#7814;
+!v051!LATIN CAPITAL LETTER W WITH DOT ABOVE
+!v052!LATIN CAPITAL LETTER W WITH DOT ABOVE
+!v101!1E86
+!ID 000385
+!v001!e1ba87
+!v002!119
+!v010!1E87
+!v011!hex
+!v012!119
+!v021!asc
+!v041!&#7815;
+!v051!Latin small letter w with dot above
+!v052!LATIN SMALL LETTER W WITH DOT ABOVE
+!v101!1E87
+!ID 000386
+!v001!e1ba88
+!v002!087
+!v010!1E88
+!v011!hex
+!v012!087
+!v021!asc
+!v041!&#7816;
+!v051!LATIN CAPITAL LETTER W WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER W WITH DOT BELOW
+!v101!1E88
+!ID 000387
+!v001!e1ba89
+!v002!119
+!v010!1E89
+!v011!hex
+!v012!119
+!v021!asc
+!v041!&#7817;
+!v051!Latin small letter w with dot below
+!v052!LATIN SMALL LETTER W WITH DOT BELOW
+!v101!1E89
+!ID 000388
+!v001!e1ba8a
+!v002!088
+!v010!1E8A
+!v011!hex
+!v012!088
+!v021!asc
+!v041!&#7818;
+!v051!LATIN CAPITAL LETTER X WITH DOT ABOVE
+!v052!LATIN CAPITAL LETTER X WITH DOT ABOVE
+!v101!1E8A
+!ID 000389
+!v001!e1ba8b
+!v002!120
+!v010!1E8B
+!v011!hex
+!v012!120
+!v021!asc
+!v041!&#7819;
+!v051!Latin small letter x with dot above
+!v052!LATIN SMALL LETTER X WITH DOT ABOVE
+!v101!1E8B
+!ID 000390
+!v001!e1ba8c
+!v002!088
+!v010!1E8C
+!v011!hex
+!v012!088
+!v021!asc
+!v041!&#7820;
+!v051!LATIN CAPITAL LETTER X WITH DIAERESIS
+!v052!LATIN CAPITAL LETTER X WITH DIAERESIS
+!v101!1E8C
+!ID 000391
+!v001!e1ba8d
+!v002!120
+!v010!1E8D
+!v011!hex
+!v012!120
+!v021!asc
+!v041!&#7821;
+!v051!Latin small letter x with diaeresis
+!v052!LATIN SMALL LETTER X WITH DIAERESIS
+!v101!1E8D
+!ID 000392
+!v001!e1ba8e
+!v002!089
+!v010!1E8E
+!v011!hex
+!v012!089
+!v021!asc
+!v041!&#7822;
+!v051!LATIN CAPITAL LETTER Y WITH DOT ABOVE
+!v052!LATIN CAPITAL LETTER Y WITH DOT ABOVE
+!v101!1E8E
+!ID 000393
+!v001!e1ba8f
+!v002!121
+!v010!1E8F
+!v011!hex
+!v012!121
+!v021!asc
+!v041!&#7823;
+!v051!Latin small letter y with dot above
+!v052!LATIN SMALL LETTER Y WITH DOT ABOVE
+!v101!1E8F
+!ID 000394
+!v001!e1ba90
+!v002!090
+!v010!1E90
+!v011!hex
+!v012!090
+!v021!asc
+!v041!&#7824;
+!v051!LATIN CAPITAL LETTER Z WITH CIRCUMFLEX
+!v052!LATIN CAPITAL LETTER Z WITH CIRCUMFLEX
+!v101!1E90
+!ID 000395
+!v001!e1ba91
+!v002!122
+!v010!1E91
+!v011!hex
+!v012!122
+!v021!asc
+!v041!&#7825;
+!v051!Latin small letter z with circumflex
+!v052!LATIN SMALL LETTER Z WITH CIRCUMFLEX
+!v101!1E91
+!ID 000396
+!v001!e1ba92
+!v002!090
+!v010!1E92
+!v011!hex
+!v012!090
+!v021!asc
+!v041!&#7826;
+!v051!LATIN CAPITAL LETTER Z WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER Z WITH DOT BELOW
+!v101!1E92
+!ID 000397
+!v001!e1ba93
+!v002!122
+!v010!1E93
+!v011!hex
+!v012!122
+!v021!asc
+!v041!&#7827;
+!v051!LATIN SMALL LETTER Z WITH DOT BELOW
+!v052!LATIN SMALL LETTER Z WITH DOT BELOW
+!v101!1E93
+!ID 000398
+!v001!e1ba94
+!v002!090
+!v010!1E94
+!v011!hex
+!v012!090
+!v021!asc
+!v041!&#7828;
+!v051!LATIN CAPITAL LETTER Z WITH LINE BELOW
+!v052!LATIN CAPITAL LETTER Z WITH LINE BELOW
+!v101!1E94
+!ID 000399
+!v001!e1ba95
+!v002!122
+!v010!1E95
+!v011!hex
+!v012!122
+!v021!asc
+!v041!&#7829;
+!v051!LATIN SMALL LETTER Z WITH LINE BELOW
+!v052!LATIN SMALL LETTER Z WITH LINE BELOW
+!v101!1E95
+!ID 000400
+!v001!e1ba96
+!v002!104
+!v010!1E96
+!v011!hex
+!v012!104
+!v021!asc
+!v041!&#7830;
+!v051!Latin small letter h with line below
+!v052!LATIN SMALL LETTER H WITH LINE BELOW
+!v101!1E96
+!ID 000401
+!v001!e1ba97
+!v002!116
+!v010!1E97
+!v011!hex
+!v012!116
+!v021!asc
+!v041!&#7831;
+!v051!Latin small letter t with diaeresis
+!v052!LATIN SMALL LETTER T WITH DIAERESIS
+!v101!1E97
+!ID 000402
+!v001!e1ba98
+!v002!119
+!v010!1E98
+!v011!hex
+!v012!119
+!v021!asc
+!v041!&#7832;
+!v051!Latin small letter w with ring above
+!v052!LATIN SMALL LETTER W WITH RING ABOVE
+!v101!1E98
+!ID 000403
+!v001!e1ba99
+!v002!121
+!v010!1E99
+!v011!hex
+!v012!121
+!v021!asc
+!v041!&#7833;
+!v051!Latin small letter y with ring above
+!v052!LATIN SMALL LETTER Y WITH RING ABOVE
+!v101!1E99
+!ID 000404
+!v001!e1ba9a
+!v002!097
+!v010!1E9A
+!v011!hex
+!v012!097
+!v021!asc
+!v041!&#7834;
+!v051!Latin small letter a with right half ring
+!v052!LATIN SMALL LETTER A WITH RIGHT HALF RING
+!v101!1E9A
+!ID 000405
+!v001!e1baa0
+!v002!065
+!v010!1EA0
+!v011!hex
+!v012!065
+!v021!asc
+!v041!&#7840;
+!v051!LATIN CAPITAL LETTER A WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER A WITH DOT BELOW
+!v101!1EA0
+!ID 000406
+!v001!e1baa1
+!v002!097
+!v010!1EA1
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH DOT BELOW
+!v052!LATIN SMALL LETTER A WITH DOT BELOW
+!v101!1EA1
+!ID 000407
+!v001!e1baa2
+!v002!065
+!v010!1EA2
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH HOOK ABOVE
+!v052!LATIN CAPITAL LETTER A WITH HOOK ABOVE
+!v101!1EA2
+!ID 000408
+!v001!e1baa3
+!v002!097
+!v010!1EA3
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH HOOK ABOVE
+!v052!LATIN SMALL LETTER A WITH HOOK ABOVE
+!v101!1EA3
+!ID 000409
+!v001!e1baa4
+!v002!065
+!v010!1EA4
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND ACUTE
+!v052!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND ACUTE
+!v101!1EA4
+!ID 000410
+!v001!e1baa5
+!v002!097
+!v010!1EA5
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH CIRCUMFLEX AND ACUTE
+!v052!LATIN SMALL LETTER A WITH CIRCUMFLEX AND ACUTE
+!v101!1EA5
+!ID 000411
+!v001!e1baa6
+!v002!065
+!v010!1EA6
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND GRAVE
+!v052!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND GRAVE
+!v101!1EA6
+!ID 000412
+!v001!e1baa7
+!v002!097
+!v010!1EA7
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH CIRCUMFLEX AND GRAVE
+!v052!LATIN SMALL LETTER A WITH CIRCUMFLEX AND GRAVE
+!v101!1EA7
+!ID 000413
+!v001!e1baa8
+!v002!065
+!v010!1EA8
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE
+!v052!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE
+!v101!1EA8
+!ID 000414
+!v001!e1baa9
+!v002!097
+!v010!1EA9
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE
+!v052!LATIN SMALL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE
+!v101!1EA9
+!ID 000415
+!v001!e1baaa
+!v002!065
+!v010!1EAA
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND TILDE
+!v052!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND TILDE
+!v101!1EAA
+!ID 000416
+!v001!e1baab
+!v002!097
+!v010!1EAB
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE
+!v052!LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE
+!v101!1EAB
+!ID 000417
+!v001!e1baac
+!v002!065
+!v010!1EAC
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND DOT BELOW
+!v052!LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND DOT BELOW
+!v101!1EAC
+!ID 000418
+!v001!e1baad
+!v002!097
+!v010!1EAD
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH CIRCUMFLEX AND DOT BELOW
+!v052!LATIN SMALL LETTER A WITH CIRCUMFLEX AND DOT BELOW
+!v101!1EAD
+!ID 000419
+!v001!e1baae
+!v002!065
+!v010!1EAE
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH BREVE AND ACUTE
+!v052!LATIN CAPITAL LETTER A WITH BREVE AND ACUTE
+!v101!1EAE
+!ID 000420
+!v001!e1baaf
+!v002!097
+!v010!1EAF
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH BREVE AND ACUTE
+!v052!LATIN SMALL LETTER A WITH BREVE AND ACUTE
+!v101!1EAF
+!ID 000421
+!v001!e1bab0
+!v002!065
+!v010!1EB0
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH BREVE AND GRAVE
+!v052!LATIN CAPITAL LETTER A WITH BREVE AND GRAVE
+!v101!1EB0
+!ID 000422
+!v001!e1bab1
+!v002!097
+!v010!1EB1
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH BREVE AND GRAVE
+!v052!LATIN SMALL LETTER A WITH BREVE AND GRAVE
+!v101!1EB1
+!ID 000423
+!v001!e1bab2
+!v002!065
+!v010!1EB2
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH BREVE AND HOOK ABOVE
+!v052!LATIN CAPITAL LETTER A WITH BREVE AND HOOK ABOVE
+!v101!1EB2
+!ID 000424
+!v001!e1bab3
+!v002!097
+!v010!1EB3
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH BREVE AND HOOK ABOVE
+!v052!LATIN SMALL LETTER A WITH BREVE AND HOOK ABOVE
+!v101!1EB3
+!ID 000425
+!v001!e1bab4
+!v002!065
+!v010!1EB4
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH BREVE AND TILDE
+!v052!LATIN CAPITAL LETTER A WITH BREVE AND TILDE
+!v101!1EB4
+!ID 000426
+!v001!e1bab5
+!v002!097
+!v010!1EB5
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH BREVE AND TILDE
+!v052!LATIN SMALL LETTER A WITH BREVE AND TILDE
+!v101!1EB5
+!ID 000427
+!v001!e1bab6
+!v002!065
+!v010!1EB6
+!v011!hex
+!v012!065
+!v021!asc
+!v051!LATIN CAPITAL LETTER A WITH BREVE AND DOT BELOW
+!v052!LATIN CAPITAL LETTER A WITH BREVE AND DOT BELOW
+!v101!1EB6
+!ID 000428
+!v001!e1bab7
+!v002!097
+!v010!1EB7
+!v011!hex
+!v012!097
+!v021!asc
+!v051!LATIN SMALL LETTER A WITH BREVE AND DOT BELOW
+!v052!LATIN SMALL LETTER A WITH BREVE AND DOT BELOW
+!v101!1EB7
+!ID 000429
+!v001!e1bab8
+!v002!069
+!v010!1EB8
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER E WITH DOT BELOW
+!v101!1EB8
+!ID 000430
+!v001!e1bab9
+!v002!101
+!v010!1EB9
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH DOT BELOW
+!v052!LATIN SMALL LETTER E WITH DOT BELOW
+!v101!1EB9
+!ID 000431
+!v001!e1baba
+!v002!069
+!v010!1EBA
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH HOOK ABOVE
+!v052!LATIN CAPITAL LETTER E WITH HOOK ABOVE
+!v101!1EBA
+!ID 000432
+!v001!e1babb
+!v002!101
+!v010!1EBB
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH HOOK ABOVE
+!v052!LATIN SMALL LETTER E WITH HOOK ABOVE
+!v101!1EBB
+!ID 000433
+!v001!e1babc
+!v002!069
+!v010!1EBC
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH TILDE
+!v052!LATIN CAPITAL LETTER E WITH TILDE
+!v101!1EBC
+!ID 000434
+!v001!e1babd
+!v002!101
+!v010!1EBD
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH TILDE
+!v052!LATIN SMALL LETTER E WITH TILDE
+!v101!1EBD
+!ID 000435
+!v001!e1babe
+!v002!069
+!v010!1EBE
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND ACUTE
+!v052!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND ACUTE
+!v101!1EBE
+!ID 000436
+!v001!e1babf
+!v002!101
+!v010!1EBF
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH CIRCUMFLEX AND ACUTE
+!v052!LATIN SMALL LETTER E WITH CIRCUMFLEX AND ACUTE
+!v101!1EBF
+!ID 000437
+!v001!e1bb80
+!v002!069
+!v010!1EC0
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND GRAVE
+!v052!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND GRAVE
+!v101!1EC0
+!ID 000438
+!v001!e1bb81
+!v002!101
+!v010!1EC1
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH CIRCUMFLEX AND GRAVE
+!v052!LATIN SMALL LETTER E WITH CIRCUMFLEX AND GRAVE
+!v101!1EC1
+!ID 000439
+!v001!e1bb82
+!v002!069
+!v010!1EC2
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE
+!v052!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE
+!v101!1EC2
+!ID 000440
+!v001!e1bb83
+!v002!101
+!v010!1EC3
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE
+!v052!LATIN SMALL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE
+!v101!1EC3
+!ID 000441
+!v001!e1bb84
+!v002!069
+!v010!1EC4
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND TILDE
+!v052!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND TILDE
+!v101!1EC4
+!ID 000442
+!v001!e1bb85
+!v002!101
+!v010!1EC5
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH CIRCUMFLEX AND TILDE
+!v052!LATIN SMALL LETTER E WITH CIRCUMFLEX AND TILDE
+!v101!1EC5
+!ID 000443
+!v001!e1bb86
+!v002!069
+!v010!1EC6
+!v011!hex
+!v012!069
+!v021!asc
+!v051!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND DOT BELOW
+!v052!LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND DOT BELOW
+!v101!1EC6
+!ID 000444
+!v001!e1bb87
+!v002!101
+!v010!1EC7
+!v011!hex
+!v012!101
+!v021!asc
+!v051!LATIN SMALL LETTER E WITH CIRCUMFLEX AND DOT BELOW
+!v052!LATIN SMALL LETTER E WITH CIRCUMFLEX AND DOT BELOW
+!v101!1EC7
+!ID 000445
+!v001!e1bb88
+!v002!073
+!v010!1EC8
+!v011!hex
+!v012!073
+!v021!asc
+!v051!LATIN CAPITAL LETTER I WITH HOOK ABOVE
+!v052!LATIN CAPITAL LETTER I WITH HOOK ABOVE
+!v101!1EC8
+!ID 000446
+!v001!e1bb89
+!v002!105
+!v010!1EC9
+!v011!hex
+!v012!105
+!v021!asc
+!v051!LATIN SMALL LETTER I WITH HOOK ABOVE
+!v052!LATIN SMALL LETTER I WITH HOOK ABOVE
+!v101!1EC9
+!ID 000447
+!v001!e1bb8a
+!v002!073
+!v010!1ECA
+!v011!hex
+!v012!073
+!v021!asc
+!v051!LATIN CAPITAL LETTER I WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER I WITH DOT BELOW
+!v101!1ECA
+!ID 000448
+!v001!e1bb8b
+!v002!105
+!v010!1ECB
+!v011!hex
+!v012!105
+!v021!asc
+!v051!LATIN SMALL LETTER I WITH DOT BELOW
+!v052!LATIN SMALL LETTER I WITH DOT BELOW
+!v101!1ECB
+!ID 000449
+!v001!e1bb8c
+!v002!079
+!v010!1ECC
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER O WITH DOT BELOW
+!v101!1ECC
+!ID 000450
+!v001!e1bb8d
+!v002!111
+!v010!1ECD
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH DOT BELOW
+!v052!LATIN SMALL LETTER O WITH DOT BELOW
+!v101!1ECD
+!ID 000451
+!v001!e1bb8e
+!v002!079
+!v010!1ECE
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH HOOK ABOVE
+!v052!LATIN CAPITAL LETTER O WITH HOOK ABOVE
+!v101!1ECE
+!ID 000452
+!v001!e1bb8f
+!v002!111
+!v010!1ECF
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH HOOK ABOVE
+!v052!LATIN SMALL LETTER O WITH HOOK ABOVE
+!v101!1ECF
+!ID 000453
+!v001!e1bb90
+!v002!079
+!v010!1ED0
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND ACUTE
+!v052!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND ACUTE
+!v101!1ED0
+!ID 000454
+!v001!e1bb91
+!v002!111
+!v010!1ED1
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH CIRCUMFLEX AND ACUTE
+!v052!LATIN SMALL LETTER O WITH CIRCUMFLEX AND ACUTE
+!v101!1ED1
+!ID 000455
+!v001!e1bb92
+!v002!079
+!v010!1ED2
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND GRAVE
+!v052!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND GRAVE
+!v101!1ED2
+!ID 000456
+!v001!e1bb93
+!v002!111
+!v010!1ED3
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH CIRCUMFLEX AND GRAVE
+!v052!LATIN SMALL LETTER O WITH CIRCUMFLEX AND GRAVE
+!v101!1ED3
+!ID 000457
+!v001!e1bb94
+!v002!079
+!v010!1ED4
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE
+!v052!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE
+!v101!1ED4
+!ID 000458
+!v001!e1bb95
+!v002!111
+!v010!1ED5
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE
+!v052!LATIN SMALL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE
+!v101!1ED5
+!ID 000459
+!v001!e1bb96
+!v002!079
+!v010!1ED6
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND TILDE
+!v052!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND TILDE
+!v101!1ED6
+!ID 000460
+!v001!e1bb97
+!v002!111
+!v010!1ED7
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE
+!v052!LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE
+!v101!1ED7
+!ID 000461
+!v001!e1bb98
+!v002!079
+!v010!1ED8
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND DOT BELOW
+!v052!LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND DOT BELOW
+!v101!1ED8
+!ID 000462
+!v001!e1bb99
+!v002!111
+!v010!1ED9
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH CIRCUMFLEX AND DOT BELOW
+!v052!LATIN SMALL LETTER O WITH CIRCUMFLEX AND DOT BELOW
+!v101!1ED9
+!ID 000463
+!v001!e1bb9a
+!v002!079
+!v010!1EDA
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH HORN AND ACUTE
+!v052!LATIN CAPITAL LETTER O WITH HORN AND ACUTE
+!v101!1EDA
+!ID 000464
+!v001!e1bb9b
+!v002!111
+!v010!1EDB
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH HORN AND ACUTE
+!v052!LATIN SMALL LETTER O WITH HORN AND ACUTE
+!v101!1EDB
+!ID 000465
+!v001!e1bb9c
+!v002!079
+!v010!1EDC
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH HORN AND GRAVE
+!v052!LATIN CAPITAL LETTER O WITH HORN AND GRAVE
+!v101!1EDC
+!ID 000466
+!v001!e1bb9d
+!v002!111
+!v010!1EDD
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH HORN AND GRAVE
+!v052!LATIN SMALL LETTER O WITH HORN AND GRAVE
+!v101!1EDD
+!ID 000467
+!v001!e1bb9e
+!v002!079
+!v010!1EDE
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH HORN AND HOOK ABOVE
+!v052!LATIN CAPITAL LETTER O WITH HORN AND HOOK ABOVE
+!v101!1EDE
+!ID 000468
+!v001!e1bb9f
+!v002!111
+!v010!1EDF
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH HORN AND HOOK ABOVE
+!v052!LATIN SMALL LETTER O WITH HORN AND HOOK ABOVE
+!v101!1EDF
+!ID 000469
+!v001!e1bba0
+!v002!079
+!v010!1EE0
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH HORN AND TILDE
+!v052!LATIN CAPITAL LETTER O WITH HORN AND TILDE
+!v101!1EE0
+!ID 000470
+!v001!e1bba1
+!v002!111
+!v010!1EE1
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH HORN AND TILDE
+!v052!LATIN SMALL LETTER O WITH HORN AND TILDE
+!v101!1EE1
+!ID 000471
+!v001!e1bba2
+!v002!079
+!v010!1EE2
+!v011!hex
+!v012!079
+!v021!asc
+!v051!LATIN CAPITAL LETTER O WITH HORN AND DOT BELOW
+!v052!LATIN CAPITAL LETTER O WITH HORN AND DOT BELOW
+!v101!1EE2
+!ID 000472
+!v001!e1bba3
+!v002!111
+!v010!1EE3
+!v011!hex
+!v012!111
+!v021!asc
+!v051!LATIN SMALL LETTER O WITH HORN AND DOT BELOW
+!v052!LATIN SMALL LETTER O WITH HORN AND DOT BELOW
+!v101!1EE3
+!ID 000473
+!v001!e1bba4
+!v002!085
+!v010!1EE4
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER U WITH DOT BELOW
+!v101!1EE4
+!ID 000474
+!v001!e1bba5
+!v002!117
+!v010!1EE5
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH DOT BELOW
+!v052!LATIN SMALL LETTER U WITH DOT BELOW
+!v101!1EE5
+!ID 000475
+!v001!e1bba6
+!v002!085
+!v010!1EE6
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH HOOK ABOVE
+!v052!LATIN CAPITAL LETTER U WITH HOOK ABOVE
+!v101!1EE6
+!ID 000476
+!v001!e1bba7
+!v002!117
+!v010!1EE7
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH HOOK ABOVE
+!v052!LATIN SMALL LETTER U WITH HOOK ABOVE
+!v101!1EE7
+!ID 000477
+!v001!e1bba8
+!v002!085
+!v010!1EE8
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH HORN AND ACUTE
+!v052!LATIN CAPITAL LETTER U WITH HORN AND ACUTE
+!v101!1EE8
+!ID 000478
+!v001!e1bba9
+!v002!117
+!v010!1EE9
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH HORN AND ACUTE
+!v052!LATIN SMALL LETTER U WITH HORN AND ACUTE
+!v101!1EE9
+!ID 000479
+!v001!e1bbaa
+!v002!085
+!v010!1EEA
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH HORN AND GRAVE
+!v052!LATIN CAPITAL LETTER U WITH HORN AND GRAVE
+!v101!1EEA
+!ID 000480
+!v001!e1bbab
+!v002!117
+!v010!1EEB
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH HORN AND GRAVE
+!v052!LATIN SMALL LETTER U WITH HORN AND GRAVE
+!v101!1EEB
+!ID 000481
+!v001!e1bbac
+!v002!085
+!v010!1EEC
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH HORN AND HOOK ABOVE
+!v052!LATIN CAPITAL LETTER U WITH HORN AND HOOK ABOVE
+!v101!1EEC
+!ID 000482
+!v001!e1bbad
+!v002!117
+!v010!1EED
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH HORN AND HOOK ABOVE
+!v052!LATIN SMALL LETTER U WITH HORN AND HOOK ABOVE
+!v101!1EED
+!ID 000483
+!v001!e1bbae
+!v002!085
+!v010!1EEE
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH HORN AND TILDE
+!v052!LATIN CAPITAL LETTER U WITH HORN AND TILDE
+!v101!1EEE
+!ID 000484
+!v001!e1bbaf
+!v002!117
+!v010!1EEF
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH HORN AND TILDE
+!v052!LATIN SMALL LETTER U WITH HORN AND TILDE
+!v101!1EEF
+!ID 000485
+!v001!e1bbb0
+!v002!085
+!v010!1EF0
+!v011!hex
+!v012!085
+!v021!asc
+!v051!LATIN CAPITAL LETTER U WITH HORN AND DOT BELOW
+!v052!LATIN CAPITAL LETTER U WITH HORN AND DOT BELOW
+!v101!1EF0
+!ID 000486
+!v001!e1bbb1
+!v002!117
+!v010!1EF1
+!v011!hex
+!v012!117
+!v021!asc
+!v051!LATIN SMALL LETTER U WITH HORN AND DOT BELOW
+!v052!LATIN SMALL LETTER U WITH HORN AND DOT BELOW
+!v101!1EF1
+!ID 000487
+!v001!e1bbb2
+!v002!089
+!v010!1EF2
+!v011!hex
+!v012!089
+!v021!asc
+!v051!LATIN CAPITAL LETTER Y WITH GRAVE
+!v052!LATIN CAPITAL LETTER Y WITH GRAVE
+!v101!1EF2
+!ID 000488
+!v001!e1bbb3
+!v002!121
+!v010!1EF3
+!v011!hex
+!v012!121
+!v021!asc
+!v051!y minusculo acento grave
+!v052!LATIN SMALL LETTER Y WITH GRAVE
+!v101!1EF3
+!ID 000489
+!v001!e1bbb4
+!v002!089
+!v010!1EF4
+!v011!hex
+!v012!089
+!v021!asc
+!v051!LATIN CAPITAL LETTER Y WITH DOT BELOW
+!v052!LATIN CAPITAL LETTER Y WITH DOT BELOW
+!v101!1EF4
+!ID 000490
+!v001!e1bbb5
+!v002!121
+!v010!1EF5
+!v011!hex
+!v012!121
+!v021!asc
+!v051!LATIN SMALL LETTER Y WITH DOT BELOW
+!v052!LATIN SMALL LETTER Y WITH DOT BELOW
+!v101!1EF5
+!ID 000491
+!v001!e1bbb6
+!v002!089
+!v010!1EF6
+!v011!hex
+!v012!089
+!v021!asc
+!v051!LATIN CAPITAL LETTER Y WITH HOOK ABOVE
+!v052!LATIN CAPITAL LETTER Y WITH HOOK ABOVE
+!v101!1EF6
+!ID 000492
+!v001!e1bbb7
+!v002!121
+!v010!1EF7
+!v011!hex
+!v012!121
+!v021!asc
+!v051!latin small letter y with hook above
+!v052!LATIN SMALL LETTER Y WITH HOOK ABOVE
+!v101!1EF7
+!ID 000493
+!v001!e1bbb8
+!v002!089
+!v010!1EF8
+!v011!hex
+!v012!089
+!v021!asc
+!v051!LATIN CAPITAL LETTER Y WITH TILDE
+!v052!LATIN CAPITAL LETTER Y WITH TILDE
+!v101!1EF8
+!ID 000494
+!v001!e1bbb9
+!v002!121
+!v010!1EF9
+!v011!hex
+!v012!121
+!v021!asc
+!v051!latin small letter y with tilde
+!v052!LATIN SMALL LETTER Y WITH TILDE
+!v101!1EF9
+!ID 000495
+!v001!e28082
+!v002!032
+!v010!2002
+!v011!hex
+!v012!032
+!v021!asc
+!v041!&#8194;
+!v051!espaco EN
+!v052!EN Space
+!v101!2002
+!ID 000496
+!v001!e28083
+!v002!032
+!v010!2003
+!v011!hex
+!v012!032
+!v021!asc
+!v041!&#8195;
+!v051!espaco EM
+!v052!EM Space
+!v101!2003
+!ID 000497
+!v001!e28089
+!v002!032
+!v010!2009
+!v011!hex
+!v012!032
+!v021!asc
+!v041!&#8201;
+!v051!Espaco estreito
+!v052!Thin Space
+!v101!2009
+!ID 000498
+!v001!e2808c
+!v002!124
+!v010!200C
+!v011!hex
+!v012!124
+!v021!asc
+!v041!&#8204;
+!v051!zero width non-joiner
+!v052!Zero Width Non-Joiner
+!v101!200C
+!ID 000499
+!v001!e2808d
+!v002!124
+!v010!200D
+!v011!hex
+!v012!124
+!v021!asc
+!v041!&#8205;
+!v051!zero width joiner
+!v052!Zero Width joiner
+!v101!200D
+!ID 000500
+!v001!e2808e
+!v002!032
+!v010!200E
+!v011!hex
+!v012!032
+!v021!asc
+!v041!&#8206;
+!v051!Left-to-Right mark
+!v052!Left-to-Right Mark
+!v101!200E
+!ID 000501
+!v001!e2808f
+!v002!032
+!v010!200F
+!v011!hex
+!v012!032
+!v021!asc
+!v041!&#8207;
+!v051!Right-to-Left mark
+!v052!Right-to-Left Mark
+!v101!200F
+!ID 000502
+!v001!e28090
+!v002!173
+!v010!2010
+!v011!hex
+!v012!173
+!v021!asc
+!v041!&#8208;
+!v051!hifen
+!v052!Hyphen
+!v101!2010
+!ID 000503
+!v001!e28091
+!v002!173
+!v010!2011
+!v011!hex
+!v012!173
+!v021!asc
+!v041!&#8209;
+!v051!hifen nao divisivel
+!v052!Non-Breaking Hyphen
+!v101!2011
+!ID 000504
+!v001!e28093
+!v002!173
+!v010!2013
+!v011!hex
+!v012!173
+!v021!asc
+!v041!&#8211;
+!v051!EN DASH
+!v052!– EN DASH
+!v101!2013
+!ID 000505
+!v001!e28094
+!v002!173
+!v010!2014
+!v011!hex
+!v012!173
+!v021!asc
+!v041!&#8212;
+!v051!EM DASH
+!v052!— EM DASH
+!v101!2014
+!ID 000506
+!v001!e28095
+!v002!173
+!v010!2015
+!v011!hex
+!v012!173
+!v021!asc
+!v041!&#8213;
+!v051!Barra horizontal
+!v052!Horizontal Bar
+!v101!2015
+!ID 000507
+!v001!e28097
+!v002!095
+!v010!2017
+!v011!hex
+!v012!095
+!v021!asc
+!v041!&#8215;
+!v051!Linha dupla inferior
+!v052!Double Low Line
+!v101!2017
+!ID 000508
+!v001!e28098
+!v002!039
+!v010!2018
+!v011!hex
+!v012!039
+!v021!asc
+!v041!&#8216;
+!v051!LEFT SINGLE QUOTATION MARK
+!v052!LEFT SINGLE QUOTATION MARK
+!v101!2018
+!ID 000509
+!v001!e28099
+!v002!039
+!v010!2019
+!v011!hex
+!v012!039
+!v021!asc
+!v041!&#8217;
+!v051!RIGHT SINGLE QUOTATION MARK
+!v052!RIGHT SINGLE QUOTATION MARK
+!v101!2019
+!ID 000510
+!v001!e2809a
+!v002!039
+!v010!201A
+!v011!hex
+!v012!039
+!v021!asc
+!v041!&#8218;
+!v051!SINGLE LOW-9 QUOTATION MARK
+!v052!SINGLE LOW-9 QUOTATION MARK
+!v101!201A
+!ID 000511
+!v001!e2809b
+!v002!063
+!v011!hex
+!v021!asc
+!v041!&#8219;
+!v051!SINGLE HIGH-REVERSED-9 QUOTATION MARK
+!v052!SINGLE HIGH-REVERSED-9 QUOTATION MARK
+!v101!0000
+!v32001!tgrl^l1^kE2809B^o1
+!ID 000512
+!v001!e2809c
+!v002!034
+!v010!201C
+!v011!hex
+!v012!034
+!v021!asc
+!v041!&#8220;
+!v051!LEFT DOUBLE QUOTATION MARK
+!v052!LEFT DOUBLE QUOTATION MARK
+!v101!201C
+!ID 000513
+!v001!e2809d
+!v002!034
+!v010!201D
+!v011!hex
+!v012!034
+!v021!asc
+!v041!&#8221;
+!v051!RIGHT DOUBLE QUOTATION MARK
+!v052!RIGHT DOUBLE QUOTATION MARK
+!v101!201D
+!ID 000514
+!v001!e2809e
+!v002!034
+!v010!201E
+!v011!hex
+!v012!034
+!v021!asc
+!v041!&#8222;
+!v051!DOUBLE LOW-9 QUOTATION MARK
+!v052!DOUBLE LOW-9 QUOTATION MARK
+!v101!201E
+!ID 000515
+!v001!e2809f
+!v002!063
+!v010!201F
+!v011!hex
+!v012!063
+!v021!asc
+!v041!&#8223;
+!v051!DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+!v052!DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+!v101!201F
+!ID 000516
+!v001!e280a0
+!v002!134
+!v010!2020
+!v011!hex
+!v012!134
+!v021!asc
+!v041!&#8224;
+!v051!Dagger
+!v052!† DAGGER
+!v101!2020
+!ID 000517
+!v001!e280a1
+!v002!135
+!v010!2021
+!v011!hex
+!v012!135
+!v021!asc
+!v041!&#8225;
+!v051!Dagger duplo
+!v052!‡ DOUBLE DAGGER
+!v101!2021
+!ID 000518
+!v001!e280a6
+!v002!133
+!v010!2026
+!v011!hex
+!v021!asc
+!v041!&#8230;
+!v051!reticencias
+!v052!Horizontal ellipsis
+!v101!2026
+!ID 000519
+!v001!e280b0
+!v002!137
+!v010!2030
+!v011!hex
+!v021!asc
+!v041!&#8240;
+!v051!Por mil
+!v052!Per Mille
+!v101!2030
+!ID 000520
+!v001!e280b2
+!v002!039
+!v010!2032
+!v011!hex
+!v012!039
+!v021!asc
+!v041!&#8242;
+!v051!PRIME
+!v052!PRIME
+!v101!2032
+!ID 000521
+!v001!e280b5
+!v002!096
+!v010!2035
+!v011!hex
+!v012!096
+!v021!asc
+!v041!&#8245;
+!v051!REVERSED PRIME
+!v052!REVERSED PRIME
+!v101!2035
+!ID 000522
+!v001!e280b9
+!v002!060
+!v010!2039
+!v011!hex
+!v012!060
+!v021!asc
+!v041!&#8249;
+!v051!Single left-pointing angle quotation mark
+!v052!SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+!v101!2039
+!ID 000523
+!v001!e280ba
+!v002!062
+!v010!203A
+!v011!hex
+!v012!062
+!v021!asc
+!v041!&#8250;
+!v051!Single right-pointing angle quotation mark
+!v052!SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+!v101!203A
+!ID 000524
+!v001!e28184
+!v002!047
+!v010!2044
+!v011!hex
+!v012!047
+!v021!asc
+!v041!&#8260;
+!v051!barra de fracao
+!v052!FRACTION SLASH
+!v101!2044
+!ID 000525
+!v001!e281b0
+!v002!176
+!v010!2070
+!v011!hex
+!v012!176
+!v021!asc
+!v041!&#8304;
+!v051!zero superscrito
+!v052!° SUPERSCRIPT ZERO
+!v101!2070
+!ID 000526
+!v001!e281b4
+!v002!052
+!v010!2074
+!v011!hex
+!v012!052
+!v021!asc
+!v041!&#8308;
+!v051!quatro superscrito
+!v052!SUPERSCRIPT FOUR
+!v101!2074
+!ID 000527
+!v001!e281b5
+!v002!053
+!v010!2075
+!v011!hex
+!v012!053
+!v021!asc
+!v041!&#8309;
+!v051!cinco superscrito
+!v052!SUPERSCRIPT FIVE
+!v101!2075
+!ID 000528
+!v001!e281b6
+!v002!054
+!v010!2076
+!v011!hex
+!v012!054
+!v021!asc
+!v041!&#8310;
+!v051!seis superscrito
+!v052!SUPERSCRIPT SIX
+!v101!2076
+!ID 0
+!v001!e281b7
+!v002!055
+!v010!2077
+!v011!hex
+!v012!055
+!v021!asc
+!v041!&#8311;
+!v051!sete superscrito
+!v052!SUPERSCRIPT SEVEN
+!v101!2077
+!ID 0
+!v001!e281b8
+!v002!056
+!v010!2078
+!v011!hex
+!v012!056
+!v021!asc
+!v041!&#8312;
+!v051!oito superscrito
+!v052!SUPERSCRIPT EIGHT
+!v101!2078
+!ID 0
+!v001!e281b9
+!v002!057
+!v010!2079
+!v011!hex
+!v012!057
+!v021!asc
+!v041!&#8313;
+!v051!nove superscrito
+!v052!SUPERSCRIPT NINE
+!v101!2079
+!ID 0
+!v001!e281bf
+!v002!110
+!v010!207F
+!v011!hex
+!v012!110
+!v021!asc
+!v041!&#8319;
+!v051!n minusculo superscrito
+!v052!SUPERSCRIPT LATIN SMALL LETTER N
+!v101!207F
+!ID 0
+!v001!e28280
+!v002!048
+!v010!2080
+!v011!hex
+!v012!048
+!v021!asc
+!v041!&#8320;
+!v051!0 subscrito
+!v052!SUBSCRIPT ZERO
+!v101!2080
+!ID 0
+!v001!e28281
+!v002!049
+!v010!2081
+!v011!hex
+!v012!049
+!v021!asc
+!v041!&#8321;
+!v051!1 subscrito
+!v052!SUBSCRIPT ONE
+!v101!2081
+!ID 0
+!v001!e28282
+!v002!050
+!v010!2082
+!v011!hex
+!v012!050
+!v021!asc
+!v041!&#8322;
+!v051!2 subscrito
+!v052!SUBSCRIPT TWO
+!v101!2082
+!ID 0
+!v001!e28283
+!v002!051
+!v010!2083
+!v011!hex
+!v012!051
+!v021!asc
+!v041!&#8323;
+!v051!3 subscrito
+!v052!SUBSCRIPT THREE
+!v101!2083
+!ID 0
+!v001!e28284
+!v002!052
+!v010!2084
+!v011!hex
+!v012!052
+!v021!asc
+!v041!&#8324;
+!v051!4 subscrito
+!v052!SUBSCRIPT FOUR
+!v101!2084
+!ID 0
+!v001!e28285
+!v002!053
+!v010!2085
+!v011!hex
+!v012!053
+!v021!asc
+!v041!&#8325;
+!v051!5 subscrito
+!v052!SUBSCRIPT FIVE
+!v101!2085
+!ID 0
+!v001!e28286
+!v002!054
+!v010!2086
+!v011!hex
+!v012!054
+!v021!asc
+!v041!&#8326;
+!v051!6 subscrito
+!v052!SUBSCRIPT SIX
+!v101!2086
+!ID 0
+!v001!e28287
+!v002!055
+!v010!2087
+!v011!hex
+!v012!055
+!v021!asc
+!v041!&#8327;
+!v051!7 subscrito
+!v052!SUBSCRIPT SEVEN
+!v101!2087
+!ID 0
+!v001!e28288
+!v002!056
+!v010!2088
+!v011!hex
+!v012!056
+!v021!asc
+!v041!&#8328;
+!v051!8 subscrito
+!v052!SUBSCRIPT EIGHT
+!v101!2088
+!ID 0
+!v001!e28289
+!v002!057
+!v010!2089
+!v011!hex
+!v012!057
+!v021!asc
+!v041!&#8329;
+!v051!9 subscrito
+!v052!SUBSCRIPT NINE
+!v101!2089
+!ID 0
+!v001!e282a1
+!v002!162
+!v010!20A1
+!v011!hex
+!v012!162
+!v021!asc
+!v041!&#8310;
+!v041!&#8353;
+!v051!COLON SIGN
+!v052!COLON SIGN
+!v101!20A1
+!ID 0
+!v001!e282a4
+!v002!163
+!v010!20A4
+!v011!hex
+!v012!163
+!v021!asc
+!v041!&#8356;
+!v051!LIRA SIGN
+!v052!LIRA SIGN
+!v101!20A4
+!ID 0
+!v001!e282a7
+!v002!080
+!v010!20A7
+!v011!hex
+!v012!080
+!v021!asc
+!v041!&#8359;
+!v051!PESETA SIGN
+!v052!PESETA SIGN
+!v101!20A7
+!ID 0
+!v001!e282ac
+!v002!128
+!v010!20AC
+!v011!hex
+!v021!asc
+!v041!&#8364;
+!v051!Euro
+!v052!EURO SIGN
+!v101!20AC

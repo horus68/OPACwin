@@ -1,0 +1,27 @@
+'</table>'
+'</form>'
+if val(v1091)=7 then
+  '<br>'/
+  '<p class="aviso">Não foram encontrados registos </p>'/
+else
+'<br />'/
+'<div align="right">'
+
+   if val(v1032)<=val(v1002) and val(v1002)>val(v1083)  
+   then
+     '<form method="get" action="/opac/cgi/www.exe/[in=pesqleitor.in]">'
+	 '<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+     '<input type="hidden" name="expressao" value="'if getenv('user')='ADMIN' then '$' else 'SI '(if v9000^n='ut' then v9000^v fi) fi'">'
+     '<input type="hidden" name="from" value="'f(val(v1031)+val(v1083),0,0)'">'
+     '<input type="hidden" name="to" value="'f(val(v1032)+val(v1083),0,0)'">'/
+	 '<input type="button" value="Página anterior" onclick="window.history.back(-1)">'/
+    if val(v1083)+val(v1031)<=val(v1002) then 
+    '<input type="submit" value="'if val(v1002)-val(v1083) < val(v1031)+val(v1083)-1 then 'Últimos ' f(val(v1002)-val(v1083)-val(v1031)+1,0,0)  else 'Próximos 'f(val(v1083),0,0) fi ' registos" name="Submit" tabindex="1" ></p>'/
+    fi
+	'</form>'/
+  fi
+   
+'</div>'
+fi
+'<br>'/
+'</BODY>'

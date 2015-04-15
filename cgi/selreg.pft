@@ -1,0 +1,3 @@
+/* Ativa a seleção de registos */
+'<input type="checkbox" value="'mfn(7),'" id="T8000" name="T8000" onclick="toggle_filtro(this)">'
+

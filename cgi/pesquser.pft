@@ -1,0 +1,11 @@
+if val(v1001)=1  then
+        '<table id="users" class="edit" summary="Editar utilizadores">'/
+        '<th width="80">Nº Registo</th><th width="140">Sigla</th><th width="350">Designação</th><th width="70">&nbsp;</th>'/
+fi        
+     (
+	if p(v2) then
+ 			    
+        '<tr><td>' mfn'</td><td>' v2'</td><td width="65%">' v3'</td><td><a href="javascript:edUser(&quot;'v2'&quot;,&quot;'v1'&quot;)"><img src="../../imagens/icon_edit.gif" border=0 title="Editar registo" alt="Editar registo"></a> 'if v2<>'ADMIN' then '<a href="javascript:dlUser(&quot;'v2'&quot;,&quot;'mfn(1)'&quot;)"><img src="../../imagens/icon_delete.gif" border=0 title="Eliminar registo" alt="Eliminar registo"></a> 'else'<img src="../../imagens/icon_del_stop.gif" border=0 title="Não é possível eliminar este registo" alt="Não é possível eliminar este registo">' fi' 'if REF(['prmusr']L(['prmusr']'SIGLA 'v2),mfn(1))<>'' then '<a href="javascript:permUser(&quot;'v2'&quot;)">' else '<a href="javascript:permNovo(&quot;'v2'&quot;)">' fi '<img src="../../imagens/keys.gif" border=0 title="Definir permissões" alt="Definir permissões"></a></td></tr>'/      
+ 		
+        fi
+    )

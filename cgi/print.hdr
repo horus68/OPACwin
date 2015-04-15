@@ -1,0 +1,69 @@
+'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">'/
+'<head>'/
+'<title>Listagem para impressão (Pré-visualização)</title>'/
+'<META HTTP-EQUIV="Pragma" CONTENT="no-cache">'/
+'<META HTTP-EQUIV="Expires" CONTENT="-1">'/
+' <link href="/opac/css/print.css" rel="stylesheet" type="text/css" />'/
+'	<![if !IE]>'/
+'	<link href="/opac/css/print1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+' <script>
+ function doSaveAs()
+  {
+   document.execCommand("SaveAs",false,"*.html")
+  }
+ </script>'/
+'</head>'/
+'<body >'/
+'<div id="titulo"> '/
+'  <h1><span>'getenv('tmp')'</span></h1>'/
+	'<div id=data> '/
+	'	<script>'/
+	'	var gNow = new Date();'/
+	'	var vNowDay = gNow.getDate();'/
+	'	var vNowMonth = gNow.getMonth()+1;'/
+	'	var vNowYear = gNow.getFullYear();'/
+	'	var mes="";'/
+	'	if (vNowMonth<10)  mes="0"+vNowMonth; else mes=vNowMonth;'/
+	'	var vday = vNowDay + "-" + mes + "-" + vNowYear;'/
+	'	document.write(vday);'/	
+	'	</script>'/
+	'  </div>'/
+    '  <div id=hora> '/
+	'	<script>'/
+	'	var Digital=new Date()'/
+	'	var hours=Digital.getHours()'/
+	'	var minutes=Digital.getMinutes()'/
+	'	if (hours.toString().length==1)'/
+	'	hours="0"+hours'/
+	'	if (minutes<=9)'/
+	'	minutes="0"+minutes'/
+	'	dispTime=hours+":"+minutes'/
+	'	if (document.layers) {'/
+	'	document.layers.hora.document.write(dispTime);'/
+	'	document.layers.hora.document.close();'/
+	'	}'/
+	'	else'/
+	'	if (document.all)'/
+	'	hora.innerHTML = dispTime;'/
+	'	</script>'/
+	 ' </div>'/
+'</div>'/
+'<!-- fim do titulo -->'/
+
+
+'<script language="JavaScript" src="/opac/js/geral.js"></script>'/
+
+
+'<div id="globalprint">'/
+'    <div id="contenu">'/ 
+
+ putenv('base='(if v9000^n='base' then v9000^v fi))
+ putenv('formato='(if v9000^n='formato' then v9000^v fi))
+ if getenv('base') = 'opac' then 
+'		<h2>Listagem para impressão (<span class=destaque>Catálogo Coletivo</span>)</h2>'/
+else,
+'		<h2>Listagem para impressão (<span class=destaque>Catálogo de 'getenv('base')'</span>)</h2>'/
+      
+fi,

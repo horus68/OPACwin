@@ -1,0 +1,166 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'   <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">'/
+'   <META HTTP-EQUIV="Pragma" CONTENT="no-cache">'/
+'   <META HTTP-EQUIV="Expires" CONTENT="0">'/
+'   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="/opac/css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="/opac/css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script language="JavaScript" src="/opac/js/geral.js"></script>'/
+'<script language="JavaScript" src="/opac/js/prototype.js"></script>'/
+'<script type="text/javascript" src="/opac/js/jquery-1.7.1.min.js"></script>'/
+'<script type="text/javascript" src="/opac/js/jquery-tagbox/js/jquery.tagbox.js"></script>'/
+'<link rel="stylesheet" type="text/css" href="/opac/js/jquery-tagbox/css/jquery.tagbox.css" />'/
+'<!--<script type="text/javascript" src="/opac/js/jquery.tagsinput.js"></script>'/
+'<link rel="stylesheet" type="text/css" href="/opac/css/jquery.tagsinput.css" />-->'/
+'<link type="text/css" rel="stylesheet" href="/opac/js/jqueryRater/style.css" />'/
+'<script type="text/javascript" src="/opac/js/jqueryRater/jquery.rater.js"></script>'/
+
+'<script>'/
+ putenv('exp='(if v9000^n='expressao' then v9000^v fi))
+ putenv('termo='(if v9000^n='termo' then v9000^v fi))
+
+' function grava_historico(){'/
+    '           var exp="'if getenv('termo')='' then replace(getenv('exp'),'"','') else replace(getenv('termo'),'"','') fi'";'/
+	'      	    url ="/opac/admin/savtermos.asp?exp="+exp;'/
+	' 	   		new Ajax.Request(url, {     '/
+	'      	    method:"get"  '/
+	'	   	    }) '/ 
+	'      		url ="/opac/admin/historico.asp?exp="+exp+"&tipodoc='(if v9000^n='TDOC' then v9000^v fi)'&lim_ini='(if v9000^n='lim_inicio' then v9000^v fi)'&limites='(if v9000^n='limites' then v9000^v fi)'&formato='(if v9000^n='formato' then v9000^v fi)'";'/
+	' 	   		new Ajax.Request(url, {     '/
+	'      	    method:"get"  '/
+	'	   	    }); '/ 
+'}'/
+	
+'function round(n,dec) {'
+	'n = parseFloat(n);'
+	'if(!isNaN(n)){'
+    '	if(!dec) var dec= 0;'
+	'	var factor= Math.pow(10,dec);'
+	'	return Math.floor(n*factor+((n*factor*10)%10>=5?1:0))/factor;'
+	'}else{'
+	'	return n;'
+	'}'
+'}'
+
+'function ver_tags(usr,mfn,reg) {'/
+'        url ="/opac/admin/vertags.asp?user="+usr+"&mfn="+mfn+"&nreg="+reg;'/
+'		 var janela =  "tags"; '
+'		 var loc = url;'
+'		 popup=window.open("",janela,"toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=no,width=500,height=300,left=200,top=100");'
+'		 ndoc=popup.document;'
+'		 ndoc.location.href=loc;'
+'		 if(window.focus) popup.focus(); '
+'}'
+'</script>'/
+'<style>'/
+'div.autosize { display: table; width: 1px; }'/
+'div.autosize > div { display: table-cell; }'/
+'</style>'/
+'</head>'/
+'<body id="opac" onload="grava_historico();toggle_filtro();">'/
+'<script language="JavaScript">'/
+'  window.status="Resultado da pesquisa";'/
+'  var checkflag = "false";'
+'function check(field)
+{
+    var flag;
+	if (checkflag == "false") 
+    {
+       for (i = 0; i < field.length; i++) 
+            field[i].checked = true;
+	   checkflag = "true";
+	   $("#img").show();
+	   flag="Desmarcar"; 
+    } else { 
+	   for (i = 0; i < field.length; i++) 
+          field[i].checked = false; 
+       checkflag = "false";
+	   $("#img").hide();
+       flag="Marcar todos"; 
+    }
+	var $b = $("input[type=checkbox]");
+	if ($b.filter(":checked").length >0 ) $("#lblfilter").html("&nbsp;" +$b.filter(":checked").length+" registo(s) marcado(s)");
+    else $("#lblfilter").html("");  	
+	return flag;
+}'/
+
+'function toggle_filtro() {
+  
+	var $b = $("input[type=checkbox]");
+	if ($b.filter(":checked").length >0 ) 
+	{
+	  $("#img").show();  
+      $("#lblfilter").html("&nbsp;" +$b.filter(":checked").length+" registo(s) marcado(s)"); 
+	} else {
+	       $("#img").hide(); 
+	       $("#lblfilter").html(Array(39).join("&nbsp;")); 
+		   }
+}'
+
+'function ChkLinkHref(tipo,formato,linha_in)'/
+'{'/
+'  var dim=0;'/
+'  var tmp="",car="";'/
+'  tmp=ConvUp(linha_in);'/
+'  tmp=FindRepChar(unescape(tmp),"`","\"");'/
+'  var param="/opac/cgi/www.exe/[in=pesqger.in]?base='(if v9000^n='base' then v9000^v fi)'&ut='(if v9000^n='ut' then v9000^v fi)'&nomemnu='(if v9000^n='nomemnu' then v9000^v fi)'&formato="+formato+"&lim_inicio=1&limites='(if v9000^n='limites' then v9000^v fi)'&id='(if v9000^n='id' then v9000^v fi)'";'
+'      param+="&user='(if v9000^n='user' then v9000^v fi)'&nut='(if v9000^n='nut' then v9000^v fi)'&sortfmt='(if v9000^n='sortfmt' then v9000^v fi)'&termo="+linha_in+"&expressao=";'/
+'  dim=tmp.length;'/
+'  car=tmp.charAt(dim-1);'/
+'  // Tratamento especial para a Coleccao'/
+'  if (tipo=="1" && car==")") tmp=tmp.substring(0,dim-1);'/
+'  // Tratamento especial para a CDU, Deve ativar-se o tipo 3 na chamada da funcao ChkLinkHrf(3,fmt,campo)'/
+'  if (tipo=="3") tmp=TrataCDU(tmp);'/
+'  return(param + ChkChars_2(LimpaMais(tmp)));'/
+'}'/
+ putenv('user='(if v9000^n='ut' then v9000^v fi))
+ putenv('nuser='(if v9000^n='nut' then v9000^v fi))
+ putenv('ent='(if v9000^n='ent' then v9000^v fi))
+'</script>'/
+'   <h3><span>Catálogos</span></h3>  
+	<div id="principal" class="resultado"> <div id="lblutilizador">Utilizador: <span id="utilizador">' 
+        if getenv('user')='guest' then 'anónimo' else getenv('user') fi
+        '</span>' if getenv('user')<>'guest' then ' [ <a href="/opac/logout.asp?sys=admin">Sair</a> ] ' fi '</div>  '/
+		 
+' <p class="fil">» '/
+	       putenv('base='(if v9000^n='base' then v9000^v fi))
+           putenv('mnuori='(if v9000^n='nomemnu' then v9000^v fi))
+           putenv('op='(if v9000^n='id' then v9000^v fi))
+	   if  getenv('mnuori') : 'admin/catind.asp' then
+	     '<a href="/opac/default.asp">Início</a> » <a href="/opac/admin/admin.asp?id=1">Administração</a> » '/
+	   else
+	     '<a href="/opac/default.asp">Início</a> » '/
+		
+	   fi
+		    if getenv('op')='1' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=1"> Pesquisa Orientada </a>'
+		    fi
+		    if getenv('op')='0' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=0"> Pesquisa Simplificada </a>'
+		    fi
+		    if getenv('op')='2' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=2' if getenv('mnuori'):'bd' then '' else '&bd=col' fi'"> Pesquisa por Palavra-chave </a>'
+		    fi
+		    if getenv('op')='3' then      
+	       ' <a href="/opac/'getenv('mnuori'),if instr(getenv('mnuori'),'?') >0 then '&' else '?' fi 'id=3' if getenv('mnuori'):'bd' then '' else '&bd=col' fi'"> Pesquisa por palavra-chave </a>'
+		    fi
+        
+ 
+	'  » Resultado</p>	'/   
+	''/
+	
+'  <!--Adicionado em 9-10-09 -->'/		
+ '  <div id="basket" style="background-color: #efefef; padding: 0px; 'if getenv('user')<>'guest' and getenv('user')<>'ADMIN' then '' else 'display:none' fi '">'/
+'	<table border="0">'/
+'		<tr>'/
+'			<td width='if getenv('nuser')<>'' then '"762"' else '"800"' fi'></td><td>'if getenv('nuser')<>'' then '<!--<span style="font: 8pt Arial">Alterar PIN</span>--> <a  href="javascript:void(0)"   onclick="javascript:alterarPin()"><img src="../../imagens/person.gif"  border="0" alt="Aletar o meu PIN" align="absmiddle""></a> ' fi'  <!--<span style="font: 8pt Arial"> As minhas reservas </span>--> <a href="javascript:void(0)" onclick="javascript:build_reservas(&quot;'getenv('user')'&quot;,&quot;'getenv('nuser')'&quot;)"><img src="../../imagens/basket_3.gif"  border="0" alt="As minhas reservas" align="absmiddle""></a></td>'/
+'		</tr>'
+'	</table>'/
+'</div>'/

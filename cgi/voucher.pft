@@ -1,0 +1,34 @@
+
+if getenv('pk')<> '37d636a9639ec4faa0f89a2da00d8f17'  then
+   '<div style="margin-top:100px;text-align:center">' 
+   '<p style="font-size:2em">Acesso negado</p>'
+   '</div>'
+else 
+	'<body id="cert">'
+    '<h1 id="topo" title="Certificado de reserva"> <span>Certificado de reserva</span> '
+	'</h1>'   
+
+	'<div id="headcert"><span style="float:right; font: 110% Helvetica; color: #000;margin: 10px 40px 0 0 ">VOUCHER Nº: 'mfn'</span><img src="/opac/imagens/logotipo" align="left" border=0></div>'
+	'<div style="margin-top:190px">'
+	'<fieldset class="cert" >'
+	'<label><em>Data de emissão:</em></label><b><label> 'v60*6.2'-'v60*4.2'-'v60.4'</label><label style="width:60px">  Hora:</label><label style="width:60px">'v60*9.2':'v60*11.2':'v60*13.2'</label></b><br>'
+	'<label><em>Entidade emissora:</em></label><b><label style="width:500px"> '
+	putenv('dummy='cat('cgi.ini'))
+	putenv ('temp='mid(getenv('dummy'),instr(getenv('dummy'),'entidade')+9,150))
+	mid(getenv('temp'),0,instr(getenv('temp'),';;')-1)
+	'</label></b><br>'
+	'<label><em>Entidade destinatária :</em></label><b><label style="width:500px"> 'v40' - 'v45'</label></b><br>'
+	'<label><em>Morada:</em></label><b><label style="width:500px">'v50'</label></b><br>'
+	'<label><em>A favor de:</em></label><b><label style="width:500px"> 'ref(['leitor']L(['leitor']'NR 'v999^a),v2)'</label></b><br>'
+	'<label><em>Nº de Leitor:</em></label><b><label > 'v999^a'</label></b><br>'
+	'</fieldset>'
+	'</div>'
+	'<div style="margin-top:30px">'
+	'<fieldset class="cert">'
+	'<p><b>Por favor considere a reserva do seguinte documento:</b></p>'
+	'<label><em>Título:</em></label><b><label style="width:500px"> 'v10'</label></b><br>'
+	'<label><em>Autor(es):</em></label><b><label style="width:500px"> 'v20'</label></b><br>'
+	'<label><em>Nº registo:</em></label><b><label> 'v30'</label></b><br>'
+	'</fieldset>'
+	'<br>'	
+fi

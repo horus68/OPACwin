@@ -1,0 +1,1 @@
+if REF(['leitor']L(['leitor'](if v9000^n='nome' then v9000^v fi)),mfn(1)) <>'' then 'sim' else 'nao' fi

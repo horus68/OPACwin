@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@mnucol.hdr
+cgi=@mnucol.cgi
+epilog=@mnucol.ftr
+
+

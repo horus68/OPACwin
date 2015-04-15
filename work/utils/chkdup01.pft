@@ -1,0 +1,16 @@
+lw(5000),
+/* Titulo */
+proc('D20000A20000~'replace(replace(replace(replace(V200[1],'~','?'),'^c','~A20000~^c'),'^e','~A20000~^e'),'^d','~A20000~^d')'~'),
+proc('D20001A20001~'MHU,V20000^a,v20000^b,v20000^c,v20000^e,v20000^d,mhl,v20000^h,v20000^i,v20000^f,v20000^g,mhl'~')
+MHU,
+ '|'V1'|'
+       replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(
+       S(
+         s(V921,V922,X2).2,
+         s(V20001[1]).150,
+         v205^a,
+         v210^a,| : |v210^c,|, |v210^d,
+         ),' ',''),'"',''),'.',''),'!',''),',',''),':',''),'|',''),'[',''),']',''),'(',''),')',''),'-','')
+
+MHL,
+/

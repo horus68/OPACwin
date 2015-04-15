@@ -1,0 +1,117 @@
+'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+    putenv('expressao=' (if v9000^n='expressao' then v9000^v fi))
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script type="text/javascript" src="../../js/prototype.js"></script>'/
+'<script type="text/javascript" src="../../js/users.js"></script>'/
+'      <script>'
+'      function onEnter(event){'
+'       var bolOldBrowser = (document.layers) ? true : false;'
+'       var intKeyCode = 0;'
+'       if (bolOldBrowser)'
+'         intKeyCode = event.which;'
+'         else'
+'         intKeyCode = event.keyCode;'
+'         if (intKeyCode == 13)'
+'          novapesq();'
+'       }'
+
+'      function fechar(){'
+'       var user="'(if v9000^n='ut' then v9000^v fi)'";'
+'       var expr= user.toUpperCase()=="ADMIN" ? "$": "SI "+ user;'
+'       window.location.href="../../cgi/www.exe/[in=pesqleitor.in]?expressao="+ expr +"&ut="+user+"&from=1&to=25";' 
+'}' 
+'      function novapesq() { var strexpr=$("expr").value;'
+'       window.location.href="../../cgi/www.exe/[in=pleitor.in]?ut='(if v9000^n='ut' then v9000^v fi)'&expressao=" + strexpr; '
+'       }'
+
+'       function validadados() {'
+'       var status=true;'
+'       var msg="";' 
+'        if (!ValidateData($("v12"))) return false;'	
+'		 if (!ValidateEmail($("v18"))) return false;'
+'        if ($("v11").value=="")'
+'        {msg=  (msg != "") ? msg +",NOME": msg+ "NOME"; status=false; }'
+'        if ($("v13").value=="")'
+'        {msg=  (msg != "") ? msg +",MORADA": msg+ "MORADA"; status=false; }'
+'        if ($("v14").value=="")'
+'        {msg=  (msg != "") ? msg +",CONCELHO": msg+ "CONCELHO"; status=false; }'
+'        if (msg != "")  msg= "O(s) campo(s) " + msg + " é(são) obrigatório(s).";'
+'        if (!status) alert ("ATENÇÂO! Existem erros no preenchimento do formulário.\n\n" + msg);'
+'        return status;'
+'       }'
+
+'       function edLeitor(nreg,bib){'
+'       window.location.href="../../cgi/www.exe/[in=editleitor.in]?ut='(if v9000^n='ut' then v9000^v fi)'&expressao="+nreg+bib;'
+'       }'/
+'       var resp; '/
+'       function dlLeitor(nreg,us,bib,mfn){'/
+'       confirmaSubmit(nreg,us,bib);'/
+'       if (resp) '/ 
+'          window.location.href="../../cgi/www.exe/[in=delleitor.in]?ut='(if v9000^n='ut' then v9000^v fi)'&mfn="+mfn;'/
+'       }'/
+
+'       function pinLeitor(nreg,bib){'
+'       var url="../../cgi/www.exe/[in=pinleitor.in]?expressao="+nreg+bib+"&ut='(if v9000^n='ut' then v9000^v fi)'";'
+
+'       window.location.href=url;'
+'       }'
+
+'       function criarpin(nreg,bib){'
+'       var url="../../admin/criarpin.asp?expressao="+nreg+bib;'
+'       window.location.href=url;'
+'       }'
+
+'       function chkpin(nreg,bib){'
+'           url ="/opac/cgi/www.exe/[in=getpin.in]?expressao="+nreg+bib+"&r="+new Date().getTime() ;'/
+'  			new Ajax.Request(url, {    '/
+'   				method:"get",  '/
+'					onSuccess: function(transport){       '/
+'				var response = transport.responseText;'/
+'               if (response!="") pinLeitor(nreg,bib); else criarpin(nreg,bib);'/ 
+'				},'/    
+'  				onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }  }); '/
+'       }'
+
+'       function confirmaSubmit(nreg,us,bib){'
+'           url ="/opac/cgi/www.exe/[in=chksumres.in]?expressao="+nreg+bib+"&r="+new Date().getTime();'/
+'  			new Ajax.Request(url, {    '/
+'   				method:"get",  '/
+'					onSuccess: function(transport){       '/
+'				var response = transport.responseText;'/
+'               var texto="";'/
+'               if (parseInt(response)!=0) texto="ATENÇÂO: Este leitor tem "+ response + " reserva(s) em seu nome.\n\n";'/
+'               sim=confirm(texto+"Tem a certeza que quer eliminar o utilizador " + us.toUpperCase() +"?");'/
+'               resp=sim;'/
+'               },'/    
+'  				onFailure: function(){ alert("Ocorreu um erro. Contacte o administrador.") }  }); '/
+'               sleep (100);'/
+'        }'/
+
+'       function sleep(milliseconds) { '
+' 			var start = new Date().getTime();'
+' 			while ((new Date().getTime() - start) < milliseconds){ } '
+' 		} '
+'      </script>'
+putenv('user='mhu,(if v9000^n='ut' then v9000^v fi),mhl)
+'</head>'/
+'<body >'/
+'      <span id="resp" style="display:none"></span>'
+'      <h3><span>Utilizadores [leitores]</span></h3>'
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp?'if getenv('user')='ADMIN' then 'mnut=2' else 'id=5' fi'">Administração</a> » '
+'      <a href="/opac/cgi/www.exe/[in=pesqleitor.in]?expressao=$&from=1&to=25&ut='getenv('user')'">Seleção de leitor </a>» Edição de leitor</p>'
+'      '
+'      <div id="admbotoes" style="float:right"><a href="javascript:fechar();"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></div><h3>Edição de Leitor</h3>'/
+    '<!--<b>Expressão de pesquisa:</b> <input name="expr" id="expr" type="text" size="50" value="'(if v9000^n='expressao' then v9000^v fi)'" onkeypress="javascript:onEnter(event)">'/
+    '<a href="javascript:novapesq()"><img src="../../imagens/refresh.gif" alt="Refazer pesquisa" width="20" height="20" align="absmiddle" border=0></a>-->'/
+     ''/

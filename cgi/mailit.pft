@@ -1,0 +1,18 @@
+/#
+'Registo nº: 'mfn/'<br>'
+IF P(V700)THEN(MHU,V700^a,MHL,| |V700^b,| |V700^d,| |V700^c,| |V700^f) ELSE IF P(V710)THEN IF V500.2='00'THEN(MHU,V710^a,MHL,| |V500^a,| |v500^h,| |v500^i,| |V500^n,| |V500^k)ELSE(MHU,V710^a,MHL,| |V710^b,| |V710^c,| |V710^d,| |V710^e,| |V710^f)     FI ELSE IF V500.2='11'THEN(V500^a,| |v500^n,| |v500^h,| |v500^i,| |V500^n,| |V500^k)ELSE IF P(V200)THEN MHU,(| ; |+V200^a) MHL,ELSE 'Erro: ',MFN FI FI FI FI/
+MHL(| ; |+v200^a,| [|v200^b|]|,|. |v200^c,| : |v200^e,| |v200^d,|. |v200^h,| |v200^i,| / |v200^f,| ; |v200^g)
+". - "D205(|, |+v205^a,|, |v205^b,| |v205^d,| / |v205^f,| ; |v205^g)
+". - "D206^a(| ; |+v206^a)(". - "v207^a+| ; |)(". - "v208^a,| = |v208^d)
+". - "D210(| ; |+v210^a,|, |v210^b,| : |v210^c,|, |v210^d,| (|v210^e,| |v210^f,| : |v210^g,|, |v210^h)
+". - "D215(| ; |+v215^a,| : |v215^c,| |V215^d,| + |v215^e)
+". - ("D225,(| (|+V225^a,| = |v225^d,| : |v225^e,| / |V225^f,|; |V225^g,| |v225^h,| |V225^i,|, |V225^x,| ; |V225^v)
+(|. - |v300^a)/(|. - |v301^a)(|. - |v302^a)(|. - |v303^a)(|. - |v304^a)(|. - |v305^a)(|. - |v306^a)(|. - |v307^a)(|. - |v308^a)(|. - |v310^a)(|. - |v311^a)(|. - |v312^a)(|. -|v313^a)(|. - |v314^a)(|. - |v315^a)(|. - |v320^a)(|. - |v321^a,|, |v321^b,| |v321^x)(|. - |v322^a)
+(|. - |v323^a)(|. - |v324^a)(|. - |v326^a,| |v326^b)(|. - |v327^a)(|. - |v328^a)(|. - |v330^a)(|. - |v332^a)(|. - |v333^a)(|. - |v336^a)(|. - |v337^a)(|. - |v345^a,| |v345^b,| |v345^c,| |v345^d)
+(". - Suplemento: "|. - |+V421^a+|. - |,| / |V421^f)(". - Suplemento de: "|.- |+V422^a,| / |V422^f)(". - Publicado com: "|. - |+V423^a,| / |V423^f)(". - Continua: "|. - |+V430^a,| / |V430^f)
+(". - Continua em parte: "|. - |+V431^a,| / |V431^f)(". - Absorve: "|. - |+V434^a,| / |V424^f)(". - Absorve em parte: "|. - |+V435^a,| / |V435^f)(". - Fus„o de: "|. - |+V436^a,| / |V436^f)(". - Continuado por: "|. - |+V440^a,| / |V440^f)(". - Continuado em parte por: "|. - |+V441^a,| / |V441^f)
+(". - Absorvido por: "|. - |+V444^a,| / |V444^f)(". - Absorvido em parte por: "|. - |+V445^a,| / |V445^f)(". - Cindido em: "|. - |+V446^a,| / |V446^f)(". - Fundido com: "|. - |+V447^a,| / |V447^f)(". - Mudou de novo para: "|. - |+V448^a,| / |V448^f)(". - Outra ed. no mesmo suporte: "|. - |+V451^a,| / |V451^f)(". - Ed. em suporte diferente: "|. - |+V452^a,
+| / |V452^f)(". - Trad. como: "|. - |+V453^a,| / |V453^f)(". - Trad. de: "|. - |+V454^a,| / |V454^f)IF S(v921,v922):'aa' AND s(v461,v463)<>'' THEN / 'In: ',v461^a,| : |v461^e,|. - |v461^v,v463^a,| : |v463^e,| / |v463^f,|. - |v463^v FI (". - Outras obras relacionadas: "|. - |+V488^a,| / |V488^f)
+IF A(V10^a) THEN |. - |V10^b,| : |V10^d,|. |V10^z ELSE / "ISBN "D10,(|. ISBN |+V10^a,| (|V10^b|)|,| : |V10^d,|. |V10^z)FI,". ISSN "D11(|. |+V11^a,| |V11^b,| : |V11^d,|. |V11^z),
+if p(v966) then /# fi,(V966^s,| - |V966^a/)/
+/#'<br>'

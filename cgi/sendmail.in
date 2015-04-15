@@ -1,0 +1,7 @@
+ctttype=text/html
+tcg=9000
+tck=9001
+prolog=@sendmail.hdr
+cgi=@sendmail.cgi
+epilog=@sendmail.ftr
+

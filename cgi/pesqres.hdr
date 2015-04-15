@@ -1,0 +1,53 @@
+putenv('user='(if v9000^n='ut' then v9000^v fi))
+putenv('nut='(if v9000^n='nut' then v9000^v fi))
+'<!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head>'/
+'<TITLE>Listagem de reservas</TITLE>'/
+'<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'<link type="text/css" rel="stylesheet" href="/opac/css/default.css"/>'/
+'<![if !IE]>'/
+'<link href="/opac/css/default1.css" rel="stylesheet" type="text/css"/>'/
+'<![endif]>'/
+'<script>'/
+'function popupform(myform, windowname)
+{
+	if (! window.focus)return true;
+	var popup=window.open("", windowname, "height=620,width=800,scrollbars=no");
+	myform.target=windowname;
+	if(window.focus) popup.focus();
+	return true;
+}'
+'function passMfn(mfn,base,tit,nreg,sigla,siglaext,siglamor,user)
+{
+	document.getElementById("mfn").value=mfn;
+	document.getElementById("base").value=base;
+    document.getElementById("expressao").value="MFN "+mfn;
+	document.getElementById("titulo").value=tit;
+	document.getElementById("user").value=escape(user);
+	document.getElementById("nreg").value=nreg;
+	document.getElementById("sigla").value=sigla;
+	document.getElementById("siglamor").value=escape(siglamor);
+	return true;
+}'
+
+'       function dlRes(nreg,ti,r,s,nut){'/
+'       if (confirmaSubmit(nreg,ti,r)) ' /
+'          window.location.href="/opac/cgi/www.exe/[in=delres.in]?base=reservas&lim_inicio=1&limites=999999&ut='getenv('user')'&nut="+nut+"&mfn="+nreg+"&titulo="+escape(ti)+"&nreg="+r+"&sigla="+s+"&flag=cat";'/
+
+'       }'/
+'       function confirmaSubmit(nreg,ti,r){'/
+'       var sim=confirm("Tem a certeza que quer eliminar a reserva nº" + nreg +"?\nTítulo: "+ti.toUpperCase()+ " [nº registo:"+r+"]");'/
+'       if (sim) return true ; else return false ;}'/
+'       function confRes(nreg){'/
+'       window.location.href="/opac/cgi/www.exe/[in=confres.in]?base=reservas&lim_inicio=1&limites=999999&ut='getenv('user')'&mfn="+nreg+"&express='(if v9000^n='express' then v9000^v fi)'&estado='(if v9000^n='estado' then v9000^v fi)'";'/
+'       }'
+'</script>'/
+'</head><body>'/
+'<div>'/
+'<p>&nbsp;</p>'/
+'<div id="principal" style="width:640px"> '/
+'<div style="float:right"><a href="javascript:self.close()"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="/opac/imagens/imprimir.gif" border=0 title="Imprimir lista de reservas" alt="Imprimir lista de reservas""></a></div><h3>Listagem de reservas ['getenv('user')']</h3>'/
+'<table id="users" style="width:640px" summary="Listagem de reservas">'/
+'  <th>ID</th><th>Título</th><th title="biblioteca">Bib.</th><th>Cota</th><th>Nº registo</th><th>Ex</th><th>Estado</th><th>Data</th><th></th>'/

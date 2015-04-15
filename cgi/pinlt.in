@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pinlt.hdr
+cgi=@pinlt.cgi
+epilog=@pinlt.ftr
+
+

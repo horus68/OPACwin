@@ -1,0 +1,9 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@pesqtrm.hdr
+cgi=@pesqtrm.cgi
+epilog=@pesqtrm.ftr
+/* Ativa a exportacao de registos "exportok=1" Permite exportar */
+/* Ativa/Desativa a selecao de registos "selrec=1" permite selecionar */
+get=exportok=1&selrec=1&tmppath=../tmp/&isofilepath=/opac/tmp/

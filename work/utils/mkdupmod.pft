@@ -1,0 +1,8 @@
+lw(1000)
+mhl,
+if V1^s:'MOD' then 
+   'mx 'V1^x' from='ref([V1^x]L([V1^x]V1^c),mfn)' count=1 "proc=ref([`'V1^b'`]L([`'V1^b'`]`'s(V1^m)'`),s(,@.\add_fields.pft,))" copy='V1^x' now -all tell=100'
+fi,
+
+
+

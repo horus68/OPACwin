@@ -1,0 +1,4 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head><META HTTP-EQUIV="Refresh" CONTENT="2;URL=../www.exe/[in=editreg.in]?base='(if v9000^n='base' then v9000^v fi)'&expressao='(if v9000^n='from' then v9000^v fi)'&campo='(if v9000^n='campo' then v9000^v fi)'&texto='(if v9000^n='texto' then v9000^v fi)'">'/
+'</head>'/

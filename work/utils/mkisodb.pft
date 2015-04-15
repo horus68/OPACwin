@@ -1,0 +1,18 @@
+lw(1000),
+if v2<>'' and  v2<>'ADMIN' then
+'IF NOT EXIST %ISOSPATH%'v2'.iso GOTO NEXT'v2/
+'call converte_isos %ISOSPATH%'v2'.iso %ISOSPATH%isos_proc\'v2'.iso ' ref([getenv('BASESPATH')'users']l([getenv('BASESPATH')'users']'SIGLA 'v2),v24)'  ' ref([getenv('BASESPATH')'users']l([getenv('BASESPATH')'users']'SIGLA 'v2),v26)/
+'mx iso=%ISOSPATH%isos_proc\'v2'.iso "proc=@.\proc_7xx.prc" create=%DBTMPPATH%'v2' now -all'/
+'mx %DBTMPPATH%'v2' "proc=`A9905~'v2'~`" "proc=@.\chk_sigla.prc" copy=%DBTMPPATH%'v2' now -all tell=25000'/
+if v21<>'' then   
+   'mx %DBTMPPATH%'v2' fst=@.\geral.fst stw=@.\geral.stw fullinv=%DBTMPPATH%'v2' uctab=isisuc.tab -all now'/
+   'mx %DBTMPPATH%'v2' append=%DBTMPPATH%'v21' now -all'/
+fi
+'GOTO CONTINUA'/
+':NEXT'v2/
+if v21<>'' then
+'echo Ficheiro ISO 'v2' não encontrado >> %LOGSPATH%log_%LOGDATE%.txt'/ 
+fi
+':CONTINUA'/   
+fi
+   

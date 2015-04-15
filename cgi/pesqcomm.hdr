@@ -1,0 +1,25 @@
+putenv('id='(if v9000^n='id' then v9000^v fi))
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/		
+'<link href="/opac/css/default.css" rel="stylesheet" type="text/css" />'/
+'<![if !IE]>'/
+'<link href="/opac/css/default1.css" rel="stylesheet" type="text/css" />'/
+'<![endif]>'/
+'<script>'/
+' function delcomm(n) {
+   var rs=confirm("Tem a certeza de que quer eliminar o comentário nº "+n); 
+   if (rs=="") return;
+   window.location.href="/opac/cgi/www.exe/[in=delcomm.in]?from="+n+"&mfn='(if v9000^n='mfn' then v9000^v fi)'&expr='(if v9000^n='expr' then v9000^v fi)'";
+ }'
+'</script>'/
+'<script type="text/javascript" src="/opac/js/geral.js"></script>'/
+'<script type="text/javascript" src="/opac/js/jquery-1.6.2.js"></script>'/
+'<script type="text/javascript" src="/opac/js/md5.js"></script>'/
+'<div id="principal" style="width:500px">'/
+'<div style="float:right"><input type="image" onclick="history.back();" src="/opac/imagens/close.gif" alt="Fechar janela" title="Fechar janela"></div><div style="font-size:1.2em;font-weight:bold;display:inline">COMENTÁRIOS</div> <div style="margin-left:8px;display:inline;margin-bottom:4px;">'if val(getenv('id'))> 0 then '(<a href="javascript:void(0)" onclick="adcoment('getenv('id')',&quot;'(if v9000^n='mfn' then v9000^v fi)'&quot;)">Adicionar</a>)'fi'</div>'/
+''/

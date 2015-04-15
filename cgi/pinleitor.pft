@@ -1,0 +1,20 @@
+   
+        '<form name="pinleitor" id="pinleitor" action="../../cgi/www.exe/[in=updpin.in]" method="post">'/
+		'<input type="hidden" name="from" id="from" value="'mfn'">'/
+		'<input type="hidden" name="us" id="us" value="'(if v9000^n='us' then v9000^v fi)'">'/
+		'<input type="hidden" name="expressao" id="expressao" value="'(if v9000^n='expressao' then v9000^v fi)'">'/
+		'<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+		'<input type="hidden" name="activo" id="activo" value="">'/		
+        '<fieldset class="leitor"><br>'/
+		'<h3 style="margin-left:45px">'ref(['leitor']L(['leitor']s(v10,v100)),v2)'</h3>'/
+		'<div>'/
+		'<label for "v10"><span>Nº de leitor:</span></label><input size="10" type="text" name="v10" id="v10" value="'v10'" readonly>'/
+		'<label for "v100" class="esp">Biblioteca:   </label><input size="10" type="text" name="v100" id="v100" value="'v100'" readonly>'/
+		'<label for "v11" class="esp">PIN:</label>   <input size="10" type="password" name="v11" id="v11" value="'v11'" maxlength="4">'/
+		'</div>'/
+		'<br>'/
+		'<label for "v12"><span>Activo:</span></label><input type="radio" name="v12" id="v121" 'if v12='1' then 'checked' fi'>Sim   <input type="radio" name="v12" id="v122" 'if v12='0' then 'checked' fi'>Não<br><br>'/
+		'<label for "v13"><span>Mensagem:</span></label><textarea type="text" name="v13" id="v13">'v13'</textarea><br><br>'/
+		'<div align="center"><input type="submit" name="submit" value="Atualizar" onclick="validadados();"></div><br>'/
+		'</fieldset>'/
+		'</form>'/

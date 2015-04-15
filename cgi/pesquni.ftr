@@ -1,0 +1,15 @@
+if s(v1091)='0' then
+   '<TEXTAREA ID="guardatexto" STYLE="display:none;"></TEXTAREA>'/
+   '<br><input type="button" onclick="ClipBoard();" value="Copiar">   <input TYPE="button" VALUE="Fechar" ONCLICK="javascript:self.close()">'/
+else
+,@wierro.pft,
+fi,
+'<script>				   
+		var x= (navigator.userAgent.indexOf("Firefox")!=-1)?document.documentElement.scrollWidth: document.body.scrollWidth;
+		var y= (navigator.userAgent.indexOf("Firefox")!=-1)?document.documentElement.scrollHeight: document.body.scrollHeight;
+		window.resizeTo (x,y+95);
+</script>'
+'</body>'
+'</html>'
+
+

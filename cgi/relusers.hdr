@@ -1,0 +1,61 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'<head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/ 
+'<script type="text/javascript" src="../../js/sorttable.js"></script>'/
+'<script src="../../js/tableH.js" type="text/javascript"></script>'/
+'<script>
+function start() {
+    if (!document.getElementsByTagName || !document.createTextNode) return;
+    var rows = document.getElementById("users").getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    for (i = 0 ; i < rows.length; i++) {
+        rows[i].onclick = function() {
+			document.getElementById("expressao").value="\"SIGLA "+ this.cells[0].firstChild.nodeValue+"\"";
+	 		document.getElementById("frmseluser").submit();
+        }
+    }
+} '
+'function chk_iso(us,codigo) '/
+' {'/
+' var user=us.toLowerCase();'/
+' url = "/opac/admin/chkiso.asp?file="+user+".iso&r="+new Date().getTime();'/
+' new Ajax.Request (url, { '/
+' method:"get",   '/
+' onSuccess: function(transport) {    '/
+' var response = transport.responseText; '/
+
+' if (response != codigo.toLowerCase() ) '/
+'    if (response=="Erro") '/
+'      $("td"+us).innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/stop.gif\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Ficheiro ISO NÃO ENCONTRADO ou não foi possível ler o ficheiro.\">";'/
+'    else '/ 
+'     if (response=="misc") '/
+'       $("td"+us).innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/question
+.png\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente com mistura do padrão ANSI com o padrão ASCII.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\">";'/
+'     else '/
+'       $("td"+us).innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/aviso.gif\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente NÃO CONFERE com a parametrização.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\">";'/
+' else  $("td"+us).innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/checked.jpg\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente VÁLIDA.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\"/>";'/
+' }, '/
+' onFailure: function() {alert("Ocorreu um erro. Contacte o administrador.")}
+ }); '/
+'  }'/
+'</script>'/
+'</head>'/
+'<body onload="start();">'/
+'<h3><span>Administração do sistema</span></h3>'/
+'<div id="principal"> '/
+'<div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl'&nbsp; [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div>'/
+'<p class="fil">» <a href="../../default.asp">Início</a>'/
+'»  <a href="../../admin/admin.asp">Administração </a> » Seleção de utilizador</p>'/
+'<div id="admbotoes" style="float:right"><a href="../../admin/admin.asp?mnut=1"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></div><h3>Seleção de utilizador</h3>'/
+'<div align="center">'/
+'<form name="frmseluser" id="frmseluser" action="../../cgi/www.exe/[in=pesquser.in]" method="post" >  '/
+' <input type="hidden" name="ut" value="admin">'/
+' <input type="hidden" name="expressao" id="expressao" value="">'/
+'<table id="users" class="sortable" style="text-align:left" summary="Seleção de utilizadores" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);" onMouseOut="javascript:highlightTableRow(0);">'/
+'<th>Sigla</th><th>Nome</th><th><img src="../../imagens/login.gif"  title="Permissões"/></th>'/

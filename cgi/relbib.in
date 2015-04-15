@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@relbib.hdr
+cgi=@relbib.cgi
+epilog=@relinst.ftr
+
+

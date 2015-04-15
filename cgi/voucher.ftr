@@ -1,0 +1,13 @@
+if val(v1002)=0 then
+   '<tr><td colspan=9><div align="center" class="aviso" style="margin:100px 0 100px 0;font-size:1.3em">Não foram encontrados registos...</div></td></tr>'
+else
+ 
+'<p class="cert">O certificado deverá ser entregue na ENTIDADE DESTINATÁRIA e servirá como credencial para se efetuar o procedimento de empréstimo.</p>'
+'<br>'
+'<p class="cert">NOTA IMPORTANTE: Este documento é válido apenas por 'ref(['param']2,v20)' dias a contar da data de emissão</p><br>'
+'<div style="float:right; margin-right: 50px; font: 0.8em">Imprimir<a href="javascript:window.print()"><img src="/opac/imagens/imprimir.gif" border=0 align="absmiddle"></a></div>'
+'</div>'
+'</body>'
+'</html>'
+
+fi

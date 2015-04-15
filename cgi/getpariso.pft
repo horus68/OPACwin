@@ -1,0 +1,1 @@
+if s(mhu,v2,mhl)<>'ADMIN' then v24,'%%',v26,'%%'(if v9000^n='resp' then v9000^v fi) fi

@@ -1,0 +1,9 @@
+'<table border="0" width="100%" cellpadding="0">'
+'  <tr>'
+'     <td width="25%">'/
+,@toolbar.pft,
+'</td>'
+'     <td width="15%" valign="middle" align="center"><h2>Base: <span style="font-size:80%">'MHU,V1051,' ('f(maxmfn-1,0,0),MHL' registos)</span></h2></td>'/
+'     <td width="55%" valign="middle" align="right" style="font-size:80%"><strong>'V1002'</strong> registo(s) encontrado(s)</td>'/
+'  </tr>'
+'</table>'

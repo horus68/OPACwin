@@ -1,0 +1,6 @@
+ '<center>'/
+if val(v1102)<>0 then
+  '<p style="height:50px"></p><p class="aviso">Erro ao inserir o registo </p>'/
+else
+  '<p style="height:50px"></p><p class="aviso">Inserção do registo bem sucedida...</p>'/
+fi

@@ -1,0 +1,43 @@
+ '</form>'/
+ '<br>'/
+'<div align="right">'
+if s(v1091)='0' then
+  if val(v1032)<=val(v1002)
+   then
+     '<form method="get" action="../../cgi/www.exe/%5Bin=pesqger.in%5D" name="pesqger">'
+	 '<input type="hidden" name="exectype" value="2">'
+	 '<input type="hidden" name="ut" value="'(if v9000^n='ut' then v9000^v fi)'">'
+     '<input type="hidden" name="base" value="'v1051'">'
+     '<input type="hidden" name="expressao" value="'V1021'">'
+     '<input type="hidden" name="formato" value="'(if v9000^n='formato' then v9000^v fi)'">'
+	 '<input type="hidden" name="TDOC" value="'(if v9000^n='TDOC' then v9000^v fi)'">'
+     '<input type="hidden" name="nomemnu" value="'(if v9000^n='nomemnu' then v9000^v fi)'">'
+     '<input type="hidden" name="lim_inicio" value="'f(val(v1031)+val(v1083),0,0)'">'
+     '<input type="hidden" name="limites" value="'f(val(v1032)+val(v1083),0,0)'">'/
+     '<input type="hidden" name="iso2709" value="'(if v9000^n='iso2709' then v9000^v fi)'">'/
+     '<input type="hidden" name="user" value="'(if v9000^n='user' then v9000^v fi)'">'/
+     '<input type="hidden" name="nut" value="'(if v9000^n='nut' then v9000^v fi)'">'/	 
+	 '<input type="hidden" name="id" value="'(if v9000^n='id' then v9000^v fi)'">'/
+     '<input type="hidden" name="sortfmt" value="'(if v9000^n='sortfmt' then v9000^v fi)'">'/
+   '<input TYPE="button" VALUE="Página anterior" ONCLICK="window.history.back(-1)" NAME="PagAnt">'/
+   '<input TYPE="button" VALUE="Nova pesquisa" ONCLICK="window.location.href = &quot;/opac/'(if v9000^n='nomemnu' then v9000^v fi)'&id='(if v9000^n='id' then v9000^v fi)'&quot;" NAME="mnuprincipal" >'/
+    if val(v1083)+val(v1031)<=val(v1002) then 
+    '<input type="submit" value="'if val(v1002)-val(v1083) < val(v1031)+val(v1083)-1 then 'Últimos ' f(val(v1002)-val(v1083)-val(v1031)+1,0,0)  else 'Próximos 'f(val(v1083),0,0) fi ' registos" name="Submit" tabindex="1" ></p>'/
+   
+ fi
+
+   '</form>'/
+   '<form name="search" onSubmit="return findInPage(this.string.value);">'
+   '  Localizar nesta página'/
+   '  <input name="string" type="text" size=15 onchange="n = 0;">'
+   '  <input type="submit" value="?" name="sel">'
+   '</form>'/
+
+fi,
+else
+ ,@wierro.pft,
+fi,
+'	  
+    </div>
+</body>'
+'</html>'

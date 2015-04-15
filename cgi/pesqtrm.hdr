@@ -1,0 +1,192 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'   <meta http-equiv="X-UA-Compatible" content="IE=8"/>'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="/opac/css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="/opac/css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'</head>'/
+'<body id="opac">'/
+
+'<script language="JavaScript" src="/opac/js/geral.js"></script>'/
+'<script language="JavaScript" src="/opac/js/tools.js"></script>'/
+'<script LANGUAGE="JavaScript">'/
+
+'  window.status="Resultado da pesquisa";'/
+
+'function FindReplace_2(linha,str1,str2)'
+'{'
+'   var s1,s2;'
+'   var linha_in=linha;'
+'   var c=linha_in.length;'
+'   var p=0;'
+
+'   while ((p>-1))'
+'      {'
+'       p=linha_in.substring(0,c).lastIndexOf(str1);'
+'       if (p>=0)'
+'           {'
+'            s1=linha_in.substring(0,p);'
+'            s2=linha_in.substring(p+str1.length,linha_in.length);'
+
+'            linha_in=s1+str2+s2;'
+'            c=p-1;'
+'           };'
+'      }'
+'  return linha_in;    '
+'}'
+
+'function ChkChars(form)'/
+'{'/
+'  var sep="",termo=form.expressao.value;'/
+'  termo=termo.toUpperCase();'/
+'  lista=new Array("+","*","^"," AND "," OR "," NOT "," AND NOT ","(",")");'/
+'  for (i=0;i<9;i++)'/
+'      {'/
+'       if (termo.indexOf(lista[i])>=0)'/
+'          {'/
+'           sep="\"";'/
+'           break;'/
+'          }'/
+'       }'/
+'  form.expressao.value=sep+termo+sep;'/
+'}'/
+
+
+'function ChkChars_2(texto)'/
+'{'/
+'  var sep="",termo=texto;'/
+'  termo=termo.toUpperCase();'/
+'  termo= termo.replace("Ø","ø");'/
+'  lista=new Array("+","*","^"," AND "," OR "," NOT "," AND NOT ","(",")");'/
+'  for (i=0;i<9;i++)'/
+'      {'/
+'       if (termo.indexOf(lista[i])>=0)'/
+'          {'/
+'           sep="\"";'/
+'           break;'/
+'          }'/
+'       }'/
+'  return(sep+termo+sep);'/
+'}'/
+
+'function ChangePrefix(texto)'/
+'{'/
+'  var sep="",termo=texto;'/
+'  termo=termo.toUpperCase();'/
+'  lista=new Array("TRM ","TG ","TE ","TA ","UP ","AR ");'/
+'  for (i=0;i<6;i++)'/
+'      {'/
+'       if (termo.indexOf(lista[i])>=0)'/
+'          {'/
+'           sep=FindReplace_2(texto,lista[i],"AS ");'/
+'           break;'/
+'          }'/     
+'       }'/
+'  if (sep == "")'/
+'   { '/
+'   sep = termo; '/
+'   if (sep.indexOf("CDU ") == -1) {sep = "AS "+ sep;} '/
+'   };'/
+'  return(sep);'/
+'}'/
+
+
+'function SelTrmLista(form)'/
+'{'/
+'  var sel_term=0,n_term=0,i=0,expressao="",oper="";'/
+'      n_term=form.Lexico.options.length;'/
+'  for (i=0;i<n_term;i++)'/
+'      {'/
+'        if (form.Lexico.options[i].selected==true)'/
+'           {'/
+'            sel_term++;'/
+'            if (sel_term>1) oper=" + ";'/
+'               expressao = expressao + oper + ChkChars_2(form.Lexico.options[i].value);'/
+'           }'/
+'      }'/
+'form.expressao.value=expressao;'/
+'form.sel_trm.value=sel_term;'/
+'return (true);'/
+'}'/
+
+'function SelTrmLista1(form)'/
+'{'/
+'  var sel_term=0,n_term=0,i=0,expressao="",oper="";'/
+'      n_term=form.Lexico.options.length;'/
+'  for (i=0;i<n_term;i++)'/
+'      {'/
+'        if (form.Lexico.options[i].selected==true)'/
+'           {'/
+'            sel_term++;'/
+'            if (sel_term>1) oper=" + ";'/
+'               expressao = expressao + oper + ChkChars_2(ChangePrefix(form.Lexico.options[i].value));'/
+'           }'/
+'      }'/
+'form.expressao.value=expressao;'/
+'form.sel_trm.value=sel_term;'/
+'return (true);'/
+'}'/
+
+
+
+'function ChkSelTrm(form)'/
+'{'/
+'  var sel_term=0,n_term=0,i=0,'/
+'      n_term=form.Lexico.options.length;'/
+'  for (i=0;i<n_term;i++)'/
+'      {'/
+'        if (form.Lexico.options[i].selected==true) sel_term++;'/
+'      }'/
+'  if (sel_term < 1)'/
+'  {'/
+'    alert("Para pesquisar deve selecionar pelo menos um termo da lista apresentada");'/
+'    form.Lexico.focus();'/
+'    return (false);'/
+'  }'/
+'  if (sel_term  > 100)'/
+'  {'/
+'    alert("Não pode selecionar mais do que 100 termos da lista apresentada");'/
+'    form.Lexico.focus();'/
+'    return (false);'/
+'  }'/
+'return (true);'/
+'}'/
+
+ putenv('user='(if v9000^n='ut' then v9000^v fi))
+'</script>'/
+'   <h3><span>Catálogos</span></h3><br />  
+	<div id="principal" class="resultado"> <div id="lblutilizador">Utilizador: <span id="utilizador">' 
+        if getenv('user')='guest' then 'anónimo' else getenv('user') fi
+        '</span>' if getenv('user')<>'guest' then ' [ <a href="/opac/logout.asp?sys=admin">Sair</a> ] ' fi '</div> '/ 
+' <p class="fil">» '/
+	     putenv('base='(if v9000^n='base' then v9000^v fi))
+         putenv('mnuori='(if v9000^n='nomemnu' then v9000^v fi))   
+	     putenv('op='(if v9000^n='id' then v9000^v fi))
+	  if  getenv('mnuori') : 'admin/catind.asp' then
+	     '<a href="../default.asp">Início</a> » <a href="/opac/admin/admin.asp">Administração</a> »' 
+       else 
+		'<a href="/opac/default.asp">Início</a> »' 	     
+	   fi
+        
+	          if getenv('op')='1' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=1"> Pesquisa Orientada </a>'
+		    fi
+		    if getenv('op')='0' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=0"> Pesquisa Simplificada </a>'
+		    fi
+		    if getenv('op')='2' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=2"> Pesquisa Avançada </a>'
+		    fi
+		    if getenv('op')='3' then      
+	       ' <a href="/opac/'getenv('mnuori')'&id=3"> Pesquisa por termos </a>'
+		    fi
+        
+ 
+	'  » Resultado da pesquisa</p>	'/   
+	''/	
+ 

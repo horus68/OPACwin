@@ -1,0 +1,71 @@
+'<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">'/
+'<html xmlns="http://www.w3.org/1999/xhtml">'/
+'  <head>'/
+'    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />'/
+'	<meta name="robots" content="follow,index" />'/
+'	<title>'ref(['_cnf']1,v100)'</title>'/	
+'	<link href="../../css/default.css" rel="stylesheet" type="text/css" />'/
+'   <![if !IE]>'/
+'	<link href="../../css/default1.css" rel="stylesheet" type="text/css" />'/
+'	<![endif]>'/
+'<script language="JavaScript" src="../../js/users.js"></script>'/
+'<script language="JavaScript" src="../../js/md5.js"></script>'/
+'<script language="JavaScript" src="../../js/prototype.js"></script>'/
+'<script>'/
+'function chk_iso(us,codigo) '/
+' {'/
+' var user=us.toLowerCase();'/
+' url = "/opac/admin/chkiso.asp?file="+user+".iso";'/
+' new Ajax.Request (url, { '/
+' method:"get",   '/
+' onSuccess: function(transport) {    '/
+' var response = transport.responseText; '/
+' if (response != codigo.toLowerCase() ) '/
+'    if (response=="Erro") '/
+'      $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/stop.gif\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Ficheiro ISO NÃO ENCONTRADO ou não foi possível ler o ficheiro.\">";'/
+'    else '/ 
+'     if (response=="misc") '/
+'       $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/question
+.png\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente com mistura do padrão ANSI com o padrão ASCII.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\">";'/
+'     else '/
+'       $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/aviso.gif\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente NÃO CONFERE com a parametrização.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\">";'/
+' else  $("alerta").innerHTML = "<img style=\"cursor:pointer\" src=\"../../imagens/checked.jpg\" width=\"15\" border=\"0\" align=\"absmiddle\" title=\"Codificação do ficheiro ISO aparentemente VÁLIDA.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido\"/>";'/
+' }, '/
+' onFailure: function() {alert("Ocorreu um erro. Contacte o administrador.")}
+ }); '/
+'  }'/
+'</script>'/
+'</head>'/
+'<body>'/
+'      <h3><span>Utilizadores</span></h3>'
+'      <script>'
+'       function validadados() {'
+'       var status=true; var stat_gps=true;'
+'       var msg="";' 
+'       var msgID="";'
+'        if (document.getElementById("v3").value=="")'
+'        {msg=  (msg != "") ? msg +",NOME": msg+ "NOME"; status=false; }'
+'        if (document.getElementById("v7").value=="")'
+'        {msg= (msg != "") ? msg +",SENHA": msg+ "SENHA" ; status=false; }'
+'        if (msg != "")  msg= "Os campos " + msg + " são obrigatórios.";'
+'        if (document.getElementById("v22").value!=""){'
+' 		 		var valor1 = parseInt(document.getElementById("v22").value);'
+'               if (isNaN(valor1)) stat_gps=false;'
+'        }'
+'        if (document.getElementById("v23").value!=""){'
+' 		 		var valor2 = parseInt(document.getElementById("v23").value);'
+'               if (isNaN(valor2)) stat_gps=false;}'
+'		 if (!stat_gps) { msgID += "As coordenadas GPS têm de ser valores numéricos!\n";status=false;}'
+'        if (!status) alert ("ATENÇÂO! Existem erros no preenchimento do formulário.\n\n" + msgID +"\n" + msg);'
+'        return status;'
+'       }'
+		  
+'      </script>'  
+
+'      <div id="principal">'
+'      <div id="lblutilizador">Utilizador: <span id="utilizador">'mhu,(if v9000^n='ut' then v9000^v fi),mhl' [ <a href="../../admin/admin.asp?Logout=1">Sair</a> ]</span> </div>'
+'      <p class="fil">'
+'      » <a href="../../default.asp">Início</a> » <a href="../../admin/admin.asp">Administração</a> » Utilizadores</p>'
+'      <div id="admbotoes" style="float:right"><a href="javascript:history.go(-1)"><img src="/opac/imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="/opac/imagens/imprimir.gif" border=0 alt="Imprimir lista de títulos" title="Imprimir lista de títulos"></a></div><h3>Perfil de utilizador</h3>'
+
+ 

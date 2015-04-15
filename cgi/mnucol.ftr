@@ -1,0 +1,7 @@
+'</select>'/
+'<br>'/
+'<input type="button" value="Selecionar" onclick="getOpsel(); return false;">'/
+'<br><br>'/
+'</form>'/
+'</div></div>'/
+'</body>'/

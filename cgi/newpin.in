@@ -1,0 +1,8 @@
+ctttype=text/html
+tcg=9000
+pfxtag=T
+prolog=@newpin.hdr
+cgi=@newpin.cgi
+epilog=@newpin.ftr
+
+

@@ -1,0 +1,7 @@
+ctttype=text/html
+tcg=9000
+tck=9001
+prolog=@pedemp.hdr
+cgi=@pedemp.cgi
+epilog=@pedemp.ftr
+
