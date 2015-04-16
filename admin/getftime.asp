@@ -1,4 +1,4 @@
-<% 
+<%
 sfile= request("file")
 dim fs,f
 set fs=Server.CreateObject("Scripting.FileSystemObject")
