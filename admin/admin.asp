@@ -149,17 +149,17 @@ function getfdados(){
       if (aresp[1]!=aresp[2])
 		  if (aresp[2]=="Erro") 
 		  {
-			 $("#fiso").html('<img style="cursor:pointer" src="../imagens/stop.gif" width="15" border="0" align="absmiddle" title="Ficheiro ISO NÃO ENCONTRADO ou não foi possível ler o ficheiro.">');
+			 $("#fiso").html('<img style="cursor:pointer" src="../imagens/stop.gif" width="15" border="0" align="absmiddle" title="Ficheiro ISO NÃƒO ENCONTRADO ou nÃ£o foi possÃ­vel ler o ficheiro.">');
 		  } else 
 			  if (aresp[2]=="misc") 
-			    $("#alerta").html('<img style="cursor:pointer" src="../imagens/question.png" width="15" border="0" align="absmiddle" title="Codificação do ficheiro ISO aparentemente com mistura do padrão ANSI com o padrão ASCII.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido">');
+			    $("#alerta").html('<img style="cursor:pointer" src="../imagens/question.png" width="15" border="0" align="absmiddle" title="CodificaÃ§Ã£o do ficheiro ISO aparentemente com mistura do padrÃ£o ANSI com o padrÃ£o ASCII.\r\nATENÃ‡Ã‚O: convÃ©m notar que o mÃ©todo heurÃ­stico de validaÃ§Ã£o nÃ£o Ã© absolutamente garantido">');
 			  else 
-			    $("#alerta").html('<img style="cursor:pointer" src="../imagens/aviso.gif" width="15" border="0" align="absmiddle" title="Codificação do ficheiro ISO aparentemente NÃO CONFERE com a parametrização.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido">');
-     else   $("#alerta").html('<img style="cursor:pointer" src="../imagens/checked.jpg" width="15" border="0" align="absmiddle" title="Codificação do ficheiro ISO aparentemente VÁLIDA.\r\nATENÇÂO: convém notar que o método heurístico de validação não é absolutamente garantido">');
+			    $("#alerta").html('<img style="cursor:pointer" src="../imagens/aviso.gif" width="15" border="0" align="absmiddle" title="CodificaÃ§Ã£o do ficheiro ISO aparentemente NÃƒO CONFERE com a parametrizaÃ§Ã£o.\r\nATENÃ‡Ã‚O: convÃ©m notar que o mÃ©todo heurÃ­stico de validaÃ§Ã£o nÃ£o Ã© absolutamente garantido">');
+     else   $("#alerta").html('<img style="cursor:pointer" src="../imagens/checked.jpg" width="15" border="0" align="absmiddle" title="CodificaÃ§Ã£o do ficheiro ISO aparentemente VÃLIDA.\r\nATENÃ‡Ã‚O: convÃ©m notar que o mÃ©todo heurÃ­stico de validaÃ§Ã£o nÃ£o Ã© absolutamente garantido">');
      }, 
      onFailure: function() {alert("Ocorreu um erro. Contacte o administrador.")}
       });
-     } else {$("#soft").html("----"); $("#codepage").html("");$("#alerta").html('<img style="cursor:pointer" src="../imagens/stop.gif" width="15" border="0" align="absmiddle" title="Ficheiro ISO NÃO ENCONTRADO ou não foi possível ler o ficheiro.">');}	  
+     } else {$("#soft").html("----"); $("#codepage").html("");$("#alerta").html('<img style="cursor:pointer" src="../imagens/stop.gif" width="15" border="0" align="absmiddle" title="Ficheiro ISO NÃƒO ENCONTRADO ou nÃ£o foi possÃ­vel ler o ficheiro.">');}	  
    }, 
    onFailure: function() {alert("Ocorreu um erro. Contacte o administrador.")}
    });   
@@ -224,7 +224,7 @@ function muda_base(ob){
 	   document.getElementById("MFNate").value=response;
 	   if (response=="") { 
 		 document.getElementById("validar").style.display="none";
-		 document.getElementById("nocat1").innerHTML="<center>Nota: Este utilizador não tem catálogo na REDE</center>";
+		 document.getElementById("nocat1").innerHTML="<center>Nota: este utilizador nÃ£o tem catÃ¡logo na REDE</center>";
 	   } else
 	   {
 		 document.getElementById("validar").style.display="";
@@ -235,7 +235,7 @@ function muda_base(ob){
 	   document.getElementById("MFNate1").value=response;
 	   if (response=="") {
 		 //document.getElementById("validar").style.display="none";
-		 document.getElementById("nocat2").innerHTML="<center>Nota: Este utilizador não tem catálogo na REDE</center>";
+		 document.getElementById("nocat2").innerHTML="<center>Nota: este utilizador nÃ£o tem catÃ¡logo na REDE</center>";
 	   } else
 	   {
 		 //document.getElementById("validar").style.display="";
@@ -337,8 +337,8 @@ function chkfields(){
 	  var y=document.getElementById("MFNde1").value;
 	  if (isNaN(y)) document.getElementById("MFNde1").value="1";
 	  if (isNaN(x))  document.getElementById("MFNate1").value="9999999";
-	  if (document.getElementById("expfile").value=="") msg="Erro: Falta indicar o nome do ficheiro de destino";
-	  else if (Right(tmp,3) != "iso") msg="Erro: O ficheiro de destino deve ter a entensão ISO";
+	  if (document.getElementById("expfile").value=="") msg="Erro: falta indicar o nome do ficheiro de destino";
+	  else if (Right(tmp,3) != "iso") msg="Erro: o ficheiro de destino deve ter a entensÃ£o ISO";
 	  if (msg != "") {document.getElementById("expfile").focus();document.getElementById("expfile").select();alert(msg);} 
 	  else { 
 	  document.getElementById("msgISO").innerHTML='<br><span style="margin-left:-60px;color:red;font-size:0.8em;text-align:center">A processar... Aguarde um momento. </span>';
@@ -426,19 +426,19 @@ if (document.createEvent)
 	<input type="file" name="file" style="display: none" />
 	</form>    
 	<%If Not Session("LoggedIn") = True  Then %>
-			<h3><span>Autenticação de utilizadores</span></h3>
+			<h3><span>AutenticaÃ§Ã£o de utilizadores</span></h3>
 			<div id="principal"> 
-			<p class="fil">» <a href="../default.asp">Início</a> » Entrada no Sistema de Administração </p>		
+			<p class="fil">Â» <a href="../default.asp">InÃ­cio</a> Â» Entrada no Sistema de AdministraÃ§Ã£o </p>		
 	<%else%>			
-			<h3><span>Administração do sistema</span></h3>
+			<h3><span>AdministraÃ§Ã£o do sistema</span></h3>
 			<div id="principal"> 
 			<div id="lblutilizador">Utilizador: <span id="utilizador"> 
-        <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
-        </span> </div><p class="fil">» <a href="../default.asp">Início</a>
+        <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
+        </span> </div><p class="fil">Â» <a href="../default.asp">InÃ­cio</a>
 		<%if request("op")="add" then %>
-		» <a href="admin.asp<% if request("tipo")="lt" then response.write "?mnut=2" else response.write "?mnut=1" %>">Administração</a> » Novo utilizador</p>
+		Â» <a href="admin.asp<% if request("tipo")="lt" then response.write "?mnut=2" else response.write "?mnut=1" %>">AdministraÃ§Ã£o</a> Â» Novo utilizador</p>
 		<%else%>
-		 » Administração </p>
+		 Â» AdministraÃ§Ã£o </p>
 		<% end if%>				
 	 <%end if%>
 <% end if
@@ -467,7 +467,7 @@ If Session("LogError") < 3 Then
 								strHTML=getUrl(strROOT & "/cgi/www.exe/[in=chkuser.in]?expressao=SIGLA "& nm)
                             else
 							    writeLog("LOGIN (insucesso) - " & ucase(nm))
-								response.write "<h3 style=""margin-top:50px;color:red"">Acesso negado. O utilizador não tem permissões de administração no sistema...</h3>"
+								response.write "<h3 style=""margin-top:50px;color:red"">Acesso negado. O utilizador nÃ£o tem permissÃµes de administraÃ§Ã£o no sistema...</h3>"
 								response.write "<br>Contacte o administrador"
 								Session("LogError")=Session("LogError")+1        
 								response.end
@@ -541,7 +541,7 @@ If Session("LogError") < 3 Then
 			
 			<% if request("op")<>"" then %>
 			    
-				<div id="admbotoes" style="float:right"><a href="admin.asp<% if ucase(session("user"))="ADMIN" then if request("tipo")="lt" then response.write "?mnut=2" else response.write "?mnut=1" end if else response.write "?id=5" %>"><img src="../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></div><h3>Novo utilizador</h3>
+				<div id="admbotoes" style="float:right"><a href="admin.asp<% if ucase(session("user"))="ADMIN" then if request("tipo")="lt" then response.write "?mnut=2" else response.write "?mnut=1" end if else response.write "?id=5" %>"><img src="../imagens/close.gif" border=0 title="Voltar Ã  pÃ¡gina anterior" alt="Voltar Ã  pÃ¡gina anterior"></a></div><h3>Novo utilizador</h3>
 
                    <% select case request("tipo")
 				       case "ut" %>
@@ -550,7 +550,7 @@ If Session("LogError") < 3 Then
 							 <input type="hidden" name="base" value="users">
 							 <fieldset class="users"><legend>Campos</legend><br />
 							<div>
-							<label for="v1"><span>Código ID</span></label><input class="esp" type="text" id="v1" name="v1" value=""onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
+							<label for="v1"><span>CÃ³digo ID</span></label><input class="esp" type="text" id="v1" name="v1" value=""onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label class="esp" for="v2">Sigla</label><input class="esp" type="text" id="v2" name="v2" value=""  onBlur="chgColor(this,false);this.value=this.value.toUpperCase();" onFocus="chgColor(this,true)">
 							<label class="esp" for="v21">Agrupamento</label><input type="text" class="agrup" id="v21" name="v21" value=""  onBlur="chgColor(this,false);this.value=this.value.toUpperCase();" onFocus="chgColor(this,true)">
 							</div>
@@ -563,16 +563,16 @@ If Session("LogError") < 3 Then
 							<label for="v9" ><span>Telefone</span></label><input class="extra" type="text" id="v9" name="v9" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v10" ><span>Fax</span></label><input class="extra"type="text" id="v10" name="v10" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v11" ><span>Email</span></label><input class="extra" type="text" id="v11" name="v11" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
-							<label for="v12" ><span>Pág. Web</span></label><input class="extra"type="text" id="v12" name="v12" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
+							<label for="v12" ><span>PÃ¡g. Web</span></label><input class="extra"type="text" id="v12" name="v12" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v18" ><span>Blogue</span></label><input class="extra" type="text" id="v18" name="v18" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v23" ><span>Lat.(GPS)</span></label><input type="text" class="coords" id="v23" name="v23" value="" size="25" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v22" class="esp">Long.(GPS)</label><input class="coords" type="text" id="v22" name="v22" value="" size="24" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">												
 							<label for="v24" ><span>Software</span></label><select class="extra" id="v24" name="v24" onblur="chgColor(this,false)" onfocus="chgColor(this,true)">
-							<option value="">Não definido</option><option value="Bibliobase" >Bibliobase</option><option value="Porbase" >Prisma/Horizon</option><option value="DocBase" >DocBase</option><option value="GIB" >GIB</option></select>
+							<option value="">NÃ£o definido</option><option value="Bibliobase" >Bibliobase</option><option value="Porbase" >Prisma/Horizon</option><option value="DocBase" >DocBase</option><option value="GIB" >GIB</option></select>
 							<select class="extra" id="v26" name="v26" style="width:50px;margin-bottom:3px" onblur="chgColor(this,false)" onfocus="chgColor(this,true)">
 							<option value="ansi">Ansi</option><option value="ascii" >Ascii</option></select>
 							<label class="esp" for="v25">Estatuto</label><select class="coords1" id="v25" name="v25"  onblur="chgColor(this,false)" onfocus="chgColor(this,true)">
-							<option value="0">Autónoma</option><option value="1">Não autónoma</option></select>
+							<option value="0">AutÃ³noma</option><option value="1">NÃ£o autÃ³noma</option></select>
 							<label for="v17" ><span>Resp./Coord.</span></label><input class="extra" type="text" id="v17" name="v17" value=""   onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 				  
 							<br /><br /><center><input  type="submit" name="bt1" value="Confirmar" onClick="return chkuser();">
@@ -588,7 +588,7 @@ If Session("LogError") < 3 Then
 								%>
 							 <fieldset class="users"><legend>Campos</legend><br />
 							<div>
-							<label for="v1" ><span>Nº leitor </span></label><input type="text" id="v1" name="v1" value="<%=strLT%>" size="12" readonly>
+							<label for="v1" ><span>NÂº leitor </span></label><input type="text" id="v1" name="v1" value="<%=strLT%>" size="12" readonly>
 							<label class="esp" ></label>
 							<label class="esp" for="v3" >Data nasc. </label><input type="text" id="v3" name="v3" value="" size="12" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label class="esp" ></label>
@@ -617,9 +617,9 @@ If Session("LogError") < 3 Then
 							<label for="v5" ><span>Concelho</span></label><input class="extra1" type="text" id="v5" name="v5" value="" size="64" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v6" ><span>Cod. Postal</span></label><input class="extra1" type="text" id="v6" name="v6" value="" size="64" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v7" ><span>Telefone</span></label><input class="extra1" type="text" id="v7" name="v7" value="" size="64" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
-							<label for="v8" ><span>Profissão</span></label><input class="extra2" type="text" id="v8" name="v8" value="" size="87" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
+							<label for="v8" ><span>ProfissÃ£o</span></label><input class="extra2" type="text" id="v8" name="v8" value="" size="87" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v9" ><span>E-mail</span></label><input class="extra2" type="text" id="v9" name="v9" value="" size="87" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
-							<label for="v10" ><span>Pág. Web</span></label><input class="extra2" type="text" id="v10" name="v10" value="" size="87" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
+							<label for="v10" ><span>PÃ¡g. Web</span></label><input class="extra2" type="text" id="v10" name="v10" value="" size="87" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)">
 							<label for="v11" ><span>Foto</span></label><input class="extra" type="text" id="v11" name="v11" value="" size="81" onBlur="chgColor(this,false)" onFocus="chgColor(this,true)"><input type="button" name="btim" onClick="javascript:getDirImg();" value=" ... " style="font: 8pt Verdana;height:22px;">
 				  
 							<br /><br /><center><input  type="submit" name="bt1" value="Confirmar" onClick="return chkleitor();">
@@ -635,15 +635,15 @@ If Session("LogError") < 3 Then
       <li><a href="#" rel="tab2">Acessos </a></li>
 <% else %>
       <li><a href="#" rel="tab3" class="selected">&nbsp;&nbsp;&nbsp;Perfil&nbsp;&nbsp;&nbsp;</a></li> 												
-      <li><a href="#" rel="tab4">O meu catálogo</a></li>					
+      <li><a href="#" rel="tab4">O meu catÃ¡logo</a></li>					
 <% end if %>            
       <li><a href="#" rel="tab6">Reservas</a></li>       
-      <li><a href="#" rel="tab7">Coleção</a></li>	  
+      <li><a href="#" rel="tab7">ColeÃ§Ã£o</a></li>	  
       <li><a href="#" rel="tab9">Bases de dados</a></li>	
 <%if lcase(session("user"))<>"admin" then %>
       <li><a href="#" rel="tab10">Utilizadores</a></li>
 <% else %>
-      <li><a href="#" rel="tab10">Parametrizações</a></li>	  
+      <li><a href="#" rel="tab10">ParametrizaÃ§Ãµes</a></li>	  
 <% end if %>
       <!--<li><a href="#" rel="tab11">Web 2.0</a></li>--> 	  
 	 </ul>
@@ -697,12 +697,12 @@ If Session("LogError") < 3 Then
 								   <input type="hidden" name="ut" value="admin">
 
 								</form>
-							<dd><a href="javascript:document.frmdisplog.submit()">Visualizar acessos ao sistema de administração</a></dd>
+							<dd><a href="javascript:document.frmdisplog.submit()">Visualizar acessos ao sistema de administraÃ§Ã£o</a></dd>
 								<form name="frmcleanlog" action="cleanlog.asp" method="post" >
 								   <input type="hidden" name="ut" value="admin">
 
 								</form>
-							<dd><a href="javascript:document.frmcleanlog.submit()"  OnClick= "return confirm('Tem memsmo a certeza que quer reiniciar o ficheiro de acessos ao sistema de administração [LOGS]?')">Reiniciar o ficheiro de acessos</a></dd> 
+							<dd><a href="javascript:document.frmcleanlog.submit()"  OnClick= "return confirm('Tem memsmo a certeza que quer reiniciar o ficheiro de acessos ao sistema de administraÃ§Ã£o [LOGS]?')">Reiniciar o ficheiro de acessos</a></dd> 
 						</dl>		
                     </div>
 					   
@@ -741,12 +741,12 @@ If Session("LogError") < 3 Then
 				  if  uflag then %>
 				     <dd><a href="catind.asp?id=0&base=<%=lcase(session("user"))%>">Pesquisa simplificada</a></dd>
 					 <dd><a href="catind.asp?id=1&base=<%=lcase(session("user"))%>">Pesquisa orientada</a></dd>
-					 <dd><a href="catind.asp?id=2&base=<%=lcase(session("user"))%>">Pesquisa avançada</a></dd>
+					 <dd><a href="catind.asp?id=2&base=<%=lcase(session("user"))%>">Pesquisa avanÃ§ada</a></dd>
 					 <dd><a href="catind.asp?id=3&base=<%=lcase(session("user"))%>">Pesquisa por termos</a></dd>
 				  <%
 				   else 
-				     response.write "Nota: Este utilizador não tem catálogo na REDE" 
-				     if ucase(session("user"))<>"ADMIN" then writeLog("AVISO: O utilizador " & ucase(session("user")) & " não está definido em 'database.lst'")
+				     response.write "Nota: Este utilizador nÃ£o tem catÃ¡logo na REDE" 
+				     if ucase(session("user"))<>"ADMIN" then writeLog("AVISO: O utilizador " & ucase(session("user")) & " nÃ£o estÃ¡ definido em 'database.lst'")
 				  end if
 				  %>
 				  </dl>			              				
@@ -755,7 +755,7 @@ If Session("LogError") < 3 Then
                  <div id="tab6" class="tabcontent">
 					     <dl style="margin-left:5px;margin-top:15px;">
   					     <dt style="font: 10pt Arial"><a href="admin.asp?id=2&mnres=1" <% if request("mnres")="1" or request("mnres")="" then response.write "class=""tabfakeon""" else response.write "class=""tabfakeoff"""%>>Listagens</a>
-						 <a href="admin.asp?id=2&mnres=2" <% if request("mnres")="2" then response.write "class=""tabfakeon""" else response.write "class=""tabfakeoff"""%>>Estatísticas</a>
+						 <a href="admin.asp?id=2&mnres=2" <% if request("mnres")="2" then response.write "class=""tabfakeon""" else response.write "class=""tabfakeoff"""%>>EstatÃ­sticas</a>
 						
 						 </dl>
 						 <dl class="tabsubmenu1">
@@ -809,7 +809,7 @@ If Session("LogError") < 3 Then
 						
 						 
 						 <dl style="margin-left:80px;margin-top:67px">
-						 <dt>Avaliação das existências</dt><br>
+						 <dt>AvaliaÃ§Ã£o das existÃªncias</dt><br>
 						 <dd>
 						 <form name="frmgescol" id="frmgescol" action="" method="post" >  
 						 <input type="hidden" name="ut" value="<%=ucase(session("user"))%>">
@@ -821,7 +821,7 @@ If Session("LogError") < 3 Then
 
 						 Procurar em: <select name="criterio" id="criterio">
 						   <option value="X" selected>[Toda rede]</option>
-						   <option value="i">Por Instituição</option>
+						   <option value="i">Por InstituiÃ§Ã£o</option>
 						   <option value="c">Por CDU</option>  
 						 </select>
 						 <input type="button" value="Selecionar" onClick="getOp(); return false;">
@@ -884,50 +884,50 @@ If Session("LogError") < 3 Then
 							 <%end if%>
 							 <input type="hidden" id="nregs" name="nregs" value="<%=totregs%>">
 							 <input type="hidden" name="expressao" id="expressao" value="$">
-							 MFN's: de <input type="text" id="MFNde" name="MFNde" value="1" size="7" onkeyup="checkValInput(this)">&nbsp; até <input type="text" id="MFNate" name="MFNate" value="<%=totregs%>" size="7" onkeyup="checkValInput(this)">
+							 MFN's: de <input type="text" id="MFNde" name="MFNde" value="1" size="7" onkeyup="checkValInput(this)">&nbsp; atÃ© <input type="text" id="MFNate" name="MFNate" value="<%=totregs%>" size="7" onkeyup="checkValInput(this)">
 							<input type="submit" value="Ok" id="validar" name="Submit">		
 							 </p>
 							 </div>
                                <br />
-                              <b>Análise seletiva (campo/subcampo/nº de ocorrências ou texto)</b>
+                              <b>AnÃ¡lise seletiva (campo/subcampo/nÂº de ocorrÃªncias ou texto)</b>
 						   	<div> 
 							<p >
 							  Campo: &nbsp;&nbsp;&nbsp;<select id="canom" name="canom" onChange="muda_campo(this)">
-								<option value="005">005-Identificador da versão</option>
+								<option value="005">005-Identificador da versÃ£o</option>
 								<option value="010">010-ISBN </option>
 								<option value="011">011-ISSN</option>
-								<option value="020">020-Número bibliográfico nacional</option>
-								<option value="021">021-Depóstito legal</option>
-								<option value="035">035-Outros números de identificação</option>
+								<option value="020">020-NÃºmero bibliogrÃ¡fico nacional</option>
+								<option value="021">021-DepÃ³stito legal</option>
+								<option value="035">035-Outros nÃºmeros de identificaÃ§Ã£o</option>
 								<option value="100">100-Dados gerais de processamento</option>
-								<option value="101">101-Língua</option>
-								<option value="200">200-Título e menção de responsabilidade</option>
-								<option value="205">205-Edição</option>
-								<option value="210">210-Publicação</option>
-								<option value="215">215-Descrição física</option>
-								<option value="225">225-Séries</option>
+								<option value="101">101-LÃ­ngua</option>
+								<option value="200">200-TÃ­tulo e menÃ§Ã£o de responsabilidade</option>
+								<option value="205">205-EdiÃ§Ã£o</option>
+								<option value="210">210-PublicaÃ§Ã£o</option>
+								<option value="215">215-DescriÃ§Ã£o fÃ­sica</option>
+								<option value="225">225-SÃ©ries</option>
 								<option value="300">300-Notas gerais</option>
-								<option value="307">307-Notas (descrição física)</option>
+								<option value="307">307-Notas (descriÃ§Ã£o fÃ­sica)</option>
 								<option value="465">465-</option>
 								<option value="467">467-</option>
 								<option value="600">600-Assunto (nome de pessoa)</option>
 								<option value="606">606-Assunto (nome comum)</option>
-								<option value="675">675-Classificação Decimal Universal</option>
-								<option value="700">700-Menção de respons. principal (pessoa)</option>
-								<option value="701">701-Outra menção de respons. (pessoa)</option>
-								<option value="702">702-Menção de respons. secundária (pessoa)</option>
-								<option value="710">710-Menção de respons. principal (coletividade)</option>
-								<option value="711">711-Outra menção de respons. (coletividade)</option>
-								<option value="712">712-Menção de respons. secundária (coletividade)</option>
-								<option value="720">720-Menção de respons. principal (família)</option>
-								<option value="721">721-Outra menção de respons. (família)</option>
-								<option value="722">722-Menção de respons. secundária (família)</option>
+								<option value="675">675-ClassificaÃ§Ã£o Decimal Universal</option>
+								<option value="700">700-MenÃ§Ã£o de respons. principal (pessoa)</option>
+								<option value="701">701-Outra menÃ§Ã£o de respons. (pessoa)</option>
+								<option value="702">702-MenÃ§Ã£o de respons. secundÃ¡ria (pessoa)</option>
+								<option value="710">710-MenÃ§Ã£o de respons. principal (coletividade)</option>
+								<option value="711">711-Outra menÃ§Ã£o de respons. (coletividade)</option>
+								<option value="712">712-MenÃ§Ã£o de respons. secundÃ¡ria (coletividade)</option>
+								<option value="720">720-MenÃ§Ã£o de respons. principal (famÃ­lia)</option>
+								<option value="721">721-Outra menÃ§Ã£o de respons. (famÃ­lia)</option>
+								<option value="722">722-MenÃ§Ã£o de respons. secundÃ¡ria (famÃ­lia)</option>
 								<option value="801">801-Origem do registo</option>
 								<option value="856">856-URL</option>
 								<option value="859">859-</option>
-								<option value="921">921-Nível hierárquico</option>
-								<option value="922">922-Nível bibliográfico</option>
-								<option value="930">930-Cota sumário</option>
+								<option value="921">921-NÃ­vel hierÃ¡rquico</option>
+								<option value="922">922-NÃ­vel bibliogrÃ¡fico</option>
+								<option value="930">930-Cota sumÃ¡rio</option>
 								<option value="955">955-</option>
 								<option value="966">966-Exemplar</option>
 								
@@ -942,8 +942,8 @@ If Session("LogError") < 3 Then
 								<option value="<"><</option>
 								<option value="=" selected>=</option>
 								<option value=">">></option>
-								<option value="in">contém</option>
-								<option value="notin">não contém</option>
+								<option value="in">contÃ©m</option>
+								<option value="notin">nÃ£o contÃ©m</option>
 							  </select>
 				      		  &nbsp;<span id="inputOcorrAnom">Ocorr(as): <input type="text" id="ncanom" size="2" value="0"  onKeyup="checkValInput(this)"></span>
                               &nbsp;<span id="inputTextoAnom" style="display:none">Texto <input type="text" id="txtanom" size="12" value="" ></span>
@@ -958,13 +958,13 @@ If Session("LogError") < 3 Then
 							<div id="nocat1" style="margin:30px 0 0 -80px"></div> 
 							 <br />
                            <% else 
-						      response.write "Nota: Este utilizador não tem catálogo na REDE" 
+						      response.write "Nota: este utilizador nÃ£o tem catÃ¡logo na REDE" 
 						  end if %>				  
 						    
 						 <% case "2" %>	
 						  						  
 						 <% if uflag or ucase(session("user"))="ADMIN"  then %>
-						<dt>Exportação de registos [formato ISO 2709]</dt><br><br>
+						<dt>ExportaÃ§Ã£o de registos [formato ISO 2709]</dt><br><br>
 						 				
 						 <input type="hidden" name="user" value="<%=lcase(session("user"))%>">
 						 <input type="hidden" name="isofilepath" value="../tmp/">
@@ -986,7 +986,7 @@ If Session("LogError") < 3 Then
 						 <% else %>
 						 	<input type="hidden" id="base1" name="base" value="<%=lcase(session("user"))%>"> 
 						 <%end if%>
-						 MFN's: de <input type="text" id="MFNde1" name="MFNde" value="1" size="7">&nbsp; até <input type="text" id="MFNate1" name="MFNate" value="<%=totregs%>" size="7"  onkeyup="checkValInput(this)">
+						 MFN's: de <input type="text" id="MFNde1" name="MFNde" value="1" size="7">&nbsp; atÃ© <input type="text" id="MFNate1" name="MFNate" value="<%=totregs%>" size="7"  onkeyup="checkValInput(this)">
 						 <br><br>
 						 <div id="exportparam"> 
 						 Nome do ficheiro:	
@@ -996,17 +996,17 @@ If Session("LogError") < 3 Then
 						 <div id="nocat2" style="margin:0 0 0 -80px"></div> 
 						 <div id="msgISO" style="display:none;text-align:center"></div>
 						  <% else 
-						      response.write "Nota: Este utilizador não tem catálogo na REDE" 
+						      response.write "Nota: Este utilizador nÃ£o tem catÃ¡logo na REDE" 
 						  end if %>
 					<%case "3" %>
 
 					 <form>
-					 <dd><a href="#" onClick="javascript:window.open('admin_iso_upload.asp?window=yes', 'DocUpload', 'width=600, height=200, dependent=yes, left=150 , top=150, menubar=no, scrollbars=no,status=yes');">Enviar ficheiros bibliográficos para o servidor(ISO 2709)</a></dd>
+					 <dd><a href="#" onClick="javascript:window.open('admin_iso_upload.asp?window=yes', 'DocUpload', 'width=600, height=200, dependent=yes, left=150 , top=150, menubar=no, scrollbars=no,status=yes');">Enviar ficheiros bibliogrÃ¡ficos para o servidor(ISO 2709)</a></dd>
 					 </form>
 					
 						 <div style="padding-left:20px">
 						    <br />
-						    <p>Último carregamento: &nbsp;&nbsp;
+						    <p>Ãšltimo carregamento: &nbsp;&nbsp;
 							 <% if lcase(session("user"))="admin" then %>
 							  Selecione a base de dados: 
 							  <select id="base2" name="base" style="width:80px" onChange="muda_base(this)">
@@ -1021,7 +1021,7 @@ If Session("LogError") < 3 Then
 								<li><div style="width:100px;display:inline-block">ISO 2709: </div> <span class="aviso" id="fiso"></span><span class="aviso" id="fsize"></span></li>
 								<li><div style="width:100px;display:inline-block">Data/hora:</div> <span class="aviso" id="time"></span></li>
 								<li><div style="width:100px;display:inline-block">Software:</div> <span class="aviso" id="soft"></span></li>
-								<li><div style="width:100px;display:inline-block">Codificação:</div> <span class="aviso" id="codepage"></span>&nbsp;<span class="aviso" id="alerta"></span></li>
+								<li><div style="width:100px;display:inline-block">CodificaÃ§Ã£o:</div> <span class="aviso" id="codepage"></span>&nbsp;<span class="aviso" id="alerta"></span></li>
 							</ul> 
 							</div>   
 						</div>
@@ -1058,32 +1058,32 @@ If Session("LogError") < 3 Then
 						
 						 <dl style="margin-left:10px;margin-top:5px;">
 					      <fieldset class="tabparam" style="float:right"><legend>Sistema</legend>
-						   <label for="estado" class="param">Estado   :</label><input type="radio" name="estado" id="estado1" <% if valores(2)="S" then response.write " checked" end if %>>Em linha <input type="radio" name="estado" id="estado2" <% if valores(2)="N" then response.write " checked" end if %>>Manutenção 
+						   <label for="estado" class="param">Estado   :</label><input type="radio" name="estado" id="estado1" <% if valores(2)="S" then response.write " checked" end if %>>Em linha <input type="radio" name="estado" id="estado2" <% if valores(2)="N" then response.write " checked" end if %>>ManutenÃ§Ã£o 
 						   
 						 </fieldset>	
 						 <fieldset class="tabparam"><legend>Reservas</legend>
-						   <label for="limres" class="param">Limite máx. :</label><input type="text" name="limres" id="limres" value="<%=valores(0)%>" size="2">
-						   <label for="maxres" >&nbsp;Nº de Dias  :</label> &nbsp;<input type="text" name="maxres" id="maxres" value="<%=valores(1)%>" size="2"><br>
+						   <label for="limres" class="param">Limite mÃ¡x. :</label><input type="text" name="limres" id="limres" value="<%=valores(0)%>" size="2">
+						   <label for="maxres" >&nbsp;NÂº de Dias  :</label> &nbsp;<input type="text" name="maxres" id="maxres" value="<%=valores(1)%>" size="2"><br>
 						   <form name="frmsetcal" id="frmsetcal" action="calendario.asp" method="post" style="margin:6px;font-size:0.9em;height:20px">  
 							 <input type="hidden" name="ut" value="<%=ucase(session("user"))%>">
 							 <input type="hidden" id="mnu" name="mnu" value="2">
 							 <input type="hidden" name="expressao" id="expressao" value="">
-						     <input type="button" onClick="javascript:document.frmsetcal.submit();" value="Férias e feriados">
+						     <input type="button" onClick="javascript:document.frmsetcal.submit();" value="FÃ©rias e feriados">
 						   </form>
 
 						 </fieldset>
 					
-						  <fieldset class="tabparam" style="float:right"><legend>Bases bibliográficas</legend>
-						   <label for="valida" class="param">Validação :</label><input type="radio" name="valida" id="valida1"  <% if valores(5)="S" then response.write " checked" end if %>>Ativado <input type="radio" name="valida" id="valida2"  <% if valores(5)="N" then response.write " checked" end if %>>Desativado 
+						  <fieldset class="tabparam" style="float:right"><legend>Bases bibliogrÃ¡ficas</legend>
+						   <label for="valida" class="param">ValidaÃ§Ã£o :</label><input type="radio" name="valida" id="valida1"  <% if valores(5)="S" then response.write " checked" end if %>>Ativado <input type="radio" name="valida" id="valida2"  <% if valores(5)="N" then response.write " checked" end if %>>Desativado 
 						 </fieldset>
-						 <fieldset class="tabparam"><legend>Empréstimo</legend>
+						 <fieldset class="tabparam"><legend>EmprÃ©stimo</legend>
 						   <label for="empind" class="param">Individual :</label><span name="empind" ><input type="radio" name="ei" id="ei1"  <% if valores(3)="S" then response.write " checked" end if %>>Ativado <input type="radio" name="ei" id="ei2"  <% if valores(3)="N" then response.write " checked" end if %>>Desativado</span><br><span style="clear:left"></span> 
 						   <label for="empbib" class="param" >Interbibliotecas :</label><span name="empbib"><input type="radio" name="eib" id="eib1"  <% if valores(4)="S" then response.write " checked" end if %>>Ativado <input type="radio" name="eib" id="eib2"  <% if valores(4)="N" then response.write " checked" end if %>>Desativado</span> 
 						 </fieldset>
 							
-						 <fieldset class="tabparam1"><legend>Gráficos [tipo/orientação]</legend>
+						 <fieldset class="tabparam1"><legend>GrÃ¡ficos [tipo/orientaÃ§Ã£o]</legend>
 						   <label for="gres" class="param">Reservas :</label><input type="radio" name="gres" id="gres1"  <% if valores(6)="S" then response.write " checked" end if %>>Horizontal <input type="radio" name="gres" id="gres2"  <% if valores(6)="N" then response.write " checked" end if %>>Vertical<br><span style="clear:left"></span>
-						   <label for="gcol" class="param">Coleção :</label><input type="radio" name="gcoltip" id="gcoltip1"  <% if valores(9)="S" then response.write " checked" end if %> onClick="mudagrafop(this)">Colunas <input type="radio" name="gcoltip" id="gcoltip2"  <% if valores(9)="N" then response.write " checked " end if %> onClick="mudagrafop(this)">Circular <span id="grafori" <% if valores(9)="N" then response.write "style=display:none"  end if %>><input type="radio" name="gcol" id="gcol1"  <% if valores(7)="S" then response.write " checked" end if %>>Horizontal <input type="radio" name="gcol" id="gcol2"  <% if valores(7)="N" then response.write " checked" end if %>>Vertical</span>
+						   <label for="gcol" class="param">ColeÃ§Ã£o :</label><input type="radio" name="gcoltip" id="gcoltip1"  <% if valores(9)="S" then response.write " checked" end if %> onClick="mudagrafop(this)">Colunas <input type="radio" name="gcoltip" id="gcoltip2"  <% if valores(9)="N" then response.write " checked " end if %> onClick="mudagrafop(this)">Circular <span id="grafori" <% if valores(9)="N" then response.write "style=display:none"  end if %>><input type="radio" name="gcol" id="gcol1"  <% if valores(7)="S" then response.write " checked" end if %>>Horizontal <input type="radio" name="gcol" id="gcol2"  <% if valores(7)="N" then response.write " checked" end if %>>Vertical</span>
 						   
 						 </fieldset>
 						 <div style="margin-top:20px;text-align:center;"><input type="button" value="Atualizar" onClick="act_param_res()"> </div>					
@@ -1091,8 +1091,8 @@ If Session("LogError") < 3 Then
 					</div>
 					<!--<div id="tab11" class="tabcontent">							
 						 <dl style="margin-left:80px;margin-top:67px;">
-  					     <dd><a href="/opac/cgi/www.exe/[in=lstcomm.in]?expr=$&ut=<%=session("user")%>">Comentários</a></dd>
-						 <dd><a href="lstvotos.asp?id=7" >Votações</a></dd>				
+  					     <dd><a href="/opac/cgi/www.exe/[in=lstcomm.in]?expr=$&ut=<%=session("user")%>">ComentÃ¡rios</a></dd>
+						 <dd><a href="lstvotos.asp?id=7" >VotaÃ§Ãµes</a></dd>				
 						 </dl>
 					</div>-->	 					
                     <%end if%>
@@ -1116,8 +1116,8 @@ If Session("LogError") < 3 Then
        end if
 	   	
 	Else
-		writeLog("LOGIN (insucesso): nº máx de tentativas")
-		Response.Write("<br /><br /><p>Esgotou as três tentativas de ENTRADA no sistema de administração. <br />Terá de fechar esta janela e iniciar nova sessão!</p>")
+		writeLog("LOGIN (insucesso): nÂº mÃ¡x de tentativas")
+		Response.Write("<br /><br /><p>Esgotou as trÃªs tentativas de ENTRADA no sistema de administraÃ§Ã£o. <br />TerÃ¡ de fechar esta janela e iniciar nova sessÃ£o!</p>")
 		
 	End If
 %>
