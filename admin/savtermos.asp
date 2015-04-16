@@ -1,4 +1,4 @@
-<!--#include file="config.asp"-->
+<!--#include file="config.asp"--> 
 <!--#include file="functions.asp"-->
 <%
   tmp=split(request("exp")," ") 
