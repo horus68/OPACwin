@@ -1,4 +1,4 @@
-<!--#include file="config.asp"--> 
+<!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
 <head>
 <link rel="stylesheet" type="text/css" href="/opac/css/default.css" />
