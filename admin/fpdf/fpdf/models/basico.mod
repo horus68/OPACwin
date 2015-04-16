@@ -1,6 +1,6 @@
 
 pdf.Header=function Header()
-{ 
+{
 
     this.Image('/opac/imagens/logotipo.jpg',89,8,22);
     this.SetFont('Arial','B',10);
