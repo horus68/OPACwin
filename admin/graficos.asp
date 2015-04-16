@@ -1,4 +1,4 @@
-<%
+<% 
 If Not Session("LoggedIn") = True  Then response.redirect "admin.asp" %>
 <!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
@@ -156,7 +156,7 @@ Set objXmlHttp = Nothing
 %>
 <!DOCTYPE html>  
 <head>   
-<title>Gráficos - <%=sentidade %></title> 
+<title>GrÃ¡ficos - <%=sentidade %></title> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9"/>
 <link type="text/css" rel="stylesheet" href="../css/default.css"/>
@@ -178,7 +178,7 @@ function start() {
     if (!document.getElementsByTagName || !document.createTextNode) return;
     var rows = document.getElementById("users").getElementsByTagName("tbody")[0].getElementsByTagName("tr");
     for (i = 1 ; i < rows.length; i++) {
-	    rows[i].title="Clique para ver a coleção desta entidade";
+	    rows[i].title="Clique para ver a coleÃ§Ã£o desta entidade";
         rows[i].onclick = function() {
 			window.location.href="graficos.asp?base="+this.cells[0].firstChild.nodeValue.toLowerCase()+"&op=<%=request("op")%>&criterio=<%=request("criterio")%>&voltar=true&sigla="+ this.cells[0].firstChild.nodeValue;
 	 		//document.getElementById("frmseluser").submit();
@@ -215,17 +215,17 @@ function verCDU(bib) {
 		var scaleH=t.length<5? 1.4: 1;
 		var flag=false;
 		for(i=0;i< t.length-1;i++) if (t[i]!=0) flag=true;
-		if (flag==false) {document.getElementById("chart_div").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 450px; height: 270px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>Não há dados para mostrar!</b></div></div>";return}    
+		if (flag==false) {document.getElementById("chart_div").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 450px; height: 270px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>NÃ£o hÃ¡ dados para mostrar!</b></div></div>";return}    
 		var data = new google.visualization.DataTable(); 
 		<% if sp<>"3" then %> 
-			   var c2='Instituições';  
+			   var c2='InstituiÃ§Ãµes';  
 			   var nr= s.length-1;
 			<% else %>
 			   var c2='CDU'; 
 			   var nr=10; 		   
 			<% end if%>   	    
 		eval("data.addColumn('string', '"+c2+"')");        		
-		data.addColumn('number', 'Refªs');    
+		data.addColumn('number', 'RefÂªs');    
 		eval("data.addRows("+nr+")");
 		document.getElementById("chart_div").innerHTML="";   
 		for (i=0;i <nr;i++)
@@ -276,17 +276,17 @@ function verCDU(bib) {
 		var z=valores1.split(",");
 		var flag=false;
 		for(i=0;i< z.length-1;i++) if (z[i]!=0) flag=true;
-		if (flag==false) {document.getElementById("chart_div1").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 350px; height: 270px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>Não há dados para mostrar!</b></div></div>";return}    
+		if (flag==false) {document.getElementById("chart_div1").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 350px; height: 270px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>NÃ£o hÃ¡ dados para mostrar!</b></div></div>";return}    
 		var data = new google.visualization.DataTable(); 
 		<% if sp<>"3" then %> 
-		   var c2='Instituições';  
+		   var c2='InstituiÃ§Ãµes';  
 		   var nr= u.length-1;
 		<% else %>
 		   var c2='CDU'; 
 		   var nr=10; 		   
 		<% end if%>   
 		eval("data.addColumn('string', '"+c2+"')");          	
-		data.addColumn('number', 'Referências');   
+		data.addColumn('number', 'ReferÃªncias');   
 		eval("data.addRows("+nr+")");
 		
 		document.getElementById("chart_div1").innerHTML="";     
@@ -297,7 +297,7 @@ function verCDU(bib) {
 			data.setValue(i, 1, parseFloat(z[i]));               
 		}
 		var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));  
-		<% if sp<>"3" then %> var titulo=""; <%else%> var titulo='Distribuição por classe da CDU';<%end if%>
+		<% if sp<>"3" then %> var titulo=""; <%else%> var titulo='DistribuiÃ§Ã£o por classe da CDU';<%end if%>
 			eval("chart.draw(data, {width: 540, height: 270, vAxis: {minValue:0}, enableTootlTip: true,  axisFontSize: 12, is3D: true, legend:'none',title:'"+titulo+"'})");   
 			
 	   }    
@@ -324,9 +324,9 @@ if sp="3" then menu=3 else menu=2
 
 <div id="principal">
 <div id="lblutilizador">Utilizador: <span id="utilizador"> 
-    <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
-    </span> </div><p class="fil">» <a href="../default.asp">Início</a> » <a href="admin.asp?id=3">Administração</a> » <% if sp="3" then %><a href="../cgi/www.exe/[in=mnucol.in]?mnu=3"><% else %><a href="colselop.asp?ut=<%=ucase(session("user"))%>&base=<%=lcase(base)%>&criterio=<%=sigla%>&users=<%=sigla%>"><% end if %>Avaliação de existências</a> » <% if sp<>"3" then %><a href="javascript:history.back()">Lista de Títulos</a> »<% end if %>  Gráficos</p>
-<div id="admbotoes" style="float:right"><a href="javascript:history.go(-1);"><img src="../imagens/close.gif" border=0 alt="Voltar à página anterior"></a><% if flag=1 then %><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 alt="Imprimir esta página"></a><%end if%></div><h3>Referências por instituição</h3>
+    <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
+    </span> </div><p class="fil">Â» <a href="../default.asp">InÃ­cio</a> Â» <a href="admin.asp?id=3">AdministraÃ§Ã£o</a> Â» <% if sp="3" then %><a href="../cgi/www.exe/[in=mnucol.in]?mnu=3"><% else %><a href="colselop.asp?ut=<%=ucase(session("user"))%>&base=<%=lcase(base)%>&criterio=<%=sigla%>&users=<%=sigla%>"><% end if %>AvaliaÃ§Ã£o de existÃªncias</a> Â» <% if sp<>"3" then %><a href="javascript:history.back()">Lista de TÃ­tulos</a> Â»<% end if %>  GrÃ¡ficos</p>
+<div id="admbotoes" style="float:right"><a href="javascript:history.go(-1);"><img src="../imagens/close.gif" border=0 alt="Voltar Ã  pÃ¡gina anterior"></a><% if flag=1 then %><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 alt="Imprimir esta pÃ¡gina"></a><%end if%></div><h3>ReferÃªncias por instituiÃ§Ã£o</h3>
 <div> 
 <% 'if request("voltar") then response.write "javascript:history.go(-1);" else if sigla="X" then response.write "../admin/admin.asp#tab7" else response.write "../cgi/www.exe/[in=mnucol.in]?mnu="& menu %>
 <span style="float:right;">
@@ -336,9 +336,9 @@ if sp="3" then menu=3 else menu=2
 			response.write "<div id=""drop"">"
 			response.write "<div id=""launcher_container"">"
 			if ubound(biblios)>1 then
-			response.write "<a id=""vgraf"" href=""javascript:void(0)"" onclick=""ver_grafcomp()""><img src=""../imagens/comparative.gif"" align=""absmiddle"" alt=""Gráfico comparativo da CDU"" title=""Gráfico comparativo da CDU"" border=""0"" width=""32""></a>"
+			response.write "<a id=""vgraf"" href=""javascript:void(0)"" onclick=""ver_grafcomp()""><img src=""../imagens/comparative.gif"" align=""absmiddle"" alt=""GrÃ¡fico comparativo da CDU"" title=""GrÃ¡fico comparativo da CDU"" border=""0"" width=""32""></a>"
 			end if
-			response.write "<input style=""width:32px;height:32px;padding:0;border:none"" type=""image"" src=""../imagens/biblios.gif"" id=""launcher4"" title=""Distribuição da CDU por unidade documental""/>"
+			response.write "<input style=""width:32px;height:32px;padding:0;border:none"" type=""image"" src=""../imagens/biblios.gif"" id=""launcher4"" title=""DistribuiÃ§Ã£o da CDU por unidade documental""/>"
 			response.write "<div>" 
 			response.write "<ul id=""menu4"">"
   		
@@ -376,21 +376,21 @@ if sp="3" then menu=3 else menu=2
 			<%
 		else
 		   response.write "<div id=""launcher_container"">"
-	       response.write "<a id=""vgraf""	href=""javascript:void(0)"" onclick=""verCDU('"&base&"')""><input style=""width:32px;height:32px;padding:0;border:none"" type=""image"" src=""../imagens/biblios.gif"" id=""launcher4"" title=""Distribuição por CDU""/></a>"	
+	       response.write "<a id=""vgraf""	href=""javascript:void(0)"" onclick=""verCDU('"&base&"')""><input style=""width:32px;height:32px;padding:0;border:none"" type=""image"" src=""../imagens/biblios.gif"" id=""launcher4"" title=""DistribuiÃ§Ã£o por CDU""/></a>"	
 		   response.write "</div>"
 		end if	
         
 	end if
     if sigla="X" then 
 		 response.write "<div id=""launcher_container"">"
-	     response.write "<a id=""vgraf""	href=""javascript:void(0)"" onclick=""ver_grafcomp()""><img src=""../imagens/comparative.gif"" alt=""Gráfico comparativo da CDU"" title=""Gráfico comparativo da CDU"" border=""0"" width=""32""></a>"	
+	     response.write "<a id=""vgraf""	href=""javascript:void(0)"" onclick=""ver_grafcomp()""><img src=""../imagens/comparative.gif"" alt=""GrÃ¡fico comparativo da CDU"" title=""GrÃ¡fico comparativo da CDU"" border=""0"" width=""32""></a>"	
 		 response.write "</div>"
 	end if	 
 %>
 </span>
 
 
-<span style="font-size:0.9em"> critério: [<%if sp<>"3" then  response.write sfiltro else  response.write sigla & " (<span style=""color:red"">" & trim(siglaEXT) & "</span>)"%>] <% if sp<>"3" then%>em <% if sigla <>"X" then response.write sigla & " (<span style=""color:red"">" & trim(siglaEXT) & "</span>)" & nomeAGRUP  else response.write "Toda a rede"%><% end if%></span> 
+<span style="font-size:0.9em"> critÃ©rio: [<%if sp<>"3" then  response.write sfiltro else  response.write sigla & " (<span style=""color:red"">" & trim(siglaEXT) & "</span>)"%>] <% if sp<>"3" then%>em <% if sigla <>"X" then response.write sigla & " (<span style=""color:red"">" & trim(siglaEXT) & "</span>)" & nomeAGRUP  else response.write "Toda a rede"%><% end if%></span> 
 </div>
 <div style="clear:both;margin-bottom:5px"></div>
 <%
@@ -406,8 +406,8 @@ if sp<>"3" then
  end if 
  if flagtabs then %>
          <ul id="tabs" class="shadetabs"> 
-           <li><a href="#" rel="tab1" class="selected">Distribuição na Rede</a></li>											  
-           <li><a href="#" rel="tab2">Distribuição no Agrupamento  </a></li>														
+           <li><a href="#" rel="tab1" class="selected">DistribuiÃ§Ã£o na Rede</a></li>											  
+           <li><a href="#" rel="tab2">DistribuiÃ§Ã£o no Agrupamento  </a></li>														
 		 </ul>
 	   
 		 <div id="painel">      			
@@ -417,8 +417,8 @@ if sp<>"3" then
  else
     response.write "<div id=""painel"">"  
  end if 
-			 if sp<>"3" and sigla<>"X" and lcase(sigla)=lcase(base) then response.write "<b>A) Distribuição na REDE</b>"  else response.write "<br />" 
-			 if sp="3" then response.write "<b>Distribuição por CDU</b>"
+			 if sp<>"3" and sigla<>"X" and lcase(sigla)=lcase(base) then response.write "<b>A) DistribuiÃ§Ã£o na REDE</b>"  else response.write "<br />" 
+			 if sp="3" then response.write "<b>DistribuiÃ§Ã£o por CDU</b>"
 			 %>
 			 <table>
 				<tr>
@@ -431,10 +431,10 @@ if sp<>"3" then
 				
 				<table id="users" class="graficos" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);" onMouseOut="javascript:highlightTableRow(0);">
 				<th><%if sp<>"3" then%>Entidade<%else%>&nbsp;CDU<%end if%></th>
-				<th>Ref.ªs</th>
-				<% response.write "<th title=""Nº de refªs / Total encontrado para todas as entidades""> A </th>"
+				<th>Ref.Âªs</th>
+				<% response.write "<th title=""NÂº de refÂªs / Total encontrado para todas as entidades""> A </th>"
 				   if sigla<>"X" or criterio<>"$" then    
-					 if sp<>"3" then response.write "<th title=""Nº de refªs / Total de referências por entidade""> B </th>" 
+					 if sp<>"3" then response.write "<th title=""NÂº de refÂªs / Total de referÃªncias por entidade""> B </th>" 
 				   end if
 				dados=split(strdados,",")
 				dados1=split(strdados1,",")
@@ -478,7 +478,7 @@ if sp<>"3" then
 
 		   <div id="tab2" class="tabcontent">
 		    <br />
-     		<b>B) Distribuição no Agrupamento</b>
+     		<b>B) DistribuiÃ§Ã£o no Agrupamento</b>
 			<table>
 			<tr>
 			<td><div id="chart_div1" style="width:540px;">A carregar dados... Aguarde um momento, por favor</div></td>
@@ -488,10 +488,10 @@ if sp<>"3" then
 %>
 				<table id="users1" class="graficos" >
 				<th><%if sp<>"3" then%>Entidade<%else%>CDU<%end if%></th>
-				<th>Ref.ªs</th>
-				<% response.write "<th title=""Nº de refªs / Total encontrado para todas as entidades""> A </th>"
+				<th>Ref.Âªs</th>
+				<% response.write "<th title=""NÂº de refÂªs / Total encontrado para todas as entidades""> A </th>"
 				   if sigla<>"X" or criterio<>"$" then    
-					 if sp<>"3" then response.write "<th title=""Nº de refªs / Total de referências por entidade""> B </th>" 
+					 if sp<>"3" then response.write "<th title=""NÂº de refÂªs / Total de referÃªncias por entidade""> B </th>" 
 				   end if
 				dados=split(strBibs,",")
 				dados1=split(strBibs1,",")
@@ -536,7 +536,7 @@ if sp<>"3" then
    end if
  end if%>
 
- <p>Legenda: <ul> <li><b>coluna A</b> - Nº de refªs / Total de refªs para o critério de pesquisa </li>     <% if sp<>"3" and sigla<>"X" or (criterio<>"$" and sp<>"3") then %><li><b>coluna B</b> - Nº de refªs / Total de refªs por entidade</li><% end if%></ul></p>
+ <p>Legenda: <ul> <li><b>coluna A</b> - NÂº de refÂªs / Total de refÂªs para o critÃ©rio de pesquisa </li>     <% if sp<>"3" and sigla<>"X" or (criterio<>"$" and sp<>"3") then %><li><b>coluna B</b> - NÂº de refÂªs / Total de refÂªs por entidade</li><% end if%></ul></p>
  </div> 
  
 </body>
