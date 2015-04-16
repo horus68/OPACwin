@@ -1,4 +1,4 @@
-<% 
+<%
  vdir = "/" & Split(Request.ServerVariables("SCRIPT_NAME"), "/")(1)  
  host=  Request.ServerVariables("server_name")
  porta= Request.ServerVariables("server_port")
