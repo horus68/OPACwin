@@ -1,4 +1,4 @@
-<%
+<% 
 If Not Session("LoggedIn") = True  Then response.redirect "admin.asp" %>
 
 <!--#include file="config.asp"-->
@@ -60,7 +60,7 @@ Set objXmlHttp = Nothing
 %>
 <html>  
 <head>   
-<title>Gráficos - <%=sentidade %></title> 
+<title>GrÃ¡ficos - <%=sentidade %></title> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9"/>
 <link type="text/css" rel="stylesheet" href="../css/default.css" >
@@ -89,9 +89,9 @@ table#users {width: 200px;font-size:1em}
 	var t=valores.split(",");
 	var flag=false;
 	for(i=0;i< t.length-1;i++) if (t[i]!=0) flag=true;
-	if (flag==false) {document.getElementById("chart_div").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 385px; height: 296px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>Não há dados para mostrar!</b></div></div>";return}    
+	if (flag==false) {document.getElementById("chart_div").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 385px; height: 296px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>NÃ£o hÃ¡ dados para mostrar!</b></div></div>";return}    
 	var data = new google.visualization.DataTable();     
-	data.addColumn('string', 'Instituições');        
+	data.addColumn('string', 'InstituiÃ§Ãµes');        
 	data.addColumn('number', 'E.I.B'); 
 	data.addColumn('number', 'Leitores');        
 	data.addRows(s.length-1);
@@ -124,9 +124,9 @@ table#users {width: 200px;font-size:1em}
 	var t=valores.split(",");
 	var flag=false;
 	for(i=0;i< t.length-1;i++) if (t[i]!=0) flag=true;
-	if (flag==false) {document.getElementById("chart_div1").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 385px; height: 296px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>Não há dados para mostrar!</b></div></div>";return}    
+	if (flag==false) {document.getElementById("chart_div1").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 385px; height: 296px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>NÃ£o hÃ¡ dados para mostrar!</b></div></div>";return}    
 	var data = new google.visualization.DataTable();     
-	data.addColumn('string', 'Instituições');        
+	data.addColumn('string', 'InstituiÃ§Ãµes');        
 	data.addColumn('number', 'Totais'); 
 	data.addColumn('number', 'Confirmados');        
 	data.addRows(s.length-1);
@@ -161,9 +161,9 @@ function drawChart2() {
 	var t=valores.split(",");
 	var flag=false;
 	for(i=0;i< t.length-1;i++) if (t[i]!=0) flag=true;
-	if (flag==false) {document.getElementById("chart_div2").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 385px; height: 296px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>Não há dados para mostrar!</b></div></div>";return}    
+	if (flag==false) {document.getElementById("chart_div2").innerHTML="<div style='position: relative; background: url(../imagens/no-graph.png); width: 385px; height: 296px;'><div style='position: absolute; top: 1em; lefght: 2em;padding: 4px;color:red;'><b>NÃ£o hÃ¡ dados para mostrar!</b></div></div>";return}    
 	var data = new google.visualization.DataTable();     
-	data.addColumn('string', 'Instituições');        
+	data.addColumn('string', 'InstituiÃ§Ãµes');        
 	data.addColumn('number', 'Totais'); 
 	data.addColumn('number', 'Confirmados');        
 	data.addRows(s.length-1);
@@ -201,12 +201,12 @@ next
 <div>
 <div id="principal">
 <div id="lblutilizador">Utilizador: <span id="utilizador"> 	 
-		     <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user")) end if%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
+		     <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user")) end if%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
       </span> 
 	  </div>
-	   <p class="fil">» 	    
-	     <a href="../default.asp">Início</a> » <a href="admin.asp?id=2&mnres=2">Administração</a> » Reservas [entidades requisitadas]
-<div id="admbotoes" style="float:right"><a href="admin.asp?id=2&mnres=2"><img src="../imagens/close.gif" border=0 alt="Voltar à página anterior"></a><% if flag=1 then %><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 alt="Imprimir esta página"></a><%end if%></div><h3>Reservas [entidades requisitadas]</h3>  
+	   <p class="fil">Â» 	    
+	     <a href="../default.asp">InÃ­cio</a> Â» <a href="admin.asp?id=2&mnres=2">AdministraÃ§Ã£o</a> Â» Reservas [entidades requisitadas]
+<div id="admbotoes" style="float:right"><a href="admin.asp?id=2&mnres=2"><img src="../imagens/close.gif" border=0 alt="Voltar Ã  pÃ¡gina anterior"></a><% if flag=1 then %><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 alt="Imprimir esta pÃ¡gina"></a><%end if%></div><h3>Reservas [entidades requisitadas]</h3>  
 	<ul id="tabs" class="shadetabs">
 		<li><a href="#" rel="tab1" >Totais</a></li>											  
 		<li><a href="#" rel="tab2" >E.I.B. </a></li>
