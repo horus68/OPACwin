@@ -224,7 +224,7 @@ function muda_base(ob){
 	   document.getElementById("MFNate").value=response;
 	   if (response=="") { 
 		 document.getElementById("validar").style.display="none";
-		 document.getElementById("nocat1").innerHTML="<center>Nota: este utilizador não tem catálogo na REDE</center>";
+		 document.getElementById("nocat1").innerHTML="<center>Nota: Este utilizador não tem catálogo na REDE</center>";
 	   } else
 	   {
 		 document.getElementById("validar").style.display="";
@@ -235,7 +235,7 @@ function muda_base(ob){
 	   document.getElementById("MFNate1").value=response;
 	   if (response=="") {
 		 //document.getElementById("validar").style.display="none";
-		 document.getElementById("nocat2").innerHTML="<center>Nota: este utilizador não tem catálogo na REDE</center>";
+		 document.getElementById("nocat2").innerHTML="<center>Nota: Este utilizador não tem catálogo na REDE</center>";
 	   } else
 	   {
 		 //document.getElementById("validar").style.display="";
@@ -337,8 +337,8 @@ function chkfields(){
 	  var y=document.getElementById("MFNde1").value;
 	  if (isNaN(y)) document.getElementById("MFNde1").value="1";
 	  if (isNaN(x))  document.getElementById("MFNate1").value="9999999";
-	  if (document.getElementById("expfile").value=="") msg="Erro: falta indicar o nome do ficheiro de destino";
-	  else if (Right(tmp,3) != "iso") msg="Erro: o ficheiro de destino deve ter a entensão ISO";
+	  if (document.getElementById("expfile").value=="") msg="Erro: Falta indicar o nome do ficheiro de destino";
+	  else if (Right(tmp,3) != "iso") msg="Erro: O ficheiro de destino deve ter a entensão ISO";
 	  if (msg != "") {document.getElementById("expfile").focus();document.getElementById("expfile").select();alert(msg);} 
 	  else { 
 	  document.getElementById("msgISO").innerHTML='<br><span style="margin-left:-60px;color:red;font-size:0.8em;text-align:center">A processar... Aguarde um momento. </span>';
@@ -958,7 +958,7 @@ If Session("LogError") < 3 Then
 							<div id="nocat1" style="margin:30px 0 0 -80px"></div> 
 							 <br />
                            <% else 
-						      response.write "Nota: este utilizador não tem catálogo na REDE" 
+						      response.write "Nota: Este utilizador não tem catálogo na REDE" 
 						  end if %>				  
 						    
 						 <% case "2" %>	
@@ -1161,4 +1161,3 @@ sub lista_bases
 end sub
  
 %>
-	
