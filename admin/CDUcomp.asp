@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <%	
 		vdir = "/" & Split(Request.ServerVariables("SCRIPT_NAME"), "/")(1)  
 		host=  Request.ServerVariables("server_name")
@@ -32,7 +31,7 @@
 		'response.end
 %>
 
- <title>Gr·fico comparativo da coleÁ„o <%if sigla="X" then response.write "em toda a Rede" else response.write "no Agrupamento"%></title>
+ <title>Gr√°fico comparativo da cole√ß√£o <%if sigla="X" then response.write "em toda a Rede" else response.write "no Agrupamento"%></title>
   <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../js/dist/excanvas.js"></script><![endif]-->
   
   <link rel="stylesheet" type="text/css" href="../js/dist/jquery.jqplot.css" />
@@ -63,7 +62,7 @@
 	 k=1;
      for (i=0;i< t.length-1; i++)	
 	 {     
-			eval("s"+k+" = [['0 Generalidades', "+t[i++]+"], ['1 Filosofia. Psicologia', "+t[i++]+"], ['2 Religi„o',"+t[i++]+"], ['3 CiÍncias Sociais',"+t[i++]+"],['4 Vazia',"+t[i++]+"], ['5 CiÍncias Exatas e Naturais',"+t[i++]+"], ['6 CiÍncias Aplicadas',"+t[i++]+"],['7 Artes e Desporto',"+t[i++]+"], ['8 LinguÌstica. Literatura',"+t[i++]+"], ['9 Geografia. Biografias. HistÛria',"+t[i]+"]]"); 
+			eval("s"+k+" = [['0 Generalidades', "+t[i++]+"], ['1 Filosofia. Psicologia', "+t[i++]+"], ['2 Religi√£o',"+t[i++]+"], ['3 Ci√™ncias Sociais',"+t[i++]+"],['4 Vazia',"+t[i++]+"], ['5 Ci√™ncias Exatas e Naturais',"+t[i++]+"], ['6 Ci√™ncias Aplicadas',"+t[i++]+"],['7 Artes e Desporto',"+t[i++]+"], ['8 Lingu√≠stica. Literatura',"+t[i++]+"], ['9 Geografia. Biografias. Hist√≥ria',"+t[i]+"]]"); 
 			k++;
 	 }
 
