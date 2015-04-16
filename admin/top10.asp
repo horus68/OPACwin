@@ -2,7 +2,7 @@
 <!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en">
 <!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
-<html xmlns="http://www.w3.org/1999/xhtml"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <TITLE><%=stitulo%></TITLE>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
