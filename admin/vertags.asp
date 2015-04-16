@@ -1,4 +1,4 @@
-<!--#include file="config.asp"-->
+<!--#include file="config.asp"--> 
 <!--#include file="functions.asp"-->
 <head>
 <link rel="stylesheet" type="text/css" href="/opac/css/default.css" />
@@ -21,7 +21,7 @@
    var flag=true; 
    if (f.tag.value=="") {
        flag=false;
-	    $("#alerta").html("<span class='quick-alert'>AtenÁ„o! O campo n„o pode ficar vazio...</span>");
+	    $("#alerta").html("<span class='quick-alert'>Aten√ß√£o! O campo n√£o pode ficar vazio...</span>");
 		$("#alerta").fadeIn('slow')
 		$("#alerta").animate({opacity: 1.0}, 3000)
 		$("#alerta").fadeOut('slow', function() {
