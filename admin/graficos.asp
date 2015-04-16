@@ -1,4 +1,4 @@
-<% 
+<%
 If Not Session("LoggedIn") = True  Then response.redirect "admin.asp" %>
 <!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
