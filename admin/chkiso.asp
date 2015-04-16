@@ -1,4 +1,4 @@
-<% 
+<%
 function findMatch(inpStr)
   Dim oRe, oMatches
   Set oRe = New RegExp
