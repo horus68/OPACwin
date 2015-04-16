@@ -2,7 +2,7 @@
 <!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en">
 <!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
 <TITLE><%=stitulo%></TITLE>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -71,13 +71,13 @@
 
 <div id="principal"> 
     <div id="lblutilizador">Utilizador: <span id="utilizador">
-        <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> &nbsp;[ <a href="admin.asp?Logout=1">Sair</a> ]<%else%> &nbsp;[ <a href="admin.asp">Entrar</a> ]<%end if%>
-        </span> </div><p class="fil">» <a href="../default.asp">Início</a> » <a href="admin.asp?id=2&mnres=2">Administração</a> » Top leitores
-	    <div id="admbotoes" style="float:right"><a href="admin.asp?id=2&mnres=2"><img src="../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir lista dos Top10 leitores" alt="Imprimir lista dos Top10 leitores""></a></div><h3>O 10 leitores com mais pedidos de reserva <img src="../imagens/thumb_up.png" align="absmiddle"  border=0></h3>
+        <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> &nbsp;[ <a href="admin.asp?Logout=1">Sair</a> ]<%else%> &nbsp;[ <a href="admin.asp">Entrar</a> ]<%end if%>
+        </span> </div><p class="fil">Â» <a href="../default.asp">InÃ­cio</a> Â» <a href="admin.asp?id=2&mnres=2">AdministraÃ§Ã£o</a> Â» Top leitores
+	    <div id="admbotoes" style="float:right"><a href="admin.asp?id=2&mnres=2"><img src="../imagens/close.gif" border=0 title="Voltar Ã  pÃ¡gina anterior" alt="Voltar Ã  pÃ¡gina anterior"></a><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir lista dos Top10 leitores" alt="Imprimir lista dos Top10 leitores""></a></div><h3>O 10 leitores com mais pedidos de reserva <img src="../imagens/thumb_up.png" align="absmiddle"  border=0></h3>
 
-<table id="users" class="sortable" summary="Listagem de acessos ao sistema de administração" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);"
+<table id="users" class="sortable" summary="Listagem de acessos ao sistema de administraÃ§Ã£o" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);"
   onMouseOut="javascript:highlightTableRow(0);">
-  <thead><th width="90">Nº leitor</th><th>Instituição</th><th>Nome</th><th>Pedidos</th><th>Confirmados</th><th>Foto</th></thead>   
+  <thead><th width="90">NÂº leitor</th><th>InstituiÃ§Ã£o</th><th>Nome</th><th>Pedidos</th><th>Confirmados</th><th>Foto</th></thead>   
 <% if ubound(adados)<1 then %>   
 <tr height="200"><td colspan="6" align="center">Ficheiro vazio</td></tr>
 <% else 
