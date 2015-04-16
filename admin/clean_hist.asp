@@ -1,4 +1,4 @@
-<% 
+<%
     temp=request("ids")
 	
 	tabela=split(temp,",")
