@@ -1,5 +1,5 @@
 <%If Not Session("LoggedIn") = True  Then response.redirect "admin.asp"%>
-<!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en">
+<!DOCTYPE html public "-//w3c//dtd html 4.01 transitional//en"> 
 <!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,14 +26,14 @@
 </head><body>
 <div id="principal">
  <div id="lblutilizador">Utilizador: <span id="utilizador"> 	 
-		     <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user")) end if%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
+		     <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user")) end if%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
       </span> 
  </div>
   <p class="fil">	    
-	    » <a href="../default.asp">Início</a> » <a href="admin.asp?id=3">Administração</a> » Listagem de acessos
-<div id="admbotoes" style="float:right"><a href="admin.asp?id=1"><img src="../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir lista de acessos" alt="Imprimir lista de acessos""></a></div><h3>Listagem de acessos ao sistema de administração [LOGS]</h3>
+	    Â» <a href="../default.asp">InÃ­cio</a> Â» <a href="admin.asp?id=3">AdministraÃ§Ã£o</a> Â» Listagem de acessos
+<div id="admbotoes" style="float:right"><a href="admin.asp?id=1"><img src="../imagens/close.gif" border=0 title="Voltar Ã  pÃ¡gina anterior" alt="Voltar Ã  pÃ¡gina anterior"></a><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir lista de acessos" alt="Imprimir lista de acessos""></a></div><h3>Listagem de acessos ao sistema de administraÃ§Ã£o [LOGS]</h3>
 
-<table id="users" class="sortable" summary="Listagem de acessos ao sistema de administração" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);"
+<table id="users" class="sortable" summary="Listagem de acessos ao sistema de administraÃ§Ã£o" onMouseOver="javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);"
   onMouseOut="javascript:highlightTableRow(0);">
   <th width="80">Data</th><th width="80" class="sorttable_nosort">Hora</th><th width="580" class="sorttable_nosort">Registo</th>
 <%
