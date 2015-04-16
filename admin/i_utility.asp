@@ -1,4 +1,4 @@
-<!--#INCLUDE FILE="i_settings.asp"-->
+<!--#INCLUDE FILE="i_settings.asp"--> 
 
 <%
 
