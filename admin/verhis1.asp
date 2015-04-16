@@ -1,4 +1,4 @@
-<!--#include file="config.asp"-->
+<!--#include file="config.asp"--> 
 <!--#include file="functions.asp"-->
 <!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -12,7 +12,7 @@
 <script type="text/javascript" src="../js/sorttable.js"></script>
 <script src="../js/tableH.js" type="text/javascript"></script>
 <script type="text/javascript" src="../js/prototype.js"></script>
-<title>Histórico de Pesquisas</title> 
+<title>HistÃ³rico de Pesquisas</title> 
 <script language="VBScript" >
 dim temp(10000,6)
 Sub getRow()
@@ -80,7 +80,7 @@ onload = function() {
 			              break;		
 			case "NP 405": formato="winp405";
 			              break;		
-			case "Títulos": formato="witit";
+			case "TÃ­tulos": formato="witit";
 			              break;		
 			case "ISBD" : formato="wicmp";
                            break;			
@@ -141,7 +141,7 @@ onload = function() {
 <body  style="margin-left:30px;text-align:left">
 
 <br>
-		<p style="font: bold 10pt Arial ">Histórico de pesquisas</p>
+		<p style="font: bold 10pt Arial ">HistÃ³rico de pesquisas</p>
 		<%
 		Dim histArray 
 		Dim histMaxUsed
@@ -151,13 +151,13 @@ onload = function() {
         'eti=split(chave,",")		
 		if histMaxUsed <>"" then
             if histMaxUsed =-1 then
-				response.write "<h3><center>Histórico vazio</center></h3>"		
+				response.write "<h3><center>HistÃ³rico vazio</center></h3>"		
 			else
                 response.write "<form name=""frmtabela"" id=""frmTabela"" method=""post"" action="""">"
-                response.write "<div style=""float:right;padding-right:5px;"">Acções: <select   name=""box"" id=""box""><option value=""1"">Apagar marcadas</option><option value=""2"">Apagar todas</option></select><input type=""button""  onclick=""getRow()"" value=""Ok""></div>"       
+                response.write "<div style=""float:right;padding-right:5px;"">AcÃ§Ãµes: <select   name=""box"" id=""box""><option value=""1"">Apagar marcadas</option><option value=""2"">Apagar todas</option></select><input type=""button""  onclick=""getRow()"" value=""Ok""></div>"       
                 response.write "</form>"
-				response.write "<table class=""sortable"" id=""users"" summary=""Histórico de pesquisa"" onMouseOver=""javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);""  onMouseOut=""javascript:highlightTableRow(0);"" >"	
-				response.write "<th>ID</th><th>Expressão de pesquisa</th><th>Formato</th><th>Tipo de documento</th><th align=""center"">Início</th><th align=""center"">Reg/pág.</th><th></th><th></th>"		
+				response.write "<table class=""sortable"" id=""users"" summary=""HistÃ³rico de pesquisa"" onMouseOver=""javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);""  onMouseOut=""javascript:highlightTableRow(0);"" >"	
+				response.write "<th>ID</th><th>ExpressÃ£o de pesquisa</th><th>Formato</th><th>Tipo de documento</th><th align=""center"">InÃ­cio</th><th align=""center"">Reg/pÃ¡g.</th><th></th><th></th>"		
 				for i=0 to histMaxUsed 
 				  select case  histArray(1,i)
 				  case "XX"
@@ -202,13 +202,13 @@ onload = function() {
 '						case "AU"
 '							criterio="No campo AUTOR"
 '						case "TI"
-'							criterio="No campo TÍTULO"
+'							criterio="No campo TÃTULO"
 '						case "AS"
 '							criterio="No campo ASSUNTO"
 '						case "COL"
-'							criterio="No campo COLEÇÃO"
+'							criterio="No campo COLEÃ‡ÃƒO"
 '						case "DP"
-'							criterio="No campo DATA DE PUBLICAÇÃO"
+'							criterio="No campo DATA DE PUBLICAÃ‡ÃƒO"
 '						case "CDU"
 '							criterio="No campo CDU"
 '						end select	
@@ -229,14 +229,14 @@ onload = function() {
 				  case "wicmp"
 				      formato="ISBD"
 				  case "witit"
-				      formato="Títulos"					  
+				      formato="TÃ­tulos"					  
 				  end select
 				  response.write "<tr><td>"& i+1 &"</td><td>" & termo & "</td><td>"& formato &"</td><td>"& tdoc &"</td><td align=""center"">"& histArray(2,i) & "</td><TD align=""center"">"&histArray(3,i)&"</td><td><input type=""checkbox"" name=""row" & i & """ id=""row" & i & """ ></td><td><img onclick=""javascript:usar_pesquisa("& i &")"" style=""cursor:pointer"" src=""../imagens/refresh.gif"" width=""18"" title=""Usar pesquisa""></td></tr>"
 				next
 				response.write "</table>"
             end if			
 		else 
-				response.write "<br><br><h3><center>Sessão terminada (Histórico vazio)</center></h3>"		
+				response.write "<br><br><h3><center>SessÃ£o terminada (HistÃ³rico vazio)</center></h3>"		
 			
 		end if	
 		%>		
