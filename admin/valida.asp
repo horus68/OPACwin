@@ -1,5 +1,5 @@
 <%If Not Session("LoggedIn") = True  Then response.Redirect("admin.asp")%>
-<!--#include file="config.asp"-->
+<!--#include file="config.asp"--> 
 <!--#include file="functions.asp"-->
 <%
   strHTML=getUrl(strROOT & "/cgi/www.exe/[in=getpar.in]")
@@ -27,7 +27,7 @@ function filtrar (tipo)
 function ChkLinkHref(base,expressao)
 {
    var loc="../cgi/www.exe/[in=vregisto.in]?base="+base+"&expressao="+expressao;
-   var texto = "Visualização do registo";
+   var texto = "VisualizaÃ§Ã£o do registo";
    var janela =  "vregisto"; 
    popup=window.open("",janela,"toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=yes,width=500,height=300,left=100,top=50");
    ndoc=popup.document;
@@ -40,7 +40,7 @@ function correct(m,campo,base,expressao,texto)
    texto= texto.replace(/</g,"[menor]");
    texto= texto.replace(/>/g,"[maior]");
    var loc="../cgi/www.exe/[in=editreg.in]?base="+base+"&expressao="+expressao+"&campo="+campo+"&texto="+escape(texto)+"&ind="+m;
-   var texto = "Edição do registo";
+   var texto = "EdiÃ§Ã£o do registo";
    var janela =  "edregisto"; 
    popup=window.open("",janela,"toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=no,width=510,height=330,left=100,top=50");
    ndoc=popup.document;
@@ -52,9 +52,9 @@ function correct(m,campo,base,expressao,texto)
 <body >    
 <div id="principal"> 
  <div id="lblutilizador">Utilizador: <span id="utilizador">
-        <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> &nbsp;[ <a href="admin.asp?Logout=1">Sair</a> ]<%else%> &nbsp;[ <a href="admin.asp">Entrar</a> ]<%end if%>
-        </span> </div><p class="fil">» <a href="../default.asp">Início</a> » <a href="admin.asp?id=4">Administração</a> » Validação de registos
-<div id="admbotoes" style="float:right"><a href="admin.asp?id=4"><img src="../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir lista de erros" alt="Imprimir lista de erros"></a></div><h3>Validação de registos: listagem de erros </h3>
+        <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user"))%><%if Session("LoggedIn") then%> &nbsp;[ <a href="admin.asp?Logout=1">Sair</a> ]<%else%> &nbsp;[ <a href="admin.asp">Entrar</a> ]<%end if%>
+        </span> </div><p class="fil">Â» <a href="../default.asp">InÃ­cio</a> Â» <a href="admin.asp?id=4">AdministraÃ§Ã£o</a> Â» ValidaÃ§Ã£o de registos
+<div id="admbotoes" style="float:right"><a href="admin.asp?id=4"><img src="../imagens/close.gif" border=0 title="Voltar Ã  pÃ¡gina anterior" alt="Voltar Ã  pÃ¡gina anterior"></a><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir lista de erros" alt="Imprimir lista de erros"></a></div><h3>ValidaÃ§Ã£o de registos: listagem de erros </h3>
 <%		
 			if request("MFNde")="" then desde= "1" else desde=request("MFNde")
 			if request("MFNate")="" then ate=request("nregs") else ate=request("MFNate")
@@ -70,9 +70,9 @@ function correct(m,campo,base,expressao,texto)
 			
 			Set MyFile = fso.OpenTextFile(spath, 1)
 			
-			response.write "<span id=""toterros"" class=""aviso"" style=""float:right;font-size:9pt""></span><span style="";font-size:9pt"">[Base de dados: " & trim(ucase(request("base"))) & " - Critério de pesquisa: " & ucase(request("expressao")) & " MFN: [" & request("MFNde") & " - " & request("MFNate") & "]</span>"
+			response.write "<span id=""toterros"" class=""aviso"" style=""float:right;font-size:9pt""></span><span style="";font-size:9pt"">[Base de dados: " & trim(ucase(request("base"))) & " - CritÃ©rio de pesquisa: " & ucase(request("expressao")) & " MFN: [" & request("MFNde") & " - " & request("MFNate") & "]</span>"
 			
-			response.write "<table id=""users""><th align=""center"" width=""50"">MFN</th><th align=""center"" width=""600"">Erros: &nbsp;&nbsp;<span style=""color:black; font-weight:bold;"">0 - <a href=""javascript:void(0)"" onclick=""filtrar('')"">Todos</a></span>&nbsp;&nbsp;<span style=""color:red; font-weight:bold"">1</span><span> - <a href=""javascript:void(0)"" onclick=""filtrar('1')"">Crítico</a></span> &nbsp;<span style=""color:rgb(255,255,0); font-weight:bold""> 2</span><span> - <a href=""javascript:void(0)"" onclick=""filtrar('2')"">Importante</a></span> &nbsp;<span style=""color:green; font-weight:bold"">3</span> - <a href=""javascript:void(0)"" onclick=""filtrar('3')"">Sugestão</a></span></th>"	
+			response.write "<table id=""users""><th align=""center"" width=""50"">MFN</th><th align=""center"" width=""600"">Erros: &nbsp;&nbsp;<span style=""color:black; font-weight:bold;"">0 - <a href=""javascript:void(0)"" onclick=""filtrar('')"">Todos</a></span>&nbsp;&nbsp;<span style=""color:red; font-weight:bold"">1</span><span> - <a href=""javascript:void(0)"" onclick=""filtrar('1')"">CrÃ­tico</a></span> &nbsp;<span style=""color:rgb(255,255,0); font-weight:bold""> 2</span><span> - <a href=""javascript:void(0)"" onclick=""filtrar('2')"">Importante</a></span> &nbsp;<span style=""color:green; font-weight:bold"">3</span> - <a href=""javascript:void(0)"" onclick=""filtrar('3')"">SugestÃ£o</a></span></th>"	
             m=0
 			Do While Not MyFile.AtEndOfStream
 				strwork = MyFile.ReadLine
@@ -83,7 +83,7 @@ function correct(m,campo,base,expressao,texto)
 				    response.write "<td width=""50"" align=""center"">"
 					response.write "<a href=""javascript:ChkLinkHref(&quot;" & request("base") & "&quot;,&quot;" & areg(0) & "&quot;)"">" & areg(0) & "</a></td>"
 					response.write "<td style=""border:none"">"
-					response.write "<table width=""100%""><th>Campo</th><th>Tipo</th><th>Mensagem</th><th align=""center"">Acção</th>"
+					response.write "<table width=""100%""><th>Campo</th><th>Tipo</th><th>Mensagem</th><th align=""center"">AcÃ§Ã£o</th>"
 					for j=1 to ubound (areg)
 			          if trim(areg(j))<>"" then
 							if isnumeric(areg(j)) then
@@ -119,7 +119,7 @@ function correct(m,campo,base,expressao,texto)
 					response.write "</td></tr>"
 			    end if
 			loop
-			if m=0 then response.write "<tr height=""120px""><td class=""aviso"" colspan=""3"" align=""center"">Não foram encontrados registos...</td></tr>"
+			if m=0 then response.write "<tr height=""120px""><td class=""aviso"" colspan=""3"" align=""center"">NÃ£o foram encontrados registos...</td></tr>"
 			response.write "</table>"
 		
 			 select case request("tipoerro")
