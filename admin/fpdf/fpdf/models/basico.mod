@@ -1,10 +1,10 @@
 
 pdf.Header=function Header()
-{
+{ 
 
     this.Image('/opac/imagens/logotipo.jpg',89,8,22);
     this.SetFont('Arial','B',10);
-	this.title="Entidades parceiras e siglas pesquis·veis";
+	this.title="Entidades parceiras e siglas pesquis√°veis";
     w = this.GetStringWidth(this.title)+10;
 	this.SetX ((210-w)/2);
     this.Cell(w,40,this.title);
