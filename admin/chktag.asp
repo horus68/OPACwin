@@ -18,6 +18,6 @@
   response.write "<link href=""../css/default1.css"" rel=""stylesheet"" type=""text/css"" />"
   response.write "<![endif]>"
   response.write "</head>"
-  response.write "<body><p class=""aviso"" style=""margin-top: 100px"">ATEN«√O: A palavra-chave introduzida j· existe</p></body>"
+  response.write "<body><p class=""aviso"" style=""margin-top: 100px"">ATEN√á√ÉO: A etiqueta introduzida j√° existe</p></body>"
 
 %>
