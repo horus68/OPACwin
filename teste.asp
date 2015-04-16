@@ -1,4 +1,4 @@
-<%  
+<% 
     myUA = Request.ServerVariables("HTTP_USER_AGENT") 
     ua = lcase(myUA)  
 	Response.Write uA & "<br />" 
