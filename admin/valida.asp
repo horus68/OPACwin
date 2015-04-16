@@ -1,5 +1,5 @@
 <%If Not Session("LoggedIn") = True  Then response.Redirect("admin.asp")%>
-<!--#include file="config.asp"--> 
+<!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
 <%
   strHTML=getUrl(strROOT & "/cgi/www.exe/[in=getpar.in]")
