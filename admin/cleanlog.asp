@@ -1,4 +1,4 @@
-<%   
+<%  
 If Not Session("LoggedIn") = True  Then response.redirect "admin.asp"
 vdir = "/" & Split(Request.ServerVariables("SCRIPT_NAME"), "/")(1)  
 Set ObjectoFicheiro = CreateObject("Scripting.fileSystemObject")
