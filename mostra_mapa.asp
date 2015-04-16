@@ -16,7 +16,7 @@
     img {
       color: #000000;
     }
-	a:link, a:vivsited {font-size: 9pt; font-weight:normal; color: magenta}
+	a:link, a:visited {font-size: 9pt; font-weight:normal; color: magenta}
     form {font-size: 9pt;}
 	</style>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
