@@ -12,7 +12,7 @@
 * License				:  	Freeware                                        *
 * Site					:	http://www.aspxnet.it	                        *
 *                                                                           *
-***************************************************************************** /
+*****************************************************************************/
 
 function CreateJsObject(s){return eval('new '+s);}
 function cfile(){this.obj;this.mode;this.isBinary=false;}
