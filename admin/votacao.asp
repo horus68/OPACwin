@@ -1,4 +1,4 @@
-<!--#include file="config.asp"-->
+<!--#include file="config.asp"--> 
 <!--#include file="functions.asp"-->
 <%
 referer=request.servervariables("http_referer") 
