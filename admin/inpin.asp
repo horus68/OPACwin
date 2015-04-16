@@ -18,7 +18,7 @@ Response.CacheControl = "no-cache"
 <label><%=request("us")%></label><br><br />
 <label for="details" style="width:120px">PIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
 <input  type="text"  size="10" name="details" id="details" value="<%=request("pin")%>">&nbsp;&nbsp;
-<label for="activo" style="width:120px">Activo:</label>
+<label for="activo" style="width:120px">Ativo:</label>
 <input type="radio" id="activo1" name="activo" <% if request("est")=1 then response.write "checked"%>>Sim<input type="radio" id="activo2" name="activo" <% if request("est")=0 then response.write "checked"%>>Não<br />
 <label for="msg" style="width:120px">Mensagem:</label> 
 <input  type="text" name="msg" id="msg" size="38" value="<%=request("msg")%>">
