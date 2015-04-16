@@ -1,4 +1,4 @@
-<%
+<% 
 If Not Session("LoggedIn") = True  Then response.redirect "admin.asp" %>
 <%
 Dim objXmlHttp
@@ -23,7 +23,7 @@ Set objXmlHttp = nothing
 <!--#include file="functions.asp"-->
 <html>  
 <head>   
-<title>Férias e feriados - <%=sentidade%></title> 
+<title>FÃ©rias e feriados - <%=sentidade%></title> 
 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
 <link type="text/css" rel="stylesheet" href="../css/default.css" >
 <![if !IE]>
@@ -92,12 +92,12 @@ table#users {width: 350px;font-size:1em}
 <div>
 <div id="principal">
 <div id="lblutilizador">Utilizador: <span id="utilizador"> 	 
-     <% if session("user")="" then response.write "anónimo" else response.write ucase(session("user")) end if%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
+     <% if session("user")="" then response.write "anÃ³nimo" else response.write ucase(session("user")) end if%><%if Session("LoggedIn") then%> [ <a href="admin.asp?Logout=1">Sair</a> ]<%end if%>
   </span> 
 </div>
   <p class="fil">	    
-  » <a href="../default.asp">Início</a> » <a href="admin.asp?id=5">Administração</a> » Calendário
-<div id="admbotoes" style="float:right"><a href="../admin/admin.asp?id=5"><img src="../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a><% if flag=1 then %><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir esta página" alt="Imprimir esta página"></a><%end if%></div><h3>Férias e feriados [<%=year(date)%>]</h3>  
+  Â» <a href="../default.asp">InÃ­cio</a> Â» <a href="admin.asp?id=5">AdministraÃ§Ã£o</a> Â» CalendÃ¡rio
+<div id="admbotoes" style="float:right"><a href="../admin/admin.asp?id=5"><img src="../imagens/close.gif" border=0 title="Voltar Ã  pÃ¡gina anterior" alt="Voltar Ã  pÃ¡gina anterior"></a><% if flag=1 then %><a href="javascript:window.print()"><img src="../imagens/imprimir.gif" border=0 title="Imprimir esta pÃ¡gina" alt="Imprimir esta pÃ¡gina"></a><%end if%></div><h3>FÃ©rias e feriados [<%=year(date)%>]</h3>  
 <br>
 <%
 resp=getUrl(strROOT & "/cgi/www.exe/[in=getcal.in]")
@@ -106,8 +106,8 @@ response.write "<form name=""frmtabela"" id=""frmTabela"" method=""post"" action
 response.write "<div style=""float:right"">Data: <input type=""text"" size=""4"" maxlength=""5"" name=""data"" id=""data""> Motivo: <input type=""text"" size=""30"" name=""motivo"" id=""motivo""> <a href=""javascript:submeter(0);""><img  src=""../imagens/export.gif"" border=""0""></a><a href=""javascript:submeter(1)""><img  src=""../imagens/icon_delete.gif"" border=""0""></a></div>"
 response.write "<input type=""hidden"" id=""nreg"" name=""nreg"">"
 response.write "</form>"
-response.write "<table class=""sortable"" id=""users"" summary=""Tabela de férias e feriados"" onMouseOver=""javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);""  onMouseOut=""javascript:highlightTableRow(0);"" >"
-response.write "<th align=""center"">ID</th><th>Data</th><th>Designação</th>"
+response.write "<table class=""sortable"" id=""users"" summary=""Tabela de fÃ©rias e feriados"" onMouseOver=""javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);""  onMouseOut=""javascript:highlightTableRow(0);"" >"
+response.write "<th align=""center"">ID</th><th>Data</th><th>DesignaÃ§Ã£o</th>"
 for i=0 to ubound(tabela)-1
    pos1=instr(tabela(i),"^a")
    pos2=instr(tabela(i),"^b")
