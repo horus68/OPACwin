@@ -27,14 +27,14 @@ function validar(user){
 
   s= s.substring(posi+1,pos);
   s= s.toUpperCase();
-  if (s=="")  { alert("O campo NOME do ficheiro n„o pode ficar vazio! \nUtilize o bot„o PROCURAR e repita a operaÁ„o."); return false;}
+  if (s=="")  { alert("O campo NOME do ficheiro n√£o pode ficar vazio! \nUtilize o bot√£o PROCURAR e repita a opera√ß√£o."); return false;}
   
   if (fext=='ISO')
   {
 	  
 	  if (s != user) 
 	  {
-		  var r=confirm("O sistema detetou que o nome do ficheiro ISO n„o confere com o nome do UTILIZADOR atual.\nATEN«√O: O ficheiro ISO n„o ser· processado. \nTem a certeza que pretende continuar?")
+		  var r=confirm("O sistema detetou que o nome do ficheiro ISO n√£o confere com o nome do UTILIZADOR atual.\nATEN√á√ÉO: O ficheiro ISO n√£o ser√° processado. \nTem a certeza que pretende continuar?")
 		  if (r==true) return true; else return false;
 	  }
   }
@@ -47,25 +47,25 @@ function validar(user){
 </style>
 <%	If Session("LoggedIn") = True Then 
 %>
-		<!--estava aqui o topo da p·gina-->
+		<!--estava aqui o topo da p√°gina-->
 
 <%		If Request.QueryString("mode") = "doit" Then
 			Server.ScriptTimeout = 1200		
 			flag = UploadFile("iso")		
             response.write "<br><h3>Envio de ficheiros em formato ISO</h3>"
 			If Flag = "None"  or Flag="ErroTipo" or Flag="ErroNome" or Flag="Existe" Then
-			    Response.Write "<br><p align='center'>O documento n„o pÙde ser carregado!<br>"
+			    Response.Write "<br><p align='center'>N√£o foi poss√≠vel carregar o documento!<br>"
 				select case Flag
 									
 					case "ErroTipo"
-						Response.Write("<p align='center'>Erro: Tipo de ficheiro n„o permitido.<br>")				
+						Response.Write("<p align='center'>Erro: Tipo de ficheiro n√£o permitido.<br>")				
 					case "ErroNome"
 					    Response.Write("<p align='center'>Erro: O nome do ficheiro tem de coincidir com a SIGLA do utilizador.<br>")				
 					case "Existe"
-						Response.Write("<p align='center'>Erro: O ficheiro j· existe!<br>")				
+						Response.Write("<p align='center'>Erro: O ficheiro j√° existe!<br>")				
 
 				end select						
-				Response.Write("<p align='center'>Use o bot„o Retroceder do Browser para tentar de novo ou clique <a  href='javascript:history.go(-1)'>aqui</a>!</p>")				
+				Response.Write("<p align='center'>Use o bot√£o Retroceder do Browser para tentar de novo ou clique <a  href='javascript:history.go(-1)'>aqui</a>!</p>")				
 			Else			
 				If Request.QueryString("window") = "yes" Then			
 					Response.Write("<br><p align='center'>O documento foi carregado com successo. <a  href='#' onClick='window.close();'>Clique aqui para fechar a janela</a>!</p>")
@@ -106,7 +106,7 @@ function validar(user){
 				    </td>
 				  </tr>
 				  <tr>
-				     <td colspan=2 class="fecho"><input id="chkfecho" name="chkfecho" type="checkbox" checked> Fechar janela apÛs conclus„o da transferÍncia</td>
+				     <td colspan=2 class="fecho"><input id="chkfecho" name="chkfecho" type="checkbox" checked> Fechar janela ap√≥s conclus√£o da transfer√™ncia</td>
 				  </tr>
 				   	
 				  <tr>
@@ -134,10 +134,10 @@ function validar(user){
  <div id="upload"> 
   <img src="../imagens/logotipo.png">
   <br><br><br>
-  <h3>AtenÁ„o! A sua sess„o expirou!!!</h3>
+  <h3>Aten√ß√£o! A sua sess√£o expirou!!!</h3>
   <p><%=session("nome")%></p>
   <p></p>
-  <p>Por esse motivo ter· que voltar a entrar no sistema para realizar a operaÁ„o solicitada.</p>
+  <p>Por esse motivo ter√° que voltar a entrar no sistema para realizar a opera√ß√£o solicitada.</p>
    <script>   
 		fechar();
     </script>
