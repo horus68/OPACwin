@@ -6,7 +6,7 @@
 	host=  Request.ServerVariables("server_name")
 	porta= Request.ServerVariables("server_port")
 	strROOT = "http://" & host 
-	if porta <>"80" then strROOT = strROOT & ":" & porta 
+	if porta <>"80" then strROOT = strROOT & ":" & porta
 	strROOT = strROOT & vdir
 	response.write strROOT & "<br />" 
 	response.write Server.MapPath(vdir) & "<br />" 
