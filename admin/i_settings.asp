@@ -1,4 +1,4 @@
-<% 
+<%
 
 strImageRoot  =  lcase( server.mappath(vdir) &  "\upload\fotos\leitores\")
 
