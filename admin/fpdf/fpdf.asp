@@ -1332,7 +1332,8 @@ function FPDF()
 		pE = Code.lastIndexOf("}")
 		eval("this." + AddTo + "=" + Code.substring(0,pE) + "\n" + sToAdd +"}");
 	}
-	
+
+		
 }
 
 </script>
