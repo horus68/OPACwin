@@ -1,4 +1,4 @@
-<!--#include file="config.asp"-->
+<!--#include file="config.asp"--> 
 <!--#include file="functions.asp"-->
 <!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,7 +14,7 @@
 <script language="JavaScript" src="../js/tools.js"></script>
 </head>
 <body>
-      <h3><span>Definição de permissões</span></h3>
+      <h3><span>DefiniÃ§Ã£o de permissÃµes</span></h3>
       <script>
        function validadados() {
        var status=true;
@@ -22,8 +22,8 @@
        var msg="";
        document.getElementById("activo").value= document.getElementById("v121").checked ? "1": "0";
        if (document.getElementById("v11").value=="")
-        {msg= "O campo PIN é de preenchimento obrigatório."; status=false;}
-       if (!status) alert ("ATENÇÂO! Existem erros no preenchimento do formulário.\n\n" + msg);
+        {msg= "O campo PIN Ã© de preenchimento obrigatÃ³rio."; status=false;}
+       if (!status) alert ("ATENÃ‡Ã‚O! Existem erros no preenchimento do formulÃ¡rio.\n\n" + msg);
         return status;
        }
 	   
@@ -36,8 +36,8 @@
       </script>
       <div id="principal">
       <div id="lblutilizador">Utilizador: <span id="utilizador"><%= SESSION("user") %> [ <a href="admin.asp?Logout=1">Sair</a> ]</span> </div><p class="fil">
-      » <a href="admin.asp">Início</a> » <a href="admin.asp">Administração</a> » <a href="../cgi/www.exe/[in=pleitor.in]?ut=<%= lcase(SESSION("user")) %>&expressao=<%= REQUEST("expressao")%>"> Leitores </a> » Definição de permissões</p>
-      <span style="float:right"><a href="javascript:voltar()"><img src="../imagens/close.gif" border=0 title="Voltar à página anterior" alt="Voltar à página anterior"></a></span>
+      Â» <a href="admin.asp">InÃ­cio</a> Â» <a href="admin.asp">AdministraÃ§Ã£o</a> Â» <a href="../cgi/www.exe/[in=pleitor.in]?ut=<%= lcase(SESSION("user")) %>&expressao=<%= REQUEST("expressao")%>"> Leitores </a> Â» DefiniÃ§Ã£o de permissÃµes</p>
+      <span style="float:right"><a href="javascript:voltar()"><img src="../imagens/close.gif" border=0 title="Voltar Ã  pÃ¡gina anterior" alt="Voltar Ã  pÃ¡gina anterior"></a></span>
       <br>
 	  <br>
 	  <form name="pinleitor" id="pinleitor" action="../cgi/www.exe/[in=novpin.in]" method="post">
@@ -54,12 +54,12 @@
 	 num = stripALPHA(REQUEST("expressao"))
 	 bib = stripNUM(REQUEST("expressao"))  
 	%>
-	<label for "v10"><span>Nº de leitor:</span></label><input size="10" type="text" name="v10" id="v10" value="<%=num %>" readonly>
+	<label for "v10"><span>NÂº de leitor:</span></label><input size="10" type="text" name="v10" id="v10" value="<%=num %>" readonly>
 	<label for "v100" class="esp">Biblioteca: &nbsp;&nbsp;</label><input size="10" type="text" name="v100" id="v100" value="<%= bib %>" readonly>
-	<label for "v11" class="esp">PIN:</label>   <input size="10" type="text" name="v11" id="v11" value="" maxlength="4">
+	<label for "v11" class="esp">PIN:</label>Â Â Â <input size="10" type="text" name="v11" id="v11" value="" maxlength="4">
 	</div>
 	<br>
-	<label for "v12"><span>Activo:</span></label><input type="radio" name="v12" id="v121" checked>Sim   <input type="radio" name="v12" id="v122" >Não<br><br>
+	<label for "v12"><span>Activo:</span></label><input type="radio" name="v12" id="v121" checked>SimÂ Â Â <input type="radio" name="v12" id="v122" >NÃ£o<br><br>
 	<label for "v13"><span>Mensagem:</span></label><textarea type="text" name="v13" id="v13"></textarea><br><br>
 	<div align="center"><input type="submit" name="submit" value="Atualizar" onClick="return validadados();"></div><br>
 	</fieldset>
