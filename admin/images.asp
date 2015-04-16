@@ -54,9 +54,9 @@ function fixar(fpath)
 				Session("ImageArray") = True
 	
 				If Image(ArraySize + 1) = "None" Then						
-					Response.Write("<br><br><p align='center'>A imagem n„o pÙde ser carregada! Use o bot„o Retroceder do Browser para tentar de novo ou clique <a href='javascript:history.go(-1)'>aqui</a>!</p>")				
+					Response.Write("<br><br><p align='center'>A imagem n√£o p√¥de ser carregada! Use o bot√£o Retroceder do Browser para tentar de novo ou clique <a href='javascript:history.go(-1)'>aqui</a>!</p>")				
 				elseif Image(ArraySize + 1) = "Existe" then
-					 Response.Write("<br><br><p align='center'>J· existe uma imagem com esse nome no servidor! <br><br><a  href='javascript:window.resizeTo(500,420);history.go(-1)'>Voltar</a></p>")
+					 Response.Write("<br><br><p align='center'>J√° existe uma imagem com esse nome no servidor! <br><br><a  href='javascript:window.resizeTo(500,420);history.go(-1)'>Voltar</a></p>")
 				Else
 					 Response.Write("<br><br><p align='center'><br>A imagem foi carregada com successo. <a  href=""images.asp?expressao=""" & request.querystring("expressao") & ">Clique aqui para fechar a janela</a>!</p>")							
 					 								
@@ -189,7 +189,7 @@ function fixar(fpath)
 			<body onload="init();window.focus();">
 			<title>Imagens guardadas no servidor</title>
 				 <div id="lista">
-				    Escolha a imagem pretendida a partir da lista e depois pressione o bot„o SELECIONAR FICHEIRO (<img SRC="navImages/yes.gif" align="absbottom">) para atualizar. <br> Caso queira, poder· CARREGAR A IMAGEM PARA O SERVIDOR (<img SRC="navImages/upload.gif" align="absbottom">) a partir do seu computador. 
+				    Escolha a imagem pretendida a partir da lista e depois pressione o bot√£o SELECIONAR FICHEIRO (<img SRC="navImages/yes.gif" align="absbottom">) para atualizar. <br> Caso queira, poder√° CARREGAR A IMAGEM PARA O SERVIDOR (<img SRC="navImages/upload.gif" align="absbottom">) a partir do seu computador. 
 					<table WIDTH="100%">
 					<tr>
 					<td VALIGN="top" width="200">
@@ -245,7 +245,7 @@ function fixar(fpath)
                    
 					<img SRC="navImages/inviz.gif" NAME="i_image" ID="i_image" STYLE="display:none">
 					<br>
-					<span ID="img_props" NAME="img_props" style="font-size:7pt"><img src="..\imagens\" & slogo></span>
+					<span ID="img_props" NAME="img_props" style="font-size:7pt"><img src="../imagens/" & slogo></span>
 					</td>
 					</tr>
 					</table>
@@ -284,7 +284,7 @@ function fixar(fpath)
 <%
         response.write "<script>window.resizeTo(500,250);</script>"
         response.write "<p>&nbsp;</p>"
-		response.write "<br><br><b>A sua sess„o expirou! Ter· de voltar a iniciar a sess„o.</b><br><br>"
+		response.write "<br><br><b>A sua sess√£o expirou! Ter√° de voltar a iniciar a sess√£o.</b><br><br>"
         response.write "<a href=""javascript:window.close();"">Fechar a janela</a>"      
 	
 %>
