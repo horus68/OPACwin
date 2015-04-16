@@ -1,4 +1,4 @@
-﻿<%@ CodePage=65001 Language="VBScript"%>
+﻿<%@ CodePage=65001 Language="VBScript"%> 
 <%
 Option Explicit
 Response.Buffer = True
