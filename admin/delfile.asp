@@ -1,4 +1,4 @@
-<% 
+<%  
    
    filespec = request("strDir") & request("delFile")
    on error resume next
