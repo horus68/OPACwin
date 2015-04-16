@@ -1,4 +1,4 @@
-<%
+<% 
 
 Function BinaryToString(xBinary)
 
@@ -68,7 +68,7 @@ Function getUrl(surl)
 	If (objXmlHttp.ReadyState <> 4) Or (objXmlHttp.Status <> 200) Then  
 	  'Abort the request.   
 	  objXmlHttp.Abort   
-	  strHTML = "<br /><br /><p class=""aviso"">Servidor IndisponÌvel.<br>N„o È possÌvel continuar...</p>"
+	  strHTML = "<br /><br /><p class=""aviso"">Servidor Indispon√≠vel.<br>N√£o √© poss√≠vel continuar...</p>"
 	  response.write strHTML
 	  response.end   
 	End if		
@@ -285,7 +285,7 @@ End Function
 Function UploadFile(tipo)
  
  
- ' Se nao for este o componente deve ser feita alateraÁ„o respectiva
+ ' Se nao for este o componente deve ser feita alatera√ß√£o respectiva
 	componente="ASPSmartUpload"
 	Select Case componente							'Application(ScriptName & "UploadComponent")
                                               	
@@ -303,7 +303,7 @@ Function UploadFile(tipo)
 			DeniedFileList = "exe,asp,php,sql,bat,pif,ocx,dll,aspx,shtml"
 		
 			RenameFile = False
-			MaxFileSize = 100000000  ' 100MB m·ximo
+			MaxFileSize = 100000000  ' 100MB m√°ximo
 
 			Set mySmartUpload = Server.CreateObject("aspSmartUpload.SmartUpload")
 
