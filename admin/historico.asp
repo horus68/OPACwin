@@ -1,4 +1,4 @@
-<%
+<% 
 Dim histArray 
 Dim histMaxUsed
 histArray = Session("histArray")
