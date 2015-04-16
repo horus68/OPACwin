@@ -10,4 +10,4 @@
   next
   response.write strHTML
   
-%> 
+%>
