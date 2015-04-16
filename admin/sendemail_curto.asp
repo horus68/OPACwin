@@ -1,4 +1,4 @@
-<!--#include file="functions.asp"-->
+<!--#include file="functions.asp"--> 
 <%  
 assunto=Request.QueryString("assunto")
 remetente=request.QueryString("Email")					
@@ -12,10 +12,10 @@ mensagem= Request.QueryString("mensagem") & "<br><br>Remetido por:" & "<b>" & uc
 if SendMail(assunto, remetente, destinatario, mensagem) then
     response.Charset="ISO-8859-1"
 	response.write "<center>"
-    response.write "AVISO de " & assunto & " enviado com sucesso...[e-mail: " & destinatario & "]"
+    response.write "AVISO de " & assunto & " enviado com sucesso...[email: " & destinatario & "]"
 	response.write "</center>"
 else
-    response.write "FALHOU o envio do aviso de " & assunto & " [e-mail: " & destinatario & "]"
+    response.write "FALHOU o envio do aviso de " & assunto & " [email: " & destinatario & "]"
 end if
 
 %>
