@@ -22,7 +22,7 @@
 <!--
 function removeacento(texto){
 var car,i,dim,p,linha_out="";
-var trocarIsso = "àáâãäåçèéêëìíîïñòóôõöùüúÿÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖOÙÜÚŸ";
+var trocarIsso = "Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã§Ã¨Ã©ÃªÃ«Ã¬Ã­Ã®Ã¯Ã±Ã²Ã³Ã´ÃµÃ¶Ã¹Ã¼ÃºÃ¿Ã€ÃÃ‚ÃƒÃ„Ã…Ã‡ÃˆÃ‰ÃŠÃ‹ÃŒÃÃŽÃÃ‘Ã’Ã“Ã”Ã•Ã–OÃ™ÃœÃšÅ¸";
 var porIsso    = "aaaaaaceeeeiiiinooooouuuyAAAAAACEEEEIIIINOOOOO0UUUY";
 dim=texto.length;
 for(i=0;i<dim;i++)
@@ -89,7 +89,7 @@ Function log_erro(msg)
     strHTML=getUrl(strROOT & "/cgi/www.exe/[in=getmailusr.in]?expressao=SIGLA ADMIN&r=" & rnd())
 	writeLog("LOGIN (insucesso) - Leitor:" & ucase(nu) & msg )
 	response.write "<p>&nbsp;</p>"						 
-	response.write "<h4 style=""font: 9pt Verdana;color:red"">Acesso negado. O leitor não tem acesso ao sistema...</h3>"
+	response.write "<h4 style=""font: 9pt Verdana;color:red"">Acesso negado. O leitor nÃ£o tem acesso ao sistema...</h3>"
 	response.write "<p style=""font: 8pt Verdana"">Mensagem:" & msg & "</p>"
 	response.write "<p style=""font: 8pt Verdana"">Contacte o administrador em " & strHTML & "</p>"
 	'Session("LogError")=Session("LogError")+1        
@@ -103,8 +103,8 @@ if request("op")="vp" then
       if not session("LeitorIn") then
 	           response.write "<br><br>"
 			   response.write "<center><h3 class=""aviso"">AVISO</h3></center> " 
-			   response.write "<p style=""font:10pt bold Arial"">Não é possível continuar...A sua sessão expirou!</p>"
-			   response.write "<div align=""right""> » <a style=""font:10pt bold Arial"" href=""javascript:window.self.close();"">Fechar</a> &nbsp;</div>"
+			   response.write "<p style=""font:10pt bold Arial"">NÃ£o Ã© possÃ­vel continuar...A sua sessÃ£o expirou!</p>"
+			   response.write "<div align=""right""> Â» <a style=""font:10pt bold Arial"" href=""javascript:window.self.close();"">Fechar</a> &nbsp;</div>"
 			   response.End 
 			
       end if
@@ -126,18 +126,18 @@ if request("op")="vp" then
 				strHTML=getUrl(strROOT & "/cgi/www.exe/[in=savepin.in]?v11=" & np & "&from=" & avalores(0))
 				strHTML=OnlyAlphaNumericChars(Server.HTMLEncode(strHTML)) 
 				if strHTML="Erro" then				    
-					response.write "<p style=""margin-top:55px"">Ocorreu um erro durante a alteração do PIN!</p>"
+					response.write "<p style=""margin-top:55px"">Ocorreu um erro durante a alteraÃ§Ã£o do PIN!</p>"
 				else
-				   response.write "<p style=""margin-top:55px"">A alteração do PIN foi concluída com sucesso!</p>"
+				   response.write "<p style=""margin-top:55px"">A alteraÃ§Ã£o do PIN foi concluÃ­da com sucesso!</p>"
 				end if
 				response.write "<p>&nbsp;</p><div align=""right"" style=""font: 9pt Verdana""><a href=""javascript:window.self.close();"" >Fechar</a>&nbsp&nbsp;</div>"
 				response.end   
 			else 
 			   response.write "<br><br>"
 			   response.write "<center><h3 class=""aviso"">AVISO</h3></center> " 
-			   response.write "<p style=""font:10pt bold Arial"">O PIN anterior não confere com o valor guardado.</p>"
-			   response.write "O PIN do leitor mantém-se inalterado..."
-			   response.write "<div align=""right""> » <a style=""font:10pt bold Arial "" href=""javascript:history.back()"">Voltar</a> &nbsp;</div>"
+			   response.write "<p style=""font:10pt bold Arial"">O PIN anterior nÃ£o confere com o valor guardado.</p>"
+			   response.write "O PIN do leitor mantÃ©m-se inalterado..."
+			   response.write "<div align=""right""> Â» <a style=""font:10pt bold Arial "" href=""javascript:history.back()"">Voltar</a> &nbsp;</div>"
 			   response.End
 			end if    
 			
@@ -165,7 +165,7 @@ If Session("LogError") < 3 Then
 					else
 						strHTML=getUrl(strROOT & "/cgi/www.exe/[in=getlt.in]?expressao=NR " & nut &  "&r=" & rnd())
                         if strHTML="" then 
-						     log_erro "Este utilizador não está registado na base de leitores!"
+						     log_erro "Este utilizador nÃ£o estÃ¡ registado na base de leitores!"
 							 response.End
 						end if	 
 						nomelt= left(strHTML,len(strHTML)-2)
@@ -224,7 +224,7 @@ If Session("LogError") < 3 Then
 		if request("op")="ap" and session("LeitorIn") then
 		%>
 		<br>
-		<p style="font: bold 10pt Arial ">Leitores - alteração do código PIN</p>
+		<p style="font: bold 10pt Arial ">Leitores - alteraÃ§Ã£o do cÃ³digo PIN</p>
 		<form name="Login" action="logleitor.asp?op=vp" method="post" onSubmit="oldpin.value = hex_md5(oldpin.value);novopin.value = novopin.value;">
 		<input type="hidden" name="reqPath" value="<%=server.URLEncode(replace(replace(replace(request.ServerVariables("HTTP_REFERER"),"%5B","["),"%5D","]"),"%3D","="))%>">
 		<table style="font: 9pt Arial"  border="0" cellpadding="1" cellspacing="0" >					 
@@ -247,7 +247,7 @@ If Session("LogError") < 3 Then
 		<input type="hidden" name="reqPath" value="<%=server.URLEncode(replace(replace(replace(request.ServerVariables("HTTP_REFERER"),"%5B","["),"%5D","]"),"%3D","="))%>">
 		<table style="font: 9pt Arial"  border="0" cellpadding="1" cellspacing="0" >					 
 		  <tr>									
-			<td  valign="middle"> Nº de leitor: </td>
+			<td  valign="middle"> NÂº de leitor: </td>
 			<td valign="middle"> <input type="text" name="utilizador" size="10"></td>					
 		     <td width="40"></td>								
 			 <td  valign="middle">PIN:</td>
@@ -261,8 +261,8 @@ If Session("LogError") < 3 Then
 		</body>
 <% end if
 Else
-		writeLog("LOGIN (insucesso): nº máx de tentativas")
-		Response.Write("<br /><p>&nbsp;</p><p>Esgotou as três tentativas de ENTRADA. <br />Terá de fechar esta janela e iniciar nova sessão!</p>")
+		writeLog("LOGIN (insucesso): nÂº mÃ¡x de tentativas")
+		Response.Write("<br /><p>&nbsp;</p><p>Esgotou as trÃªs tentativas de ENTRADA. <br />TerÃ¡ de fechar esta janela e iniciar nova sessÃ£o!</p>")
 	
 End If
 
@@ -301,5 +301,5 @@ Public Function OnlyAlphaNumericChars(ByVal OrigString)
 End Function
 
 
- 
+
 %>
