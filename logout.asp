@@ -1,6 +1,6 @@
 <%         
 		Function writeLog (str) 
-        Application.Lock 
+        Application.Lock
 			Dim objFSO, objTStream
 			Set objFSO = Server.CreateObject("Scripting.FileSystemObject")
 			Set objTStream = objFSO.openTextFile(Server.MapPath(vdir &"/upload/logs/admin.log"), 8, True)
