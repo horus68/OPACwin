@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <%	
 		vdir = "/" & Split(Request.ServerVariables("SCRIPT_NAME"), "/")(1)  
 		host=  Request.ServerVariables("server_name")
