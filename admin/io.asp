@@ -2,7 +2,7 @@
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2007 Frederico Caldeira Knabben
  * 
- * == BEGIN LICENSE ==
+ * == BEGIN LICENSE == 
  * 
  * Licensed under the terms of any of the following licenses at your
  * choice:
