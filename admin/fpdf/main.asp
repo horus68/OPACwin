@@ -1,7 +1,7 @@
 <%@language=vbscript%>
 <!--#include file="fpdf.asp"-->
 <head>
-<title>Lista de siglas</title>
+<title>Lista de siglas e contactos</title>
 </head>
 <%
 vdir = "/" & Split(Request.ServerVariables("SCRIPT_NAME"), "/")(1)  
