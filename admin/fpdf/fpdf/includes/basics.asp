@@ -12,7 +12,7 @@
 * License				:  	Freeware                                        *
 * Site					:	http://www.aspxnet.it	                        *
 *                                                                           *
-*****************************************************************************/
+***************************************************************************** /
 
 function CreateJsObject(s){return eval('new '+s);}
 function cfile(){this.obj;this.mode;this.isBinary=false;}
@@ -73,12 +73,12 @@ this.rtrim=function rtrim(s) {
 }
 
 this.file=function file(path){
-   	var f
-   	var ar = new Array()
-   	try{
-   	f = this.fso.OpenTextFile(Server.MapPath(path), 1);
-   	while (!f.atEndOfStream){
-   		ar[ar.length] =  f.ReadLine();
+Â Â Â 	var f
+Â Â Â 	var ar = new Array()
+Â Â Â 	try{
+Â Â Â 	f = this.fso.OpenTextFile(Server.MapPath(path), 1);
+Â Â Â 	while (!f.atEndOfStream){
+Â Â Â 		ar[ar.length] =  f.ReadLine();
 		}
 	f.close()
 	return ar;
@@ -240,15 +240,15 @@ this.newArray=function newArray(){
 	return ar;
 }
 this.file_exists=function file_exists(path){
-   	res = this.fso.FileExists(Server.MapPath(path))
-   	return res;
+Â Â Â 	res = this.fso.FileExists(Server.MapPath(path))
+Â Â Â 	return res;
 }
 
 this.readtextfile=function readtextfile(path){
-   	var f,res
-   	if (this.file_exists(path)){
-   	f = this.fso.OpenTextFile(Server.MapPath(path), 1);
-   	res = f.ReadAll();
+Â Â Â 	var f,res
+Â Â Â 	if (this.file_exists(path)){
+Â Â Â 	f = this.fso.OpenTextFile(Server.MapPath(path), 1);
+Â Â Â 	res = f.ReadAll();
 	f.close()
 	}
 	else{die("Path Not Found : "+Server.MapPath(path))}
@@ -256,21 +256,21 @@ this.readtextfile=function readtextfile(path){
 }
 
 this.readbinfile=function readbinfile(path){
-   	var f,res;
-   	f = Server.CreateObject("ADODB.Stream");
-   	f.CharSet ="ISO-8859-1";
-   	f.Type=2
- 	f.Open()
- 	f.LoadFromFile(Server.MapPath(path))
- 	f.Position=0
-   	res = f.ReadText();
+Â Â Â 	var f,res;
+Â Â Â 	f = Server.CreateObject("ADODB.Stream");
+Â Â Â 	f.CharSet ="ISO-8859-1";
+Â Â Â 	f.Type=2
+Â 	f.Open()
+Â 	f.LoadFromFile(Server.MapPath(path))
+Â 	f.Position=0
+Â Â Â 	res = f.ReadText();
 	f.Close()
 	return res;
 }
 
 this.filesize=function filesize(path){
-   	if(!this.file_exists(path)){return false;}
-   	return this.fso.getFile(Server.MapPath(path)).size;
+Â Â Â 	if(!this.file_exists(path)){return false;}
+Â Â Â 	return this.fso.getFile(Server.MapPath(path)).size;
 }
 
 this.printf = function printf(format) {
