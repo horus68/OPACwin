@@ -1,5 +1,5 @@
 <%If Not Session("LoggedIn") = True  Then response.redirect "admin.asp"%>
-<!--#include file="config.asp"--> 
+<!--#include file="config.asp"-->
 <!--#include file="functions.asp"-->
 <!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
