@@ -1,8 +1,8 @@
-<%
+<% 
 function findMatch(inpStr)
   Dim oRe, oMatches
   Set oRe = New RegExp
-  oRe.Pattern = "/µ|‡|¡|¢|„|##/"
+  oRe.Pattern = "/Âµ|â€¡|Â¡|Â¢|â€ž|##/"
   
   Set oMatches = oRe.Execute(inpStr)
   ' Get the first item in the Matches collection
