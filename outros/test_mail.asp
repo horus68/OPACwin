@@ -59,7 +59,7 @@ End Function
 
 <HTML>
 <HEAD>
-<TITLE>Teste de componentes de E-mail</TITLE>
+<TITLE>Teste de componentes de email</TITLE>
 </HEAD>
 <BODY bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="red">
 <font face="Verdana, Arial, Helvetica">
@@ -68,7 +68,7 @@ End Function
     <td bgcolor="black">
     <table border=0 cellspacing=1 cellpadding=4>
       <tr valign="top">
-        <td bgcolor="midnightblue" colspan="2" align="center"><font size="2" color="mintcream"><b>Teste de componentes de E-mail</b></font></td>
+        <td bgcolor="midnightblue" colspan="2" align="center"><font size="2" color="mintcream"><b>Teste de componentes de email</b></font></td>
       </tr>
      
         <% Dim i
@@ -91,7 +91,7 @@ End Function
     <td bgcolor="black">
     <table border=0 cellspacing=1 cellpadding=4>
       <tr valign="top">
-        <td bgcolor="midnightblue" colspan="2" align="center"><font size="2" color="mintcream"><b>Teste de componentes de E-mail</b></font></td>
+        <td bgcolor="midnightblue" colspan="2" align="center"><font size="2" color="mintcream"><b>Teste de componentes de email</b></font></td>
       </tr>
       
         <% Dim j
