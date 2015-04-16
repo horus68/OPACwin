@@ -1,4 +1,4 @@
-<script language="javascript" runat="server">
+<script language="javascript" runat="server"> 
 Math.hexdec = function(sHexNum) {return  parseInt(sHexNum, 16);}
 Math.bindec = function(lBinaryNum) {return parseInt(lBinaryNum.toString(), 2);}
 Math.deg2rad = function(fDegrees) {return  ((2 * Math.PI) / 360) * fDegrees;}
