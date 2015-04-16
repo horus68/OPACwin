@@ -1,5 +1,5 @@
 <!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
@@ -10,7 +10,7 @@
 <script type="text/javascript" src="../js/sorttable.js"></script>
 <script src="../js/tableH.js" type="text/javascript"></script>
 <script type="text/javascript" src="../js/prototype.js"></script>
-<title>Histórico de Pesquisas</title> 
+<title>HistÃ³rico de Pesquisas</title> 
 
 <script type="text/javascript">
 onload = function() {
@@ -122,29 +122,29 @@ function clean_his()
 			              break;	
 			case "Partituras (M)": tipodoc="DM";
 			              break;	
-			case "Material cartográfico (I)": tipodoc="EM";
+			case "Material cartogrÃ¡fico (I)": tipodoc="EM";
 			              break;	
-			case "Material cartográfico (M)": tipodoc="FM";
+			case "Material cartogrÃ¡fico (M)": tipodoc="FM";
 			              break;	
-			case "Projeção e vídeo": tipodoc="GM";
+			case "ProjeÃ§Ã£o e vÃ­deo": tipodoc="GM";
 			              break;							  
-			case "Registos áudio":tipodoc="IM";
+			case "Registos Ã¡udio":tipodoc="IM";
                           break;
 			case "Registos Musicais":tipodoc="JM";
                           break;
-			case "Material gráfico 2D":tipodoc="KM";
+			case "Material grÃ¡fico 2D":tipodoc="KM";
                           break;
 			case "Produtos de computador":tipodoc="LM";
                           break;
-			case "Periódicos":tipodoc="AS";
+			case "PeriÃ³dicos":tipodoc="AS";
                           break;		
-			case "Analíticos":tipodoc="AA";
+			case "AnalÃ­ticos":tipodoc="AA";
                           break;	
-			case "Multimédia":tipodoc="MM";
+			case "MultimÃ©dia":tipodoc="MM";
                           break;
 			case "Artefactos 3D e realia":tipodoc="RM";
                           break;						  
-			case "Não definido":tipodoc="";
+			case "NÃ£o definido":tipodoc="";
 						  break;
 			}
 			
@@ -164,7 +164,7 @@ function clean_his()
 			              break;		
 			case "NP 405": formato="winp405";
 			              break;		
-			case "Títulos": formato="witit";
+			case "TÃ­tulos": formato="witit";
 			              break;		
 			case "ISBD" : formato="wicmp";
                            break;			
@@ -224,7 +224,7 @@ function clean_his()
 </head>
 <body  style="margin-left:30px;text-align:left">
 <br>
-		<p style="font: bold 10pt Arial ">Histórico de pesquisas</p>
+		<p style="font: bold 10pt Arial ">HistÃ³rico de pesquisas</p>
 		<%
 		Dim histArray 
 		Dim histMaxUsed
@@ -237,10 +237,10 @@ function clean_his()
 				response.write "<h3 style=""margin-top:100px""><center>[Vazio]</center></h3>"		
 			else
                 response.write "<form name=""frmtabela"" id=""frmTabela"" method=""post"" action="""">"
-                response.write "<div style=""float:right;padding-right:5px;"">Acções: <select   name=""box"" id=""box""><option value=""1"">Apagar marcadas</option><option value=""2"">Apagar todas</option></select><input type=""button""  onclick=""javascript:clean_his()"" value=""Ok""></div>"       
+                response.write "<div style=""float:right;padding-right:5px;"">AcÃ§Ãµes: <select   name=""box"" id=""box""><option value=""1"">Apagar marcadas</option><option value=""2"">Apagar todas</option></select><input type=""button""  onclick=""javascript:clean_his()"" value=""Ok""></div>"       
                 response.write "</form>"
-				response.write "<table class=""sortable"" id=""users"" summary=""Histórico de pesquisa"" onMouseOver=""javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);""  onMouseOut=""javascript:highlightTableRow(0);"" >"	
-				response.write "<th>ID</th><th>Expressão de pesquisa</th><th>Formato</th><th>Tipo de documento</th><th align=""center"">Início</th><th align=""center"">Reg/pág.</th><th></th><th></th>"		
+				response.write "<table class=""sortable"" id=""users"" summary=""HistÃ³rico de pesquisa"" onMouseOver=""javascript:trackTableHighlight(event, &quot;#FFFF99&quot;);""  onMouseOut=""javascript:highlightTableRow(0);"" >"	
+				response.write "<th>ID</th><th>ExpressÃ£o de pesquisa</th><th>Formato</th><th>Tipo de documento</th><th align=""center"">InÃ­cio</th><th align=""center"">Reg/pÃ¡g.</th><th></th><th></th>"		
 				for i=0 to histMaxUsed 
 				  select case  histArray(1,i)
 				  case "XX"
@@ -254,29 +254,29 @@ function clean_his()
 				case "DM"
 				     tdoc="Partituras (M)"
 				case "EM"
-				     tdoc="Material cartográfico (I)"
+				     tdoc="Material cartogrÃ¡fico (I)"
 				case "FM"
-				     tdoc="Material cartográfico (M)"
+				     tdoc="Material cartogrÃ¡fico (M)"
 				case "GM"
-				     tdoc="Projeção e vídeo"
+				     tdoc="ProjeÃ§Ã£o e vÃ­deo"
 				case "IM"
-				     tdoc="Registos áudio"
+				     tdoc="Registos Ã¡udio"
 				case "JM"
 				     tdoc="Registos musicais"
 				case "KM"
-				     tdoc="Materila gráfico 2D"
+				     tdoc="Materila grÃ¡fico 2D"
 				case "LM"
 				     tdoc="Produtos de computador"
 				case "MM"
-				     tdoc="Multimédia"
+				     tdoc="MultimÃ©dia"
 				case "RM"
 				     tdoc="Artefactos 3D e realia"
 				  case "AS"
-				     tdoc="Periódicos"		  
+				     tdoc="PeriÃ³dicos"		  
 				  case "AA"
-				     tdoc="Analíticos"
+				     tdoc="AnalÃ­ticos"
 				  case else
-				     tdoc="Não definido"
+				     tdoc="NÃ£o definido"
 				  end select 	 
 				  select case  histArray(0,i)
 				  case "$"
@@ -318,13 +318,13 @@ function clean_his()
 '						case "AU"
 '							criterio="No campo AUTOR"
 '						case "TI"
-'							criterio="No campo TÍTULO"
+'							criterio="No campo TÃTULO"
 '						case "AS"
 '							criterio="No campo ASSUNTO"
 '						case "COL"
-'							criterio="No campo COLEÇÃO"
+'							criterio="No campo COLEÃ‡ÃƒO"
 '						case "DP"
-'							criterio="No campo DATA DE PUBLICAÇÃO"
+'							criterio="No campo DATA DE PUBLICAÃ‡ÃƒO"
 '						case "CDU"
 '							criterio="No campo CDU"
 '						end select	
@@ -345,14 +345,14 @@ function clean_his()
 				  case "wicmp"
 				      formato="ISBD"
 				  case "witit"
-				      formato="Títulos"					  
+				      formato="TÃ­tulos"					  
 				  end select
 				  response.write "<tr><td>"& i+1 &"</td><td>" & termo & "</td><td>"& formato &"</td><td>"& tdoc &"</td><td align=""center"">"& histArray(2,i) & "</td><TD align=""center"">"&histArray(3,i)&"</td><td><input type=""checkbox"" name=""row" & i & """ id=""row" & i & """ ></td><td><img onclick=""javascript:usar_pesquisa("& i &")"" style=""cursor:pointer"" src=""../imagens/refresh.gif"" width=""18"" title=""Usar pesquisa""></td></tr>"
 				next
 				response.write "</table>"
             end if			
 		else 
-				response.write "<br><br><h3><center>Sessão terminada (Histórico vazio)</center></h3>"		
+				response.write "<br><br><h3><center>SessÃ£o terminada (HistÃ³rico vazio)</center></h3>"		
 			
 		end if	
 		%>		
